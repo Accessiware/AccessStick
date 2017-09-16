@@ -1,0 +1,1037 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2017.3 Brukermanual</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2017.3 Brukermanual</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<A NAME="toc"></A>
+<H2>Innholdsfortegnelse</H2>
+  <UL>
+
+  <LI><A HREF="#toc2">1. introduksjon</A>
+    <UL>
+    <LI><A HREF="#toc3">1.1. Generelle Funksjoner</A>
+    <LI><A HREF="#toc4">1.2. Internasjonalisering</A>
+    <LI><A HREF="#toc5">1.3. Talesyntetisestøtte</A>
+    <LI><A HREF="#toc6">1.4. Punktstøtte</A>
+    <LI><A HREF="#toc7">1.5. Lisens og kopibeskyttelse</A>
+    </UL>
+  <LI><A HREF="#toc8">2. Systemkrav</A>
+  <LI><A HREF="#toc9">3. Få tak i NVDA</A>
+  <LI><A HREF="#toc10">4. Installere NVDA</A>
+    <UL>
+    <LI><A HREF="#toc11">4.1. NVDA Installasjonsprogrammet</A>
+    <LI><A HREF="#toc12">4.2. NVDA Portable</A>
+      <UL>
+      <LI><A HREF="#toc13">4.2.1. NVDA Portable på en USB-nøkkel</A>
+      </UL>
+    </UL>
+  <LI><A HREF="#toc14">5. Komme i gang med NVDA</A>
+    <UL>
+    <LI><A HREF="#toc15">5.1. Lasting av NVDA</A>
+    <LI><A HREF="#toc16">5.2. Om NVDA tastaturkommandoer</A>
+      <UL>
+      <LI><A HREF="#toc17">5.2.1. NVDA-tasten</A>
+      <LI><A HREF="#toc18">5.2.2. Tastaturhjelp Modus</A>
+      <LI><A HREF="#toc19">5.2.3. Tastaturoppsett</A>
+      </UL>
+    <LI><A HREF="#toc20">5.3. NVDA menyen</A>
+    <LI><A HREF="#toc21">5.4. Grunnleggende tastekommandoer</A>
+    <LI><A HREF="#toc22">5.5. Rapportering av systeminformasjon</A>
+    </UL>
+  <LI><A HREF="#toc23">6. Navigere med NVDA</A>
+    <UL>
+    <LI><A HREF="#Objects">6.1. Objekter</A>
+    <LI><A HREF="#SystemFocus">6.2. Navigere med Systemfokus</A>
+    <LI><A HREF="#SystemCaret">6.3. Navigere med Systemmarkøren</A>
+    <LI><A HREF="#toc27">6.4. Objektnavigasjon</A>
+    <LI><A HREF="#ReviewingText">6.5. Lese Tekst</A>
+    <LI><A HREF="#toc29">6.6. Navigere med musen</A>
+    </UL>
+  <LI><A HREF="#toc30">7. Bla Modus</A>
+    <UL>
+    <LI><A HREF="#toc31">7.1. Enkeltbokstavnavigasjon</A>
+    <LI><A HREF="#toc32">7.2. Elementlisten</A>
+    <LI><A HREF="#toc33">7.3. Innebuygde Objekter</A>
+    </UL>
+  <LI><A HREF="#toc34">8. Applikasjon Spesifike NVDA kommandoer</A>
+    <UL>
+    <LI><A HREF="#toc35">8.1. Foobar2000</A>
+    <LI><A HREF="#toc36">8.2. Miranda IM</A>
+    <LI><A HREF="#toc37">8.3. Poedit</A>
+    </UL>
+  </UL>
+
+<P></P>
+<A NAME="toc2"></A>
+<H2>1. introduksjon</H2>
+<P>
+NonVisual Desktop Access (NVDA) er en fri og åpen kildekode skjermleser for Microsoft Windows-operativsystemet.
+Gir tilbakemeldinger via syntetisk tale og punktskrift, lar blinde og svaksynte få tilgang til datamaskiner som kjører Windows for samme kostnad som seende.
+NVDA er utviklet av <A HREF="http://www.nvaccess.org/">NV Access</A>, med bidrag fra fellesskapet.
+</P>
+<A NAME="toc3"></A>
+<H3>1.1. Generelle Funksjoner</H3>
+<P>
+NVDA lar blinde og svaksynte få tilgang til og bruke med Windows operativsystem og mange tredjeparts applikasjoner.
+</P>
+<P>
+Store høydepunkter inkluderer:
+</P>
+<UL>
+<LI>Støtte for populære applikasjoner, inkludert nettlesere, e-postklienter, chatteprogrammer og kontorpakker
+<LI>Innebygget syntetisk tale som støtter over 43 språk
+<LI>Lesing av tekstformatering hvor tilgjengelig for eksempel skriftnavn og størrelse, stil og stavefeil
+<LI>Automatisk lesing av tekst under musa og valgfrie hørbar indikasjon ved musens plassering
+<LI>Støtte for mange leselister
+<LI>Mulig å kjøre fra en USB minnepinne eller annet flyttbart medium uten behov for installasjon
+<LI>Enkel å bruke talende installasjonsprogram
+<LI>Oversatt til 36 språk
+<LI>Støtte for moderne Windows-operativsystemer, inkludert både 32 og 64 bits varianter
+<LI>Mulig å kjøre på Windows-pålogging og andre sikre skjermer
+<LI>Støtte for vanlige tilgjengelighetsgrensesnitt som Microsoft Active Accessibility, Java Access Bridge, IAccessible2 og UI Automation (UI Automation støttes bare i Windows 7 og senere)
+<LI>Støtte for Windows Command Prompt og konsoll applikasjoner
+</UL>
+
+<P></P>
+<A NAME="toc4"></A>
+<H3>1.2. Internasjonalisering</H3>
+<P>
+ Det er viktig at folk hvor som helst i verden, uansett hvilket språk de snakker, får lik tilgang til teknologien.
+ Foruten engelsk, har NVDA blitt oversatt til 36 språk, inkludert: afrikaansk, albansk, arabisk, brasiliansk portugisisk, bulgarsk, kroatisk, tsjekkisk, dansk, nederlandsk, finsk, fransk, galisisk, georgisk, tysk, hebraisk, hindi, ungarsk, islandsk, italiensk , japansk, norsk, polsk, portugisisk, rumensk, russisk, serbisk, slovakisk, spansk, svensk, tamil, thai, tradisjonell kinesisk, Taiwansk mandarin, tyrkisk, ukrainsk og vietnamesisk.
+</P>
+<A NAME="toc5"></A>
+<H3>1.3. Talesyntetisestøtte</H3>
+<P>
+Foruten å gi sine meldinger og brukergrensesnitt på flere språk, kan NVDA også la brukeren få lest innhold på alle språk, så lenge de har en talesyntese som kan snakke det språket.
+</P>
+<P>
+Med NVDA følger <A HREF="http://espeak.sourceforge.net/">eSpeak</A>, en gratis, åpen kilde, flerspråklig talesyntese.
+</P>
+<P>
+Informasjon om andre talesynteser som NVDA støtter finnes i <A HREF="#SupportedSpeechSynths">Støttede talesynteser</A>-seksjonen.
+</P>
+<A NAME="toc6"></A>
+<H3>1.4. Punktstøtte</H3>
+<P>
+For brukere som har leselist, kan NVDA gi informasjon i punktskrift.
+Se <A HREF="#SupportedBrailleDisplays">Støttede Leselister</A>-seksjonen for informasjon om de støttede leselistene.
+</P>
+<P>
+NVDA støtter punkt for mange språk, inkludert kortskrift, fullskrift og datapunkt for enkelte språk.
+</P>
+<A NAME="toc7"></A>
+<H3>1.5. Lisens og kopibeskyttelse</H3>
+<P>
+NVDA er kopibeskyttet 2006-2017 NVDA bidragsytere.
+</P>
+<P>
+NVDA dekkes av GNU General Public License (versjon 2).
+Du er fri til å dele eller endre denne programvaren på alle måte du vil så lenge det lisensen medfølger, og gjøre all kildekode tilgjengelig for alle som ønsker den.
+Dette gjelder både originale og modifiserte eksemplarer av denne programvaren, samt eventuelle avledede verk.
+For ytterligere opplysninger, kan du <A HREF="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">se den fullstendige lisensen.</A>
+</P>
+<A NAME="toc8"></A>
+<H2>2. Systemkrav</H2>
+<UL>
+<LI>Operativsystem: Alle 32-biters og 64-bits versjoner av Windows XP, Windows Vista og Windows 7 (Inkludert serveroperativsystemer).
+<LI>Minne: 256 mb RAM eller mer
+<LI>Prosessorhastighet: 1.0 GHz eller høyere
+<LI>Omtrent 50 MB lagringsplass.
+</UL>
+
+<P></P>
+<A NAME="toc9"></A>
+<H2>3. Få tak i NVDA</H2>
+<P>
+Hvis du ennå ikke har fått en kopi av NVDA, kan du laste den ned fra <A HREF="http://www.nvaccess.org/">www.nvda-project.org</A>.
+</P>
+<P>
+Gå til nedlastingssiden, og der finner du en lenke for å laste ned den nyeste versjonen av NVDA.
+</P>
+<P>
+Det er for tiden to måter NVDA er pakket.
+Det ene er en Installer som vil lede deg gjennom installasjon av NVDA slik at du kan kjøre den til enhver tid fra startmenyen.
+Den andre er en selvutpakkende arkiv fil som inneholder en flyttbar versjon av NVDA, som du kan kjøre fra hvor som helst, inkludert USB minnepinner eller CD.
+</P>
+<P>
+For å få tilgang til Windows-påloggingsskjermen, User Account Control (UAC) skjerm eller andre sikre Windows-skjermer, samt programmer som kjører som administrator i Windows Vista og senere, må du installere NVDA på systemet med installasjonsprogrammet.
+Disse skjermene kan ikke nås ved hjelp av en flyttbar kopi av NVDA.
+</P>
+<A NAME="toc10"></A>
+<H2>4. Installere NVDA</H2>
+<A NAME="toc11"></A>
+<H3>4.1. NVDA Installasjonsprogrammet</H3>
+<P>
+Hvis du allerede har NVDA installasjonsprogrammet, trykker du ganske enkelt enter eller dobbeltklikke på filen og installasjonsprogrammet starter.
+</P>
+<P>
+Mens installasjonen lastes, vil du høre NVDA installasjonsmusikk.
+Når den er lastet inn, vil en midlertidig kopi av NVDA følge deg gjennom instruksjonene i installasjonsprogrammet og installere NVDA.
+Merk at hvis du kjørte en annen kopi av NVDA på det tidspunktet du startet installasjonsprogrammet, vil installasjonsprogrammet lukke din forrige kopi og starte sitt eget.
+Dette er nødvendig slik at installasjonsprogrammet kan ordentlig oppdatere eventuelle endrede filer.
+Hvis du allerede har en annen kopi av NVDA installert, vil NVDA installasjonsprogrammet avinstallere det for deg, og deretter vil det begynne å installere NVDA.
+</P>
+<P>
+Når du har fullført installasjonen, vil installasjonsprogrammet varsle deg om at installasjon av NVDA er ferdig.
+Hvis reinstallerer NVDA, kan det deg om å restarte systemet.
+Det er svært viktig at du restarter systemet for å unngå å få uheldige konsekvenser.
+Hvis det ikke ber deg om å restarte, trykk ferdig og installasjonsprogrammet lukkes og starte den nylig installerte versjonen av NVDA.
+</P>
+<A NAME="toc12"></A>
+<H3>4.2. NVDA Portable</H3>
+<P>
+Hvis du har den flyttbare versjonen av NVDA, er alt du trenger å gjøre å trykke enter eller dobbeltklikke på filen, og følge instruksjonene.
+Den vil spørre deg hvor på systemet du ønsker å plassere filene.
+</P>
+<A NAME="toc13"></A>
+<H4>4.2.1. NVDA Portable på en USB-nøkkel</H4>
+<P>
+Det er mulig å plassere NVDA på en USB minnepinne, slik at du kan bruke den på andre datasystemer.
+</P>
+<P>
+Når den flyttbare versjonen spør hvor du ønsker å pakke det ut i stasjonen av din USB minnepinne, pluss en valgfri underkatalog hvor du ønsker å plassere NVDA.
+</P>
+<P>
+Hvis for eksempel USB-minnepinne er på E:\, kan du skrive i E:\nvda, som vil plassere NVDA i NVDA underkatalogen på USB-minnepinnen.
+</P>
+<P>
+Merk at selv om dette betyr at du kan ha NVDA og innstillingene med deg overalt, bare å plugge i USB-minnepinnen, vil ikke starte NVDA automatisk; Du må starte NVDA manuelt fra enten Windows Utforsker eller Kjør Dialogen.
+</P>
+<P>
+For informasjon om autostart av NVDA fra en USB-minnepinne, kan du se denne artikkelen:
+<A HREF="http://www.nvda-project.org/wiki/RunningAutomaticallyFromAUSBDrive">http://www.nvda-project.org/wiki/RunningAutomaticallyFromAUSBDrive</A>
+</P>
+<A NAME="toc14"></A>
+<H2>5. Komme i gang med NVDA</H2>
+<A NAME="toc15"></A>
+<H3>5.1. Lasting av NVDA</H3>
+<P>
+Hvis du har installert NVDA med installasjonsprogrammet, starter NVDA er så enkelt som enten å trykke Ctrl+Alt+N, eller velge NVDA fra NVDA menyen under Programmer på startmenyen.
+I tillegg kan du skrive NVDA inn dialogboksen Kjør, og trykke Enter.
+</P>
+<P>
+For å starte den flyttbare versjonen, gå til katalogen du pakket NVDA til, og trykk enter eller dobbeltklikke på nvda.exe.
+</P>
+<P>
+Når NVDA starter, vil du først høre et stigende sett av toner (som forteller deg at NVDA lastes).
+Avhengig av hvor rask maskinen er, eller hvis du kjører NVDA fra en USB-nøkkel eller annet langsommere medium, kan det ta litt tid å starte.
+Hvis det tar ekstra lang tid, bør NVDA si "Laster NVDA. Vennligst vent..."
+</P>
+<P>
+Hvis du ikke hører noe av dette, eller du hører Windows-feil lyd, eller et synkende sett av toner, så betyr dette at NVDA har en feil, må du muligens sende en feilrapport til utviklerne.
+Vennligst sjekk NVDA nettsiden for hvordan du gjør dette.
+</P>
+<P>
+Når NVDA starter for første gang, vil du bli møtt av en dialogboks som gir deg litt grunnleggende informasjon om NVDA spesialtasten og NVDA menyen.
+(Vennligst se nærmere avsnittene om disse temaene.)
+Dialogboksen inneholder også to avkryssingsbokser.
+Den første lar deg kontrollere om NVDA skal bruke CapsLock som en NVDA valgtast, og den andre lar deg kontrollere om Velkommen-dialogen skal vises hver gang NVDA starter.
+</P>
+<A NAME="toc16"></A>
+<H3>5.2. Om NVDA tastaturkommandoer</H3>
+<A NAME="toc17"></A>
+<H4>5.2.1. NVDA-tasten</H4>
+<P>
+De fleste NVDA-spesifikke tastaturkommandoer består vanligvis av å trykke en spesiell tast kalt NVDA-tasten, sammen med en eller flere andre taster.
+Et unntak fra dette er tekstlesingskommandoer som bare bruker numpad tastene alene.
+</P>
+<P>
+NVDA kan konfigureres slik at enten numpad Sett, Insert eller CapsLock tasten kan brukes som NVDA-tast.
+</P>
+<P>
+Som standard er både Numpad Sett og inserttastene satt som NVDA-taster.
+</P>
+<P>
+Hvis du ønsker at en av NVDA spesialtastene skal opptre som opprinnelig tast (for eksempel ønsker å trykke CapsLock når du har satt CapsLock til å være en NVDA endringstast) kan du trykke på tasten to ganger i rask rekkefølge.
+</P>
+<A NAME="toc18"></A>
+<H4>5.2.2. Tastaturhjelp Modus</H4>
+<P>
+Mange tastaturkommandoer er nevnt gjennom hele resten av denne bruksanvisningen, men en enkel måte å utforske alle de forskjellige tastaturkommandoene er å slå på tastaturhjelp.
+</P>
+<P>
+For å slå på tastaturhjelp trykker du NVDA+1.
+For å slå den av, trykk NVDA+1 en gang til.
+I tastaturhjelp, vil hvetrt tastetrykk lese hva den gjeldende tasten gjør (så sant det gjør noe).
+Tastene vil ikke utføre sin funksjon i tastaturhjelp modus, slik at du kan trykke hvilke taster du vil.
+</P>
+<A NAME="toc19"></A>
+<H4>5.2.3. Tastaturoppsett</H4>
+<P>
+NVDA kommer i dag med to sett av sentrale kommandoer.
+Det er et oppsett for stasjonære og et oppsett for bærbare.
+NVDA som standard er satt til å bruke stasjonæroppsett, men du kan bytte til bærbaroppsettet i Tastaturinnstillinger, under Innstillinger i NVDA menyen.
+</P>
+<P>
+Stasjonæroppsettet gjør mye bruk av numpad (med Numlock av).
+Selv om de fleste bærbare datamaskiner ikke har en fysisk numpad, kan noen bærbare emulere en ved å holde nede Fn-tasten og trykke bokstaver og tall på høyre side av tastaturet (7 8 9 u i o j k l etc).
+Dersom din bærbare ikke kan gjøre dette, eller ikke tillater deg å slå Numlock av, kan det være lurt å bytte til bærbaroppsett i stedet.
+</P>
+<A NAME="toc20"></A>
+<H3>5.3. NVDA menyen</H3>
+<P>
+NVDA menyen lar deg kontrollere NVDA innstillinger, Hjelp, lagre / tilbakestille konfigurasjonen, Endre taleordbøker, få tilgang til flere verktøy og avslutte NVDA.
+</P>
+<P>
+For å gå til NVDA menyen fra hvor som helst i Windows mens NVDA kjører, trykker du NVDA+N.
+Du kan også gå til NVDA menyen via systemstatusfeltet i Windows.
+Enten høyreklikk på NVDA ikonet i systemstatusfeltet, eller få tilgang til systemstatusfeltet ved å trykke Windows-tasten+B, pil ned til NVDA ikonet og trykk på kontekst-tasten ved siden av høyre kontroll-tast på de fleste tastaturer.
+Når menyen kommer opp, kan du bruke piltastene til å navigere i menyen, og enter-tasten for å aktivere et element.
+</P>
+<A NAME="toc21"></A>
+<H3>5.4. Grunnleggende tastekommandoer</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Stopp tale</TD>
+<TD>Ctrl</TD>
+<TD>Slutter øyeblikkelig å snakke</TD>
+</TR>
+<TR>
+<TD>Pause tale</TD>
+<TD>Skift</TD>
+<TD>Pauser øyeblikkelig tale. Ved å trykke den igjen vil fortsette å snakke der den slapp (hvis pause støttes av gjeldende synthesizer)</TD>
+</TR>
+<TR>
+<TD>NVDA Meny</TD>
+<TD>NVDA+N</TD>
+<TD>Åpner NVDA menyen slik at du kan få tilgang til innstillinger, verktøy og hjelp etc</TD>
+</TR>
+<TR>
+<TD>Veksler talemodus</TD>
+<TD>NVDA+S</TD>
+<TD>Veksler talemodus mellom tale, pip og av.</TD>
+</TR>
+<TR>
+<TD>Slår av/på Tastaturhjelp modus</TD>
+<TD>NVDA+1</TD>
+<TD>Når du trykker en tast i denne modusen vil tasten bli lest, og beskrivelse av eventuelle NVDA kommando tilknyttet den</TD>
+</TR>
+<TR>
+<TD>Avslutt NVDA</TD>
+<TD>NVDA+Q</TD>
+<TD>Avslutter NVDA</TD>
+</TR>
+<TR>
+<TD>Slipp neste tast gjennom</TD>
+<TD>NVDA+F2</TD>
+<TD>Lar NVDA slippe neste tastetrykk rett gjennom til det aktive programmet, selv om det er normalt håndtert som en NVDA tastekommando</TD>
+</TR>
+<TR>
+<TD>Slår applikasjonshvilemodus på/av</TD>
+<TD>NVDA+Skift+S</TD>
+<TD>Dvalemodus deaktiverer alle NVDA kommandoer og tale/punkt for det gjeldende programmet. Dette er mest nyttig i applikasjoner som har sin egen tale eller leser av skjermen funksjoner. Trykk denne kommandoen på nytt for å deaktivere innebygde talemodus.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc22"></A>
+<H3>5.5. Rapportering av systeminformasjon</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Rapporter dato/klokkeslett</TD>
+<TD>NVDA+F12</TD>
+<TD>Trykk en gang rapporterer nåværende tidspunkt, å trykke to ganger rapporterer dato</TD>
+</TR>
+<TR>
+<TD>Rapporter batteristatus</TD>
+<TD>NVDA+Skift+B</TD>
+<TD>Rapporterer batteristatus dvs. om strøm er i bruk eller nåværende strømprosent.</TD>
+</TR>
+<TR>
+<TD>Rapporter tekst i utklippstavle</TD>
+<TD>NVDA+C</TD>
+<TD>Rapporterer tekst i utklippstavlen hvis det er noen.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc23"></A>
+<H2>6. Navigere med NVDA</H2>
+<P>
+NVDA lar deg utforske og navigere i systemet på flere måter, inkludert både normal samhandling og lesing.
+</P>
+<A NAME="Objects"></A>
+<H3>6.1. Objekter</H3>
+<P>
+Hvert program og selve operativsystemet består av mange objekter.
+Et objekt er et enkelt element som en del av teksten, knapp, boks, glidebryter, liste eller redigerbare tekstfelt.
+</P>
+<A NAME="SystemFocus"></A>
+<H3>6.2. Navigere med Systemfokus</H3>
+<P>
+Systemfokus, også kjent som fokus, er <A HREF="#Objects">objektet</A> som mottar tastetrykk som trykkes på tastaturet.
+For eksempel, hvis du skriver inn i et redigerbart tekstfelt, er tekstfeltet i fokus.
+</P>
+<P>
+Den vanligste måten å navigere rundt i Windows med NVDA, er å bare flytte systemfokus ved hjelp av standard Windows tastaturkommandoer, for eksempel å trykke Tab og Skift+Tab for å gå fram og tilbake mellom kontrollene, trykke Alt for å komme til menylinjen og deretter bruke piltastene for å navigere i menyer, og ved hjelp av Alt+Tab for å flytte mellom åpne programmer.
+Mens du gjør dette, vil NVDA rapportere informasjon om objektet med fokus, slik som navn, type, verdi, tilstand, beskrivelse, tastatursnarvei og posisjonsinformasjon.
+</P>
+<P>
+Det er noen viktige kommandoer som er nyttige når du flytter sammen med Systemfokus:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Lese gjeldende fokus</TD>
+<TD>NVDA+Tab</TD>
+<TD>Leser det gjeldende objektet eller kontroll som har systemfokus. Ved å trykke to ganger staves informasjonen</TD>
+</TR>
+<TR>
+<TD>Lese tittel</TD>
+<TD>NVDA+T</TD>
+<TD>Leser tittelen på det aktive vinduet. Ved å trykke to ganger staves informasjonen. Ved å trykke tre ganger kopieres den til utklippstavlen</TD>
+</TR>
+<TR>
+<TD>Les det aktive vinduet</TD>
+<TD>NVDA+B</TD>
+<TD>Leser alle kontrollene i det aktive vinduet (nyttig for dialoger)</TD>
+</TR>
+<TR>
+<TD>Les Statuslinje</TD>
+<TD>NVDA+End</TD>
+<TD>Leser Statuslinjen hvis NVDA finner en. Flytter også navigasjonsobjektet til denne plasseringen</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>6.3. Navigere med Systemmarkøren</H3>
+<P>
+Når et <A HREF="#Objects">objekt</A> som har navigering og/eller redigering av tekst er <A HREF="#SystemFocus">fokusert</A>, kan du bevege deg i teksten ved hjelp av systemmarkøren, også kjent som redigeringsmarkøren.
+</P>
+<P>
+Når fokus er på et objekt som har systemmarkør, kan du bruke piltastene, side opp, side ned, home, end osv. for å bevege deg rundt i teksten.
+Du kan også endre teksten om kontrollen har støtte for redigering.
+NVDA vil lese når du flytter mellom tegn, ord og linje, og vil også lese når du velger og avmarker tekst.
+</P>
+<P>
+NVDA har følgende tastaturkommandoer i forhold til systemetmarkør:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Si alle</TD>
+<TD>NVDA+Pil Ned</TD>
+<TD>Starter lesing fra gjeldende posisjon til systemetmarkøren, flytter den under lesing</TD>
+</TR>
+<TR>
+<TD>Les gjeldende linje</TD>
+<TD>NVDA+Pil Opp</TD>
+<TD>Leser linjen der systemmarkøren befinner seg. Ved å trykke to ganger staves linjen.</TD>
+</TR>
+<TR>
+<TD>Les gjeldende valgte tekst</TD>
+<TD>NVDA+Skift+Pil Opp</TD>
+<TD>Leser den valgte tekste</TD>
+</TR>
+</TABLE>
+
+<P>
+Når innenfor en tabell, er følgende sentrale kommandoer også tilgjengelige:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Flytt til forrige kolonne</TD>
+<TD>Ctrl+Alt+Pil Venstre</TD>
+<TD>Flytter systemmarkøren til forrige kolonne (i samme rad)</TD>
+</TR>
+<TR>
+<TD>Flytt til neste kolonne</TD>
+<TD>Ctrl+Alt+Pil Høyre</TD>
+<TD>Flytter systemmarkøren til neste kolonne (i samme rad)</TD>
+</TR>
+<TR>
+<TD>Flytt til forrige rad</TD>
+<TD>Ctrl+Alt+Pil Opp</TD>
+<TD>Flytter systemmarkøren til forrige rad (i samme kolonne)</TD>
+</TR>
+<TR>
+<TD>Flytt til neste rad</TD>
+<TD>Ctrl+Alt+Pil Ned</TD>
+<TD>Flytter systemmarkøren til neste rad (i samme kolonne)</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc27"></A>
+<H3>6.4. Objektnavigasjon</H3>
+<P>
+Mesteparten av tiden, vil du arbeide med applikasjoner ved hjelp av kommandoer som flytter <A HREF="#SystemFocus">fokuset</A> og <A HREF="#SystemCaret">markør</A>.
+Men noen ganger kan du ønske å utforske det gjeldende programmet eller operativsystemet uten å flytte fokus eller markør.
+Du kan også ønske å arbeide med <A HREF="#Objects">objekter</A> som ikke kan nås normalt ved hjelp av tastaturet.
+I disse tilfellene kan du bruke objektnavigasjon.
+</P>
+<P>
+Objektnavigasjon lar deg flytte mellom og få informasjon om de enkelte <A HREF="#objekter">objekter</A>.
+Når du flytter til et objekt, vil NVDA lese det på samme måte som systemet fokus.
+For å lese all tekst som vises på skjermen, kan du i stedet bruke <A HREF="#FlatReview">flatlesing</A>.
+</P>
+<P>
+Istedet for å måtte flytte frem og tilbake mellom hvert enkelt objekt på systemet, er objektene organisert hierarkisk.
+Dette betyr at noen objekter inneholder andre objekter, og du må flytte inni dem for å få tilgang til de objektene de inneholder.
+For eksempel inneholder en liste listeelementer, så du må flytte inne i listen for å få tilgang dens elementer.
+Hvis du har flyttet til et listeelement, flytter neste og forrige, kommer du til andre listeelementer i samme liste.
+Flytte til et listeelement i hovedobjektet vil ta deg tilbake til listen.
+Du kan deretter flytte forbi listen hvis du ønsker tilgang til andre objekter.
+Tilsvarende inneholder en verktøylinje kontroller, så du må flytte inne i verktøylinjen for å få tilgang til kontrollene i verktøylinjen.
+</P>
+<P>
+Objektet som leses kalles navigasjonsobjektet.
+Når du navigerer til et objekt, kan du se gjennom det ved hjelp av <A HREF="#ReviewingText">tekstlesingskommandoer</A>.
+Som standard flyttes navigasjonsobjektet sammen med Systemfokus, men denne oppførselen kan slås av og på.
+</P>
+<P>
+Merk at leselister følger <A HREF="#SystemFocus">fokuset</A> og <A HREF="#SystemCaret">markør</A> som standard, istedet for enn objektnavigasjon og tekstlesing.
+Hvis du vil at den skal følge objektnavigasjon og tekstlesing i stedet, må du <A HREF="#BrailleTether">konfigurere leselisten til å bli bundet til</A> lesing.
+</P>
+<P>
+Ved navigering med objekt, bruker du følgende taster:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Stasjonærtaster</TH>
+<TH>Bærbartaster</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Les gjeldende objekt</TD>
+<TD>NVDA+NumPad5</TD>
+<TD>NVDA+Ctrl+I</TD>
+<TD>Leser gjeldende navigasjonsobjektet. Ved å trykke to ganger staves informasjonen, og trykke tre ganger kopierer objektets navn og verdi til utklippstavlen.</TD>
+</TR>
+<TR>
+<TD>Flytt til innholdsobjektet</TD>
+<TD>NVDA+NumPad8</TD>
+<TD>NVDA+Skift+I</TD>
+<TD>Flytter til objektet som inneholder gjeldende navigasjonsobjekt</TD>
+</TR>
+<TR>
+<TD>Flytt til forrige objekt</TD>
+<TD>NVDA+NumPad4</TD>
+<TD>NVDA+Ctrl+J</TD>
+<TD>Flytter til objektet før den gjeldende navigasjonsobjektet</TD>
+</TR>
+<TR>
+<TD>Flytt til neste objekt</TD>
+<TD>NVDA+NumPad6</TD>
+<TD>NVDA+Ctrl+L</TD>
+<TD>Flytter til objektet etter gjeldende navigasjonsobjektet</TD>
+</TR>
+<TR>
+<TD>Flytt til første beholderobjekt</TD>
+<TD>NVDA+NumPad2</TD>
+<TD>NVDA+Skift+,</TD>
+<TD>Flytter til det første objektet i det gjeldende navigasjonsobjektet</TD>
+</TR>
+<TR>
+<TD>Flytt til å fokusere objekt</TD>
+<TD>NVDA+NumPad-</TD>
+<TD>NVDA+Backspace</TD>
+<TD>Flytter til objektet som for øyeblikket har systemfokus, og også plasserer lesemarkøren i Systemmarkørposisjonen, hvis den viser</TD>
+</TR>
+<TR>
+<TD>Aktiver nåværende navigator objekt</TD>
+<TD>NVDA+NumPadEnter</TD>
+<TD>NVDA+Enter</TD>
+<TD>Aktiverer gjeldende navigasjonsobjekt (lik klikke med musen eller trykke mellomrom når den har systemet fokus)</TD>
+</TR>
+<TR>
+<TD>Flytt System fokus eller markør til gjeldende lesestilling</TD>
+<TD>NVDA+Skift+NumPad-</TD>
+<TD>NVDA+Skift+Backspace</TD>
+<TD>Trykket en gang, flytter Systemfokuset til gjeldende navigasjonsobjektet, trykket to ganger flytter systemmarkøren til plasseringen til lesemarkøren</TD>
+</TR>
+<TR>
+<TD>Les navigasjonsobjekt dimensjoner</TD>
+<TD>NVDA+NumPadDelete</TD>
+<TD>NVDA+Delete</TD>
+<TD>Leser det gjeldende navigasjonsobjektets dimensjoner på skjermen i prosent (inkludert avstand fra venstre og toppen av skjermen, og dets bredde og høyde)</TD>
+</TR>
+</TABLE>
+
+<P>
+Merk: NUMPAD-taster krever Numlock-tasten slått av for å fungere.
+</P>
+<A NAME="ReviewingText"></A>
+<H3>6.5. Lese Tekst</H3>
+<P>
+Med NVDA kan du lese innholdet i gjeldende <A HREF="#ObjectNavigation">navigasjonsobjekt</A> (inkludert <A HREF="#FlatReview">flatlesing</A>) for tegn, ord eller linje.
+Dette er mest nyttig på steder (inkludert Windows konsollen) der det ikke finnes <A HREF="#SystemCaret">systemmarkør</A>.
+For eksempel kan du bruke den til å lese teksten i en lang informasjonmelding i en dialog.
+</P>
+<P>
+Når du flytter lesemarkøren, og systemmarkøren ikke følger med, slik at du kan se gjennom teksten uten å miste redigeringsposisjon.
+Men som standard, når systemmarkøren beveger seg, følger lesemarkøren med.
+Dette kan slås av og på.
+</P>
+<P>
+Merk at leselisten følger <A HREF="#SystemFocus">fokuset</A> og <A HREF="#SystemCaret">markøren</A> som standard, istedet for objektnavigasjon og tekstlesing.
+Hvis du vil at den skal følge objektnavigasjon og tekstlesing i stedet, må du <A HREF="#BrailleTether">konfigurere leselisten til å bli bundet til</A> lesing.
+</P>
+<P>
+Følgende sentrale kommandoer er tilgjengelige for lesing av tekst:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Stasjonærtast</TH>
+<TH>Bærbartast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Gå til øverste linje i lesing</TD>
+<TD>Skift+NumPad7</TD>
+<TD>NVDA+7</TD>
+<TD>Flytter lesemarkøren til øverste linje i teksten</TD>
+</TR>
+<TR>
+<TD>Gå til forrige linje i lesing</TD>
+<TD>NumPad7</TD>
+<TD>NVDA+U</TD>
+<TD>Flytter lesemarkøren til forrige tekstlinje</TD>
+</TR>
+<TR>
+<TD>Les gjeldende linje i lesing</TD>
+<TD>Numpad8</TD>
+<TD>NVDA+I</TD>
+<TD>Les gjeldende tekstlinje der lesemarkøren er plassert. Ved å trykke to ganger staves linjen. Hvis du trykker tre ganger staves linje med tegnbeskrivelser.</TD>
+</TR>
+<TR>
+<TD>Gå til neste linje i lesing</TD>
+<TD>NumPad9</TD>
+<TD>NVDA+O</TD>
+<TD>Flytt lesemarkøren til neste tekstlinje</TD>
+</TR>
+<TR>
+<TD>Gå til nederste linje i lesing</TD>
+<TD>Skift+NumPad9</TD>
+<TD>NVDA+9</TD>
+<TD>Flytter lesemarkøren til siste linje av teksten</TD>
+</TR>
+<TR>
+<TD>Gå til forrige ord i lesing</TD>
+<TD>NumPad4</TD>
+<TD>NVDA+J</TD>
+<TD>Flytter lesemarkøren til forrige ord i teksten</TD>
+</TR>
+<TR>
+<TD>Les gjeldende ord i lesing</TD>
+<TD>NumPad5</TD>
+<TD>NVDA+K</TD>
+<TD>Les gjeldende ord i teksten der lesemarkøren er plassert. Ved å trykke to ganger staves ordet. Hvis du trykker tre ganger staves ordet med tegnbeskrivelser.</TD>
+</TR>
+<TR>
+<TD>Gå til neste ord i lesing</TD>
+<TD>NumPad6</TD>
+<TD>NVDA+L</TD>
+<TD>Flytt lesemarkøren til neste ord i teksten</TD>
+</TR>
+<TR>
+<TD>Gå til starten av linjen i lesing</TD>
+<TD>Skift+NumPad1</TD>
+<TD>NVDA+Skift+U</TD>
+<TD>Flytter lesemarkøren til begynnelsen av linjen i teksten</TD>
+</TR>
+<TR>
+<TD>Gå til forrige tegn i lesing</TD>
+<TD>NumPad1</TD>
+<TD>NVDA+M</TD>
+<TD>Flytter lesemarkøren til forrige tegn på den gjeldende linjen i teksten</TD>
+</TR>
+<TR>
+<TD>Les gjeldende tegn i lesing</TD>
+<TD>NumPad2</TD>
+<TD>NVDA+,</TD>
+<TD>Les gjeldende tegn på linjen der lesemarkøren er plassert. Ved å trykke to ganger leses en beskrivelse eller eksempel på det tegnet. Hvis du trykker tre ganger leses den numeriske verdien av tegnet i desimal og heksadesimal.</TD>
+</TR>
+<TR>
+<TD>Flytt til neste tegn i lesing</TD>
+<TD>NumPad3</TD>
+<TD>NVDA+.</TD>
+<TD>Flytter lesemarkøren til neste tegn på gjeldende linje i teksten</TD>
+</TR>
+<TR>
+<TD>Flytt til slutten av linjen i lesing</TD>
+<TD>Skift+NumPad3</TD>
+<TD>NVDA+Skift+O</TD>
+<TD>Flytter lesemarkøren til slutten av gjeldende linje i teksten</TD>
+</TR>
+<TR>
+<TD>Si alle ved lesing</TD>
+<TD>NumPad+</TD>
+<TD>NVDA+Skift+Pil Ned</TD>
+<TD>Leser fra gjeldende posisjon av lesemarkøren, og følger under lesing</TD>
+</TR>
+<TR>
+<TD>Kopier fra lesemarkøren</TD>
+<TD>NVDA+F9</TD>
+<TD>NVDA+F9</TD>
+<TD>Begynner å kopiere tekst fra den gjeldende posisjonen til lesemarkøren. Selve kopien blir ikke utført før du forteller NVDA hvor du skal kopiere til</TD>
+</TR>
+<TR>
+<TD>Kopier til lesemarkøren</TD>
+<TD>NVDA+F10</TD>
+<TD>NVDA+F10</TD>
+<TD>Kopier fra plasseringen til lesemarkøren. Kopier fra lesemarkøren til lesemarkørens gjeldende posisjon. Etter å ha trykket på denne tasten, vil teksten bli kopiert til utklippstavlen i Windows</TD>
+</TR>
+<TR>
+<TD>Les tekstformatering</TD>
+<TD>NVDA+F</TD>
+<TD>Les formateringen av teksten der lesemarkøren befinner seg</TD>
+</TR>
+</TABLE>
+
+<P>
+Merk: NUMPAD-taster krever at Numlock slås av for å fungere.
+</P>
+<P>
+For å hjelpe deg til å huske disse kommandoene, er lesekommandoene organisert i et rutenett av tre og tre, med topp til bunnleinje er ord og tegn og venstre til høyre er tidligere, gjeldende og neste.
+Oppsettet er illustrert som følger:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>Forrige linje</TD>
+<TD>Gjeldende linje</TD>
+<TD>Neste linje</TD>
+</TR>
+<TR>
+<TD>Forrige ord</TD>
+<TD>Gjeldende ord</TD>
+<TD>Neste ord</TD>
+</TR>
+<TR>
+<TD>Forrige tegn</TD>
+<TD>Gjeldende tegn</TD>
+<TD>Neste tegn</TD>
+</TR>
+</TABLE>
+
+<P>
+++ Flat lesing ++ [FlatReview]
+Normalt kan du vanligvis bare lese innholdet i et enkelt <A HREF="#Objects">Objekt</A>, noen objekter lar deg lese innholdet til objekter inni.
+Komplekse dokumenter lar deg lese alt innholdet og programvinduer du kan se teksten på skjermen som det vises visuelt.
+Dette kalles flat lesing.
+Dette ligner på skjermlesing eller musepekerfunksjonalitet i mange andre Windows skjermlesere.
+</P>
+<P>
+Når du går til flat lesing, vil du bli plassert på plasseringen til den gjeldende <A HREF="#ObjectNavigation">navigatsjonsobjekt</A>.
+Hvis du ikke har brukt objektnavigasjon, vil dette vanligvis være objektet som har <A HREF="#SystemFocus">fokuset</A>.
+For eksempel, hvis navigasjonsobjektet er en knapp, vil du vanligvis bli plassert på teksten på knappen i flat lesing.
+Du kan deretter lese teksten ved hjelp av <A HREF="#ReviewingText">tekstlesekommandoer</A>.
+Du kan også navigere direkte til objektet som har den aktuelle posisjonen til lesemarkøren, slik at du kan bruke <A HREF="#ObjectNavigation">objekt navigasjon</A> derfra.
+</P>
+<P>
+Merk at leselisten følger <A HREF="#SystemFocus">fokuset</A> og <A HREF="#SystemCaret">markøren</A> som standard, istedet for enn objekt navigasjon og tekstlesing.
+Hvis du vil at den skal følge objektnavigasjon og tekstlesing i stedet, må du <A HREF="#BrailleTether">konfigurere leselisten til å bli bundet til</A> lesing.
+</P>
+<P>
+Følgende to kommandoer brukes for å bytte til / fra flat lesing:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Stasjonærtast</TH>
+<TH>Bærbartast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Flytt til flat lesing</TD>
+<TD>NVDA+NumPad7</TD>
+<TD>NVDA+PageUp</TD>
+<TD>Flytter til flat lesing, plasserer deg ved posisjonen av gjeldende navigasjonsobjektet, slik at du kan se på skjermen (eller dokumentet hvis du er inne i et) med tekstenlesings kommandoer.</TD>
+</TR>
+<TR>
+<TD>Flytt til objektet fra flat lesing</TD>
+<TD>NVDA+NumPad1</TD>
+<TD>NVDA+PageDown</TD>
+<TD>Navigerer til objektet representert ved teksten på gjeldende posisjon av lesemarkøren i flat lesing</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc29"></A>
+<H3>6.6. Navigere med musen</H3>
+<P>
+Når du beveger musen, leser NVDA som standard den teksten som er under musepekeren når pekeren beveger seg over den.
+Når støttet, vil NVDA lese den omkringliggende tekstavsnitt, men enkelte kontroller kan bare leses på linje.
+</P>
+<P>
+NVDA kan konfigureres til også å lese den typen <A HREF="#Objects">objekt</A> under musen når den beveger seg (f.eks liste, knapp, etc.).
+Dette kan være nyttig for helt blinde brukere, som noen ganger, er teksten ikke nok.
+</P>
+<P>
+NVDA gir en måte for brukerne å forstå hvor musen er plassert i forhold til dimensjonene på skjermen ved å si musepekerens koordinater som lyd pip.
+Jo høyere musen er på skjermen, jo høyere er pipene.
+Den videre til venstre eller høyre musen er plassert på skjermen, vil ytterligere venstre eller høyre lyden skal spilles (forutsatt at brukeren har stereohøyttalere eller hodetelefoner).
+</P>
+<P>
+Disse ekstra mus funksjonene er ikke aktivert som standard i NVDA.
+Hvis du ønsker å dra nytte av dem, kan du konfigurere dem fra <A HREF="#MouseSettings">Museinnstillinger</A> dialogen, som finnes i NVDA Innstillinger.
+</P>
+<P>
+Selv om en fysisk mus eller styreflate bør brukes til å navigere med musen, har NVDA noen viktige kommandoer knyttet til mus:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Stasjonærtast</TH>
+<TH>Bærbartast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Venstre museknapp klikk</TD>
+<TD>NumPad/</TD>
+<TD>NVDA+Pil Venstre</TD>
+<TD>Klikker på venstre museknapp en gang. Dobbeltklikk kan utføres ved å trykke på denne tasten to ganger i rask rekkefølge</TD>
+</TR>
+<TR>
+<TD>Venstre museknapp lås</TD>
+<TD>Skift+NumPad/</TD>
+<TD>NVDA+Skift+Pil Venstre</TD>
+<TD>Låser venstre museknapp nede. Trykk igjen for å slippe den. Du drar musen, trykker du denne tasten for å låse den venstre knappen nede og deretter flytte musen enten fysisk eller bruke en av de andre muserouting kommandoene</TD>
+</TR>
+<TR>
+<TD>Høyre museknapp klikk</TD>
+<TD>NumPad*</TD>
+<TD>NVDA+Pil Høyre</TD>
+<TD>Klikker på høyre museknapp en gang.</TD>
+</TR>
+<TR>
+<TD>Høyre museknapp lås</TD>
+<TD>Skift+NumPad*</TD>
+<TD>NVDA+Skift+Pil Høyre</TD>
+<TD>Låser høyre museknapp nede. Trykk igjen for å slippe den. Du drar musen, trykker du denne tasten for å låse den høyre knappen nede og deretter flytte musen enten fysisk eller bruke en av de andre mus routing kommandoer</TD>
+</TR>
+<TR>
+<TD>Flytt musen til gjeldende navigasjonsobjekt</TD>
+<TD>NVDA+Numpad/</TD>
+<TD>NVDA+Skift+F9</TD>
+<TD>Flytter musepekeren til plasseringen til det gjeldende navigasjonsobjektet og lesemarkøren</TD>
+</TR>
+<TR>
+<TD>Naviger til objektet under musen</TD>
+<TD>NVDA+NumPad*</TD>
+<TD>NVDA+Skift+F10</TD>
+<TD>Sett navigasjosnobjektet til objektet i posisjonen til musepekeren</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc30"></A>
+<H2>7. Bla Modus</H2>
+<P>
+Komplekse skrivebeskyttede dokumenter som web sider leses i NVDA med Bla lesing.
+Dette gjelder også dokumenter i Mozilla Firefox, Microsoft Internet Explorer, Google Chrome, Adobe Reader og Adobe Flash.
+</P>
+<P>
+I nettlesermodus er innholdet til dokumentet tilgjengelig i en flat representasjon som kan navigeres med piltastene som om det var et vanlig tekst dokument.
+Alle NVDAs <A HREF="#SystemCaret">systemmarkør</A> tastekommandoer vil fungere i denne modusen, f.eks si alle, les formatering, bord navigeringskommandoene osv.
+Informasjon som om teksten er en link, overskrift, osv. er lest sammen med teksten når du flytter.
+</P>
+<P>
+Noen ganger trenger du å kommunisere direkte med kontroller i disse dokumentene.
+For eksempel, må du gjøre dette for redigerbare tekstfelt og lister, slik at du kan skrive tegn og bruk piltastene til å arbeide med kontrollen.
+Dette gjør du ved å bytte til fokusmodus, hvor nesten alle tastene er sendt til kontrollen.
+Når i Bla modus, som standard, vil NVDA automatisk bytte til fokusmodus hvis du klikker på en bestemt kontroll som krever det.
+Motsatt vil tabbe seg til eller klikke på en kontroll som ikke krever Fokusmodusbryter tilbake til bla-modus.
+Du kan også trykke inn eller plass til å bytte til fokusere modus på kontroller som krever det.
+Ved å trykke escape byttes det tilbake til bla-modus.
+I tillegg kan du manuelt påtvinge fokusmodus, etter det vil den forbli i kraft inntil du velger å deaktivere den.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Veksle mellom bla/fokusmoduser</TD>
+<TD>NVDA+Space</TD>
+<TD>Veksler mellom fokusmodus, og bla modus</TD>
+</TR>
+<TR>
+<TD>Avslutt fokusmodus</TD>
+<TD>Escape</TD>
+<TD>Bytter tilbake til bla modus hvis fokusmodus ble tidligere slått til automatisk</TD>
+</TR>
+<TR>
+<TD>Oppdater nettlesermodus modus dokument</TD>
+<TD>NVDA+f5</TD>
+<TD>Oppdaterer gjeldende dokumentinnhold (nyttig hvis vist innhold synes å mangle i dokumentet)</TD>
+</TR>
+<TR>
+<TD>Finn</TD>
+<TD>NVDA+Ctrl+F</TD>
+<TD>Popper opp en dialogboks der du kan skrive inn tekst å finne i det gjeldende dokumentet</TD>
+</TR>
+<TR>
+<TD>Finn neste</TD>
+<TD>NVDA+F3</TD>
+<TD>Finner neste forekomst av teksten i dokumentet som du tidligere søkte etter</TD>
+</TR>
+<TR>
+<TD>Finn forrige</TD>
+<TD>NVDA+Skhift+F3</TD>
+<TD>Finner forrige forekomst av teksten i dokumentet du tidligere søkte etter</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc31"></A>
+<H3>7.1. Enkeltbokstavnavigasjon</H3>
+<P>
+Mens i nettlesermodus modus, for raskere navigasjon, gir NVDA også enkelt tegn-taster til å hoppe til bestemte felt i dokumentet.
+</P>
+<P>
+Følgende taster hopper til neste tilgjengelige element, mens med Skift-tasten hopper til forrige element:
+</P>
+<UL>
+<LI>H: Overskrift
+<LI>L: Liste
+<LI>I: Listeelement
+<LI>T: Tabell
+<LI>K: Lenke
+<LI>N: Tekst uten lenke
+<LI>F: Skjemafelt
+<LI>U: Ikke besøkt lenke
+<LI>V: Besøkt lenke
+<LI>E: Redigeringsfelt
+<LI>B: Knapp
+<LI>X: Avkrysningsboks
+<LI>C: Kombinasjonsboks
+<LI>R: Radioknapp
+<LI>Q: Blokksitat
+<LI>S: Separator
+<LI>M: Ramme
+<LI>G: Grafikk
+<LI>D: ARIA landemerke
+<LI>O: Innebygd objekt
+<LI>1 til 6: Overskriftene på nivå 1 til 6
+</UL>
+
+<P></P>
+<A NAME="toc32"></A>
+<H3>7.2. Elementlisten</H3>
+<P>
+Elementlisten gir tilgang til en liste over enten lenker, overskrifter eller ARIA landemerker i dokumentet.
+Radioknappene lar deg bytte mellom disse tre typer informasjon.
+Det er også et redigeringsfelt i dialogen som lar deg filtrere listen for å hjelpe deg å søke etter et bestemt element på siden.
+Når du har valgt et element, kan du bruke de medfølgende knappene i dialogboksen for å flytte til eller aktivere dette elementet.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Bla modus elementliste</TD>
+<TD>NVDA+F7</TD>
+<TD>Åpner Elementlisten som inneholder linker, overskrifter og landemerker i det gjeldende dokumentet</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc33"></A>
+<H3>7.3. Innebuygde Objekter</H3>
+<P>
+Sider kan inkludere rikt innhold ved hjelp av teknologier som Adobe Flash og Sun Java.
+Når disse finnes i nettlesermodus, vil NVDA lese "innebygd objekt".
+Du kan gå inn i disse objektene for å samhandle med dem.
+Hvis det er tilgjengelig, kan du deretter tabbe rundt i det og samhandle med det som alle andre programmer.
+En tastekommando gis for å gå tilbake til det opprinnelige siden som inneholder det innebygde objektet:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Flytt til innehold i nettlesermodus dokument</TD>
+<TD>NVDA+Ctrl+Mellomrom</TD>
+<TD>Flytter fokus ut av det nåværende innebygde objektet, og inn i dokumentet som inneholder det</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc34"></A>
+<H2>8. Applikasjon Spesifike NVDA kommandoer</H2>
+<P>
+NVDA har sine egne ekstra kommandoer for enkelte programmer for å gjøre enkelte oppgaver enklere eller for å gi tilgang til funksjonalitet som ellers ikke er tilgjengelig for brukere med skjermleser.
+</P>
+<A NAME="toc35"></A>
+<H3>8.1. Foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Les gjenværende tid</TD>
+<TD>Ctrl+Skift+R</TD>
+<TD>Leser den gjenværende tiden av det gjeldende sporet, hvis noen.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc36"></A>
+<H3>8.2. Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Les siste melding</TD>
+<TD>NVDA+Ctrl+1-4</TD>
+<TD>Leser en av de siste meldingene, avhengig av tallet trykket, f.eks NVDA+Ctrl+2 leser nest nyeste meldingen.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc37"></A>
+<H3>8.3. Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Navn</TH>
+<TH>Tast</TH>
+<TH>Beskrivelse</TH>
+</TR>
+<TR>
+<TD>Les Kommentarer Vindu</TD>
+<TD>Ctrl+Skift+C</TD>
+<TD>Leser eventuelle kommentarer i kommentarfeltvinduet.</TD>
+</TR>
+<TR>
+<TD>Leser automatisk kommentarer vindu</TD>
+<TD>Ctrl+Skift+A</TD>
+<TD>Leser eventuelle kommentarer i det automatiske kommentarvinduet.</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\nb_NO\userGuide.t2t -->
+</BODY></HTML>

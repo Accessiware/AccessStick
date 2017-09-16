@@ -1,0 +1,1692 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>از NVDA تازه چه خبر؟</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>از NVDA تازه چه خبر؟</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>2017.3</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به امکان نوشتن بریل کوتاه‌نویسی، پشتیبانی از صداهای OneCore موجود در ویندوز ۱۰، پشتیبانی داخلی از OCR ویندوز ۱۰، و بهبودی‌های بسیار قابل توجهی در بریل و وب اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>یک تنظیم به تنظیمات بریل برای «نشان دادن پیام‌ها بطور نامحدود» افزوده شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6669" target="_blank">#6669</A>)
+<LI>در فهرست پیام‌ها در Microsoft Outlook، NVDA پیامی را که علامت‌دار باشد اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6374" target="_blank">#6374</A>)
+<LI>در Microsoft Powerpoint، هنگام ویرایش یک اسلاید، حالا نوع دقیق یک شکل اعلام میشود. مثلا، به جای اینکه فقط گفته شود: «شکل»، اعلام میشود: مثلث، دایره، ویدیو، فِلِش. (<A HREF="https://github.com/nvaccess/nvda/issues/7111" target="_blank">#7111</A>)
+<LI>محتوای ریاضی (که به عنوان MathML ارائه شده) از این به بعد در Google Chrome پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7184" target="_blank">#7184</A>)
+<LI>NVDA حالا میتواند با استفاده از صداهای جدید Windows OneCore (که به عنوان mobile voices نیز شناخته میشوند) که در ویندوز ۱۰ موجود است، سخن بگوید. میتوانید با انتخاب «صداهای Windows OneCore» در پنجره‌ی موتور سخنگو به این صداها دست یابید. (<A HREF="https://github.com/nvaccess/nvda/issues/6159" target="_blank">#6159</A>)
+<LI>فایل‌های پیکره‌بندی کاربر NVDA میتوانند از این به بعد در پوشه‌ی Local داخل پوشه‌ی Application Dataی کاربر ذخیره شوند. این رفتار میتواند توسط تنظیمی در رجیستری امکان‌پذیر شود. برای کسب اطلاعات بیشتر <A HREF="userGuide.html#SystemWideParameters" target="_blank">پارامترهای فراگیر سیستم</A> را در راهنمای کاربر ببینید. (<A HREF="https://github.com/nvaccess/nvda/issues/6812" target="_blank">#6812</A>)
+<LI>در مرورگرهای وب، NVDA حالا مقادیر جا‌نگهدارها (placeholders) را برای فیلدها اعلام میکند. به‌ویژه، aria-placeholder از این پس پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7004" target="_blank">#7004</A>)
+<LI>در حالت مرور برای Microsoft Word، حالا پیمایش روی خطاهای املایی با استفاده از کلید پیمایش سریع (W و Shift+W) امکان‌پذیر است. (<A HREF="https://github.com/nvaccess/nvda/issues/6942" target="_blank">#6942</A>)
+<LI>پشتیبانی از کنترل انتخاب‌کننده‌ی تاریخ در پنجره‌های تعیین قرار ملاقات در Microsoft Outlook افزوده شد. (<A HREF="https://github.com/nvaccess/nvda/issues/7217" target="_blank">#7217</A>)
+<LI>از این پس پیشنهاد فعلی انتخاب‌شده در فیلدهای to و cc برنامک Mail و فیلد جستجو در تنظیمات ویندوز ۱۰ اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>هنگام ظاهر شدن پیشنهادها در برخی فیلدهای جستجو در ویندوز ۱۰، مانند صفحه‌ی Start، جستجوی تنظیمات، فیلدهای to و cc در Mail ویندوز ۱۰، صدایی پخش میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>NVDA اعلان‌ها را در برنامه‌ی Skype for Business Desktop بطور خودکار میخوانَد؛ مثلا هنگامی که کسی با شما شروع به مکالمه‌ی متنی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>NVDA بطور خودکار گپ‌های ورودی را هنگامی که در مکالمه‌ای در Skype for Business هستید اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/7286" target="_blank">#7286</A>)
+<LI>NVDA اعلان‌ها را در برنامه‌ی Microsoft Edge بطور خودکار میخوانَد؛ مثلا زمانی که یک دانلود شروع میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>شما حالا میتوانید هم بریل کوتاه‌نویسی و هم بریل معمولی را با استفاده از صفحه‌کلید بریل تایپ کنید. برای کسب اطلاعات بیشتر بخش ورودی بریل در راهنمای کاربری را ببینید. (<A HREF="https://github.com/nvaccess/nvda/issues/2439" target="_blank">#2439</A>)
+<LI>حالا میتوانید نویسه‌های بریل یونی‌کد را با استفاده از صفحه‌کلید بریل نمایشگر بریلتان وارد کنید. برای این کار، جدول بریل یونی‌کد را به عنوان جدول ورودی در تنظیمات بریل انتخاب کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/6449" target="_blank">#6449</A>)
+<LI>پشتیبانی از نمایشگر بریل SuperBraille، که در تایوان استفاده میشود، افزوده شد. (<A HREF="https://github.com/nvaccess/nvda/issues/7352" target="_blank">#7352</A>)
+<LI>جدول‌های برگرداننده‌ی بریل جدید: دانمارکی بریل ۸ نقطه‌ی رایانه، لیتوانیایی، فارسی بریل ۸ نقطه‌ی رایانه*، فارسی درجه ۱ (بهبودیافته نسبت به جدول پیشین)، اسلوونیایی بریل ۸ نقطه‌ی رایانه. (<A HREF="https://github.com/nvaccess/nvda/issues/6188" target="_blank">#6188</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6550" target="_blank">#6550</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6773" target="_blank">#6773</A>, <A HREF="https://github.com/nvaccess/nvda/issues/7367" target="_blank">#7367</A>)
+<LI>جدول بریل ۸ نقطه‌ی رایانه‌ایِ انگلیسی آمریکا بهبود یافته است؛ به‌گونه‌ای که بولِت‌ها، علامت یورو و حروف آکساندار را پشتیبانی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6836" target="_blank">#6836</A>)
+<LI>NVDA حالا میتواند از قابلیت OCR موجود در ویندوز ۱۰ برای بازشناسایی متن در تصاویر و برنامه‌های دسترس‌ناپذیر استفاده کند. (<A HREF="https://github.com/nvaccess/nvda/issues/7361" target="_blank">#7361</A>)
+ <UL>
+ <LI>زبان OCR را میتوانید در پنجره‌ی جدید OCR ویندوز ۱۰ در تنظیمات NVDA تعیین کنید.
+ <LI>برای بازشناسایی محتوای شیء پیمایشگر جاری، NVDA+r را فشار دهید.
+ <LI>برای جزئیات بیشتر، بخش «بازشناسی محتوا» را در راهنمای کاربر ببینید.
+ </UL>
+<LI>شما حالا میتوانید انتخاب کنید هنگامی که یک شیء فرمان‌پذیر میشود، چه اطلاعات زمینه‌ای در نمایشگر بریل -مربوط به آن شیء- نشان داده شود. این کار را میتوانید با استفاده از تنظیم جدید «ارائه‌ی اطلاعات زمینه‌ای فکوس» در پنجره‌ی تنظیمات بریل انجام دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/217" target="_blank">#217</A>)
+ <UL>
+ <LI>مثلا، گزینه‌های «پر کردن نمایشگر با تغییرات زمینه‌ای» و «تنها هنگام عقب بردن نمایشگر» میتوانند کار کردن با منوها و فهرست‌ها را کارامدتر سازند؛ چرا که دیگر اجزای موجود در یک  منو یا فهرست بطور مداوم جایشان را در نمایشگر تغییر نمیدهند.
+ <LI>بخش تنظیم «ارائه‌ی اطلاعات زمینه‌ای فکوس» را در راهنمای کاربر برای اطلاعات و مثال‌های بیشتر ببینید.
+ </UL>
+<LI>NVDA حالا در فایرفاکس و کروم، جدول‌های پویای پیچیده را مانند صفحات گسترده پشتیبانی میکند. در این جدول‌ها ممکن است تنها بعضی محتواها بارگزاری شده یا نمایش داده شود. (مشخصا، ویژگی‌های aria-rowcount، aria-colcount، aria-rowindex و aria-colindex در ARIA 1.1 معرفی شده‌اند). (<A HREF="https://github.com/nvaccess/nvda/issues/7410" target="_blank">#7410</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>برای سهولت کار با نمایشگرهای بریل، اختصارات بریل به‌کار‌رفته در زبان فارسیِ NVDA، اندکی تغییر یافته‌اند. جهت کسب اطلاعات بیشتر <A HREF="userGuide.html#brlabbr" target="_blank">بخش اختصارات بریل</A> را در راهنمای کاربر ببینید.
+<LI>یک فرمان بدون کلید سریع برای راه‌اندازیِ درخواستیِ NVDA افزوده شده است. میتوانید آن‌را در دسته‌ی فرمان‌های متفرقه در پنجره‌ی فرمان‌های ورودی پیدا کنید و کلید مورد نظرتان را برای اجرای فرمان یادشده اختصاص دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/6396" target="_blank">#6396</A>)
+<LI>از این پس میتوانید چیدمان صفحه‌کلید را از پنجره‌ی خوش‌آمدگویی NVDA نیز تنظیم کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/6863" target="_blank">#6863</A>)
+<LI>انواع کنترل و وضعیت‌های بسیار بیشتری برای بریل مختصرنویسی شدند. بخش‌های موجود در یک صفحه‌ی وب نیز در بریل مختصرنویسی شده‌اند. برای فهرست کاملی از اختصارات، بخش اِختِصاراتِ انواع و وضعیت کنترل‌ها و بخش‌ها را زیر عنوان بریل در راهنمای کاربر ببینید. (<A HREF="https://github.com/nvaccess/nvda/issues/7188" target="_blank">#7188</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3975" target="_blank">#3975</A>)
+<LI>Espeak-ng به نگارش 1.49.1 به‌روز شد. (<A HREF="https://github.com/nvaccess/nvda/issues/7280" target="_blank">#7280</A>).
+<LI>فهرست‌های جدول خروجی و ورودی در پنجره‌ی تنظیمات بریل حالا به شکل الفبایی مرتب شده‌اند. (<A HREF="https://github.com/nvaccess/nvda/issues/6113" target="_blank">#6113</A>)
+<LI>برگرداننده‌ی بریل Liblouis به نگارش 3.2.0 به‌روز شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6935" target="_blank">#6935</A>)
+<LI>جدول بریل پیش‌فرضِ NVDA، کد بریل انگلیسی یکپارچه درجه‌ی 1 است. (<A HREF="https://github.com/nvaccess/nvda/issues/6952" target="_blank">#6952</A>)
+<LI>NVDA از این پس بطور پیش‌فرض، هنگامی که یک شیء فرمان‌پذیر شود، تنها آن بخش از اطلاعات زمینه‌ای را که تغییر کرده‌است روی نمایشگر بریل نشان میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/217" target="_blank">#217</A>)
+ <UL>
+ <LI>پیش از این، همیشه در صورت امکان، بیشترین اطلاعات زمینه‌ای، بدون توجه به این‌که قبلا همان اطلاعات را دیده باشید یا نه، نمایش داده میشد.
+ <LI>میتوانید با تغییر تنظیم «ارائه‌ی اطلاعات زمینه‌ای فکوس» در پنجره‌ی تنظیمات بریل، رفتار بریل را به پیش از این امکان بازگردانید؛ تا مانند گذشته نمایشگر همیشه با اطلاعات زمینه‌ای پر شود.
+ </UL>
+<LI>وقتی از بریل استفاده میکنید، میتوانید مکان‌نمای بریل را طوری تنظیم کنید که شکل متفاوتی هنگام اتصال به بازبینی یا فرمان‌پذیری داشته باشد. (<A HREF="https://github.com/nvaccess/nvda/issues/7112" target="_blank">#7112</A>)
+<LI>لوگوی NVDA به‌روز شده‌است. لوگوی به‌روز‌شده عبارت است از مخلوط سفیدرنگ دارای سبْک از حروف NVDA، روی یک پس‌زمینه‌ی بنفش خالص. این ترکیب، این اطمینان را میدهد که لوگو روی هر پس‌زمینه‌ی رنگی دیده شود؛ و رنگ بنفش لوگوی NVDA نیز نمایان باشد. (<A HREF="https://github.com/nvaccess/nvda/issues/7446" target="_blank">#7446</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در حالت مرور، سازه‌های ویرایشی div در Chrome دیگر برچسب خود را به عنوان مقدارشان اعلام نمیکنند. (<A HREF="https://github.com/nvaccess/nvda/issues/7153" target="_blank">#7153</A>)
+<LI>فشردن End هنگامی که در حالت مرور یک سند خالی در Microsoft Word هستید، دیگر باعث بُروز خطای زمان اجرا نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7009" target="_blank">#7009</A>)
+<LI>حالت مرور در Microsoft Edge حالا در جایی که به یک سند نقش سندی ARIA‌ی خاصی داده میشود، به‌درستی پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6998" target="_blank">#6998</A>)
+<LI>در حالت مرور، حالا میتوانید حتی زمانی که نشانگر روی آخرین نویسه‌ی خط قرار دارد، با استفاده از Shift+End تا پایان خط را انتخاب کرده یا از انتخاب درآورید. (<A HREF="https://github.com/nvaccess/nvda/issues/7157" target="_blank">#7157</A>)
+<LI>اگر یک پنجره‌ی محاوره‌ای دارای نوار پیش‌رفت باشد، متن پنجره هم‌زمان با تغییر نوار پیش‌رفت در بریل به‌روز میشود. این بدین معنیست که مثلا، زمان باقی‌مانده در پنجره‌ی دانلود به‌روزرسانی NVDA خوانده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6862" target="_blank">#6862</A>)
+<LI>NVDA حالا تغییرات در گزینه‌های برخی جعبه‌های کشویی در ویندوز ۱۰، همچون AutoPlay در Settings را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6337" target="_blank">#6337</A>).
+<LI>اطلاعات بیهوده دیگر هنگام ورود به پنجره‌های ایجاد جلسه یا قرار ملاقات در Microsoft Outlook اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7216" target="_blank">#7216</A>)
+<LI>NVDA برای پنجره‌هایی که حاوی نوار پیشرفت نامعین باشند، مانند بررسی‌کننده‌ی به‌روزرسانی، تنها وقتی که خروجی نوار پیشرفت روی بوق زدن تنظیم شده باشد بوق میزند. (<A HREF="https://github.com/nvaccess/nvda/issues/6759" target="_blank">#6759</A>)
+<LI>در Microsoft Excel 2003 و 2007، هنگامی که در یک کار‌برگ با جهت‌نماها حرکت میکنید، خانه‌ها دوباره اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/7243" target="_blank">#7243</A>)
+<LI>در به‌روزرسانی Creators ویندوز ۱۰ و به‌روزرسانی‌های بعدی، هنگام خواندن ایمیل‌ها در برنامک Mail ویندوز ۱۰، حالت مرور دوباره بطور خودکار فعال میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7289" target="_blank">#7289</A>)
+<LI>در بیشترِ نمایشگرهای بریلِ دارای صفحه‌کلید بریل، نقطه‌ی ۷ از این به بعد آخرین خانه‌ی بریل یا نویسه‌ی وارد‌شده را پاک میکند، و نقطه‌ی ۸ کلید اینتر را فشار میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/6054" target="_blank">#6054</A>)
+<LI>در متن قابل ویرایش، هنگامی که نشانگر را مثلا با کلیدهای مکان‌نما یا کلید Backspace حرکت میدهید، در بیشتر وقت‌ها، به‌ویژه در برنامه‌های کروم و پایانه‌ها، بازخورد گفتاری NVDA دقیقتر است. (<A HREF="https://github.com/nvaccess/nvda/issues/6424" target="_blank">#6424</A>)
+<LI>NVDA میتواند از این به بعد محتوای ویرایشگر امضا را در Microsoft Outlook 2016 بخواند. (<A HREF="https://github.com/nvaccess/nvda/issues/7253" target="_blank">#7253</A>)
+<LI>NVDA دیگر در برنامه‌های JAVA Swing، هنگامی که در جدول‌ها پیمایش میکنید، باعث توقف برنامه نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6992" target="_blank">#6992</A>)
+<LI>NVDA دیگر در روزامد Creators در ویندوز ۱۰، اعلان‌های فوری را چندین بار اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/7128" target="_blank">#7128</A>)
+<LI>در start menu در ویندوز 10، هنگامی که بعد از انجام جستجو اینتر را برای بستن منوی یادشده میزنید، دیگر باعث نمیشود تا NVDA بگوید متنِ جستجو. (<A HREF="https://github.com/nvaccess/nvda/issues/7370" target="_blank">#7370</A>)
+<LI>اجرای پیمایش سریع روی سرنوشتارها در Microsoft Edge حالا بطور قابل ملاحظه‌ای سریعتر شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/7343" target="_blank">#7343</A>)
+<LI>در Microsoft Edge، پیمایش در حالت مرور دیگر بخش‌های وسیعی از بعضی صفحات وب را نادیده نمیگیرد؛ مانند آنچه که پیش از این در مورد Wordpress 2015 theme اتفاق می‌افتاد. (<A HREF="https://github.com/nvaccess/nvda/issues/7143" target="_blank">#7143</A>)
+<LI>در Microsoft Edge، نام بخش‌های یک صفحه در زبان‌های غیر از انگلیسی به‌درستی محلی‌سازی (ترجمه) میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/7328" target="_blank">#7328</A>)
+<LI>بریل، هنگامی که متنی را خارج از عرض صفحه‌ی نمایش بریل انتخاب میکنید، حالا به‌درستی آنچه که انتخاب شده را دنبال میکند. مثلا اگر چند خط را با شیفت+جهت‌نمای پایین انتخاب کنید، حالا بریل، آخرین خطی را که انتخاب کرده‌اید نمایش میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/5770" target="_blank">#5770</A>)
+<LI>در فایرفاکس، NVDA دیگر هنگامی که جزئیات یک توئیت را در twitter.com باز میکنید، دیگر به‌اشتباه «بخش» را چندین بار اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5741" target="_blank">#5741</A>)
+<LI>در حالت مرور، پیمایش جدول‌ها دیگر برای جدول‌های طرح‌بندی موجود نیست؛ مگر اینکه گزینه‌ی «اعلام جدول‌های طرح‌بندی» فعال شود. (<A HREF="https://github.com/nvaccess/nvda/issues/7382" target="_blank">#7382</A>)
+<LI>در فایرفاکس و کروم، فرمان‌های پیمایش در حالت مرور، حالا خانه‌های جدول‌های مخفی را نادیده میگیرند. (<A HREF="https://github.com/nvaccess/nvda/issues/6652" target="_blank">#6652</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5655" target="_blank">#5655</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان (متن انگلیسی)</H3>
+<UL>
+<LI>Timestamps in the log now include milliseconds. (<A HREF="https://github.com/nvaccess/nvda/issues/7163" target="_blank">#7163</A>)
+<LI>NVDA must now be built with Visual Studio Community 2015. Visual Studio Express is no longer supported. (<A HREF="https://github.com/nvaccess/nvda/issues/7110" target="_blank">#7110</A>)
+ <UL>
+ <LI>The Windows 10 Tools and SDK are now also required, which can be enabled when installing Visual Studio.
+ <LI>See the Installed Dependencies section of the readme for additional details.
+ </UL>
+<LI>Support for content recognizers such as OCR and image description tools can be easily implemented using the new contentRecog package. (<A HREF="https://github.com/nvaccess/nvda/issues/7361" target="_blank">#7361</A>)
+<LI>The Python json package is now included in NVDA binary builds. (<A HREF="https://github.com/nvaccess/nvda/issues/3050" target="_blank">#3050</A>)
+</UL>
+
+<H5>* جدول فارسی بریل ۸ نقطه‌ی رایانه</H5>
+<P>
+با انتخاب جدول فوق الذکر در بخش تنظیمات بریل به عنوان جدول ورودی، میتوانید الفبای فارسی و انگلیسی، اعداد فارسی و انگلیسی و برخی دیگر از نمادها را به شرح زیر با صفحه‌کلید بریل روی نمایشگر بریل، یا <A HREF="https://addons.nvda-project.org/files/get.php?file=pckbbrl" target="_blank">افزونه‌ی PCKeyboardBraillInput</A> با صفحه‌کلید معمولی تایپ کنید:
+</P>
+<H6>۱. حروف الفبای فارسی</H6>
+<P>
+توضیح: محتوای این جدول با آنچه که از بریل فارسی می‌دانیم تفاوتی ندارد و صرفا جهت یادآوری آمده‌است.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>آ</TD>
+<TD>۳-۴-۵</TD>
+<TD>⠜</TD>
+</TR>
+<TR>
+<TD>ا</TD>
+<TD>۱</TD>
+<TD>⠁</TD>
+</TR>
+<TR>
+<TD>ب</TD>
+<TD>۱-۲</TD>
+<TD>⠃</TD>
+</TR>
+<TR>
+<TD>پ</TD>
+<TD>۱-۲-۳-۴</TD>
+<TD>⠏</TD>
+</TR>
+<TR>
+<TD>ت</TD>
+<TD>۲-۳-۴-۵</TD>
+<TD>⠞</TD>
+</TR>
+<TR>
+<TD>ث</TD>
+<TD>۱-۴-۵-۶</TD>
+<TD>⠹</TD>
+</TR>
+<TR>
+<TD>ج</TD>
+<TD>۲-۴-۵</TD>
+<TD>⠚</TD>
+</TR>
+<TR>
+<TD>چ</TD>
+<TD>۱-۴</TD>
+<TD>⠉</TD>
+</TR>
+<TR>
+<TD>ح</TD>
+<TD>۱-۵-۶</TD>
+<TD>⠱</TD>
+</TR>
+<TR>
+<TD>خ</TD>
+<TD>۱-۳-۴-۶</TD>
+<TD>⠭</TD>
+</TR>
+<TR>
+<TD>د</TD>
+<TD>۱-۴-۵</TD>
+<TD>⠙</TD>
+</TR>
+<TR>
+<TD>ذ</TD>
+<TD>۲-۳-۴-۶</TD>
+<TD>⠮</TD>
+</TR>
+<TR>
+<TD>ر</TD>
+<TD>۱-۲-۳-۵</TD>
+<TD>⠗</TD>
+</TR>
+<TR>
+<TD>ز</TD>
+<TD>۱-۳-۵-۶</TD>
+<TD>⠵</TD>
+</TR>
+<TR>
+<TD>ژ</TD>
+<TD>۳-۴-۶</TD>
+<TD>⠬</TD>
+</TR>
+<TR>
+<TD>س</TD>
+<TD>۲-۳-۴</TD>
+<TD>⠎</TD>
+</TR>
+<TR>
+<TD>ش</TD>
+<TD>۱-۴-۶</TD>
+<TD>⠩</TD>
+</TR>
+<TR>
+<TD>ص</TD>
+<TD>۱-۲-۳-۴-۶</TD>
+<TD>⠯</TD>
+</TR>
+<TR>
+<TD>ض</TD>
+<TD>۱-۲-۴-۶</TD>
+<TD>⠫</TD>
+</TR>
+<TR>
+<TD>ط</TD>
+<TD>۲-۳-۴-۵-۶</TD>
+<TD>⠾</TD>
+</TR>
+<TR>
+<TD>ظ</TD>
+<TD>۱-۲-۳-۴-۵-۶</TD>
+<TD>⠿</TD>
+</TR>
+<TR>
+<TD>ع</TD>
+<TD>۱-۲-۳-۵-۶</TD>
+<TD>⠷</TD>
+</TR>
+<TR>
+<TD>غ</TD>
+<TD>۱-۲-۶</TD>
+<TD>⠣</TD>
+</TR>
+<TR>
+<TD>ف</TD>
+<TD>۱-۲-۴</TD>
+<TD>⠋</TD>
+</TR>
+<TR>
+<TD>ق</TD>
+<TD>۱-۲-۳-۴-۵</TD>
+<TD>⠟</TD>
+</TR>
+<TR>
+<TD>ک</TD>
+<TD>۱-۳</TD>
+<TD>⠅</TD>
+</TR>
+<TR>
+<TD>گ</TD>
+<TD>۱-۲-۴-۵</TD>
+<TD>⠛</TD>
+</TR>
+<TR>
+<TD>ل</TD>
+<TD>۱-۲-۳</TD>
+<TD>⠇</TD>
+</TR>
+<TR>
+<TD>م</TD>
+<TD>۱-۳-۴</TD>
+<TD>⠍</TD>
+</TR>
+<TR>
+<TD>ن</TD>
+<TD>۱-۳-۴-۵</TD>
+<TD>⠝</TD>
+</TR>
+<TR>
+<TD>و</TD>
+<TD>۲-۴-۵-۶</TD>
+<TD>⠺</TD>
+</TR>
+<TR>
+<TD>ه</TD>
+<TD>۱-۲-۵</TD>
+<TD>⠓</TD>
+</TR>
+<TR>
+<TD>ی</TD>
+<TD>۲-۴</TD>
+<TD>⠊</TD>
+</TR>
+</TABLE>
+
+<H6>۲. نویسه‌های عربی</H6>
+<P>
+توضیح: این جدول حاوی نویسه‌هاییست که بیشتر در کلماتی که در فارسی به شیوه‌ی عربی نوشته میشوند و در بعضی موارد در کلمات غیر عربی نیز به کار میروند.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>ء (همزه؛ مثل: انشاء)</TD>
+<TD>۳</TD>
+<TD>⠄</TD>
+</TR>
+<TR>
+<TD>أ (الف همزه رو: أبطال)</TD>
+<TD>۳-۴</TD>
+<TD>⠌</TD>
+</TR>
+<TR>
+<TD>إ (الف همزه زیر: إبطال)</TD>
+<TD>۳-۴-۷</TD>
+<TD>⡌</TD>
+</TR>
+<TR>
+<TD>ؤ (واو همزه: مسؤول)</TD>
+<TD>۱-۲-۵-۶</TD>
+<TD>⠳</TD>
+</TR>
+<TR>
+<TD>ئ (یا همزه: تئاتر)</TD>
+<TD>۱-۳-۴-۵-۶</TD>
+<TD>⠽</TD>
+</TR>
+<TR>
+<TD>ة (ت تأنیث: دائرة المعارف)</TD>
+<TD>۱-۶</TD>
+<TD>⠡</TD>
+</TR>
+<TR>
+<TD>ك (کاف عربی: كوت)</TD>
+<TD>۱-۳-۷-۸</TD>
+<TD>⣅</TD>
+</TR>
+<TR>
+<TD>ي (ی عربی: يم)</TD>
+<TD>۲-۴-۶-۷-۸</TD>
+<TD>⣪</TD>
+</TR>
+<TR>
+<TD>ى (الف مقصوره: موسى)</TD>
+<TD>۱-۳-۵</TD>
+<TD>⠕</TD>
+</TR>
+<TR>
+<TD>َ (فتحه)</TD>
+<TD>۲</TD>
+<TD>⠂</TD>
+</TR>
+<TR>
+<TD>ِ (کسره)</TD>
+<TD>۱-۵</TD>
+<TD>⠑</TD>
+</TR>
+<TR>
+<TD>ُ (ضمه)</TD>
+<TD>۱-۳-۶</TD>
+<TD>⠥</TD>
+</TR>
+<TR>
+<TD>ً (دو فتحه، نصب: حتماً)</TD>
+<TD>۲-۳</TD>
+<TD>⠆</TD>
+</TR>
+<TR>
+<TD>ٍ (دو کسره، جَر)</TD>
+<TD>۳-۵</TD>
+<TD>⠔</TD>
+</TR>
+<TR>
+<TD>ٌ (دو ضمه، رفع)</TD>
+<TD>۲-۶</TD>
+<TD>⠢</TD>
+</TR>
+<TR>
+<TD>ّ (تشدید؛ هنگام تایپ بعد از حرف مشدد تایپ میشود)</TD>
+<TD>۶</TD>
+<TD>⠠</TD>
+</TR>
+<TR>
+<TD>ْ (ساکن)</TD>
+<TD>۲-۵</TD>
+<TD>⠒</TD>
+</TR>
+</TABLE>
+
+<H6>۳. دو نویسه‌ی ویژه‌ی نگارش فارسی</H6>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>نیم‌فاصله یا فاصله‌ی مجازی: خانه‌ی</TD>
+<TD>۶-۸</TD>
+<TD>⢠</TD>
+</TR>
+<TR>
+<TD>کشیده: خـــروج</TD>
+<TD>۴-۵-۶-۷</TD>
+<TD>⡸</TD>
+</TR>
+</TABLE>
+
+<H6>۴. اعداد و نمادهای ریاضی در نگارش فارسی</H6>
+<P>
+توضیح: از آنجا که در جدول بریل رایانه‌ای نمیتوان دو خانه را به یک نویسه اختصاص داد، لذا علامت حساب حذف شد و به جای آن نقاط ۷-۸ اضافه شد.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>۱</TD>
+<TD>۱-۷-۸</TD>
+<TD>⣁</TD>
+</TR>
+<TR>
+<TD>۲</TD>
+<TD>۱-۲-۷-۸</TD>
+<TD>⣃</TD>
+</TR>
+<TR>
+<TD>۳</TD>
+<TD>۱-۴-۷-۸</TD>
+<TD>⣉</TD>
+</TR>
+<TR>
+<TD>۴</TD>
+<TD>۱-۴-۵-۷-۸</TD>
+<TD>⣙</TD>
+</TR>
+<TR>
+<TD>۵</TD>
+<TD>۱-۵-۷-۸</TD>
+<TD>⣑</TD>
+</TR>
+<TR>
+<TD>۶</TD>
+<TD>۱-۲-۴-۷-۸</TD>
+<TD>⣋</TD>
+</TR>
+<TR>
+<TD>۷</TD>
+<TD>۱-۲-۴-۵-۷-۸</TD>
+<TD ALIGN="right">⣛</TD>
+</TR>
+<TR>
+<TD>۸</TD>
+<TD>۱-۲-۵-۷-۸</TD>
+<TD>⣓</TD>
+</TR>
+<TR>
+<TD>۹</TD>
+<TD>۲-۴-۷-۸</TD>
+<TD>⣊</TD>
+</TR>
+<TR>
+<TD>۰</TD>
+<TD>۲-۴-۵-۷-۸</TD>
+<TD>⣚</TD>
+</TR>
+<TR>
+<TD>٫ (ممیز)</TD>
+<TD>۵</TD>
+<TD>⠐</TD>
+</TR>
+<TR>
+<TD>٬ (هزارگان، جداکننده‌ی سه‌رقمی اعداد: ۱۲۳٬۴۵۶)</TD>
+<TD>۳-۷</TD>
+<TD>⡄</TD>
+</TR>
+<TR>
+<TD>٪ (نماد درصد)</TD>
+<TD>۱-۴-۶-۷</TD>
+<TD>⡩</TD>
+</TR>
+</TABLE>
+
+<H6>۵. نمادهای نقطه‌گذاری ویژه‌ی نگارش فارسی</H6>
+<P>
+توضیح: شکل قرار گرفتن این نمادها در رسم الخط به گونه‌ایست که تنها باید در نگارش فارسی به‌کار گرفته شوند. چنانکه در جدول خواهید دید، نقطه‌ی ۷ به این علامت‌ها اضافه شده و به معادل انگلیسی این علامت‌ها، نقطه‌ی ۸ اضافه می‌شود.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>، (ویرگول)</TD>
+<TD>۲-۷</TD>
+<TD>⡂</TD>
+</TR>
+<TR>
+<TD>؛ (نقطه ویرگول)</TD>
+<TD>۲-۳-۷</TD>
+<TD>⡆</TD>
+</TR>
+<TR>
+<TD>؟ (سؤال)</TD>
+<TD>۱-۴-۵-۶-۷</TD>
+<TD>⡹</TD>
+</TR>
+</TABLE>
+
+<H6>۶. حروف الفبای انگلیسی</H6>
+<P>
+توضیح: راهکاری موقت و سریع برای درج حروف الفبای انگلیسی در متن فارسی. به حروف uppercase نقطه‌ی ۷، و به حروف lowercase نقطه‌ی ۸ اضافه شده است.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه (Up, low)</TH>
+<TH>نقطه‌های بریل (Up, low)</TH>
+<TH>بریل یونی‌کد (Up, low)</TH>
+</TR>
+<TR>
+<TD>A, a</TD>
+<TD>1-7, 1-8</TD>
+<TD>⡁, ⢁</TD>
+</TR>
+<TR>
+<TD>B, b</TD>
+<TD>1-2-7, 1-2-8</TD>
+<TD>⡃, ⢃</TD>
+</TR>
+<TR>
+<TD>C, c</TD>
+<TD>1-4-7, 1-4-8</TD>
+<TD>⡉, ⢉</TD>
+</TR>
+<TR>
+<TD>D, d</TD>
+<TD>1-4-5-7, 1-4-5-8</TD>
+<TD>⡙, ⢙</TD>
+</TR>
+<TR>
+<TD>E, e</TD>
+<TD>1-5-7, 1-5-8</TD>
+<TD>⡑, ⢑</TD>
+</TR>
+<TR>
+<TD>F, f</TD>
+<TD>1-2-4-7, 1-2-4-8</TD>
+<TD>⡋, ⢋</TD>
+</TR>
+<TR>
+<TD>G, g</TD>
+<TD>1-2-4-5-7, 1-2-4-5-8</TD>
+<TD>⡛, ⢛</TD>
+</TR>
+<TR>
+<TD>H, h</TD>
+<TD>1-2-5-7, 1-2-5-8</TD>
+<TD>⡓, ⢓</TD>
+</TR>
+<TR>
+<TD>I, i</TD>
+<TD>2-4-7, 2-4-8</TD>
+<TD>⡊, ⢊</TD>
+</TR>
+<TR>
+<TD>J, j</TD>
+<TD>2-4-5-7, 2-4-5-8</TD>
+<TD>⡚, ⢚</TD>
+</TR>
+<TR>
+<TD>K, k</TD>
+<TD>1-3-7, 1-3-8</TD>
+<TD>⡅, ⢅</TD>
+</TR>
+<TR>
+<TD>L, l</TD>
+<TD>1-2-3-7, 1-2-3-8</TD>
+<TD>⡇, ⢇</TD>
+</TR>
+<TR>
+<TD>M, m</TD>
+<TD>1-3-4-7, 1-3-4-8</TD>
+<TD>⡍, ⢍</TD>
+</TR>
+<TR>
+<TD>N, n</TD>
+<TD>1-3-4-5-7, 1-3-4-5-8</TD>
+<TD>⡝, ⢝</TD>
+</TR>
+<TR>
+<TD>O, o</TD>
+<TD>1-3-5-7, 1-3-5-8</TD>
+<TD>⡕, ⢕</TD>
+</TR>
+<TR>
+<TD>P, p</TD>
+<TD>1-2-3-4-7, 1-2-3-4-8</TD>
+<TD>⡏, ⢏</TD>
+</TR>
+<TR>
+<TD>Q, q</TD>
+<TD>1-2-3-4-5-7, 1-2-3-4-5-8</TD>
+<TD>⡟, ⢟</TD>
+</TR>
+<TR>
+<TD>R, r</TD>
+<TD>1-2-3-5-7, 1-2-3-5-8</TD>
+<TD>⡗, ⢗</TD>
+</TR>
+<TR>
+<TD>S, s</TD>
+<TD>2-3-4-7, 2-3-4-8</TD>
+<TD>⡎, ⢎</TD>
+</TR>
+<TR>
+<TD>T, t</TD>
+<TD>2-3-4-5-7, 2-3-4-5-8</TD>
+<TD>⡞, ⢞</TD>
+</TR>
+<TR>
+<TD>U, u</TD>
+<TD>1-3-6-7, 1-3-6-8</TD>
+<TD>⡥, ⢥</TD>
+</TR>
+<TR>
+<TD>V, v</TD>
+<TD>1-2-3-6-7, 1-2-3-6-8</TD>
+<TD>⡧, ⢧</TD>
+</TR>
+<TR>
+<TD>W, w</TD>
+<TD>2-4-5-6-7, 2-4-5-6-8</TD>
+<TD>⡺, ⢺</TD>
+</TR>
+<TR>
+<TD>X, x</TD>
+<TD>1-3-4-6-7, 1-3-4-6-8</TD>
+<TD>⡭, ⢭</TD>
+</TR>
+<TR>
+<TD>Y, y</TD>
+<TD>1-3-4-5-6-7, 1-3-4-5-6-8</TD>
+<TD>⡽, ⢽</TD>
+</TR>
+<TR>
+<TD>Z, z</TD>
+<TD>1-3-5-6-7, 1-3-5-6-8</TD>
+<TD>⡵, ⢵</TD>
+</TR>
+</TABLE>
+
+<H6>۷. اعداد در نگارش انگلیسی</H6>
+<P>
+توضیح: همانند جدول ۴، علامت حساب حذف شده و از شکل -به اصطلاح- کوتاه اعداد همراه با نقطه‌های ۷-۸ استفاده شده است.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>1</TD>
+<TD>2-7-8</TD>
+<TD>⣂</TD>
+</TR>
+<TR>
+<TD>2</TD>
+<TD>2-3-7-8</TD>
+<TD>⣆</TD>
+</TR>
+<TR>
+<TD>3</TD>
+<TD>2-5-7-8</TD>
+<TD>⣒</TD>
+</TR>
+<TR>
+<TD>4</TD>
+<TD>2-5-6-7-8</TD>
+<TD>⣲</TD>
+</TR>
+<TR>
+<TD>5</TD>
+<TD>2-6-7-8</TD>
+<TD>⣢</TD>
+</TR>
+<TR>
+<TD>6</TD>
+<TD>2-3-5-7-8</TD>
+<TD>⣖</TD>
+</TR>
+<TR>
+<TD>7</TD>
+<TD>2-3-5-6-7-8</TD>
+<TD>⣶</TD>
+</TR>
+<TR>
+<TD>8</TD>
+<TD>2-3-6-7-8</TD>
+<TD>⣦</TD>
+</TR>
+<TR>
+<TD>9</TD>
+<TD>3-5-7-8</TD>
+<TD>⣔</TD>
+</TR>
+<TR>
+<TD>0</TD>
+<TD>3-5-6-7-8</TD>
+<TD>⣴</TD>
+</TR>
+</TABLE>
+
+<H6>۸. نمادهای نقطه‌گذاری مشترک</H6>
+<P>
+توضیح: به جز مواردی که بر انگلیسی بودن علامت تصریح شده، باقی علامت‌ها ممکن است در فارسی نیز به کار روند.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>! (علامت تعجب)</TD>
+<TD>۲-۳-۵</TD>
+<TD>⠖</TD>
+</TR>
+<TR>
+<TD>" (Quotation mark, علامت نقل قول در انگلیسی)</TD>
+<TD>۵-۸</TD>
+<TD>⢐</TD>
+</TR>
+<TR>
+<TD>' (Apostrophe در انگلیسی)</TD>
+<TD>3-8</TD>
+<TD>⢄</TD>
+</TR>
+<TR>
+<TD>( (پرانتز باز)</TD>
+<TD>2-3-5-6-7</TD>
+<TD>⡶</TD>
+</TR>
+<TR>
+<TD>) (پرانتز بسته)</TD>
+<TD>2-3-5-6-8</TD>
+<TD>⢶</TD>
+</TR>
+<TR>
+<TD>* (ستاره)</TD>
+<TD>1-6-8</TD>
+<TD>⢡</TD>
+</TR>
+<TR>
+<TD>, (Comma در انگلیسی)</TD>
+<TD>2-8</TD>
+<TD>⢂</TD>
+</TR>
+<TR>
+<TD>- (خط تیره)</TD>
+<TD>3-6</TD>
+<TD>⠤</TD>
+</TR>
+<TR>
+<TD>. (نقطه)</TD>
+<TD>2-5-6</TD>
+<TD>⠲</TD>
+</TR>
+<TR>
+<TD>: (Colon, دو نقطه)</TD>
+<TD>2-5-8</TD>
+<TD>⢒</TD>
+</TR>
+<TR>
+<TD>; (semicolon در انگلیسی)</TD>
+<TD>2-3-8</TD>
+<TD>⢆</TD>
+</TR>
+<TR>
+<TD>? (Question mark, علامت سؤال در انگلیسی)</TD>
+<TD>1-4-5-6-8</TD>
+<TD>⢹</TD>
+</TR>
+<TR>
+<TD>« (گیومه باز، ابتدای نقل قول در فارسی)</TD>
+<TD>۲-۳-۶</TD>
+<TD>⠦</TD>
+</TR>
+<TR>
+<TD>» (گیومه بسته، انتهای نقل قول در فارسی)</TD>
+<TD>۳-۵-۶</TD>
+<TD>⠴</TD>
+</TR>
+<TR>
+<TD>“ (Left Quote)</TD>
+<TD>3-7-8</TD>
+<TD>⣄</TD>
+</TR>
+<TR>
+<TD>” (Right quote)</TD>
+<TD>6-7-8</TD>
+<TD>⣠</TD>
+</TR>
+<TR>
+<TD>… (سه نقطه)</TD>
+<TD>۴-۶-۸</TD>
+<TD>⢨</TD>
+</TR>
+</TABLE>
+
+<H6>۹. نمادهای ریاضی مشترک</H6>
+<P>
+توضیح: به جز مواردی که بر انگلیسی بودن علامت تصریح شده، باقی علامت‌ها ممکن است در فارسی نیز به کار روند.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>% Percent sign, درصد در انگلیسی)</TD>
+<TD>۱-۴-۶-۸</TD>
+<TD>⢩</TD>
+</TR>
+<TR>
+<TD>&amp; (Ampersand, علامت و)</TD>
+<TD>1-2-3-4-6-8</TD>
+<TD>⢯</TD>
+</TR>
+<TR>
+<TD>+ (به‌علاوه)</TD>
+<TD>2-3-5-8</TD>
+<TD>⢖</TD>
+</TR>
+<TR>
+<TD>/ (Slash, خط کسری)</TD>
+<TD>3-4-8</TD>
+<TD>⢌</TD>
+</TR>
+<TR>
+<TD>&lt; (علامت کوچکتر)</TD>
+<TD>1-2-6-8</TD>
+<TD>⢣</TD>
+</TR>
+<TR>
+<TD>= (علامت مساوی)</TD>
+<TD>۲-۳-۵-۶</TD>
+<TD>⠶</TD>
+</TR>
+<TR>
+<TD>&gt; (علامت بزرگتر)</TD>
+<TD>3-4-5-8</TD>
+<TD>⢜</TD>
+</TR>
+<TR>
+<TD>[ (کروشه باز)</TD>
+<TD>۱-۲-۳-۵-۶-۷</TD>
+<TD>⡷</TD>
+</TR>
+<TR>
+<TD>] (کروشه بسته)</TD>
+<TD>2-3-4-5-6-8</TD>
+<TD>⢾</TD>
+</TR>
+<TR>
+<TD>^ (علامت توان)</TD>
+<TD>4-5-7</TD>
+<TD>⡘</TD>
+</TR>
+<TR>
+<TD>{ (آکولاد باز)</TD>
+<TD>2-4-6-8</TD>
+<TD>⢪</TD>
+</TR>
+<TR>
+<TD>} (آکولاد بسته)</TD>
+<TD>۱-۲-۴-۵-۶-۸</TD>
+<TD>⢻</TD>
+</TR>
+<TR>
+<TD>~ (تقریبا یا حدودِ)</TD>
+<TD>4-5-8</TD>
+<TD>⢘</TD>
+</TR>
+<TR>
+<TD>¬ (Not sign, علامت نفی)</TD>
+<TD>1-3-4-5-7-8</TD>
+<TD>⣝</TD>
+</TR>
+<TR>
+<TD>° (Degrees, درجه)</TD>
+<TD>3-4-5-6-8</TD>
+<TD>⢼</TD>
+</TR>
+<TR>
+<TD>± (مثبت منفی)</TD>
+<TD>3-4-6-7-8</TD>
+<TD>⣬</TD>
+</TR>
+<TR>
+<TD>× (علامت ضرب)</TD>
+<TD>۲-۳-۶-۸</TD>
+<TD>⢦</TD>
+</TR>
+<TR>
+<TD>÷ (علامت تقسیم)</TD>
+<TD>2-5-6-8</TD>
+<TD>⢲</TD>
+</TR>
+<TR>
+<TD>‰ (per mill)</TD>
+<TD>1-4-5-6-7-8</TD>
+<TD>⣹</TD>
+</TR>
+<TR>
+<TD>− (منفی)</TD>
+<TD>3-6-8</TD>
+<TD>⢤</TD>
+</TR>
+</TABLE>
+
+<H6>۱۰. نماد واحد پول برخی کشورها</H6>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD>$ (دلار)</TD>
+<TD>۱-۲-۴-۶-۷-۸</TD>
+<TD>⣫</TD>
+</TR>
+<TR>
+<TD>¢ (سِنت)</TD>
+<TD>1-4-6-7-8</TD>
+<TD>⣩</TD>
+</TR>
+<TR>
+<TD>£ (پوند)</TD>
+<TD>1-2-3-7-8</TD>
+<TD>⣇</TD>
+</TR>
+<TR>
+<TD>¥ (ین)</TD>
+<TD>1-3-4-5-6-7-8</TD>
+<TD>⣽</TD>
+</TR>
+<TR>
+<TD>€ (یورو)</TD>
+<TD>1-3-6-7-8</TD>
+<TD>⣥</TD>
+</TR>
+<TR>
+<TD>﷼ (ریال)</TD>
+<TD>۱-۲-۳-۵-۷-۸</TD>
+<TD>⣗</TD>
+</TR>
+</TABLE>
+
+<H6>۱۱. سایر نمادها</H6>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>نویسه</TH>
+<TH>نقطه‌های بریل</TH>
+<TH>بریل یونی‌کد</TH>
+</TR>
+<TR>
+<TD># (علامت مربع در تلفن یا هَش)</TD>
+<TD>۳-۴-۵-۶</TD>
+<TD>⠼</TD>
+</TR>
+<TR>
+<TD>@ (at sign)</TD>
+<TD>4-7</TD>
+<TD>⡈</TD>
+</TR>
+<TR>
+<TD>\ (Backslash)</TD>
+<TD>1-2-5-6-8</TD>
+<TD>⢳</TD>
+</TR>
+<TR>
+<TD>_ (underline, زیرخط)</TD>
+<TD>4-5-6</TD>
+<TD>⠸</TD>
+</TR>
+<TR>
+<TD>` (Grave accent)</TD>
+<TD>4-8</TD>
+<TD>⢈</TD>
+</TR>
+<TR>
+<TD>"|" (Vertical bar, خط عمودی</TD>
+<TD>۴-۵-۶-۸</TD>
+<TD>⢸</TD>
+</TR>
+<TR>
+<TD>¦ (Broken bar)</TD>
+<TD>1-5-6-7</TD>
+<TD>⡱</TD>
+</TR>
+<TR>
+<TD>§ (section sign</TD>
+<TD>1-2-3-4-5-6-7-8</TD>
+<TD>⣿</TD>
+</TR>
+<TR>
+<TD>© (Copyright)</TD>
+<TD>1-3-4-6-7-8</TD>
+<TD>⣭</TD>
+</TR>
+<TR>
+<TD>® (Registered)</TD>
+<TD>2-3-4-5-7-8</TD>
+<TD>⣞</TD>
+</TR>
+<TR>
+<TD>¶ (Paragraph)</TD>
+<TD>4-5-6-7-8</TD>
+<TD>⣸</TD>
+</TR>
+<TR>
+<TD>‐ (Hyphen)</TD>
+<TD>3-6-7</TD>
+<TD>⡤</TD>
+</TR>
+<TR>
+<TD>• (Bullet)</TD>
+<TD>2-4-6-7</TD>
+<TD>⡪</TD>
+</TR>
+<TR>
+<TD>◦ (White bullet)</TD>
+<TD>3-5-8</TD>
+<TD>⢔</TD>
+</TR>
+<TR>
+<TD>◾ (Black square)</TD>
+<TD>3-5-6-8</TD>
+<TD>⢴</TD>
+</TR>
+</TABLE>
+
+<H2>2017.2</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به پشتیبانی کامل از کم کردن صداهای پس‌زمینه در به‌روزرسانیِ Creaters در ویندوز ۱۰؛ برطرف کردن مشکلات مربوط به انتخاب متن در حالت مرور،  شامل مشکلاتی در انتخاب همه‌ی متن؛ بهبودی‌های قابل توجهی در پشتیبانی از Microsoft Edge؛ و بهبودی در تشخیص سازه‌هایی در صفحات وب که با استفاده از aria-current نشانه‌گذاری شده اند، اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>اطلاعات حاشیه‌ی خانه‌ها در اکسل با استفاده از کلید‌های NVDA+F اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/3044" target="_blank">#3044</A>)
+<LI>NVDA حالا در مرورگرهای وب با استفاده از مشخصه‌ی aria-current، سازه‌ای را که مشخصا به عنوان «جاری» نشانه‌گذاری شده باشد، تشخیص میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/6358" target="_blank">#6358</A>)
+<LI>از تعویض زبان خودکار در Microsoft Edge پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6852" target="_blank">#6852</A>)
+<LI>پشتیبانی از برنامه‌ی ماشین‌حساب در ویندوز ۱۰ Enterprise LTSB و سِروِر افزوده شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6914" target="_blank">#6914</A>)
+<LI>اجرای فرمان خواندن خط جاری سه بار به سرعت، خط جاری را با استفاده از توضیح نویسه‌ها (کلمات قراردادی معادل حروف) هجی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6893" target="_blank">#6893</A>)
+<LI>زبان جدید: برمه‌ای
+<LI>نمادهای یونیکُدِ جهت‌نماهای بالا و پایین و کسرها حالا بطور مناسبی خوانده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/3805" target="_blank">#3805</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>هنگام پیمایش با بازبینی ساده در برنامه‌هایی که از UI Automation استفاده میکنند، اشیاء نامربوط و غیر اصلیِ بیشتری نادیده گرفته میشوند تا پیمایش در این برنامه‌ها آسانتر شود. (<A HREF="https://github.com/nvaccess/nvda/issues/6948" target="_blank">#6948</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6950" target="_blank">#6950</A>) 
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>موارد موجود در منوها در صفحات وب را از این پس میتوانید در حالت مرور نیز فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/6735" target="_blank">#6735</A>)
+<LI>هنگامی که پنجره‌ی اعلان تایید برای حذف یک گروه پیکره‌بندی فعال است، فشردن Escape پنجره‌ی یاد‌شده را میبندد. (<A HREF="https://github.com/nvaccess/nvda/issues/6851" target="_blank">#6851</A>)
+<LI>بعضی از توقف‌ها در فایرفاکس و دیگر برنامه‌های دارای ساختار گِکو هنگام فعال بودن امکان چند‌پردازشی (multi-process) برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6885" target="_blank">#6885</A>)
+<LI>اعلام رنگ پس‌زمینه در بازبینی صفحه، حالا هنگامی که متن روی یک پس‌زمینه‌ی شفاف نقش بسته باشد، دقیقتر است. (<A HREF="https://github.com/nvaccess/nvda/issues/6467" target="_blank">#6467</A>) 
+<LI>پشتیبانی از توضیحات کنترل‌های فراهم‌شده در صفحات وب در Internet Explorer 11. (بطور مشخص، پشتیبانی از aria-describedby داخل iframe‌ها و هنگامی که چندین ID فراهم آمده باشد.) (<A HREF="https://github.com/nvaccess/nvda/issues/5784" target="_blank">#5784</A>)
+<LI>در به‌روزرسانی Creators در ویندوز ۱۰، کم کردن صداهای پس‌زمینه، همانند انتشارهای پیشین ویندوز، دوباره کار میکند. یعنی، گزینه‌های کم شدن صدای پس‌زمینه هنگام سخن گفتن، کم شدن هنگام اجرای NVDA، و غیر فعال شدن کم شدن صدای پس‌زمینه، همگی در دسترس هستند. (<A HREF="https://github.com/nvaccess/nvda/issues/6933" target="_blank">#6933</A>)
+<LI>NVDA دیگر هنگامی که روی برخی کنترل‌ها(ی UIA) که کلید میانبر برایشان تعریف نشده‌است پیمایش میکنید یا NVDA آن‌ها را اعلام میکند، دچار خطا نخواهد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6779" target="_blank">#6779</A>)
+<LI>برای برخی کنترل‌ها(ی UIA) دیگر در اطلاعات میانبر صفحه‌کلیدی، دو فاصله‌ی خالی اضافه نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6790" target="_blank">#6790</A>)
+<LI>بعضی ترکیب کلیدها در نمایشگرهای HIMS (مثلا، فاصله+نقطه‌ی ۴) دیگر بطور متناوب دچار خطا نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/3157" target="_blank">#3157</A>)
+<LI>اشکالی که هنگام باز کردن درگاه سریال در سیستم‌هایی که از زبان‌های مشخصی به جز انگلیسی استفاده میکنند موجب میشد برقراری ارتباط با نمایشگرهای بریل در بعضی موارد با خطا مواجه شود، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6845" target="_blank">#6845</A>)
+<LI>احتمال خراب شدن فایل پیکره‌بندی هنگام خاموش شدن ویندوز کمتر شد. فایل پیکره‌بندی حالا پیش از جایگزینی با فایل اصلی در یک فایل موقتی نوشته میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/3165" target="_blank">#3165</A>)
+<LI>هنگام اجرای فرمان خواندن خط جاری دو بار پشت سر هم برای هجی کردن خط، حالا زبان مناسب برای خواندن نویسه‌های هجی‌شده استفاده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6726" target="_blank">#6726</A>)
+<LI>پیمایش خط به خط در Microsoft Edge در ویندوز ۱۰ به‌روزرسانی Creaters حالا تا سه برابر سریعتر است. (<A HREF="https://github.com/nvaccess/nvda/issues/6994" target="_blank">#6994</A>)
+<LI>NVDA هنگام در‌تیررس قرار گرفتن اسناد در Microsoft Edge در به‌روزرسانیِ Creaters ویندوز ۱۰، دیگر Web Runtime grouping نمیگوید. (<A HREF="https://github.com/nvaccess/nvda/issues/6948" target="_blank">#6948</A>)
+<LI>از این پس NVDA از همه‌ی نگارش‌های موجودِ SecureCRT پشتیبانی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6302" target="_blank">#6302</A>)
+<LI>Adobe Acrobat Reader دیگر در بعضی اسناد PDF، مشخصا آن‌هایی که حاوی ویژگی‌های خالیِ ActualText هستند، متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/7021" target="_blank">#7021</A>, <A HREF="https://github.com/nvaccess/nvda/issues/7034" target="_blank">#7034</A>)
+<LI>در حالت مرور در Microsoft Edge، جدول‌های تعاملی (ARIA grids) هنگام پیمایش با T و Shift+T دیگر نادیده گرفته نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6977" target="_blank">#6977</A>)
+<LI>در حالت مرور، پس از انتخاب رو به جلوی متن، با فشردن Shift+Home، آن‌گونه که انتظار میرود، تا ابتدای خط جاری از حالت انتخاب در می‌آید. (<A HREF="https://github.com/nvaccess/nvda/issues/5746" target="_blank">#5746</A>)
+<LI>در حالت مرور، هنگامی که نشانگر در ابتدای متن نباشد، دیگر با اجرای فرمان انتخاب همه (Ctrl+A)، انتخاب همه‌ی متن با مشکل مواجه نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6909" target="_blank">#6909</A>)
+<LI>برخی دیگر از مشکلات نادر در انتخاب متن در حالت مرور برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/7131" target="_blank">#7131</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان (متن انگلیسی)</H3>
+<UL>
+<LI>Commandline arguments are now processed with Python's argparse module, rather than optparse. This allows certain options such as -r and -q to be handled exclusively. (<A HREF="https://github.com/nvaccess/nvda/issues/6865" target="_blank">#6865</A>)
+<LI>core.callLater now queues the callback to NVDA's main queue after the given delay, rather than waking the core and executing it directly. This stops possible freezes due to the  core accidentally going to sleep after processing a callback, in the midle of  a modal call such as the desplaying of a message box. (<A HREF="https://github.com/nvaccess/nvda/issues/6797" target="_blank">#6797</A>)
+<LI>The InputGesture.identifiers property has been changed so that it is no longer normalized. (<A HREF="https://github.com/nvaccess/nvda/issues/6945" target="_blank">#6945</A>)
+ <UL>
+ <LI>Subclasses no longer need to normalize identifiers before returning them from this property.
+ <LI>If you want normalized identifiers, there is now an InputGesture.normalizedIdentifiers property which normalizes the identifiers returned by the identifiers property .
+ </UL>
+<LI>The InputGesture.logIdentifier property is now deprecated. Callers should use InputGesture.identifiers[0] instead. (<A HREF="https://github.com/nvaccess/nvda/issues/6945" target="_blank">#6945</A>)
+<LI>Removed some deprecated code:
+ <UL>
+ <LI>`speech.REASON_*` constants: `controlTypes.REASON_*` should be used instead. (<A HREF="https://github.com/nvaccess/nvda/issues/6846" target="_blank">#6846</A>)
+ <LI>`i18nName` for synth settings: `displayName` and `displayNameWithAccelerator` should be used instead. (<A HREF="https://github.com/nvaccess/nvda/issues/6846" target="_blank">#6846</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5185" target="_blank">#5185</A>)
+ <LI>`config.validateConfig`. (<A HREF="https://github.com/nvaccess/nvda/issues/6846" target="_blank">#6846</A>, <A HREF="https://github.com/nvaccess/nvda/issues/667" target="_blank">#667</A>)
+ <LI>`config.save`: `config.conf.save` should be used instead. (<A HREF="https://github.com/nvaccess/nvda/issues/6846" target="_blank">#6846</A>, <A HREF="https://github.com/nvaccess/nvda/issues/667" target="_blank">#667</A>)
+ </UL>
+<LI>The list of completions in the autocomplete context menu of the PythonConsole no longer shows  any objec path leading up to the final symbol being completed. (<A HREF="https://github.com/nvaccess/nvda/issues/7023" target="_blank">#7023</A>)
+<LI>There is now a unit testing framework for NVDA. (<A HREF="https://github.com/nvaccess/nvda/issues/7026" target="_blank">#7026</A>)
+ <UL>
+ <LI>Unit tests and infrastructure are located in the tests/unit directory. See the docstring in the tests\unit\<U>init</U>.py file for details.
+ <LI>You can run tests using "scons tests". See the "Running Tests" section of readme.md for details.
+ <LI>If you are submitting a pull request for NVDA, you should first run the tests and ensure they pass.
+ </UL>
+</UL>
+
+<H2>2017.1</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به اعلام بخش‌ها و ستون‌های متنی در Microsoft Word؛ پشتیبانی از خواندن کتاب‌ها، پیمایش و یادداشت‌گذاری روی آن‌ها در برنامه‌ی Kindle برای رایانه؛ و پشتیبانی بهبود‌یافته در Microsoft Edge اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>در Microsoft Word، از این به بعد NVDA انواع شکست‌های بخش‌ها و شماره‌های بخش‌ها را میتواند اعلام کند. این امکان را میتوانید با استفاده از گزینه‌ی «اعلام شماره‌ی صفحه» در پنجره‌ی قالب‌بندی اسناد فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5946" target="_blank">#5946</A>)
+<LI>از این پس در Microsoft Word، ستون‌های متن میتوانند توسط NVDA اعلام شوند. این امکان را میتوانید با استفاده از گزینه‌ی «اعلام شماره‌ی صفحه» در پنجره‌ی قالب‌بندی اسناد فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5946" target="_blank">#5946</A>)
+<LI>تعویض خودکار زبان از این پس در WordPad نیز پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6555" target="_blank">#6555</A>)
+<LI>فرمان پیدا کردن (NVDA+Ctrl+F) از این به بعد در حالت مرور در Microsoft Edge نیز پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6580" target="_blank">#6580</A>)
+<LI>پیمایش سریع برای دکمه‌ها در حالت مرور (B و Shift+B) از این پس در Microsoft Edge نیز پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6577" target="_blank">#6577</A>)
+<LI>هنگامی که در Microsoft Excel یک برگه را کپی میکنید، NVDA سرسطرها و سر‌ستون‌ها را به خاطر میسپارد. (<A HREF="https://github.com/nvaccess/nvda/issues/6628" target="_blank">#6628</A>)
+<LI>پشتیبانی از خواندن و پیمایشِ  کتاب‌ها در برنامه‌ی Kindle برای رایانه، نگارش ۱.۱۹؛ مشتمل بر دسترسی به لینک‌ها، پانویس‌ها، گرافیک‌ها، متن‌های برجسته‌شده و یادداشت‌های کاربر. لطفا برای کسب اطلاعات بیشتر، بخش «Kindle برای رایانه» را در راه‌نمای کاربر NVDA ببینید. (<A HREF="https://github.com/nvaccess/nvda/issues/6247" target="_blank">#6247</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6638" target="_blank">#6638</A>)
+<LI>پیمایش در جدول‌ها حالا در Microsoft Edge نیز پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6594" target="_blank">#6594</A>)
+<LI>در Microsoft Excel، فرمان اعلام محل قرارگیری مکان‌نمای بازبینی (چیدمان رومیزی: NVDA+Deleteدر صفحه‌کلید اعداد، چیدمان لپتاپ: NVDA+delete) حالا نام کار‌برگ و محل خانه‌ای که در آن قرار دارید را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6613" target="_blank">#6613</A>)
+<LI>گزینه‌ای برای راه‌اندازی مجدد با ثبت وقایع سطح آسیب‌یابی به پنجره‌ی خروج افزوده شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6689" target="_blank">#6689</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>حد اقل سرعت چشمک زدن مکان‌نمای بریل حالا ۲۰۰ هزارم ثانیه است. چنانچه پیش از این کمتر از این مقدار تنظیم شده باشد، به ۲۰۰ هزارم ثانیه افزایش خواهد یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/6470" target="_blank">#6470</A>)
+<LI>برای فعال یا غیر فعال کردن چشمک زدن مکان‌نمای بریل، یک کادر علامت‌زدنی به پنجره‌ی تنظیمات بریل اضافه شده است. پیش از این، برای این کار از مقدار صفر استفاده میشد. (<A HREF="https://github.com/nvaccess/nvda/issues/6470" target="_blank">#6470</A>)
+<LI>eSpeak NG به ویرایش e095f008، ۱۰ ژانویه ۲۰۱۷ ارتقا یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/6717" target="_blank">#6717</A>)
+<LI>به علت تغییرات ناگهانی در به‌روزرسانی Creators ویندوز ۱۰، حالت «کم کردن همیشگی صدای پس‌زمینه» دیگر در تنظیمات مربوطه در NVDA موجود نیست. این تنظیم هنوز در انتشارهای قدیمی ویندوز ۱۰ در دسترس است. (<A HREF="https://github.com/nvaccess/nvda/issues/6684" target="_blank">#6684</A>)
+<LI>به علت تغییرات ناگهانی در به‌روزرسانی Creators ویندوز ۱۰، حالت «کم کردن صدای پس‌زمینه هنگام سخن‌گویی»  دیگر نه میتواند تضمین کند که صدا پیش از سخن گفتن NVDA بطور کامل کم شود؛ نه به اندازه‌ی کافی صدا را پایین نگه خواهد داشت تا بعد از گفتار بطور ناگهانی حجم صدا زیاد نشود. این تغییرات روی انتشارات قدیمیتر ویندوز ۱۰ تأثیر نمیگذارد. (<A HREF="https://github.com/nvaccess/nvda/issues/6684" target="_blank">#6684</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>مشکل توقف‌ها در Microsoft Word، هنگام حرکت پاراگراف به پاراگراف در حالت مرور در یک سند طولانی، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6368" target="_blank">#6368</A>)
+<LI>در Microsoft Word، جدول‌هایی که از Microsoft Excel کپی شده‌اند، دیگر به عنوان جدول‌های طرح‌بندی حساب نشده و در نتیجه، نادیده گرفته نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5927" target="_blank">#5927</A>)
+<LI>هنگام تلاش برای تایپ در Microsoft Excel وقتی که در نمای محافظت‌شده (protected view) هستید، NVDA به جای گفتن نویسه‌هایی که واقعاً تایپ نمیشوند، صدای خاصی تولید میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6570" target="_blank">#6570</A>)
+<LI>فشردن Escape در Microsoft Excel دیگر به اشتباه NVDA را به حالت مرور نمیبرَد؛ مگر آنکه کاربر پیش از این با NVDA+Space به حالت مرور و سپس با زدن Enter روی یک فرم به حالت فرمان‌پذیری رفته باشد. (<A HREF="https://github.com/nvaccess/nvda/issues/6569" target="_blank">#6569</A>) 
+<LI>NVDA دیگر هنگامی که در صفحات گسترده در Microsoft Excel، یک سطر یا ستون کامل ادغام شده باشد، متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6216" target="_blank">#6216</A>)
+<LI>متن حذف‌شده یا اضافی در خانه‌های Microsoft Excel از این به بعد دقیقتر اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6472" target="_blank">#6472</A>)
+<LI>NVDA حالا هنگامی که یک کادر علامت‌زدنی فقط خواندنی باشد، آن‌را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6563" target="_blank">#6563</A>)
+<LI>برنامه‌ی نصب‌کننده‌ی NVDA دیگر هنگامی که به علت در دسترس نبودن دستگاه صدا، نتواند صدای لوگو‌اش را پخش کند، پنجره‌ی هشدار نشان نمیدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/6289" target="_blank">#6289</A>)
+<LI>کنترل‌های موجود در ریبون Microsoft Excel که در دسترس نیستند، حالا آن‌طور که هستند اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6430" target="_blank">#6430</A>)
+<LI>NVDA دیگر هنگامی که پنجره‌ها را کوچک میکنید، «جایگاه» نخواهد گفت. (<A HREF="https://github.com/nvaccess/nvda/issues/6671" target="_blank">#6671</A>)
+<LI>نویسه‌های تایپ‌شده از این پس در برنامه‌های چند‌بستری (برنامه‌های UWP) (از جمله Microsoft Edge) در به‌روزرسانیِ Creators ویندوز ۱۰ خوانده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6017" target="_blank">#6017</A>)
+<LI>تعقیب موس از این پس روی رایانه‌هایی با چند نمایشگر، در سرتاسر صفحات نمایش پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6598" target="_blank">#6598</A>)
+<LI>NVDA دیگر پس از خروج از Windows Media Player، هنگامی که -پیش از خروج- روی یک کنترل لغزنده باشد، دیگر غیر قابل استفاده نخواهد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5467" target="_blank">#5467</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان</H3>
+<UL>
+<LI>گروه‌های پیکره‌بندی و فایل‌های تنظیمات، حالا بطور خودکار برای رسیدن به نیاز‌مندی‌های لازم برای انجام تغییرات ارتقا داده میشوند. چنانچه خطایی در روند این ارتقا پیش بیاید، پیام هشداری نشان داده شده، تنظیمات به حالت اولیه‌ی خود باز گشته، و فایل تنظیمات قبلی در فایل وقایع NVDA در سطح «اطلاعات» موجود است. (<A HREF="https://github.com/nvaccess/nvda/issues/6470" target="_blank">#6470</A>)
+</UL>
+
+<H2>2016.4</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به پشتیبانی بهبود‌یافته از Microsoft Edge؛ حالت مرور در برنامک Mail در ویندوز ۱۰؛ و بهبودی‌های قابل توجهی در پنجره‌های محاوره‌ایِ NVDA اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>NVDA حالا میتواند تورفتگی خط‌ها را با استفاده از بوق مشخص کند. این را میتوانید با استفاده از جعبه‌ی کشویی «اعلام تورفتگی خط با» در پنجره‌ی تنظیمات قالب‌بندی اسناد  تنظیم کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5906" target="_blank">#5906</A>)
+<LI>پشتیبانی از نمایشگر بریل Orbit Reader 20. (<A HREF="https://github.com/nvaccess/nvda/issues/6007" target="_blank">#6007</A>)
+<LI>گزینه‌ای برای باز کردن نمایشگر گفتار هنگام شروع کار NVDA افزوده شده است. این گزینه را میتوانید با استفاده از کادر علامت‌زدنی‌ای که در پنجره‌ی نمایشگر گفتار هست فعال کنید. <A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>هنگامی که پنجره‌ی نمایشگر گفتار را دوباره باز میکنید، موقعیت و ابعاد پنجره به آخرین وضعیت اجرا بازمیگردد. (<A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>از این به بعد، با فیلدهای ارجاعات متقابل در Microsoft Word مانند هایپر لینک برخورد میشود. این‌گونه فیلدها به عنوان لینک اعلام میشوند و میتوانند -مانند لینک‌ها- فعال شوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6102" target="_blank">#6102</A>)
+<LI>پشتیبانی از نمایشگرهای بریل Baum SuperVario2، Baum Vario 340 و HumanWare Brailliant2. (<A HREF="https://github.com/nvaccess/nvda/issues/6116" target="_blank">#6116</A>)
+<LI>پشتیبانی اولیه از روزامد سالیانه‌ی Microsoft Edge. (<A HREF="https://github.com/nvaccess/nvda/issues/6271" target="_blank">#6271</A>)
+<LI>از این پس برای خواندن ایمیل‌ها در برنامک Mail ویندوز ۱۰ از حالت مرور استفاده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6271" target="_blank">#6271</A>)
+<LI>زبان جدید: لیتوانیایی.
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>برگرداننده‌ی بریل Liblouis به نگارش ۳.۰.۰ روزامد شد. این نگارش،  شامل بهبودی‌های قابل توجهی برای بریل انگلیسی یک‌پارچه است. (<A HREF="https://github.com/nvaccess/nvda/issues/6109" target="_blank">#6109</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4194" target="_blank">#4194</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6220" target="_blank">#6220</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6140" target="_blank">#6140</A>)
+<LI>در مدیر افزونه‌ها، دکمه‌های «غیر فعال کردن افزونه» و «فعال کردن افزونه» حالا میانبر صفحه‌کلیدی (به ترتیب، Alt+غ و Alt+ف) دارند. (<A HREF="https://github.com/nvaccess/nvda/issues/6388" target="_blank">#6388</A>)
+<LI>بسیاری از مشکلات مربوط به ترازبندی و حاشیه‌گذاری‌ها در نمایش پنجره‌های محاوره‌ایِ NVDA برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/6317" target="_blank">#6317</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5548" target="_blank">#5548</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6342" target="_blank">#6342</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6343" target="_blank">#6343</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6349" target="_blank">#6349</A>)
+<LI>پنجره‌ی محاوره‌ای «قالب‌بندی اسناد» به گونه‌ای تنظیم شده است که محتویات آن -در هنگام کار با پنجره- جابجا شود. (<A HREF="https://github.com/nvaccess/nvda/issues/6348" target="_blank">#6348</A>)
+<LI>چیدمان پنجره‌ی «تلفظ نمادها» به گونه‌ای تنظیم شد تا تمام عرض پنجره به فهرست نمادها اختصاص پیدا کند. (<A HREF="https://github.com/nvaccess/nvda/issues/6101" target="_blank">#6101</A>)
+<LI>در حالت مرور در مرورگرهای وب، فرمان‌های پیمایش تک‌حرفی «فیلدهای ویرایشی (E و Shift+E) و فرم‌ها (F و Shift+F)، حالا مکان‌نما را به فیلدهای فقط‌خواندنی هم میبرند. (<A HREF="https://github.com/nvaccess/nvda/issues/4164" target="_blank">#4164</A>)
+<LI>نحوه نمایش پنجره‌ی خوشامدگویی NVDA میزان شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6350" target="_blank">#6350</A>)
+<LI>پنجره‌های محاوره‌ایِ NVDA حالا دکمه‌های OK و Cancel را در سمت راست پنجره دارند. (<A HREF="https://github.com/nvaccess/nvda/issues/6333" target="_blank">#6333</A>)
+<LI>کنترل‌های گردونه‌ای (spin Controls) از این پس برای فیلدهای ویرایشی عددی مانند تنظیم «درصد تغییر زیر و بمی صدای حروف بزرگ» در پنجره‌ی «تنظیمات صدا» به کار میروند. میتوانید مقدار مورد نظرتان را وارد کنید یا با جهت‌نماهای بالا و پایین مقدار دلخواه را تنظیم کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/6099" target="_blank">#6099</A>)
+<LI>روش اعلام IFrame‌ها (اسنادی که در دل اسناد دیگر قرار میگیرند) در مرورگرهای گوناگون همسان‌تر شده است. IFrame از این پس در فایرفاکس به عنوان «قاب» اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6047" target="_blank">#6047</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>مشکل نادری که باعث میشد هنگام خروج از NVDA، اگر نمایشگر گفتار باز باشد NVDA دچار خطا شود، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>Image map‌ها آن‌گونه که انتظار میرود در حالت مرور در فایرفاکس نمایش داده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6051" target="_blank">#6051</A>)
+<LI>هنگامی که در پنجره‌ی دیکشنری هستید، با فشردن اینتر هر تغییری را که انجام داده باشید ذخیره میکند و پنجره را میبندد. پیش از این، فشردن اینتر کاری انجام نمیداد. (<A HREF="https://github.com/nvaccess/nvda/issues/6206" target="_blank">#6206</A>)
+<LI>هنگام تغییر حالت ورودی برای یک روش ورودی، پیام‌های مربوط، از این پس به بریل نمایش داده میشوند (ورودی بومی/الفبا-شماره‌ای، شکل کامل/شکل نیمه، الخ.). (<A HREF="https://github.com/nvaccess/nvda/issues/5892" target="_blank">#5892</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5893" target="_blank">#5893</A>)
+<LI>هنگام غیر فعال و دوباره فعال‌سازی سریع یک افزونه یا بالعکس، وضعیت افزونه به‌درستی به آن‌چه پیش از این بوده برمیگردد. (<A HREF="https://github.com/nvaccess/nvda/issues/6299" target="_blank">#6299</A>)
+<LI>هنگام استفاده از Microsoft Word، میتوان فیلدهای شماره‌ی صفحه را در سرصفحه‌ها خواند. (<A HREF="https://github.com/nvaccess/nvda/issues/6004" target="_blank">#6004</A>)
+<LI>در پنجره‌ی تلفظ نمادها میتوانید برای جابجا کردن فرمان‌پذیری بین فهرست نمادها و فیلدهای ویرایشی از موس استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/6312" target="_blank">#6312</A>)
+<LI>در حالت مرور در Microsoft Word، مشکلی که باعث میشد تا به هنگام وجود یک هایپر‌لینک نامعتبر در یک سند، فهرست سازه‌ها نمایش داده نشود، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5886" target="_blank">#5886</A>)
+<LI>بعد از بسته شدن نمایشگر گفتار از طریق نوار وظیفه یا Alt+F4، وضعیت کادر علامت‌زدنی نمایشگر گفتار در منوی NVDA، نمایانی واقعی پنجره‌ی نمایشگر را منعکس خواهد کرد. (<A HREF="https://github.com/nvaccess/nvda/issues/6340" target="_blank">#6340</A>)
+<LI>فرمان «بارگذاری مجدد افزونه‌ها» دیگر برای گروه‌های پیکره‌بندی‌ای که با یک عملگر فعال شده اند، اسناد جدید در مرورگرهای وب و بازبینی صفحه، مشکل ایجاد نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/2892" target="_blank">#2892</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5380" target="_blank">#5380</A>)
+<LI>در فهرست زبان‌ها در پنجره‌ی تنظیمات عمومی NVDA، زبان‌هایی مانند آراگونیایی حالا به‌درستی در ویندوز ۱۰ نمایش داده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6259" target="_blank">#6259</A>)
+<LI>کلیدهای صفحه‌کلید شبیه‌سازی‌شده‌ی سیستم (مثلا یک دکمه روی یک نمایشگر بریل که فشردن کلید Tab را تقلید میکند) از این به بعد در راهنمای کلید‌های ورودی و پنجره‌ی مدیریت فرمان‌های ورودی، به زبان تنظیم‌شده در NVDA نمایش داده میشوند. پیش از این، این‌گونه کلیدها همیشه به انگلیسی نمایش داده میشدند. (<A HREF="https://github.com/nvaccess/nvda/issues/6212" target="_blank">#6212</A>)
+<LI>تغییر زبان NVDA (از پنجره‌ی تنظیمات عمومی) حالا دیگر تا زمانی که NVDA دوباره شروع به کار کند، تأثیری ندارد. (<A HREF="https://github.com/nvaccess/nvda/issues/4561" target="_blank">#4561</A>)
+<LI>فیلد «الگو» برای یک ورودی جدید دیکشنری گفتار دیگر مجاز نیست خالی بماند. (<A HREF="https://github.com/nvaccess/nvda/issues/6412" target="_blank">#6412</A>)
+<LI>در برخی سیستم‌ها، اشکالی نادر که باعث میشد هنگام اسکن درگاه‌های سریال، درایورهای بعضی از نمایشگرهای بریل ناکارامد شوند، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6462" target="_blank">#6462</A>)
+<LI>هنگامی که در Microsoft Word، در جدول‌ها خانه به خانه حرکت کنید، از این به بعد بولِت‌های عددی اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6446" target="_blank">#6446</A>)
+<LI>از این به بعد، اختصاص دادن کلید به فرمان‌های درایور نمایشگر بریل Handy Tech در پنجره‌ی «فرمان‌های ورودی» در NVDA امکان‌پذیر است. (<A HREF="https://github.com/nvaccess/nvda/issues/6461" target="_blank">#6461</A>)
+<LI>هنگام پیمایش در یک صفحه‌ی گسترده در Microsoft Excel، فشردن اینتر -اصلی- یا اینتر ماشین‌حساب، حالا به‌درستی پیمایش به سطر بعدی را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/6500" target="_blank">#6500</A>)
+<LI>iTunes دیگر به هنگام استفاده از حالت مرور در فروشگاه iTunes، موسیقی Apple و غیره، بطور متناوب متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6502" target="_blank">#6502</A>)
+<LI>توقف‌ها در برنامه‌های ۶۴‌بیتیِ برپایه‌ی فایرفاکس و کروم برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6497" target="_blank">#6497</A>)
+<LI>در فایرفاکس هنگامی که وضعیت چندپردازشی (multi-process) فعال است، حالت مرور و فیلدهای متنی قابل ویرایش حالا درست کار میکنند. (<A HREF="https://github.com/nvaccess/nvda/issues/6380" target="_blank">#6380</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان</H3>
+<UL>
+<LI>از این به بعد میتوان برای فایل‌های اجرایی‌ای که در نامشان نقطه (.) به کار رفته، ماژول فراهم کرد. نویسه‌ی نقطه با زیرخط (_) جایگزین میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5323" target="_blank">#5323</A>)
+<LI>ماژول جدید gui.guiHelper ابزارهای سودمندی را در بر دارد که ساختن واسط‌های گرافیکی کاربری wxPython را آسان میکند، که از آن جمله میتوان به مدیریت خودکار فاصله‌گذاری‌ها اشاره کرد. این به ظاهر بصری بهتر و سازگاری برنامه کمک میکند؛ و به همان اندازه ساختن واسط‌های کاربری مناسب توسعه‌دهندگان نابینا را آسان میسازد. (<A HREF="https://github.com/nvaccess/nvda/issues/6287" target="_blank">#6287</A>)
+</UL>
+
+<H2>2016.3</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به توانایی غیر فعال کردن انفرادی یک افزونه، پشتیبانی از فرم‌فیلد‌ها در Microsoft Excel، بهبودی قابل توجهی در نحوه اعلام رنگ‌ها، رفع اشکالات و بهبودی‌هایی مربوط به چند نوع نمایشگر بریل، و رفع اشکالات و بهبودی‌هایی در نحوه پشتیبانی از Microsoft Word اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>برای خواندن اسناد PDF در Microsoft Edge در روزامدِ سالیانه‌ی ویندوز ۱۰، از این پس میتوانید از حالت مرور استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5740" target="_blank">#5740</A>)
+<LI>در Microsoft Word، هرگاه مناسب باشد، نوشته‌های خط‌خورده و دوبار خط‌خورده اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5800" target="_blank">#5800</A>)
+<LI>در Microsoft Word، اگر برای جدول عنوانی موجود باشد، از این پس اعلام میشود. اگر توضیحی برای جدول باشد، در حالت مرور با استفاده از فرمان باز کردن توضیح طولانی (NVDA+D) در دسترس است. (<A HREF="https://github.com/nvaccess/nvda/issues/5943" target="_blank">#5943</A>)
+<LI>در Microsoft Word، NVDA هنگام حرکت دادن پاراگرافها با Alt+Shift+جهت‌نمای بالا و Alt+Shift+جهت‌نمای پایین، اطلاعات موقعیت آن‌ها را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5945" target="_blank">#5945</A>)
+<LI>هنگامی که با کلیدهای میانبر گوناگون در Microsoft Word فواصل خطوط را تغییر میدهید، آن‌ها توسط فرمان «اعلام قالب‌بندی» اعلام میشوند. چنانچه گزینه‌ی «اعلام فواصل خطوط» در تنظیمات قالب‌بندی اسناد روشن باشد، هنگام حرکت روی متونی با فواصل خطوط مختلف نیز این اطلاعات اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/2961" target="_blank">#2961</A>)
+<LI>در Internet Explorer، سازه‌های ساختاری HTML5 هم‌اکنون بدرستی شناسایی میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6044" target="_blank">#6044</A>)
+<LI>اعلام توضیحات (مانند توضیحات در Microsoft Word) را از این پس میتوانید از طریق کادر «اعلام توضیحات» در پنجره‌ی تنظیمات قالب‌بندی اسناد، فعال یا غیر فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5108" target="_blank">#5108</A>)
+<LI>از این پس میتوان در مدیریت افزونه‌ها، هر افزونه‌ای را به‌تنهایی غیر فعال کرد. (<A HREF="https://github.com/nvaccess/nvda/issues/3090" target="_blank">#3090</A>)
+<LI>کلیدهای جدیدی برای نمایشگرهای بریل سِری ALVA BC640/680 تعریف شده‌اند. (<A HREF="https://github.com/nvaccess/nvda/issues/5206" target="_blank">#5206</A>)
+<LI>حالا فرمانی وجود دارد که نمایشگر بریل را به محل فرمان‌پذیری جاری میبَرَد. در حال حاضر، فقط سِریِ ALVA BC640/680 کلیدی را به این فرمان اختصاص داده است، اما میتوان این فرمان را، در صورت تمایل، بطور دستی با استفاده از مدیریت فرمان‌های ورودی به دیگر نمایشگرها نیز اختصاص داد. (<A HREF="https://github.com/nvaccess/nvda/issues/5250" target="_blank">#5250</A>)
+<LI>در Microsoft Excel، میتوانید با فرم‌فیلد‌ها تعامل کنید. با استفاده از فهرست سازه‌ها یا پیمایش تک‌حرفی در حالت مرور روی فرم‌ها بروید. (<A HREF="https://github.com/nvaccess/nvda/issues/4953" target="_blank">#4953</A>)
+<LI>هم‌اکنون میتوانید از طریق مدیریت فرمان‌های ورودی، فرمانی را برای فعال یا غیر فعال کردن حالت بازبینی ساده اختصاص دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/6173" target="_blank">#6173</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>NVDA حالا رنگ‌ها را به صورت مجموعه‌ای ساده و قابل فهم‌تر، مشتمل بر ۹ طیف و سه درجه‌ی رنگی همراه با گونه‌های پررنگ و کمرنگ اعلام میکند. این شیوه از این پس بجای بکار‌گیری نام رنگ‌های بیشتر مبتنی بر ادراک بصری و کمتر قابل فهم، استفاده خواهد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6029" target="_blank">#6029</A>)
+<LI>رفتار فعلی nvda+f9 سپس nvda+f10 تغییر یافته‌است؛ به گونه‌ای که با فشردن nvda+f10 برای بار اول، متن نشانه‌گذاری‌شده انتخاب میشود. وقتی nvda+f10 را دو بار سریع بفشارید، متن در کلیپ‌برد کپی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4636" target="_blank">#4636</A>)
+<LI>eSpeakNG به نگارش Master 11b1a7b (۲۲ ژوئن ۲۰۱۶) روزامد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6037" target="_blank">#6037</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در حالت مرور در Microsoft Word، هنگام کپی کردن متن در کلیپ‌برد، قالب‌بندی متن نیز حفظ میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5956" target="_blank">#5956</A>)
+<LI>در Microsoft Word، هنگام استفاده از فرمان‌های خودِ برنامه برای حرکت کردن در جدول‌ها (Alt+Home، Alt+End، Alt+pageUp و Alt+pageDown) و فرمان‌های انتخاب جدول‌ها (افزودن Shift به فرمان‌های ذکر‌شده)، NVDA بطور مناسب و بدرستی وضعیت پیمایش و انتخاب را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5961" target="_blank">#5961</A>)
+<LI>در پنجره‌های محاوره‌ایِ Microsoft Word، پیمایش شیئی NVDA بطور محسوسی بهبود یافته‌است. (<A HREF="https://github.com/nvaccess/nvda/issues/6036" target="_blank">#6036</A>)
+<LI>در برخی برنامه‌ها، مانند Visual Studio 2015، کلیدهای میانبر (مثل ctrl+c برای کپی) آن‌گونه که انتظار میرود اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/6021" target="_blank">#6021</A>)
+<LI>در برخی سیستم‌ها، اشکالی نادر که باعث میشد هنگام اسکن درگاه‌های سریال، درایورهای بعضی از نمایشگرهای بریل ناکارامد شوند، برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/6015" target="_blank">#6015</A>)
+<LI>اعلام رنگ‌ها در Microsoft Word، از آنجا که تغییرات ایجاد شده در تم‌های Office مورد توجه واقع شده، دقیق‌تر شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/5997" target="_blank">#5997</A>)
+<LI>حالت مرور برای Microsoft Edge و پشتیبانی از پیش‌نهادهای جستجو در صفحه‌ی شروع (Start Screen)، دوباره برای نگارش‌های پس از آوریل ۲۰۱۶ِ ویندوز ۱۰ در دسترس است. . (<A HREF="https://github.com/nvaccess/nvda/issues/5955" target="_blank">#5955</A>)
+<LI>در Microsoft Word، خواندن خودکار سرجدولها هنگامی که با خانه‌های ادغام‌شده مواجه میشوید، بهتر کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5926" target="_blank">#5926</A>)
+<LI>در برنامه‌ی Mail در ویندوز ۱۰، NVDA دیگر هنگام خواندن محتوای پیام‌ها دچار خطا نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5635" target="_blank">#5635</A>) 
+<LI>هنگامی که خواندن کلیدهای فرمان روشن باشد، کلیدهای lock، مانند caps lock دوبار اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5490" target="_blank">#5490</A>)
+<LI>پنجره‌های محاوره‌ایِ User Account Control در نگارش روزامد‌شده‌ی سالیانه‌ی ویندوز ۱۰ (Anniversary update) دوباره درست خوانده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5942" target="_blank">#5942</A>)
+<LI>هنگام استفاده از پلاگین Web Conference (مانند آنچه در سایت out-of-sight.net استفاده میشود) NVDA دیگر روزامدهای نوار پیش‌رفت مربوط به ورودی میکروفون را با بوق و گفتار اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5888" target="_blank">#5888</A>)
+<LI>اجرای فرمان «پیدا کردن بعدی» یا «پیدا کردن قبلی» در حالت مرور، در صورتی که «پیدا کردن» اصلی و ابتدایی حساس به حروف بزرگ و کوچک باشد، به‌درستی جستجوی حساس به بزرگی یا کوچکی حروف انجام خواهد داد. (<A HREF="https://github.com/nvaccess/nvda/issues/5522" target="_blank">#5522</A>)
+<LI>هنگام ویرایش ورودی‌های دیکشنری، برای عبارت‌های مُنتظم نامعتبر بازخورد داده میشود. NVDA دیگر در صورتی که در یک فایل دیکشنری عبارت مُنتظم نادرستی موجود باشد، متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4834" target="_blank">#4834</A>)
+<LI>چنانچه NVDA نتواند با نمایشگر بریل ارتباط برقرار کند (مثلا، به خاطر اینکه نمایشگر جدا شده است)، بطور خودکار استفاده از آن نمایشگر را غیر فعال میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/1555" target="_blank">#1555</A>)
+<LI>اجرای فیلتر کردن در فهرست سازه‌ها در حالت مرور اندکی بهبود یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/6126" target="_blank">#6126</A>)
+<LI>در Microsoft Excel، نام‌های الگوهای پس‌زمینه‌ای که توسط NVDA اعلام میشوند، با آنچه که در Excel استفاده میشود مطابقت دارند. (<A HREF="https://github.com/nvaccess/nvda/issues/6092" target="_blank">#6092</A>)
+<LI>پشتیبانی از صفحه‌ی ورودی ویندوز ۱۰، از جمله اعلام هشدارها و فعال کردن فیلد گذرواژه با لمس، بهبود یافته است. (<A HREF="https://github.com/nvaccess/nvda/issues/6010" target="_blank">#6010</A>)
+<LI>NVDA حالا بدرستی کلید‌های ثانویه‌ی جابجاکننده‌ی مکان‌نما را در نمایشگرهای بریل سِریِ ALVA BC640/680 شناسایی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5206" target="_blank">#5206</A>)
+<LI>NVDA دوباره میتواند اعلان‌های فوری  را در نگارش‌های اخیر ویندوز ۱۰ بخواند. (<A HREF="https://github.com/nvaccess/nvda/issues/6096" target="_blank">#6096</A>)
+<LI>مشکل عدم شناسایی موقت فشردن کلیدها روی نمایشگر‌های بریلِ سازگار با Baum و HumanWare Brailliant برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/6035" target="_blank">#6035</A>)
+<LI>چنانچه اعلام شماره‌ی خط‌ها در تنظیمات قالب‌بندی اسناد فعال باشد، از این پس شماره‌ی خط‌ها نیز روی نمایشگر بریل نشان داده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5941" target="_blank">#5941</A>)
+<LI>وقتی حالت سخن‌گویی خاموش باشد، اعلام اشیاء (مانند فشردن NVDA+Tab برای اعلام محل فرمان‌پذیری) هم‌اکنون -آن‌گونه که انتظار میرود- در نمایشگر گفتار ظاهر میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6049" target="_blank">#6049</A>)
+<LI>در فهرست پیام‌ها در Outlook 2016،   اطلاعات مربوط به پیش‌نویس دیگر اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6219" target="_blank">#6219</A>)
+<LI>در مرورگر گوگل کروم و دیگر مرورگرهای بر پایه‌ی آن، هنگامی که از زبانی غیر از انگلیسی استفاده میکنید، حالت مرور در حال کار با بسیاری از اسناد، دیگر دچار خطا نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/6249" target="_blank">#6249</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان برنامه (متن انگلیسی)</H3>
+<UL>
+<LI>Logging information directly from a property
+no longer results in the property  being called recursively over and over again. (<A HREF="https://github.com/nvaccess/nvda/issues/6122" target="_blank">#6122</A>)
+</UL>
+
+<H2>2016.2.1</H2>
+<P>
+این انتشار، مشکل توقف‌های واژه‌پرداز مایکروسافت را برطرف میکند.
+</P>
+<UL>
+<LI>NVDA دیگر باعث نمیشود که Microsoft Word در ویندوز XP بلافاصله پس از اجرا متوقف شود. (<A HREF="https://github.com/nvaccess/nvda/issues/6033" target="_blank">#6033</A>)
+<LI>«اعلام خطاهای دستوری»، از آنجا که باعث توقف در برنامه‌ی Microsoft Word میشد، حذف شد. (توجه: این گزینه، جدا از «اعلام خطاهای املایی» بود و خطاهای املایی در صورت تشخیص توسط برنامه، همچنان اعلام میشوند.) (<A HREF="https://github.com/nvaccess/nvda/issues/5954" target="_blank">#5954</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+</UL>
+
+<H2>2016.2</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به توانایی مشخص کردن خطاهای املایی بهنگام تایپ، پشتیبانی از اعلام خطاهای دستوری در Microsoft Word، و بهبودی‌ها و اصلاحاتی در پشتیبانی از مجموعه برنامه‌های Microsoft Office اشاره کرد.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>در حالت مرور در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، با استفاده از پیمایش تک‌حرفی برای رفتن روی یادداشت‌ها (a و shift+a)، از این پس روی متون اضافه‌شده و حذف‌شده پیمایش میکنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5691" target="_blank">#5691</A>)
+<LI>در مایکروسافت اکسل، NVDA علاوه بر اعلام باز یا بسته بودن یک گروه از خانه‌ها، سطح گروه خانه‌ها را نیز اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5690" target="_blank">#5690</A>)
+<LI>با دو بار اجرا کردن فرمان اعلام قالب‌بندی متن (NVDA+F)، اطلاعات مزبور در حالت مرور نمایش داده میشود تا بتوانید آنرا بازبینی کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4908" target="_blank">#4908</A>)
+<LI>در Microsoft Excel 2010 و بالاتر، سایه‌ی خانه‌ها و سطوح شیب‌دار از این پس اعلام میشوند. اعلام خودکار توسط گزینه‌ی «اعلام رنگ‌ها» موجود در تنظیمات قالب‌بندی اسناد کنترل میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/3683" target="_blank">#3683</A>)
+<LI>جدول برگرداننده‌ی بریل جدید: یونانی کُینه. (<A HREF="https://github.com/nvaccess/nvda/issues/5393" target="_blank">#5393</A>)
+<LI>در نمایشگر وقایع، از این به بعد میتوانید با استفاده از کلید میانبر ctrl+s فایل لاگ موجود را ذخیره کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4532" target="_blank">#4532</A>)
+<LI>چنانچه اعلام خطاهای املایی فعال باشد و در کنترل تحت فرمان پشتیبانی شود، NVDA هنگامی که تایپ میکنید، با پخش یک صدا شما را از خطای املایی‌ای که انجام داده‌اید آگاه میکند. این امکان را میتوانید با برداشتن علامت گزینه‌ی جدید «پخش صدا برای خطاهای املایی به هنگام تایپ» که در پنجره‌ی تنظیمات صفحه‌کلید اضافه شده غیر فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/2024" target="_blank">#2024</A>)
+<LI>خطاهای دستور زبانی از این پس در Microsoft Word اعلام میشوند. این امکان را میتوانید با  برداشتن علامت گزینه‌ی جدید «اعلام خطاهای دستوری» در پنجره‌ی قالب‌بندی اسناد غیر فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>در حالت مرور و فیلدهای ویرایشی، NVDA از این پس با کلید اینتر صفحه‌کلید اعداد همانند کلید اینتر اصلی رفتار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5385" target="_blank">#5385</A>)
+<LI>موتور سخنگوی پیش‌فرض NVDA به eSpeak NG تغییر یافته است. (<A HREF="https://github.com/nvaccess/nvda/issues/5651" target="_blank">#5651</A>)
+<LI>در مایکروسافت اکسل، NVDA دیگر سر‌ستون خانه‌ای را که یک سطر خالی بین آن خانه و سر‌ستون قرار داشته باشد نادیده نمیگیرد. (<A HREF="https://github.com/nvaccess/nvda/issues/5396" target="_blank">#5396</A>)
+<LI>در مایکروسافت اکسل، از این به بعد، مختصات خانه‌ها قبل از سر‌ستون یا سرسطر اعلام میشوند. با این کار، ابهام بین سرسطر یا سر‌ستون و محتوای خانه برطرف میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5396" target="_blank">#5396</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در حالت مرور، هنگامی که تلاش میکنید با استفاده از پیمایش تک‌حرفی به سازه‌ای بروید که در سند جاری پشتیبانی نمیشود، NVDA بجای اینکه بگوید سازه‌ای در این سمت وجود ندارد، اعلام میکند که این کار پشتیبانی نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5691" target="_blank">#5691</A>)
+<LI>هنگامی که در مایکروسافت اکسل، برگه‌ها را در پنجره‌ی فهرست سازه‌ها فهرست میکنید، برگه‌هایی که فقط دارای نمودار هستند نیز از این پس فهرست میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5698" target="_blank">#5698</A>)
+<LI>NVDA دیگر بهنگام جابجا کردن پنجره‌ها در برنامه‌ی جاوایی که دارای چند پنجره هست -مانند IntelliJ یا Android Studio، اطلاعات نامربوط اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5732" target="_blank">#5732</A>)
+<LI>در ویراستارهای بر پایه‌ی Scintilla، همانند Notepad++، هنگام جابجا کردن مکان‌نما با استفاده از نمایشگر بریل، از این به بعد بریل به درستی روزامد میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5678" target="_blank">#5678</A>)
+<LI>NVDA دیگر گهگاه به هنگام فعالسازی خروجی بریل دچار خطا نشده، متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4457" target="_blank">#4457</A>)
+<LI>در Microsoft Word، از این پس تورفتگی پاراگراف همیشه بر اساس واحد اندازه‌گیری‌ای که کاربر انتخاب میکند (مثلا سانتیمتر یا اینچ) اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5804" target="_blank">#5804</A>)
+<LI>هنگامی که از نمایشگر بریل استفاده میکنید، بسیاری از پیام‌های NVDA که پیش از این فقط خوانده میشدند، از این پس بریل هم میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5557" target="_blank">#5557</A>)
+<LI>در برنامه‌های دسترسی‌پذیر جاوا، از این پس سطح موارد موجود در نمای درختی اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5766" target="_blank">#5766</A>)
+<LI>در فایرفاکس، توقف‌های Adobe Flash در بعضی موارد اصلاح شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5367" target="_blank">#5367</A>)
+<LI>در گوگل کروم و مرورگرهای بر پایه‌ی کروم، سند‌های داخل پنجره‌های محاوره‌ای و برنامه‌ها را میتوانید از این پس در حالت مرور بخوانید. (<A HREF="https://github.com/nvaccess/nvda/issues/5818" target="_blank">#5818</A>)
+<LI>در گوگل کروم و مرورگرهای بر پایه‌ی کروم، از این به بعد، میتوانید NVDA را در پنجره‌های محاوره‌ای و برنامه‌های تحت وب مجبور کنید تا به حالت مرور تغییر حالت دهد. (<A HREF="https://github.com/nvaccess/nvda/issues/5818" target="_blank">#5818</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، بردن فکوس به کنترل‌های معینی (بویژه در جایی که از aria-activedescendant استفاده میشود) دیگر بنادرستی NVDA را به حالت مرور تغییر نمیدهد. این حالت، به عنوان مثال، زمانی که فکوس هنگام نوشتن پیامی در GMail به محل پیشنهادها در فیلد آدرس‌ها میرود اتفاق می‌افتد. (<A HREF="https://github.com/nvaccess/nvda/issues/5676" target="_blank">#5676</A>)
+<LI>در Microsoft Word، در جدول‌های بزرگ، هنگامی که اعلام سرسطر‌ها و سر‌ستون‌ها فعال باشد، NVDA دیگر متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5878" target="_blank">#5878</A>)
+<LI>در Microsoft word، NVDA متنی را که دارای سطحی جدا از بقیه‌ی متن است (اما دارای سبْک سرنوشتار نیست) به اشتباه به عنوان سرنوشتار اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5186" target="_blank">#5186</A>)
+<LI>در حالت مرور در  Microsoft Word، فرمان رفتن به ابتدا یا به بعد از یک دربرگیرنده (کاما و شیفت+کاما)، حالا برای جدول‌ها هم کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5883" target="_blank">#5883</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان برنامه</H3>
+<UL>
+<LI>اجزای C++‌ی تشکیل‌دهنده‌ی NVDA از این پس با استفاده از Microsoft Visual Studio 2015 ساخته میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5592" target="_blank">#5592</A>)
+<LI>میتوانید از این پس با استفاده از ui.browseableMessage یک پیام Text یا HTML را به کاربر نمایش دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/4908" target="_blank">#4908</A>)
+<LI>In the User Guide, when a %kc:setting command is used for a setting which has a common key for all layouts, the key may now be placed after a full-width colon (：) as well as the regular colon (:). (<A HREF="https://github.com/nvaccess/nvda/issues/5739" target="_blank">#5739</A>)
+</UL>
+
+<H2>2016.1</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به توانایی کمتر کردن صداهای دیگر برنامه‌ها بطور اختیاری، بهبودی‌هایی در خروجی بریل و پشتیبانی از نمایشگرهای بریل، رفع اشکالاتی قابل توجه در پشتیبانی از Microsoft Office، و حل اشکالاتی در حالت مرور iTunes اشاره کرد.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>جدول‌های برگرداننده‌ی بریل جدید: بریل رایانه‌ای هشت‌نقطه‌ی لهستانی، مغولی. (<A HREF="https://github.com/nvaccess/nvda/issues/5537" target="_blank">#5537</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5574" target="_blank">#5574</A>)
+<LI>شما میتوانید با استفاده از گزینه‌های جدید «نمایش دادن مکان‌نما» و «شکل مکان‌نما»، مکان‌نمای بریل را خاموش کنید و شکلش را تغییر دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/5198" target="_blank">#5198</A>)
+<LI>NVDA میتواند به  یک نمایشگر بریل HIMS Smart Beetle از طریق بلوتوث متصل شود. (<A HREF="https://github.com/nvaccess/nvda/issues/5607" target="_blank">#5607</A>)
+<LI>NVDA هنگامی که روی ویندوز ۸ و بالاتر نصب میشود، میتواند به طور اختیاری صداهای دیگر برنامه‌ها را کمتر کند. این امکان از طریق گزینه‌ی «کم کردن صداهای پس‌زمینه» در پنجره‌ی موتور سخن‌گو یا کلید میانبر NVDA+Shift+d قابل تنظیم است. (<A HREF="https://github.com/nvaccess/nvda/issues/3830" target="_blank">#3830</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5575" target="_blank">#5575</A>)
+<LI>پشتیبانی از APH Refreshabraille در حالت HID و Baum VarioUltra و Pronto! وقتی از طریق USB متصل میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5609" target="_blank">#5609</A>)
+<LI>پشتیبانی از نمایشگرهای بریل HumanWare Brailliant BI/B وقتی که پرتکل ارتباطی روی OpenBraille تنظیم شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/5612" target="_blank">#5612</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>اعلام تأکید از این پس بطور پیش‌فرض غیر فعال میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>در فهرست سازه‌ها در مایکروسافت اکسل، کلید میانبر فرمول‌ها به Alt+ر تغییر یافت تا از کلید میانبر فیلد «فیلتر کردن با» متمایز باشد. (<A HREF="https://github.com/nvaccess/nvda/issues/5527" target="_blank">#5527</A>)
+<LI>برگرداننده‌ی بریل Liblouis به نگارش ۲.۶.۵ روزامد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5574" target="_blank">#5574</A>)
+<LI>واژه‌ی «متن» دیگر هنگامی که فکوس یا مکان‌نمای بازبینی را به اشیاء متنی میبَرید اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5452" target="_blank">#5452</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در برنامه‌ی iTunes 12، هنگامی که در فروشگاه iTunes یک صفحه‌ی تازه بارگزاری میشود، حالت مرور بدرستی روزامد میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5191" target="_blank">#5191</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، حرکت کردن روی سطوح معینی از سرنوشتارها با استفاده از پیمایش تک‌حرفی، به ویژه هنگامی که سطح یک سرنوشتار توسط aria-level به هدف دسترس‌پذیری تغییر میکند، هم‌اکنون آن‌گونه که انتظار میرود انجام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5434" target="_blank">#5434</A>)
+<LI>در برنامه‌ی Spotify، فکوس دیگر -همچون گذشته- در بیشتر اوقات روی اشیاء «نامشخص» قرار نمیگیرد. (<A HREF="https://github.com/nvaccess/nvda/issues/5439" target="_blank">#5439</A>)
+<LI>فکوس هم‌اکنون هنگامی که از برنامه‌های دیگر به Spotify برمیگردید، بدرستی به حالت قبلی خودش برمیگردد. (<A HREF="https://github.com/nvaccess/nvda/issues/5439" target="_blank">#5439</A>)
+<LI>هنگامی که NVDA را از حالت مرور به حالت فرمان‌پذیری تغییر میدهید، همان‌گونه که NVDA تغییر حالت را اعلام میکند، در بریل نیز نمایش میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/5239" target="_blank">#5239</A>)
+<LI>دکمه‌ی Start روی نوار وظیفه دیگر در بعضی از نسخه‌های ویندوز به عنوان «فهرست» یا «انتخاب‌شده» اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5178" target="_blank">#5178</A>)
+<LI>هنگامی که در Microsoft Outlook در حال نوشتن پیام هستید، دیگر پیام‌هایی مانند «درج‌شده» اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5486" target="_blank">#5486</A>)
+<LI>هنگامی که از نمایشگر بریل استفاده میکنید و متنی در خط جاری انتخاب شود (مثلا، در ویرایشگر متن دنبال متنی میگردید که در همان خط قرار دارد) نمایشگر بریل در صورت امکان به سمت متن انتخاب‌شده جابجا خواهد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5410" target="_blank">#5410</A>)
+<LI>NVDA دیگر در ویندوز ۱۰ هنگامی که یک پنجره‌ی میز فرمان ویندوز را با Alt+F4 میبندید، بی‌صدا بسته نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5343" target="_blank">#5343</A>)
+<LI>در پنجره‌ی فهرست سازه‌ها در حالت مرور، هنگامی که نوع سازه را تغییر میدهید، فیلد «فیلتر کردن با» پاک میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5511" target="_blank">#5511</A>)
+<LI>در متن‌های ویرایشی در برنامه‌های موزیلایی، وقتی موس را حرکت میدهید، دوباره -همان‌طور که انتظار میرود- به جای خواندن تمام محتوای موجود، خط مناسب، کلمه‌ی مناسب، و غیره را میخوانَد. (<A HREF="https://github.com/nvaccess/nvda/issues/5535" target="_blank">#5535</A>)
+<LI>در برنامه‌های موزیلا هنگامی که موس را در متن‌های ویرایشی حرکت میدهید، خواندن متن هنگام رسیدن به لینکی که داخل یک کلمه است یا خطی که در حال خوانده شدن است دیگر متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/2160" target="_blank">#2160</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5535" target="_blank">#5535</A>)
+<LI>در اینترنت اکسپلورر، وب‌سایت shoprite.com در حالت مرور به جای اعلام شدن «خالی» به درستی خوانده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5569" target="_blank">#5569</A>)
+<LI>در Microsoft Word، هنگامی که علامت تغییر مسیر نمایش داده نمیشود، تغییراتی مانند «درج‌شده» دیگر اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5566" target="_blank">#5566</A>)
+<LI>وقتی یک دکمه‌ی دوکاره در محل فرمان‌پذیری قرار میگیرد، NVDA از این پس وضعیت دکمه را هنگامی که از «فشرده‌شده» به «فشرده‌نشده» تغییر میکند، اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5441" target="_blank">#5441</A>)
+<LI>اعلام تغییر شکل موس دوباره آن‌طور که انتظار میرفت کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5595" target="_blank">#5595</A>)
+<LI>هنگام خواندن تورفتگی خط‌ها، نویسه‌های فاصله‌های بدون شکست به عنوان فاصله‌های معمولی در نظر گرفته میشوند. پیش از این NVDA مثلا به جای «۳ فاصله» چیزی مثل «فاصله فاصله فاصله» اعلام میکرد. (<A HREF="https://github.com/nvaccess/nvda/issues/5610" target="_blank">#5610</A>)
+<LI>هنگام بستن فهرست مدرن کاندیداهای روش ورودی مایکروسافت، فکوس بدرستی یا به نوشتار ورودی برمیگردد یا به متنی که در زیر آن قرار دارد. (<A HREF="https://github.com/nvaccess/nvda/issues/4145" target="_blank">#4145</A>)
+<LI>در Microsoft Office 2013 و بالاتر، وقتی منوی روبانی روی نشان دادن فقط سربرگ‌ها تنظیم میشود، هنگامی که یک سربرگ فعال میشود، موارد موجود در روبان آن‌گونه که انتظار میرود اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5504" target="_blank">#5504</A>)
+<LI>رفع اشکالات و بهبودی‌ها در شناسایی حرکات لمسی و اتصال آن‌ها به فرمان‌های NVDA. (<A HREF="https://github.com/nvaccess/nvda/issues/5652" target="_blank">#5652</A>)
+<LI>لغزاندن انگشتان هنگامی که راهنمای فرمان‌های ورودی روشن است دیگر اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5652" target="_blank">#5652</A>)
+<LI>NVDA دیگر بهنگام فهرست کردن توضیحات در پنجره‌ی فهرست سازه‌ها در اکسل، اگر یک توضیح در یک خانه‌ی ادغام‌شده باشد با خطا مواجه نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5704" target="_blank">#5704</A>)
+<LI>در یک مورد بسیار نادر، NVDA دیگر در حالی که سرسطرها و سر‌ستون‌ها در اکسل اعلام میشوند، بهنگام خواندن محتوای برگه متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5705" target="_blank">#5705</A>)
+<LI>در Google Chrome، هم‌اکنون پیمایش در نوشتار ورودی بهنگام وارد کردن نویسه‌های زبان‌های آسیای شرقی آن‌گونه که انتظار میرود کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4080" target="_blank">#4080</A>)
+<LI>هنگامی که موسیقی اپل را در iTunes جستجو میکنید، حالت مرور در سند نتایج جستجو آن‌طور که انتظار میرود به‌روز میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5659" target="_blank">#5659</A>)
+<LI>در Microsoft Excel، هنگامی که Shift+F11 را برای ایجاد یک برگه‌ی جدید فشار میدهید، NVDA برخلاف سابق که چیزی نمیگفت، از این پس موقعیت جدیدتان را اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5689" target="_blank">#5689</A>)
+<LI>مشکلاتی که در خروجی نمایشگرهای بریل بهنگام وارد کردن نویسه‌های کره‌ای پیش می‌آمد برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5640" target="_blank">#5640</A>)
+</UL>
+
+<H2>2015.4</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به بهبود اجرا در ویندوز ۱۰، قرار گرفتن جزء برنامه‌های مرکز دسترسی آسان در ویندوز ۸ و بالاتر، تسهیلاتی برای اکسل شامل فهرست کردن و تغییر نام برگه‌ها، و دسترسی به خانه‌های قفل‌شده در برگه‌های محافظت‌شده، و پشتیبانی از ویرایش متن پیشرفته در Mozilla Firefox، Google Chrome و Mozilla Thunderbird اشاره کرد.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>NVDA از این پس در مرکز آسانی دسترسی (Ease of Access Center) در ویندوز ۸ و به بعد پدیدار میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/308" target="_blank">#308</A>)
+<LI>هنگامی که در اکسل در میان خانه‌ها حرکت میکنید،  چنانچه گزینه‌های مرتبط در پنجره‌ی تنظیمات قالب‌بندی اسناد فعال باشند، تغییرات قالب‌بندی بطور خودکار اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4878" target="_blank">#4878</A>)
+<LI>گزینه‌ای به عنوان «اعلام تأکید» در پنجره‌ی تنظیمات قالب‌بندی اسناد در NVDA افزوده شده است. این گزینه بطور پیش‌فرض روشن است؛ و به NVDA امکان میدهد بطور خودکار متن‌های تأکید شده را -که معمولا با رنگ دیگری از متن اصلی مشخص میشوند- در اسناد اعلام کند. پیش از این، این امکان تنها برای تگ‌های em و strong در حالت مرور در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML فراهم بود. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>چنانچه گزینه‌ی اعلام بازبینی‌های ویراستار در NVDA فعال باشد، وجود نوشته‌های درج‌شده و حذف‌شده در حالت مرور در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>هنگام مشاهده‌ی مسیر تغییرات در Microsoft Word با استفاده از فهرست سازه‌های NVDA، اطلاعات بیشتری همچون اینکه چه ویژگی‌هایی از قالب‌بندی‌ها تغییر کرده اند نمایش داده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>Microsoft Excel: از این پس، فهرست کردن و تغییر نام برگه‌ها از پنجره‌ی فهرست سازه‌ها (NVDA+F7) امکان‌پذیر است. (<A HREF="https://github.com/nvaccess/nvda/issues/4630" target="_blank">#4630</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4414" target="_blank">#4414</A>)
+<LI>هم‌اکنون در پنجره‌ی تلفظ نمادها میتوانید تنظیم کنید که آیا خود نمادها (نمادهای حقیقی) مثلاً برای ایجاد وقفه یا تغییر لحن به موتورهای سخن‌گو ارسال بشوند یا نه.  (<A HREF="https://github.com/nvaccess/nvda/issues/5234" target="_blank">#5234</A>)
+<LI>در اکسل، NVDA از این پس پیام‌های ورودی‌ای را که توسط نویسنده‌ی برگه‌ها روی خانه‌ها نوشته شده است میخواند. (<A HREF="https://github.com/nvaccess/nvda/issues/5051" target="_blank">#5051</A>)
+<LI>پشتیبانی از نمایشگر بریل Baum Pronto! V4 and VarioUltra هنگامی که از طریق بلوتوث به رایانه متصل میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/3717" target="_blank">#3717</A>)
+<LI>پشتیبانی از ویرایش متن پیش‌رفته در برنامه‌های موزیلا مانند Google Docs همراه با فعال بودن پشتیبانی از بریل  در فایرفاکس و  HTML‌نویسی در Thunderbird. (<A HREF="https://github.com/nvaccess/nvda/issues/1668" target="_blank">#1668</A>)
+<LI>پشتیبانی از ویرایش متن پیشرفته در کروم و مرورگرهای بر‌پایه‌ی آن مانند Google Docs همراه با پشتیبانی از بریل. (<A HREF="https://github.com/nvaccess/nvda/issues/2634" target="_blank">#2634</A>)
+ <UL>
+ <LI>این پشتیبانی نیازمند نگارش ۴۷ از کروم یا بیشتر است.
+ </UL>
+<LI>در حالت مرور در اکسل، میتوانید در خانه‌های قفل‌شده‌ی برگه‌های محافظت‌شده پیمایش کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4952" target="_blank">#4952</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>گزینه‌ی اعلام بازبینی‌های ویراستار در پنجره‌ی تنظیمات قالب‌بندی اسناد بطور پیش‌فرض فعال است. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>هنگام حرکت کردن نویسه-نویسه در حال فعال بودن گزینه‌ی «اعلام بازبینی‌های ویراستار» در Microsoft Word، اطلاعات کمتری در مورد مسیر تغییرات اعلام میشود. این کار، پیمایش در متن را کارامدتر میکند. برای مشاهده‌ی اطلاعات اضافی، از فهرست سازه‌ها استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>برگرداننده‌ی بریل Liblouis به نگارش 2.6.4 روزامد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5341" target="_blank">#5341</A>)
+<LI>چندین نماد -از جمله نمادهای اصلی ریاضی- به سطح «بعضی» برده شده اند تا به صورت پیش‌فرض خوانده شوند. (<A HREF="https://github.com/nvaccess/nvda/issues/3799" target="_blank">#3799</A>)
+<LI>چنانچه موتور سخن‌گو پشتیبانی کند، از این به بعد، گفتار باید در مواجهه با پرانتزها و نویسه‌ی EnDash  (–) مکث کند. (<A HREF="https://github.com/nvaccess/nvda/issues/3799" target="_blank">#3799</A>)
+<LI>هنگام انتخاب کردن متن، متن قبل از «انتخاب شد یا نشد» اعلام میشود؛ به جای اینکه بعد از آن گفته شود. (<A HREF="https://github.com/nvaccess/nvda/issues/1707" target="_blank">#1707</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>بهبودی‌های اساسی در اجرا هنگام پیمایش در فهرست پیام‌ها در Outlook 2010 و 2013. (<A HREF="https://github.com/nvaccess/nvda/issues/5268" target="_blank">#5268</A>)
+<LI>پیمایش با کلید‌های مشخصی در یک نمودار در Microsoft Excel، (همچون عوض کردن برگه‌ها با Control+PageUp و Control+PageDown) هم‌اکنون درست کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5336" target="_blank">#5336</A>)
+<LI>مشکل ظاهر دیداری دکمه‌ها در پنجره‌ی هشداری که به هنگام تلاش برای نصب نسخه‌ی پیشین NVDA نمایش داده میشود برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/5325" target="_blank">#5325</A>)
+<LI>در ویندوز ۸ و بعد از آن، زمانی که NVDA تنظیم میشود تا هنگام ورود به ویندوز آغاز به کار کند، بسیار زودتر از قبل اجرا میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/308" target="_blank">#308</A>)
+  <UL>
+  <LI>چنانچه این گزینه را با استفاده از نسخه‌ی قدیمی NVDA فعال کرده‌اید، باید این گزینه را از تنظیمات عمومی غیر فعال و دوباره فعال کنید تا کار کند. بدین ترتیب:
+  </UL>
+  <OL>
+  <LI>پنجره‌ی تنظیمات عمومی را باز کنید.
+  <LI>علامت کادر «شروع خودکار NVDA هنگامی که وارد ویندوز میشوم» را بردارید.
+  <LI>دکمه‌ی OK را فشار دهید.
+  <LI>دوباره پنجره‌ی تنظیمات عمومی را باز کنید.
+  <LI>کادر «شروع خودکار NVDA هنگامی که وارد ویندوز میشوم» را علامت بزنید. 
+  <LI>دکمه‌ی OK را بفشارید.
+  </OL>
+<LI>بهبودی در اجرای UI Automation، شامل File Explorer و Task Viewer. (<A HREF="https://github.com/nvaccess/nvda/issues/5293" target="_blank">#5293</A>)
+<LI>NVDA هم‌اکنون هنگامی که با Tab به کنترل‌های جدولی تنها خواندنی در فایرفاکس و دیگر کنترل‌های گِکو‌ای وارد میشوید، بدرستی به حالت فرمان‌پذیری تغییر حالت میدهد. (<A HREF="https://github.com/nvaccess/nvda/issues/5118" target="_blank">#5118</A>)
+<LI>NVDA هم‌اکنون بدرستی هنگامی که انگشتتان را به چپ میکشید و شیء بیشتری روی صفحه‌ی لمسی نیست، به جای «شیء بعدی نیست» میگوید «شیء قبلی نیست».
+<LI>مشکلاتی که بهنگام تایپ چند کلمه در فیلد «فیلتر کردن با» در مدیریت فرمان‌ها به وجود می‌آمد برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/5426" target="_blank">#5426</A>)
+<LI>NVDA دیگر در مواردی که از طریق درگاه USB دوباره به نمایشگر‌های سِری HumanWare Brailliant BI/B وصل میشد، متوقف نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5406" target="_blank">#5406</A>)
+<LI>در زبان‌های دارای حروف به‌هم‌پیوسته، توضیحات نویسه‌ها برای حروف بزرگ انگلیسی بدرستی کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5375" target="_blank">#5375</A>)
+<LI>NVDA هنگام آوردن منوی Start در ویندوز ۱۰ دیگر نباید گاه و بی‌گاه متوقف شود. (<A HREF="https://github.com/nvaccess/nvda/issues/5417" target="_blank">#5417</A>)
+<LI>در برنامه‌ی اسکایپ، اعلان‌هایی که پیش از اعلانی که ناپدید میشود بوده، بدرستی اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4841" target="_blank">#4841</A>)
+<LI>اعلان‌ها هم‌اکنون بدرستی در اسکایپ، نگارش‌های 7.12 و بالاتر اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5405" target="_blank">#5405</A>)
+<LI>NVDA حالا بدرستی فکوس را هنگامی که منوی محلی در برخی برنامه‌ها مانند Jart ناپدید میشوند اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5302" target="_blank">#5302</A>)
+<LI>رنگ‌ها در ویندوز ۷ و بالاتر در برخی برنامه‌ها مانند Wordpad دوباره اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5352" target="_blank">#5352</A>)
+<LI>هنگام ویرایش در پاورپوینت، فشردن اینتر حالا بطور خودکار، متن وارد‌شده را از قبیل بولت و شماره اعلام میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5360" target="_blank">#5360</A>)
+</UL>
+
+<H2>2015.3</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به پشتیبانی اولیه از ویندوز ۱۰، امکان غیر فعال کردن پیمایش تک‌حرفی (مورد استفاده برای برخی از برنامه‌های تحت وب)، اصلاحاتی در اینترنت اکسپلورر، و رفع اشکال متن در‌هم و بر‌هم هنگامی که با استفاده از ورودی بریل در برخی از برنامه‌ها تایپ میشد اشاره کرد.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>از این پس، وجود خطاهای املایی در کادرهای ویرایشی در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4174" target="_blank">#4174</A>)
+<LI>نمادهای ریاضی بسیار بیشتری در صورت موجود بودن در متن خوانده میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/3805" target="_blank">#3805</A>)
+<LI>پیشنهاد‌های جستجو در صفحه‌ی شروع ویندوز ۱۰ بطور خودکار اعلام میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5049" target="_blank">#5049</A>)
+<LI>NVDA از نمایشگرهای بریل EcoBraille 20, EcoBraille 40, EcoBraille 80 and EcoBraille Plus پشتیبانی میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4078" target="_blank">#4078</A>)
+<LI>در حالت مرور، اکنون میتوانید با فشردن کلید‌های NVDA+Shift+فاصله، پیمایش تک‌حرفی را فعال یا غیر فعال کنید. هنگامی که غیر فعال باشد، کلید‌های حروف الفبا روی برنامه‌ی پیش رو تأثیر میگذارند. این حالت برای برخی از برنامه‌های تحت وب مانند GMail، Twitter و Facebook قابل استفاده است. (<A HREF="https://github.com/nvaccess/nvda/issues/3203" target="_blank">#3203</A>)
+<LI>جدول‌های برگرداننده‌ی بریل جدید: فنلاندی ۶ نقطه، ایرلندی درجه ۱، ایرلندی درجه ۲، کره‌ای درجه ۱ (۲۰۰۶)، کره‌ای درجه ۲ (۲۰۰۶). (<A HREF="https://github.com/nvaccess/nvda/issues/5137" target="_blank">#5137</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5074" target="_blank">#5074</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5097" target="_blank">#5097</A>)
+<LI>صفحه‌کلید QWERTY روی نمایشگر بریل BRAILLEX Live Plus محصول شرکت Papenmeier از این پس پشتیبانی میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5181" target="_blank">#5181</A>)
+<LI>پشتیبانی آزمایشی از مرورگر وب Edge شرکت مایکروسافت و موتور مرورگر آن در ویندوز ۱۰. (<A HREF="https://github.com/nvaccess/nvda/issues/5212" target="_blank">#5212</A>)
+<LI>زبان جدید: کانادا.
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>برگرداننده‌ی بریل Liblouis به نگارش ۲.۶.۳ ارتقا یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/5137" target="_blank">#5137</A>)
+<LI>هنگامی که بخواهید نسخه‌ای قدیمیتر از نگارشی که در حال حاضر روی سیستم نصب است را نصب کنید، NVDA به شما هشدار خواهد داد که این کار توصیه نمیشود و آن نگارش قبلی را ابتدا باید کاملا حذف کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/5037" target="_blank">#5037</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در حالت مرور برای اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، پیمایش سریع روی فرم فیلد‌ها دیگر بطور نادرست شامل موارد فهرست‌های نمایشی نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4204" target="_blank">#4204</A>)
+<LI>در فایرفاکس،  NVDA محتوای یک تابلوی زبانه‌ی ARIA را هنگامی که فکوس داخل آن قرار میگیرد، دیگر بطور نامناسب اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4638" target="_blank">#4638</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، هنگامی که با Tab روی بخشها، مقاله‌ها یا پنجره‌های محاوره‌ای حرکت میکنید، دیگر بطور نامناسب همه‌ی محتواهای یک دربرگیرنده را اعلام نمیکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5021" target="_blank">#5021</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5025" target="_blank">#5025</A>)
+<LI>هنگامی که از نمایشگرهای بریل Baum، HumanWare یا APH با یک صفحه‌کلید بریل استفاده میکنید، ورودی بریل با فشردن نوع دیگری از کلیدها روی نمایشگر، دیگر از کار نمی‌افتد. (<A HREF="https://github.com/nvaccess/nvda/issues/3541" target="_blank">#3541</A>)
+<LI>در ویندوز ۱۰، هنگامی که برای جابجایی بین پنجره‌ها از Alt+Tab و Alt+Shift+Tab استفاده میکنید، دیگر اطلاعات نامربوط اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/5116" target="_blank">#5116</A>)
+<LI>متن تایپ شده بهنگام استفاده از برنامه‌های معینی همچون Microsoft Outlook همراه با نمایشگر بریل، دیگر در‌هم و آشفته نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/2953" target="_blank">#2953</A>)
+<LI>در حالت مرور در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، هنگامی که سازه‌ای ظاهر میشود و تغییر میکند، محتوای درست گزارش میشود و به سرعت در فکوس قرار میگیرد. (<A HREF="https://github.com/nvaccess/nvda/issues/5040" target="_blank">#5040</A>)
+<LI>در حالت مرور در Microsoft Word، پیمایش تک‌حرفی، حالا آنگونه که انتظار دارید، نمایشگر بریل و مکان‌نمای بازبینی را روز‌آمد میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4968" target="_blank">#4968</A>)
+<LI>در بریل، فاصله‌های اضافی دیگر در میان یا بعد از نشانگرهای کنترل‌ها و قالب‌بندی‌ها نمایش داده نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5043" target="_blank">#5043</A>)
+<LI>هنگامی که برنامه‌ای به‌کندی پاسخ میدهد و شما از آن برنامه به برنامه‌ای دیگر جابجا میشوید، NVDA در بیشتر موارد، در برنامه‌های دیگر بسیار پاسخگوتر خواهد بود. (<A HREF="https://github.com/nvaccess/nvda/issues/3831" target="_blank">#3831</A>)
+<LI>اعلان‌های فوری (Toast Notifications) در ویندوز ۱۰ همانطور که انتظار دارید گزارش میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5136" target="_blank">#5136</A>)
+<LI>مقدار‌ها از این پس هرگاه که در جعبه‌های کشویی (UI Automation) معینی تغییر کنند، اعلام خواهند شد. این اتفاق پیش از این نمی‌افتاد.
+<LI>در حالت مرور در مرورگرهای وب، Tab زدن بعد از با Tab داخل یک قاب حرکت کردن، آنگونه که انتظار میرود عمل میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/5227" target="_blank">#5227</A>)
+<LI>اکنون میتوانید صفحه‌ی قفل ویندوز ۱۰ را با استفاده از یک صفحه‌ی لمسی نادیده بگیرید. (<A HREF="https://github.com/nvaccess/nvda/issues/5220" target="_blank">#5220</A>)
+<LI>در ویندوز ۷ به بعد، متنی را که با یک نمایشگر بریل در برنامه‌های  معینی مانند Wordpad یا Skype تایپ میکنید، دیگر در‌هم و مغشوش نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4291" target="_blank">#4291</A>)
+<LI>در صفحه‌ی قفل ویندوز ۱۰، دیگر خواندن کلیپ‌برد، دسترسی به برنامه‌های در حال اجرا با مکان‌نمای بازبینی، تغییر پیکره‌بندی NVDA و از این قبیل، امکان‌پذیر نیست. (<A HREF="https://github.com/nvaccess/nvda/issues/5269" target="_blank">#5269</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان (متن انگلیسی)</H3>
+<UL>
+<LI>You can now inject raw input from a system keyboard that is not handled natively by Windows (e.g. a QWERTY keyboard on a braille display) using the new keyboardHandler.injectRawKeyboardInput function. (<A HREF="https://github.com/nvaccess/nvda/issues/4576" target="_blank">#4576</A>)
+<LI>eventHandler.requestEvents has been added to request particular events that are blocked by default; e.g. show events from a specific control or certain events even when in the background. (<A HREF="https://github.com/nvaccess/nvda/issues/3831" target="_blank">#3831</A>)
+<LI>Rather than a single i18nName attribute, synthDriverHandler.SynthSetting now has separate displayNameWithAccelerator and displayName attributes to avoid reporting of the accelerator in the synth settings ring in some languages.
+ <UL>
+ <LI>For backwards compatibility, in the constructor, displayName is optional and will be derived from displayNameWithAccelerator if not provided. However, if you intend to have an accelerator for a setting, both should be provided.
+ <LI>The i18nName attribute is deprecated and may be removed in a future release.
+ </UL>
+</UL>
+
+<H2>2015.2</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به توانایی خواندن نمودارها در مایکروسافت اکسل و پشتیبانی از خواندن و پیمایش تعاملی با محتواهای ریاضی اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>از این پس، رفتن به جمله‌ی بعدی و جمله‌ی قبلی در مایکروسافت وُرد، به ترتیب با استفاده از alt+جهت‌نمای پایین و alt+جهت‌نمای بالا امکان‌پذیر است. (<A HREF="https://github.com/nvaccess/nvda/issues/3288" target="_blank">#3288</A>)
+<LI>جدول‌های تازه‌ی برگرداننده به خط بریل برای چند زبان از زبان‌های هندی. (<A HREF="https://github.com/nvaccess/nvda/issues/4778" target="_blank">#4778</A>)
+<LI>در اکسل، NVDA حالا هرگاه که یک خانه دارای محتوای اضافی یا حذف شده باشد، اعلام میکند.  (<A HREF="https://github.com/nvaccess/nvda/issues/3040" target="_blank">#3040</A>)
+<LI>از این به بعد میتوانید در اکسل برای فهرست کردن نمودارها، توضیحات و فرمول‌ها از «فهرست سازه‌ها (NVDA+F7)» استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/1987" target="_blank">#1987</A>)
+<LI>پشتیبانی از خواندن نمودار‌ها در اکسل. برای این کار از «فهرست سازه‌ها» برای انتخاب نمودار استفاده کنید و با جهتنماها روی نقاط داده حرکت کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/1987" target="_blank">#1987</A>)
+<LI>NVDA هم‌اکنون میتواند با استفاده از MathPlayer4، محتواهای ریاضی را در مرورگرهای وب، مایکروسافت وُرد و پاورپوینت بخواند و به صورت تعاملی در این محتواها پیمایش کند.   برای جزئیات بیشتر، بخش «خواندن محتوای ریاضی» را در راهنمای کاربری ببینید. (<A HREF="https://github.com/nvaccess/nvda/issues/4673" target="_blank">#4673</A>)
+<LI>از این پس میتوانید با استفاده از پنجره‌ی محاوره‌ای فرمانهای ورودی، برای تمامی پنجره‌های تنظیمات NVDA و گزینه‌های قالب‌بندی متن، فرمان‌های ورودی (میانبرهای صفحه‌کلیدی، حرکات لمسی و غیره) اختصاص دهید. (<A HREF="https://github.com/nvaccess/nvda/issues/4898" target="_blank">#4898</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>در پنجره‌ی محاوره‌ای قالب‌بندی اسناد، کلیدهای میانبر گزینه‌های گزارش کردن فهرست‌ها، گزارش کردن لینک‌ها، گزارش کردن شماره‌ی خط‌ها و گزارش کردن نام قلم تغییر یافته است. (<A HREF="https://github.com/nvaccess/nvda/issues/4650" target="_blank">#4650</A>)
+<LI>در پنجره‌ی محاوره‌ای تنظیمات موس، کلیدهای میانبر به گزینه‌های «پخش مختصات صوتی بهنگام حرکت موس» و «کنترل حجم صدای مختصات صوتی بر اساس میزان روشنایی» اضافه شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/4916" target="_blank">#4916</A>)
+<LI>اعلام نام رنگ‌ها به گونه‌ای قابل توجه بهبود یافته است. (<A HREF="https://github.com/nvaccess/nvda/issues/4984" target="_blank">#4984</A>)
+<LI>مبدل بریل liblouis به نگارش ۲.۶.۲ ارتقا یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/4777" target="_blank">#4777</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>توضیح نویسه‌ها برای حروف به‌هم‌پیوسته در بعضی از زبان‌های هندی از این پس درست پردازش میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4582" target="_blank">#4582</A>)
+<LI>اگر گزینه‌ی «اعتنا کردن به زبان صدای فعلی به هنگام پردازش نمادها و نویسه‌ها» فعال باشد، پنجره‌ی محاوره‌ای تلفظ علامت‌های نقطه‌گذاری و نمادها حالا بدرستی از زبان صدای فعلی استفاده میکند. همچنین، نام زبانی که علامت‌های نقطه‌گذاری و نمادهایش در حال ویرایش شدن است، در عنوان پنجره نشان داده میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4930" target="_blank">#4930</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، نویسه‌های تایپ‌شده دیگر به گونه‌ای نامناسب در جعبه‌های کشویی ویرایشی -مانند فیلد جستجو در صفحه‌ی اصلی گوگل- اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4976" target="_blank">#4976</A>)
+<LI>هنگام انتخاب کردن رنگ‌ها در برنامه‌های دفتری (Office) مایکروسافت، از این به بعد نام رنگ‌ها گزارش میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/3045" target="_blank">#3045</A>)
+<LI>خروجی بریل دانمارکی حالا دوباره کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4986" target="_blank">#4986</A>)
+<LI>میتوانید دوباره از کلیدهای PageUp و PageDown برای تغییر اسلایدها بهنگام اجرای یک نمایش اسلاید در پاورپوینت استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4850" target="_blank">#4850</A>)
+<LI>در اسکایپ نگارش ۷.۲ و نگارشهای بعدی، یادآوری‌های هنگام تایپ حالا گزارش میشوند. همچنین مشکلاتی که بلافاصله بعد از خارج شدن فکوس از یک مکالمه ایجاد میشد برطرف شد. (<A HREF="https://github.com/nvaccess/nvda/issues/4972" target="_blank">#4972</A>)
+<LI>مشکلاتی که بهنگام تایپ علائم نقطه‌گذاری یا نمادهای معین در پنجره‌ی فرمان‌های ورودی پیش می‌آمد، مانند هنگام تایپ آکولاد، برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/5060" target="_blank">#5060</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، فشردن G و shift+G برای پیمایش گرافیک‌ها، حالا سازه‌های نشان‌گذاری‌شده به عنوان تصاویر با اهداف دسترسی‌پذیری (مثلاً ARIA role img) را نیز شامل میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/5062" target="_blank">#5062</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان برنامه (متن انگلیسی)</H3>
+<UL>
+<LI>brailleInput.handler.sendChars(mychar) will no longer filter out a character if it is equal to the previous character by ensuring that the key sent is correctly released. (<A HREF="https://github.com/nvaccess/nvda/issues/4139" target="_blank">#4139</A>)
+<LI>Scripts for changing touch modes will now honor new labeles added to touchHandler.touchModeLabels. (<A HREF="https://github.com/nvaccess/nvda/issues/4699" target="_blank">#4699</A>)
+<LI>Add-ons can provide their own math presentation implementations. See the mathPres package for details. (<A HREF="https://github.com/nvaccess/nvda/issues/4509" target="_blank">#4509</A>)
+<LI>Speech commands have been implemented to insert a break between words and to change the pitch, volume and rate. See BreakCommand, PitchCommand, VolumeCommand and RateCommand in the speech module. (<A HREF="https://github.com/nvaccess/nvda/issues/4674" target="_blank">#4674</A>)
+ <UL>
+ <LI>There is also speech.PhonemeCommand to insert specific pronunciation, but the current implementations only support a very limited number of phonemes.
+ </UL>
+</UL>
+
+<H2>2015.1</H2>
+<P>
+از نکات برجسته‌ی این نگارش میتوان به حالت مرور برای اسناد در Microsoft Word و Outlook، تغییرات اساسی در پشتیبانی NVDA از اسکایپ برای رایانه، و رفع اشکالات قابل توجه در پشتیبانی از اینترنت اکسپلورر اشاره نمود.
+</P>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>راهنمای کاربری NVDA به تمامی به فارسی ترجمه شد و در اختیار کاربران فارسی‌زبان NVDA قرار گرفت.
+<LI>شما هم‌اکنون میتوانید نمادهای جدید را از طریق پنجره‌ی محاوره‌ای «تلفظ نمادها» اضافه کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4354" target="_blank">#4354</A>)
+<LI>میتوانید در پنجره‌ی محاوره‌ای «مدیریت فرمان‌های ورودی» از فیلد جدید «فیلتر کردن با» برای دیدن فرمان‌هایی که تنها دارای واژه‌های مشخص‌شده -در فیلد یاد‌شده- هستند  استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4458" target="_blank">#4458</A>)
+<LI>NVDA در حال حاضر متن جدید را در mintty بطور خودکار گزارش میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4588" target="_blank">#4588</A>)
+<LI>در پنجره‌ی محاوره‌ای «پیدا کردن» در حالت مرور، حالا یک گزینه برای اجرای جستجوی حساس به بزرگی یا کوچکی حروف وجود دارد. (<A HREF="https://github.com/nvaccess/nvda/issues/4584" target="_blank">#4584</A>)
+<LI>پیمایش سریع (فشردن H برای حرکت کردن بین سرنوشتارها، و غیره) و فهرست سازه‌ها (NVDA+f7) از این به بعد در اسناد Microsoft Word نیز در دسترس خواهد بود. برای بهره جُستن از این قابلیت، هنگامی که در برنامه‌ی نام‌برده هستید، حالت مرور را با NVDA+فاصله فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/2975" target="_blank">#2975</A>)
+<LI>خواندن پیام‌های HTML در Microsoft Outlook 2007 و بالاتر، از آنجایی که حالت مرور بطور خودکار برای این پیام‌ها فعال میشود، اساساً بهبود یافته است. اگر حالت مرور در بعضی مواقع نادر فعال نشد، میتوانید آن‌را با استفاده از NVDA+فاصله فعال کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/2975" target="_blank">#2975</A>)
+<LI>سر‌ستون‌های جدول‌ها در Microsoft Word برای جدول‌هایی که ردیف سر‌ستونشان توسط نویسنده از طریق خصوصیات جدول دقیقاً معین شده است، به طور خودکار گزارش میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4510" target="_blank">#4510</A>)
+<LI>اما برای جدول‌هایی که سطرهایشان با هم ادغام شده اند، این مورد بطور خودکار کار نخواهد کرد. در این موقع، میتوانید بطور دستی با استفاده از NVDA+Shift+C سر‌ستون‌های جدول را معین کنید.
+<LI>در اسکایپ برای رایانه، از این پس یادآوری‌ها گزارش میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4741" target="_blank">#4741</A>)
+<LI>در اسکایپ برای رایانه، میتوانید هم‌اکنون با استفاده از کلیدهای NVDA+CTRL+1 تا NVDA+CTRL+0 از آخرین پیام‌های رسیده مطلع شده و آن‌ها را بازبینی کنید؛ مثلاً از کلید NVDA+CTRL+1 برای دیدن آخرین پیام رسیده و از کلید NVDA+CTRL+0 برای دیدن دهمین پیام از پیام‌های رسیده استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/3210" target="_blank">#3210</A>)
+<LI>در یک مکالمه در اسکایپ، از این پس هرگاه مخاطبی در حال تایپ کردن باشد، NVDA اعلام خواهد کرد. (<A HREF="https://github.com/nvaccess/nvda/issues/3506" target="_blank">#3506</A>)
+<LI>NVDA میتواند از طریق خط فرمان، بی‌صدا (بی‌هیچ پرسشی از کاربر)نصب شود؛ بدون اینکه پس از نصب، نسخه‌ی نصب‌شده آغاز به کار کند. برای انجام دادن این کار از فرمان --install-silent استفاده کنید. (<A HREF="https://github.com/nvaccess/nvda/issues/4206" target="_blank">#4206</A>)
+<LI>پشتیبانی از نمایشگرهای بریل BRAILLEX Live 20, BRAILLEX Live and BRAILLEX Live Plus شرکت Papenmeier. (<A HREF="https://github.com/nvaccess/nvda/issues/4614" target="_blank">#4614</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>در پنجره‌ی «تنظیمات قالب‌بندی اسناد»، گزینه‌ی گزارش کردن خطاهای املایی حالا کلید میانبر (alt+خ) دارد. (<A HREF="https://github.com/nvaccess/nvda/issues/793" target="_blank">#793</A>)
+<LI>NVDA هم‌اکنون برای پردازش نویسه‌ها و نمادها (از جمله نامِ علائمِ نقطه‌گذاری و نمادها)، بدون توجه به اینکه  گزینه‌ی «تعویض خودکار زبان» فعال باشد یا نه، از زبان موتور سخن‌گو یا صدای فعلی استفاده خواهد کرد. برای اینکه این امکان را غیر فعال کنید تا NVDA بتواند همچون گزشته از زبان واسط کاربری خودش برای این کار بهره بگیرد، علامت گزینه‌ی جدید موجود در پنجره‌ی تنظیمات صدا را که «اعتنا کردن به زبان صدای فعلی بهنگام پردازش نویسه‌ها و نمادها» نام دارد، بردارید. (<A HREF="https://github.com/nvaccess/nvda/issues/4210" target="_blank">#4210</A>)
+<LI>پشتیبانی از موتور سخنگوی Newfon حذف شده است. Newfon از این پس به عنوان یک افزونه برای NVDA در دسترس است. (<A HREF="https://github.com/nvaccess/nvda/issues/3184" target="_blank">#3184</A>)
+<LI>NVDA از این پس با نگارش‌های ۷ و بالاتر از اسکایپ برای رایانه کار خواهد کرد. نگارش‌های قدیمیتر دیگر پشتیبانی نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4218" target="_blank">#4218</A>)
+<LI>دانلود بروزرسانی‌های NVDA از این به بعد محافظت‌شده‌تر انجام میشود. (به ویژه اینکه، اطلاعات روزامد‌سازی از طریق https بازیابی و دریافت میشود؛ و هَشِ فایل دانلود‌شده با فایل اصلی موجود در سرور مقایسه میشود.) (<A HREF="https://github.com/nvaccess/nvda/issues/4716" target="_blank">#4716</A>)
+<LI>موتور سخنگوی eSpeak به نگارش ۱.۴۸.۰۴ ارتقا یافته است. (<A HREF="https://github.com/nvaccess/nvda/issues/4325" target="_blank">#4325</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>در مایکروسافت اکسل، مشکلی که بهنگام ادغام خانه‌های سر‌سطر و سر‌ستون پیش می‌آمد برطرف شده است. مثلاً، اگر خانه‌های A1 و B1 با هم ادغام شوند، در نتیجه، خانه‌ی B2 به جای اینکه اصلاً گزارش نشود، خانه‌های A1 و B1 را به عنوان سر‌ستونش اعلام خواهد کرد. (<A HREF="https://github.com/nvaccess/nvda/issues/4617" target="_blank">#4617</A>)
+<LI>هنگام ویرایش کردن محتوای جعبه‌ی متنی در مایکروسافت پاورپوینت ۲۰۰۳، NVDA محتوای هر خط را بدرستی اعلام خواهد کرد. پیش از این، خطها، به ازای هر پاراگراف، یک نویسه بیشتر اعلام میشدند. (<A HREF="https://github.com/nvaccess/nvda/issues/4619" target="_blank">#4619</A>)
+<LI>همه‌ی پنجره‌های محاوره‌ای NVDA هم‌اکنون در مرکز صفحه‌ی نمایش قرار میگیرند. این امر، ارائه‌ی بصری و قابل استفاده بودن آن‌ها را بهبود میبخشد. (<A HREF="https://github.com/nvaccess/nvda/issues/3148" target="_blank">#3148</A>)
+<LI>در برنامه‌ی اسکایپ، هنگامی که برای افزودن یک مخاطب پیام معرفی وارد میکنید، وارد کردن متن و حرکت کردن در متن پیام بدرستی کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/3661" target="_blank">#3661</A>)
+<LI>هنگامی که در نماهای درختی برنامه‌ی Eclipse IDE فکوس روی مورد جدیدی قرار میگیرد، اگر مورد قبلی که فکوس روی آن بوده کادر علامت‌زدنی بوده باشد، دیگر بگونه‌ی نادرست اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4586" target="_blank">#4586</A>)
+<LI>در پنجره‌ی محاوره‌ای بررسی املا در Microsoft Word، خطای املایی بعدی هنگامی که خطای قبلی توسط کلیدهای میانبر مربوط اصلاح یا نادیده گرفته میشود، بطور خودکار اعلام میگردد. (<A HREF="https://github.com/nvaccess/nvda/issues/1938" target="_blank">#1938</A>)
+<LI>NVDA میتواند نوشته‌ها را دوباره در جاهایی مانند پنجره‌ی ترمینال Tera Term Pro و اسناد در Balabolka بدرستی بخواند. (<A HREF="https://github.com/nvaccess/nvda/issues/4229" target="_blank">#4229</A>)
+<LI>فکوس حالا دیگر هنگامی که در داخل یک فریم در اینترنت اکسپلورر و دیگر اسناد MSHTML ویرایش میکنید و نوشتن متنی را به زبان کره‌ای یا دیگر زبان‌های آسیای شرقی تمام میکنید، بدرستی به سندی که در حال ویرایش است باز‌میگردد. (<A HREF="https://github.com/nvaccess/nvda/issues/4045" target="_blank">#4045</A>)
+<LI>در پنجره‌ی محاوره‌ای «مدیریت فرمان‌های ورودی»،  وقتی برای فرمانی صفحه‌کلیدی که اضافه کرده‌اید چیدمانی انتخاب میکنید، فشردن escape آنگونه که انتظار دارید منوی پیش رویتان را میبندد؛ به جای اینکه پنجره را بطور کلی ببندد. (<A HREF="https://github.com/nvaccess/nvda/issues/3617" target="_blank">#3617</A>)
+<LI>هنگامی که افزونه ای را حذف میکنید، حالا پوشه‌ی افزونه‌ی حذف‌شده بعد از به‌راه‌افتادن مجدد NVDA بدرستی پاک میشود.  پیش از این، باید دو بار NVDA را از نو راه‌اندازی میکردید. (<A HREF="https://github.com/nvaccess/nvda/issues/3461" target="_blank">#3461</A>)
+<LI>مشکلاتی اساسی بهنگام استفاده از اسکایپ نگارش ۷ برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/4218" target="_blank">#4218</A>)
+<LI>هنگامی که پیامی را در اسکایپ میفرستید، دیگر آن پیام دو بار خوانده نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/3616" target="_blank">#3616</A>)
+<LI>در اسکایپ، NVDA دیگر  گهگاه، بطور غیر واقعی، سیلی عظیم از پیام‌ها را (که شاید یک مکالمه‌ی کامل باشد) نمیخوانَد. (<A HREF="https://github.com/nvaccess/nvda/issues/4644" target="_blank">#4644</A>)
+<LI>مشکلی که در بعضی اوقات فرمان «اعلام تاریخ و ساعت» تنظیمات منطقه‌ای کاربر را نادیده میگرفت، حل شد. (<A HREF="https://github.com/nvaccess/nvda/issues/2987" target="_blank">#2987</A>)
+<LI>در حالت مرور، متن نامفهومی که گاهی چندین خط را اشغال میکرد، دیگر برای گرافیک‌های معینی همچون آن‌هایی که در گروه‌های گوگل یافت میشوند، نمایش داده نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4793" target="_blank">#4793</A>)
+<LI>NVDA دیگر هنگامی که فکوس را از پنجره‌ی برنامه‌ی Windows Store خارج میکنید، آنگونه که به نظر برسد اجرای برنامه متوقف شده است، پس از چند ثانیه از کار نمی‌افتد. (<A HREF="https://github.com/nvaccess/nvda/issues/4572" target="_blank">#4572</A>)
+<LI>ویژگی aria-atomic در مناطق Live در Mozilla Firefox حالا حتی هنگامی که سازه‌ی atomic خودش تغییر میکند، توسط NVDA رعایت میشود. پیش از این، این ویژگی تنها روی سازه‌های وابسته تأثیر میگذاشت. (<A HREF="https://github.com/nvaccess/nvda/issues/4794" target="_blank">#4794</A>)
+<LI>حالت مرور روزامد‌شدن‌ها را منعکس میکند، و مناطق Live برای نوشتارهای حالت مروری که داخل برنامه‌ی اِریایی که در سندی در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML جاسازی شده اند، اعلام خواهند شد. (<A HREF="https://github.com/nvaccess/nvda/issues/4798" target="_blank">#4798</A>)
+<LI>هنگامی که متن در ناحیه‌ی Live در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML تغییر میکند یا افزوده میشود، جایی که نویسنده مشخص کرده باشد که متن مرتبط است، به جای خوانده شدن تمام متن موجود در آن سازه، تنها متن تغییر‌یافته یا افزوده‌شده اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4800" target="_blank">#4800</A>)
+<LI>در سازه‌های موجود در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، محتوایی که با ویژگی aria-labelledby مشخص شده‌است، هرگاه مناسب باشد، با محتوای اصلی جایگزین میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4575" target="_blank">#4575</A>)
+<LI>هنگام بررسی املا در  Microsoft Outlook 2013، کلمه‌ی دارای غلط املایی حالا دیگر اعلام میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4848" target="_blank">#4848</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، محتوای درون سازه‌هایی که با visibility:hidden  مخفی شده‌اند، دیگر بگونه‌ی نامناسب و بی‌مورد در حالت مرور نمایش داده نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4839" target="_blank">#4839</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3776" target="_blank">#3776</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، ویژگی عنوان (title attribute) در کنترل‌های فرم‌ها، دیگر بطور نامناسب بر دیگر وابستگی‌های برچسب (label) ترجیح نمی‌یابد. (<A HREF="https://github.com/nvaccess/nvda/issues/4491" target="_blank">#4491</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، NVDA دیگر به خاطر وجود ویژگی aria-activedescendant، فرمان‌پذیری سازه‌ها را نادیده نمیگیرد. (<A HREF="https://github.com/nvaccess/nvda/issues/4667" target="_blank">#4667</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان برنامه</H3>
+<UL>
+<LI>wxPython به نگارش ۳.۰.۲.۰ روزامد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/3763" target="_blank">#3763</A>)
+<LI>Python به نگارش ۲.۷.۹ روزامد شد. (<A HREF="https://github.com/nvaccess/nvda/issues/4715" target="_blank">#4715</A>)
+<LI>NVDA دیگر بهنگام حذف کردن یا بروزرسانی افزونه ای که speechDictHandler را در ماژول installTasks خود وارد میکند، از کار نمی‌افتد. (<A HREF="https://github.com/nvaccess/nvda/issues/4496" target="_blank">#4496</A>)
+</UL>
+
+<H2>2014.4</H2>
+<H3>امکانات جدید</H3>
+<UL>
+<LI>زبان‌های جدید: اسپانیایی کلمبیا و پنجابی
+<LI>از این نگارش به بعد، ترجمه‌ی فارسی «تازه چه خبر» در اختیار کاربران فارسی‌زبان NVDA قرار میگیرد.
+<LI>از این پس، راه‌اندازی مجدد NVDA یا راه‌اندازی همراه با افزونه‌های غیر فعال از پنجره‌ی «خروج» NVDA امکان‌پذیر است. (<A HREF="https://github.com/nvaccess/nvda/issues/4057" target="_blank">#4057</A>)
+ <UL>
+ <LI>NVDA  هم‌چنین میتواند با استفاده از گزینه‌ی خط فرمان --disable-addons با افزونه‌های غیر فعال کار خود را آغاز کند.
+ </UL>
+<LI>در دیکشنری‌های گفتار، از این به بعد میتوانید مشخص کنید که یک الگو تنها در صورتی که یک واژه‌ی کامل باشد باید مطابقت کند؛ یعنی به عنوان بخشی از یک واژه‌ی بزرگتر واقع نشده باشد. (<A HREF="https://github.com/nvaccess/nvda/issues/1704" target="_blank">#1704</A>)
+</UL>
+
+<H3>تغییرات</H3>
+<UL>
+<LI>اگر شیئی که با پیمایش اشیا روی آن حرکت کرده‌اید درون سندیست که در حالت مرور میباشد، اما شیئی که پیش از این روی آن بودید در این حالت نبوده، حالت بازبینی بطور خودکار روی حالت بازبینی سند تنظیم میشود. پیش از این، این اتفاق، تنها هنگامی رخ میداد که شیء پیمایشگر به خاطر تغییر فکوس حرکت میکرد. (<A HREF="https://github.com/nvaccess/nvda/issues/4369" target="_blank">#4369</A>)
+<LI>فهرست‌های نمایشگرهای بریل و موتورهای سخنگو در پنجره‌های تنظیمات مربوطه بصورت الفبایی مرتب شده اند؛ به جز گزینه‌ی بدون گفتار یا بدون بریل، که حالا در پایین فهرست قرار دارند. (<A HREF="https://github.com/nvaccess/nvda/issues/2724" target="_blank">#2724</A>)
+<LI>برگرداننده‌ی بریل Liblouis به نگارش 2.6.0 ارتقا یافت. (<A HREF="https://github.com/nvaccess/nvda/issues/4434" target="_blank">#4434</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3835" target="_blank">#3835</A>)
+<LI>فشردن E و Shift+E در حالت مرور برای پیمایش فیلدهای ویرایشی، حالا جعبه‌های کشویی ویرایشی را نیز شامل میشود. این شامل جعبه‌ی جستجو در آخرین نگارش جستجوی گوگل نیز میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4436" target="_blank">#4436</A>)
+<LI>کلیک کردن روی شکلک NVDA در محدوده‌ی یادآوری‌ها با دکمه‌ی چپ موس، حالا به جای این‌که کاری انجام ندهد، منوی NVDA را باز میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4459" target="_blank">#4459</A>)
+</UL>
+
+<H3>رفع اشکال</H3>
+<UL>
+<LI>هنگامی که فکوس را به سندی در حالت مرور برمیگردانید (مثلاً با استفاده از Alt+Tab به صفحه‌ی وب از پیش باز‌شده ای میروید)، مکان‌نمای بازبینی به جای قرار گرفتن روی کنترل تحت فرمان (لینکی که در نزدیکی آن قرار دارد) بدرستی روی نشانگر مجازی قرار میگیرد. (<A HREF="https://github.com/nvaccess/nvda/issues/4369" target="_blank">#4369</A>)
+<LI>در نمایش‌های اسلاید در پاورپوینت، مکان‌نمای بازبینی بدرستی نشانگر مجازی را دنبال میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4370" target="_blank">#4370</A>)
+<LI>در موزیلا فایرفاکس و دیگر مرورگرهایی که بر پایه‌ی Gecko هستند، محتوای جدید درون یک live region حتی اگر نوع ناحیه‌ی قابل استفاده اش با ناحیه‌ی live اصلی متفاوت باشد، اعلام خواهد شد؛ مثلاً اگر محتوایی که به عنوان assertive نشانه‌گذاری شده به یک ناحیه‌ی live که به عنوان polite نشانه‌گذاری شده اضافه شود. (<A HREF="https://github.com/nvaccess/nvda/issues/4169" target="_blank">#4169</A>)
+<LI>در اینترنت اکسپلورر و دیگر کنترل‌های mshtml، در بعضی موارد که سندی داخل سند دیگری است، دیگر جلوی دسترسی کاربر به برخی محتواها گرفته نمیشود. این مورد بویژه در مورد قاب‌هایی (FrameSets) که درون قاب‌های دیگر هستند اتفاق می‌افتاد. (<A HREF="https://github.com/nvaccess/nvda/issues/4418" target="_blank">#4418</A>)
+<LI>NVDA دیگر بهنگام استفاده از نمایشگر بریل HandyTech -آن‌چنان‌که پیش از این در برخی اوقات رخ میداد- از کار نمی‌افتد. (<A HREF="https://github.com/nvaccess/nvda/issues/3709" target="_blank">#3709</A>)
+<LI>در ویندوز ویستا، در مواردی چون هنگامی که NVDA را از طریق میانبری که روی میز کار دارد، یا با استفاده از کلید میانبرش راه‌اندازی میکنید، دیگر پیام جعلی "Entry Point Not Found" نمایش داده نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4235" target="_blank">#4235</A>)
+<LI>مشکلات جدی با کنترل‌های متنی ویرایشی پنجره‌های محاوره‌ای در آخرین نگارش‌های برنامه‌ی Eclipse برطرف شده است. (<A HREF="https://github.com/nvaccess/nvda/issues/3872" target="_blank">#3872</A>)
+<LI>در برنامه‌ی  Outlook 2010، حرکت دادن نشانگر در محل فیلد قرارها و درخواست‌های ملاقات، آنگونه که باید کار میکند. (<A HREF="https://github.com/nvaccess/nvda/issues/4126" target="_blank">#4126</A>)
+<LI>در داخل یک ناحیه‌ی Live، محتوایی که به عنوان «Live نیست» نشانه‌گذاری شده (به این ترتیب: aria-live="off")، از این پس به درستی نادیده گرفته میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4405" target="_blank">#4405</A>)
+<LI>بهنگام گزارش کردن متن نوار وضعیتی که دارای نام است، حالا نام به‌درستی از نخستین کلمه‌ی متن نوار وضعیت جدا میشود. (<A HREF="https://github.com/nvaccess/nvda/issues/4430" target="_blank">#4430</A>)
+<LI>در فیلدهای ورودی گذرواژه در حالی که خواندن کلمات تایپ‌شده فعال باشد، بهنگام آغاز تایپ کلمات جدید، دیگر چندین ستاره بی‌جهت اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4402" target="_blank">#4402</A>)
+<LI>در فهرست پیام‌های Microsoft Outlook، موارد موجود دیگر بی‌جهت به عنوان موارد داده "data item" اعلام نمیشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4439" target="_blank">#4439</A>)
+<LI>بهنگام انتخاب متن در کنترل ویرایش کد در Eclipse IDE، هر بار که متن انتخاب‌شده تغییر میکند، دیگر تمام آنچه انتخاب شده اعلام نمیشود. (<A HREF="https://github.com/nvaccess/nvda/issues/2314" target="_blank">#2314</A>)
+<LI>نگارش‌های گوناگون Eclipse همچون مجموعه‌ی Spring Tool و نگارشی که درون بسته‌ی ابزارهای توسعه‌دهنده‌ی اندروید قرار دارد، از این پس به عنوان Eclipse شناسایی میشوند و بطور مناسبی توسط NVDA پشتیبانی میشوند. (<A HREF="https://github.com/nvaccess/nvda/issues/4360" target="_blank">#4360</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4454" target="_blank">#4454</A>)
+<LI>تعقیب موس و گشتن با لمس در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML (از جمله بسیاری از برنامه‌های ویندوز ۸) حالا بر روی نمایشگرهای با وضوح بالا یا هنگامی که بزرگ‌نمایی سند وب تغییر میکند، بسیار دقیقتر است. (<A HREF="https://github.com/nvaccess/nvda/issues/3494" target="_blank">#3494</A>) 
+<LI>تعقیب موس و گشتن با لمس در اینترنت اکسپلورر و دیگر کنترل‌های MSHTML، از این پس برچسب دکمه‌های بیشتری را اعلام خواهند کرد. (<A HREF="https://github.com/nvaccess/nvda/issues/4173" target="_blank">#4173</A>)
+<LI>هنگامی که نمایشگر بریل BRAILLEX شرکت Papenmeier  را با BrxCom استفاده میکنید، کلیدهای روی نمایشگر، حالا آن‌گونه که انتظار دارید کار میکنند. (<A HREF="https://github.com/nvaccess/nvda/issues/4614" target="_blank">#4614</A>)
+</UL>
+
+<H3>تغییرات برای توسعه‌دهندگان برنامه</H3>
+<UL>
+<LI>برای فایل‌های اجرایی‌ای که برنامه‌های متفاوت بسیاری را میزبانی میکنند (مثلاً javaw.exe)، از این پس برای بارگزاری ماژول معینی جهت هر برنامه میتوان کد فراهم کرد. پیش از این باید برای همه‌ی برنامه‌های میزبانی‌شده یک ماژول بارگزاری میشد. (<A HREF="https://github.com/nvaccess/nvda/issues/4360" target="_blank">#4360</A>)
+ <UL>
+ <LI>برای جزئیات بیشتر، مستندات کد برای appModuleHandler.AppModule را ببینید.
+ <LI>از این پس، پشتیبانی از javaw.exe انجام میشود.
+ </UL>
+</UL>
+
+<H2>2014.3</H2>
+<UL>
+<LI>برای دیدن تغییرات این نگارش و نگارش‌های پیشین <A HREF="../en/changes.html" target="_blank">به متن انگلیسی</A> مراجعه کنید.
+</UL>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\fa\changes.t2t -->
+</BODY></HTML>

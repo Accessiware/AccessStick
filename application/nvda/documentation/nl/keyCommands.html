@@ -1,0 +1,2480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2017.3 overzicht commando's</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2017.3 overzicht commando's</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>Aan de slag met NVDA</H2>
+<H3>NVDA Aanraakgebaren</H3>
+<H4>Aanraakmodi</H4>
+<P>
+Wisselen tussen aanraakmodi doet u door eenmaal tikken met drie vingers.
+</P>
+<H3>De NVDA-basiscommando’s</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Aanraken</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Spraak stoppen</TD>
+<TD>Control</TD>
+<TD>Control</TD>
+<TD>1tik met 2 vingers</TD>
+<TD>Spreken wordt gestopt</TD>
+</TR>
+<TR>
+<TD>Spraak pauzeren</TD>
+<TD>Shift</TD>
+<TD>Shift</TD>
+<TD>geen</TD>
+<TD>Spraakuitvoer wordt gepauzeerd. Druk Shift opnieuw in om verder te lezen vanaf de pauzepositie(als de gebruikte synthesizer dit ondersteunt)</TD>
+</TR>
+<TR>
+<TD>NVDA Menu</TD>
+<TD>NVDA+n</TD>
+<TD>NVDA+n</TD>
+<TD>dubbeltik met 2 vingers</TD>
+<TD>Opent het menu voor opties, extra,  hulp, etc.</TD>
+</TR>
+<TR>
+<TD>Spraakmodus</TD>
+<TD>NVDA+s</TD>
+<TD>NVDA+s</TD>
+<TD>geen</TD>
+<TD>Wisselt spraakmodus tussen spreken, pieptonen en stilte.</TD>
+</TR>
+<TR>
+<TD>Invoerhulpmodus aan-/uitzetten</TD>
+<TD>NVDA+1</TD>
+<TD>NVDA+1</TD>
+<TD>geen</TD>
+<TD>Als de invoerhulpmodus is ingeschakeld hoort u bij elke toets die wordt ingedrukt de naam van de toets en de (eventuele) bijbehorende functie van de toets(en)</TD>
+</TR>
+<TR>
+<TD>NVDA afsluiten</TD>
+<TD>NVDA+q</TD>
+<TD>NVDA+q</TD>
+<TD>geen</TD>
+<TD>Sluit NVDA af</TD>
+</TR>
+<TR>
+<TD>Volgende toetsaanslag niet uitvoeren</TD>
+<TD>NVDA+f2</TD>
+<TD>NVDA+f2</TD>
+<TD>geen</TD>
+<TD>De volgende toetsaanslag zal niet als NVDA-commando worden verwerkt maar als commando binnen de gebruikte toepassing worden uitgevoerd.</TD>
+</TR>
+<TR>
+<TD>Zet slaapmodus aan/uit voor huidige applicatie</TD>
+<TD>NVDA+shift+s</TD>
+<TD>NVDA+shift+z</TD>
+<TD>geen</TD>
+<TD>Slaapmodus schakelt alle NVDA commando's en uitvoer in spraak en braille uit. Dit is vooral handig bij applicaties die in hun eigen spraakuitvoer of schermlezer voorzien. Druk deze toets nogmaals in om slaapmodus weer uit te schakelen.</TD>
+</TR>
+</TABLE>
+
+<H3>Systeeminformatie melden</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Ttoets</TH>
+<TH>Omschrijving</TH>
+</TR>
+<TR>
+<TD>Datum/tijd melden</TD>
+<TD>NVDA+f12</TD>
+<TD>NVDA+f1| Eenmaal indrukken laat huidige tijd horen, tweemaal snel indrukken meldt de datum</TD>
+</TR>
+<TR>
+<TD>Batterijstatus melden</TD>
+<TD>NVDA+shift+b</TD>
+<TD>Meldt de batterijstatus, of de computer is aangesloten op netstroom en het batterijpercentage.</TD>
+</TR>
+<TR>
+<TD>Tekst op het klembord melden</TD>
+<TD>NVDA+c</TD>
+<TD>Meldt de tekst op het klembord als er tekst op het klembord staat.</TD>
+</TR>
+</TABLE>
+
+<H2>Navigeren met NVDA</H2>
+<A NAME="SystemFocus"></A>
+<H3>Navigeren met de systeemfocus</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Huidige focus melden</TD>
+<TD>NVDA+tab</TD>
+<TD>NVDA+tab</TD>
+<TD>laat horen welk object of besturingselement momenteel is gefocusseerd. Bij tweemaal indrukken wordt informatie gespeld</TD>
+</TR>
+<TR>
+<TD>Titel/naam melden</TD>
+<TD>NVDA+t</TD>
+<TD>NVDA+t</TD>
+<TD>Laat horen hoe het momenteel actieve venster heet. Bij tweemaal indrukken wordt de informatie gespeld. Bij driemaal indrukken wordt deze naar het klembord gekopieerd.</TD>
+</TR>
+<TR>
+<TD>Actieve venster voorlezen</TD>
+<TD>NVDA+b</TD>
+<TD>NVDA+b</TD>
+<TD>Leest de inhoud (knoppen, uitklapnenu’s,selectievakjes, etc.) voor. Handig voor dialoogvensters</TD>
+</TR>
+<TR>
+<TD>Statusbalk voorlezen</TD>
+<TD>NVDA+End</TD>
+<TD>NVDA+Shift+End</TD>
+<TD>Leest de statusbalk als NVDA deze kan vinden. Het navigator object wordt ook naar de statusbalk verplaatst. Bij tweemaal indrukken wordt de informatie gespeld.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>Navigeren met de systeemcursor</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Alles voorlezen</TD>
+<TD>NVDA+pijl omlaag</TD>
+<TD>NVDA+a</TD>
+<TD>Voorlezen starten vanaf de huidige positie van de tekstcursor die tijdens het lezen wordt verplaatst.</TD>
+</TR>
+<TR>
+<TD>Deze regel lezen</TD>
+<TD>NVDA+pijl omhoog</TD>
+<TD>NVDA+l</TD>
+<TD>Hiermee wordt de regel waarin de tekstcursor zich momenteel bevindt voorgelezen. Bij tweemaal drukken wordt regel gespeld. bij driemaal drukken wordt regel gespeld met gebruikmaking van spellingsalfabet.</TD>
+</TR>
+<TR>
+<TD>Geselecteerde tekst lezen</TD>
+<TD>NVDA+Shift+pijl omhoog</TD>
+<TD>NVDA+Shift+s</TD>
+<TD>Hiermee wordt geselecteerde tekst voorgelezen.</TD>
+</TR>
+<TR>
+<TD>Volgende zin</TD>
+<TD>alt+Pijl omlaag</TD>
+<TD>alt+Pijl omlaag</TD>
+<TD>Verplaatst cursor naar volgende zin en meldt deze (alleen ondersteund in Microsoft Word en Outlook).</TD>
+</TR>
+<TR>
+<TD>Vorige zin</TD>
+<TD>alt+Pijl omhoog</TD>
+<TD>Alt+Pijl omhoog</TD>
+<TD>Verplaatst cursor naar vorige zin en meldt deze (alleen ondersteund in Microsoft Word en Outlook ).</TD>
+</TR>
+</TABLE>
+
+<P>
+Binnen een tabel kunt u ook de volgende toetscommando’s gebruiken:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Ga naar vorige kolom</TD>
+<TD>control+alt+pijl links</TD>
+<TD>Verplaatst tekstcursor naar vorige kolom(van dezelfde rij)</TD>
+</TR>
+<TR>
+<TD>Ga naar volgende kolom</TD>
+<TD>control+alt+pijl rechts</TD>
+<TD>Verplaatst tekstcursor naar volgende kolom(van dezelfde rij)</TD>
+</TR>
+<TR>
+<TD>Ga een rij naar boven</TD>
+<TD>control+alt+pijl omhoog</TD>
+<TD>Verplaatst de tekstcursor een rij omhoog(van dezelfde kolom)</TD>
+</TR>
+<TR>
+<TD>Ga een rij omlaag</TD>
+<TD>control+alt+pijl omlaag</TD>
+<TD>Verplaatst de tekstcursor een rij omlaag(van dezelfde kolom)</TD>
+</TR>
+</TABLE>
+
+<A NAME="ObjectNavigation"></A>
+<H3>Objectnavigatie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Aanraken</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Informatie over huidig object</TD>
+<TD>NVDA+numeriek5</TD>
+<TD>NVDA+shift+o</TD>
+<TD>geen</TD>
+<TD>Geeft informatie over huidig navigator object. Bij tweemaal snel drukken wordt informatie gespeld.</TD>
+</TR>
+<TR>
+<TD>Naar hoger niveau navigeren</TD>
+<TD>NVDA+numeriek8</TD>
+<TD>NVDA+shift+Pijl Omhoog</TD>
+<TD>Veeg omhoog (objectmodus)</TD>
+<TD>Hiermee gaat u naar een hoger niveau (de map) waartoe het huidige navigator object behoort</TD>
+</TR>
+<TR>
+<TD>Naar vorig object gaan</TD>
+<TD>NVDA+numeriek4</TD>
+<TD>NVDA+shift+Pijl links</TD>
+<TD>Veeg links(objectmodus)</TD>
+<TD>Hiermee navigeert u naar het object dat direct voorafgaat aan het huidige navigator object|</TD>
+</TR>
+<TR>
+<TD>Naar het volgende object gaan</TD>
+<TD>NVDA+numeriek6</TD>
+<TD>NVDA+shift+Pijl rechts</TD>
+<TD>Veeg rechts (objectmodus)</TD>
+<TD>Hiermee navigeert u naar het object dat volgt op het huidige navigator object</TD>
+</TR>
+<TR>
+<TD>Naar een lager niveau gaan</TD>
+<TD>NVDA+numeriek2</TD>
+<TD>NVDA+shift+Pijl omlaag</TD>
+<TD>Veeg omlaag (objectmodus)</TD>
+<TD>Hiermee navigeert u vanuit het huidige navigator object (hoofdmap) naar het niveau eronder waar u bij de bijbehorende objecten komt</TD>
+</TR>
+<TR>
+<TD>Naar gefocusseerd object gaan</TD>
+<TD>NVDA+numeriek minteken</TD>
+<TD>NVDA+backspace</TD>
+<TD>geen</TD>
+<TD>Hiermee navigeert u naar het object waar de systeemfocus zich momenteel bevindt, en verplaatst u de leescursor (review cursor) naar de positie van de tekstcursor als deze zichtbaar is</TD>
+</TR>
+<TR>
+<TD>Huidige navigator object activeren</TD>
+<TD>NVDA+numeriek entertoets</TD>
+<TD>NVDA+enter</TD>
+<TD>dubbel tikken</TD>
+<TD>Hiermee wordt het huidige navigator object geactiveerd(hetzelfde effect als klikken met de muis of het indrukken van de spatiebalk bij gefocusseerd object)</TD>
+</TR>
+<TR>
+<TD>Verplaats de systeem focus of cursor naar de huidige review positie</TD>
+<TD>NVDA+shift+numeriek minteken</TD>
+<TD>NVDA+shift+backspace</TD>
+<TD>geen</TD>
+<TD>Een maal drukken verplaatst de focus naar het huidige navigator object, twee maal drukken verplaatst de systeem cursor naar de review cursor</TD>
+</TR>
+<TR>
+<TD>Positie van de leescursor melden</TD>
+<TD>NVDA+numeriek Delete</TD>
+<TD>NVDA+delete</TD>
+<TD>geen</TD>
+<TD>Geeft informatie overde plaats van de tekst of het object bij de leescursor. Er kan, bij voorbeeld, in een percentage aangegeven worden waar     in het document de cursor staat, wat de afstand is ten opzichte van de rand van de pagina of de exacte schermpositie. Door tweemaal te drukken krijgt u meer details.</TD>
+</TR>
+</TABLE>
+
+<P>
+Let op: voor een goede werking van de numerieke toetsen moet NumLock uitgeschakeld worden.
+</P>
+<P>
+Met NVDA kunt u de inhoud van het <A HREF="#ScreenReview">scherm (schermoverzicht)</A>, het huidige <A HREF="#DocumentReview">document (documentoverzicht)</A> of het huidige <A HREF="#ObjectReview">object</A> ,  per karakter, per woord of regel nalezen.
+Dit is vooral handig in Windows-opdrachtvensters of andere plaatsen waar de <A HREF="#SystemCaret">tekstcursor</A> niet of slechts beperkt beschikbaar is.
+U kunt dit bijvoorbeeld gebruiken voor het lezen van een lang, informatief bericht in een dialoogvenster
+</P>
+<P>
+Bij het verplaatsen van de leescursor (review cursor) volgt de tekstcursor niet maar deze blijft op de huidige invoegpositie staan, zodat u tekst kun bekijken zonder de systeemcursor te verplaatsen.
+Standaard wordt de leescursor echter gelijktijdig verplaatst wanneer de tekstcursor verplaatst wordt.
+Deze koppeling kan in- en uitgeschakeld worden.
+</P>
+<P>
+Braille volgt normaalgesproken de <A HREF="#SystemFocus">focus</A> en <A HREF="#SystemCaret">systeemcursor</A> en niet de objectnavigatie en de review cursor.
+Als de braille uitvoer de objectnavigatie en tekst review moet volgen, <A HREF="#BrailleTether">configureert u braille om de review cursor te volgen</A>.
+</P>
+<P>
+Voor het nalezen van tekst kunt u de volgende toetscombinaties gebruiken:
+</P>
+<A NAME="ReviewingText"></A>
+<H3>Nalezen van tekst</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Aanraken</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>in de leesmodus naar de eerste regel gaan</TD>
+<TD>shift+numeriek7</TD>
+<TD>NVDA+control+Home</TD>
+<TD>geen</TD>
+<TD>De leescursor wordt naar de eerste regel van de tekst verplaatst</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar de vorige regel gaan</TD>
+<TD>numeriek7</TD>
+<TD>NVDA+Pijl omhoog</TD>
+<TD>Veeg omhoog (tekstmodus)</TD>
+<TD>De leescursor wordt naar de vorige regel van de tekst verplaatst</TD>
+</TR>
+<TR>
+<TD>Huidige regel van leescursor weergeven</TD>
+<TD>numeriek8</TD>
+<TD>NVDA+shift+punt-teken</TD>
+<TD>geen</TD>
+<TD>Zegt in welke regel van de tekst de leescursor zich bevindt. Bij tweemaal drukken wordt de regel gespeld. Bij drie maal drukken wordt de regel gespeld met symboolomschrijvingen.</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar de volgende regel gaan</TD>
+<TD>numeriek9</TD>
+<TD>NVDA+Pijl omlaag,</TD>
+<TD>Veeg omlaag (tekstmodus)</TD>
+<TD>De leescursor wordt naar de volgende tekstregel verplaatst</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar de laatste regel gaan</TD>
+<TD>shift+numeriek9</TD>
+<TD>NVDA+control+End,</TD>
+<TD>geen</TD>
+<TD>De leescursor wordt naar de laatste tekstregel verplaatst</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar het vorige woord gaan</TD>
+<TD>numeriek4</TD>
+<TD>NVDA+control+pijl links</TD>
+<TD>Veeg links met 2 vingers (tekstmodus)</TD>
+<TD>De leescursor wordt naar het vorige woord in de tekst verplaatst</TD>
+</TR>
+<TR>
+<TD>Het woord waar de leescursor zich bevindt weergeven</TD>
+<TD>numeriek5</TD>
+<TD>NVDA+control+punt-teken</TD>
+<TD>geen</TD>
+<TD>Vertelt op welk woord in de tekst de leescursor nu staat. Bij tweemaal drukken wordt het woord gespeld. Bij drie maal drukken wordt het woord gespeld met symboolomschrijvingen.</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar het volgende woord gaan</TD>
+<TD>numeriek6</TD>
+<TD>NVDA+control+pijl rechts</TD>
+<TD>Veeg rechts met 2 vingers (tekstmodus)</TD>
+<TD>De leescursor wordt naar het volgende woord in de tekst verplaatst</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar begin van een regel gaan</TD>
+<TD>shift+numeriek1</TD>
+<TD>NVDA+home</TD>
+<TD>geen</TD>
+<TD>De leescursor wordt naar het begin van de huidige regel verplaatst</TD>
+</TR>
+<TR>
+<TD>Ga in de leesmodus naar vorig karakter</TD>
+<TD>numeriek1</TD>
+<TD>NVDA+pijl links</TD>
+<TD>Veeg links (tekstmodus)</TD>
+<TD>De leescursor wordt naar het vorige karakter in de huidige tekstregel verplaatst</TD>
+</TR>
+<TR>
+<TD>Huidige karakter onder de leescursor weergeven</TD>
+<TD>numeriek2</TD>
+<TD>NVDA+punt</TD>
+<TD>geen</TD>
+<TD>Noemt het huidige karakter in de tekstregel waar de leescursor zich bevindt. Tweemaal drukken geeft een omschrijving of voorbeeld van het karakter. Drie maal drukken geeft de numerieke waarde in decimalen en hexadecimalen.</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar het volgende karakter gaan</TD>
+<TD>numeriek3</TD>
+<TD>NVDA+pijl rechts</TD>
+<TD>Veeg rechts (tekstmodus)</TD>
+<TD>De leescursor wordt naar het volgende karakter verplaatst in de huidige tekstregel|</TD>
+</TR>
+<TR>
+<TD>In de leesmodus naar het einde van de regel gaan</TD>
+<TD>shift+numeriek3</TD>
+<TD>NVDA+End</TD>
+<TD>geen</TD>
+<TD>De leescursor wordt naar het einde van de huidige tekstregel verplaatst</TD>
+</TR>
+<TR>
+<TD>Alles voorlezen in leesmodus</TD>
+<TD>numeriek Plus</TD>
+<TD>NVDA+shift+a</TD>
+<TD>Veeg omlaag met 3 vingers (tekstmodus)</TD>
+<TD>Leest vanaf de huidige positie van de leescursor waarbij de leescursor zich mee beweegt.</TD>
+</TR>
+<TR>
+<TD>Selecteer, kopieer dan vanaf leescursor</TD>
+<TD>NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>geen</TD>
+<TD>Start het selectie-  en daaropvolgend kopieerproces vanaf de huidige positie van de leescursor. De feitelijke actie wordt pas uitgevoerd zodra aan NVDA wordt doorgegeven waar het tekstgebied eindigt.</TD>
+</TR>
+<TR>
+<TD>Selecteer,  kopieer dan  tot leescursor</TD>
+<TD>NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>geen</TD>
+<TD>Bij de eerste maal drukken wordt tekst geselecteerd vanaf het eerder ingestelde beginpunt tot einde inclusief de huidige positie van de leescursor. Nadat de toetscombinatie de 2de keer wordt ingedrukt wordt de tekst naar het klembord gekopieerd.</TD>
+</TR>
+<TR>
+<TD>Tekstopmaak weergeven</TD>
+<TD>NVDA+f</TD>
+<TD>NVDA+f</TD>
+<TD>geen</TD>
+<TD>NVDA laat horen hoe de tekst waarin de leescursor zich bevindt, is opgemaakt. Bij tweemaal drukken krijgt u de informatie in bladermodus.</TD>
+</TR>
+</TABLE>
+
+<H3>Leesoverzichtmodi (Review Modes)</H3>
+<TABLE ALIGN="center" BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Aanraakgebaar</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Naar volgende leesoverzichtmodus schakelen</TD>
+<TD>NVDA+numeriek7</TD>
+<TD>NVDA+pageUp</TD>
+<TD>met 2 vingers omhoog vegen</TD>
+<TD>hiermee wordt naar de volgende, beschikbare  modus geschakeld.</TD>
+</TR>
+<TR>
+<TD>Naar vorige leesoverzichtmodus schakelen</TD>
+<TD>NVDA+numeriek1</TD>
+<TD>NVDA+pageDown</TD>
+<TD>met 2 vingers omlaag vegen</TD>
+<TD>hiermee wordt naar de vorige, beschikbare modus geschakeld.</TD>
+</TR>
+</TABLE>
+
+<H3>Navigeren met de muis</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Klikken met linker muisknop</TD>
+<TD>numeriek Gedeeld Door</TD>
+<TD>NVDA+[ (vierkante haak openen</TD>
+<TD>Dit is hetzelfde als éénmaal klikken met linker muisknop. Deze toets tweemaal snel drukken is gelijk aan dubbelklikken met de muis.</TD>
+</TR>
+<TR>
+<TD>Linker muisknop vergrendelen</TD>
+<TD>shift+numeriek Gedeeld Door</TD>
+<TD>NVDA+control+[ (vierkante haak openen)</TD>
+<TD>Hiermee houdt u de linker muisknop ingedrukt. Door nogmaals te drukken wordt de knop weer los gelaten. Om te kunnen slepen met de muis drukt u deze toetscombinatie zodat de linker muisknop ingedrukt blijft. Vervolgens kunt u de muis fysiek verplaatsen of met een van de andere daarvoor bestemde commando’s.</TD>
+</TR>
+<TR>
+<TD>Klikken met rechter muisknop</TD>
+<TD>numeriek Vermenigvuldig</TD>
+<TD>NVDA+] (vierkante haak sluiten)</TD>
+<TD>Dit is gelijk aan eenmaal klikken met rechter muisknop.</TD>
+</TR>
+<TR>
+<TD>Rechter muisknop vergrendelen</TD>
+<TD>shift+numeriek Vermenigvuldig</TD>
+<TD>NVDA+control+] (vierkante haak sluiten)</TD>
+<TD>Hiermee wordt rechter muisknop ingedrukt gehouden. Door nogmaals te drukken wordt de vergrendeling opgeheven. Om te kunnen slepen met de muis drukt u deze toetscombinatie zodat de rechter muisknop ingedrukt blijft. Vervolgens kunt u de muis fysiek verplaatsen of met een van de andere daarvoor bestemde commando’s.</TD>
+</TR>
+<TR>
+<TD>Muis naar huidige navigator object verplaatsen</TD>
+<TD>NVDA+numeriek Gedeeld Door</TD>
+<TD>NVDA+shift+m</TD>
+<TD>Muis wordt verplaatst naar huidig object en de leescursor</TD>
+</TR>
+<TR>
+<TD>naar het object onder de muisaanwijzer gaan</TD>
+<TD>NVDA+numeriek Vermenigvuldig</TD>
+<TD>NVDA+shift+n</TD>
+<TD>Verplaats het navigator object naar de muispositie</TD>
+</TR>
+</TABLE>
+
+<A NAME="Bladermodus"></A>
+<H2>Bladermodus</H2>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Van modus wisselen</TD>
+<TD>NVDA+spatiebalk</TD>
+<TD>Wisselen tussen blader en focusmodus</TD>
+</TR>
+<TR>
+<TD>Focusmodus verlaten</TD>
+<TD>escape</TD>
+<TD>Naar de bladermodus teruggaan vanuit de automatisch ingeschakelde focusmodus</TD>
+</TR>
+<TR>
+<TD>Document vernieuwen</TD>
+<TD>NVDA+f5</TD>
+<TD>Het document wordt opnieuw geladen (nuttig als er iets lijkt te ontbreken op de pagina. Niet beschikbaar in Microsoft Word en Outlook.)</TD>
+</TR>
+<TR>
+<TD>Zoeken</TD>
+<TD>NVDA+control+f</TD>
+<TD>Er wordt een venster geopend waarin u tekst kunt typen die in het huidige document moet worden opgezocht</TD>
+</TR>
+<TR>
+<TD>Volgende zoeken</TD>
+<TD>NVDA+f3</TD>
+<TD>Hiermee kunt u nagaan of tekst van een zoekopdracht verderop in het document nog vaker voorkomt.</TD>
+</TR>
+<TR>
+<TD>Vorige zoeken</TD>
+<TD>NVDA+shift+f3</TD>
+<TD>Hiermee kunt u nagaan of de gezochte tekst eerder in het document voorkomt</TD>
+</TR>
+<TR>
+<TD>Uitgebreide beschrijving openen</TD>
+<TD>NVDA+d</TD>
+<TD>Er wordt een nieuw venster geopend met een uitgebreide beschrijving, voor zover aanwezig,  van het element waarop u zich bevindt.</TD>
+</TR>
+</TABLE>
+
+<H3>Lettertoetsnavigatie</H3>
+<P>
+Om naar het eerstvolgende element te springen gebruikt u uitsluitend één van de hierna vermelde toetsen, terwijl u in combinatie met de shifttoets naar een vorig element springt:
+</P>
+<UL>
+<LI>h: heading (kop)
+<LI>l: lijst
+<LI>i: lijstonderdeel
+<LI>t: tabel
+<LI>k: link
+<LI>n: niet-gelinkte tekst
+<LI>f: formulierveld
+<LI>u: unvisited (niet-bezochte) link
+<LI>v: visited (bezochte) link
+<LI>e: edit field (tekstvak)
+<LI>b: button (knop)
+<LI>x: checkbox (selectievakje)
+<LI>c: combo box (vervolgkeuzelijst)
+<LI>r: radio button (keuzerondje)
+<LI>q: block quote (citaatblok)
+<LI>s: separator (scheiding)
+<LI>m: frame (kader)
+<LI>g: graphic (afbeelding)
+<LI>d: ARIA oriëntatiepunt in een Internetomgeving
+<LI>o: embedded object (ingebed object)
+<LI>1 tot en met 6: respectievelijk, kop op niveau 1, 2, 3, 4, 5 en 6.
+<LI>a: annotatie (invoeroptie voor notities, opmerkingen e.d.).
+ <UL>
+ <LI>w: spelfout
+ <P></P>
+Gebruik de volgende toetscombinaties om naar het begin resp. het einde van containerobjecten (lijsten tabellen e.d.) te springen:
+ </UL>
+</UL>
+
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toetscombinatie</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>naar begin van containerobject springen</TD>
+<TD>Shift+komma</TD>
+<TD>Verplaatst de systeemcursor naar begin van het containerobject (lijst, tabel etc.)</TD>
+</TR>
+<TR>
+<TD>achter het containerobject springen</TD>
+<TD>komma</TD>
+<TD>Verplaatst de systeemcursor achter het containerobject (lijst, tabel etc.) waar de cursor zich bevindt.</TD>
+</TR>
+</TABLE>
+
+<P>
+Om de lettertoetsnavigatie voor het huidige document in of uit te schakelen drukt u op NVDA+shift+spatiebalk.
+</P>
+<H3>De lijst met elementen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Lijst met elementen</TD>
+<TD>NVDA+f7</TD>
+<TD>Hiermee roept u de lijst met de verschillende elementtypes  op die zich in het huidige document bevinden.</TD>
+</TR>
+</TABLE>
+
+<H3>Ingebedde objecten</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Terug naar inhoud van document</TD>
+<TD>NVDA+control+spatiebalk</TD>
+<TD>Verplaatst de focus van het huidige ingevoegde object naar “het document waarin het zich bevindt</TD>
+</TR>
+</TABLE>
+
+<H2>Inhoud van wiskundige aard lezen</H2>
+<H3>Interactieve Navigatie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Interactie met wiskundige inhoud</TD>
+<TD>NVDA+alt+m</TD>
+<TD>interactie met wiskundige inhoud starten.</TD>
+</TR>
+</TABLE>
+
+<H2>Brailleleesregelafkortingen met betrekking tot type besturingselement, gebruiksstatus en oriëntatiepunten</H2>
+<H3>Braille-invoer</H3>
+<P>
+Door punt 7 in te toetsen, verwijdert u de laatst ingevoerde braillecel of het laatste brailleteken.
+Punt  8 zet alle braille-invoer om  en activeert de Enter-toets.
+Door punt 7 + punt 8 in te drukken wordt alle braille-invoer omgezet, maar zonder de spatiebalk of Enter-toets te activeren.
+</P>
+<H2>Inhoudherkenning</H2>
+<A NAME="Win10Ocr"></A>
+<H3>Windows 10 OCR</H3>
+<P>
+Om de tekst in het huidige navigatorobject te herkennen met behulp van Windows 10 OCR drukt u op NVDA+r.
+</P>
+<H2>Applicatie-specifieke kenmerken</H2>
+<H3>Microsoft Word</H3>
+<H4>Automatisch Lezen van Kolom- en Rijkoppen</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TH>Kolomkoppen instellen</TH>
+<TH>NVDA+shift+c</TH>
+<TH>Door eenmaal indrukken weet NVDA dat dit de eerste cel is in de rij waar de kolomkoppen in staan die automatisch moeten worden gemeld bij het gaan van kolom naar kolom in de rijen eronder. Door tweemaal drukken wordt de instelling opgeheven.</TH>
+</TR>
+<TR>
+<TD>Rijkoppen instellen</TD>
+<TD>NVDA+shift+r</TD>
+<TD>Door eenmaal indrukken weet NVDA dat dit de eerste cel is in de kolom waar de rijkoppen in staan die automatisch moeten worden gemeld bij het gaan van rij naar rij na deze kolom. Door tweemaal drukken wordt de instelling opgeheven.</TD>
+</TR>
+</TABLE>
+
+<H4>Bladermodus in Microsoft Word</H4>
+<P>
+Om Bladermodus in Microsoft Word, aan en uit te zetten drukt u op NVDA+spatiebalk.
+</P>
+<H5>De Lijst met Elementen</H5>
+<P>
+Terwijl u in Bladermodus bent in Microsoft Word, kunt u toegang tot de Lijst met Elementen krijgen  door opNVDA+f7 te drukken.
+</P>
+<H4>Opmerkingen Melden</H4>
+<P>
+Om eventuele opmerkingen op de positie waar de cursor op dat moment staat te laten melden drukt u op NVDA+alt+c.
+</P>
+<H3>Microsoft Excel</H3>
+<H4>Automatisch Lezen van Kolom- en Rijkoppen</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Kolomkoppen instellen</TD>
+<TD>NVDA+shift+c</TD>
+<TD>Door eenmaal indrukken weet NVDA dat dit de eerste cel is in de rij waar de kolomkoppen in staan die automatisch moeten worden gemeld bij het gaan van kolom naar kolom in de rijen eronder. Door tweemaal drukken wordt de instelling opgeheven.</TD>
+</TR>
+<TR>
+<TD>Rijkoppen instellen</TD>
+<TD>NVDA+shift+r</TD>
+<TD>Door eenmaal indrukken weet NVDA dat dit de eerste cel is in de kolom waar de rijkoppen in staan die automatisch moeten worden gemeld bij het gaan van rij naar rij na deze kolom. Door tweemaal drukken wordt de instelling opgeheven.</TD>
+</TR>
+</TABLE>
+
+<H4>De Elementenlijst</H4>
+<P>
+Om toegank te krijgen tot de Elementenlijst in Excel, drukt u op NVDA+f7.
+</P>
+<H4>Opmerkingen Melden</H4>
+<P>
+Eventuele opmerkingen voor de cel die momenteel de focus heeft, kunt u laten horen door NVDA+alt+c in te drukken.
+</P>
+<H4>Beveiligde Cellen Lezen</H4>
+<P>
+Om naar beveiligde cellen te gaan, schakelt u over naar Bladermodus door op NVDA+spatiebalk te drukken, en vervolgens  gebruikt u standaard Excel navigatieopties zoals de pijltjestoetsen om door de cellen te gaan op het huidige werkblad.
+</P>
+<H3>Microsoft PowerPoint</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Voorlezen aantekeningen van spreker in-/uitzetten</TD>
+<TD>control+shift+s</TD>
+<TD>Tijdens een presentatie kunt u met dit commando, of de aantekeningen bij een dia, of de tekst(inhoud) van de dia laten voorlezen. Dit heeft geen invloed op dat wat op het scherm getoond wordt.</TD>
+</TR>
+</TABLE>
+
+<H3>Foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Omschrijving</TH>
+</TR>
+<TR>
+<TD>Resterende tijd melden</TD>
+<TD>control+shift+r</TD>
+<TD>Meldt de resterende tijd van het huidige nummer, indien van toepassing.</TD>
+</TR>
+</TABLE>
+
+<H3>Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Omschrijving</TH>
+</TR>
+<TR>
+<TD>Recent bericht melden</TD>
+<TD>NVDA+control+1-4</TD>
+<TD>Meldt een recent bericht, afhankelijk van de gebruikte sneltoets. NVDA+control+2 meldt bijvoorbeeld het op één na nieuwste bericht.</TD>
+</TR>
+</TABLE>
+
+<H3>Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Omschrijving</TH>
+</TR>
+<TR>
+<TD>Commentaarvenster melden</TD>
+<TD>control+shift+c</TD>
+<TD>Meldt eventueel commentaar in het commentaarvenster.</TD>
+</TR>
+<TR>
+<TD>Opmerkingen voor vertalers melden</TD>
+<TD>control+shift+a</TD>
+<TD>Meldt eventuele opmerkingen voor vertalers.</TD>
+</TR>
+</TABLE>
+
+<H3>Skype</H3>
+<P>
+Wanneer u zich in een berichtenreeks bevindt:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Bericht lezen</TD>
+<TD>NVDA+control+1-0</TD>
+<TD>Afhankelijk van het cijfer dat u indrukt, wordt de leescursor naar het daarbijbehorende bericht verplaatst en kan het gelezen worden; als  u bij voorbeeld NVDA+control+2 indrukt, wordt het bericht dat u op één na het laatst hebt ontvangen gelezen.</TD>
+</TR>
+</TABLE>
+
+<H3>Kindle voor de PC</H3>
+<P>
+U kunt ook handmatig naar de volgende pagina gaan  met de Pagina Omlaag-toets,en met de toets Pagina Omhoog kunt u naar de vorige bladzijde.
+</P>
+<H4>Tekstselectie</H4>
+<P>
+Nadat u tekst hebt geselecteerd drukt u op de Windows contextmenutoets of op shift+f10 om te zien wat u kunt doen met de selectie.
+</P>
+<H2>NVDA configureren</H2>
+<H3>Opties</H3>
+<H4>Synthesizerkeuze (NVDA+control+s)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Audio-onderdrukkingsmodus</TD>
+<TD>NVDA+shift+d</TD>
+<TD>NVDA+shift+d</TD>
+<TD>Als u Windows 8 of  hoger gebruikt, kunt u met deze optie bepalen of NVDA het volume van andere applicaties moet verlagen zodra en zolang NVDA aan het spreken  is of gedurende de hele tijd dat NVDA actief is.</TD>
+</TR>
+</TABLE>
+
+<A NAME="VoiceSettings"></A>
+<H4>Stem (NVDA+control+v)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Interpunctie-/symboolniveau</TD>
+<TD>NVDA+p</TD>
+<TD>NVDA+p</TD>
+<TD>Deze optie bepaalt welke leestekens en symbolen als woorden worden uitgesproken.</TD>
+</TR>
+</TABLE>
+
+<A NAME="SynthSettingsRing"></A>
+<H4>Synth settings ring</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Naar volgende synthesizerinstelling gaan</TD>
+<TD>NVDA+control+pijl rechts</TD>
+<TD>NVDA+shift+control+pijl rechts</TD>
+<TD>Hiermee wordt steeds een volgende spraakinstelling gekozen. Na de laatst beschikbare instelling begint u weer vooraan enz.</TD>
+</TR>
+<TR>
+<TD>Naar vorige spraakinstelling gaan</TD>
+<TD>NVDA+control+pijl Links</TD>
+<TD>NVDA+shift+control+pijl Links</TD>
+<TD>Hiermee wordt de spraakinstelling gekozen die onmiddellijk voorafgaat aan de huidige. Eenmaal bij de eerste instelling bovenaan de lijst aangekomen begint u weer onderaan enzovoorts.</TD>
+</TR>
+<TR>
+<TD>Oplopend bijstellen van huidige synthesizerinstelling</TD>
+<TD>NVDA+control+Pijl Omhoog</TD>
+<TD>NVDA+shift+control+Pijl Omhoog</TD>
+<TD>Stelt de momenteel gebruikte spraakinstelling naar bovenbij. Verhoogt bij voorbeeld snelheid en volume, selecteert volgende stem.</TD>
+</TR>
+<TR>
+<TD>De huidige synthesizerinstelling aflopend bijstellen</TD>
+<TD>NVDA+control+Pijl Omlaag</TD>
+<TD>NVDA+shift+control+Pijl Omlaag</TD>
+<TD>Stelt momenteel gebruikte spraakinstelling naar beneden bij. Verlaagt bij voorbeeld snelheid en volume, selecteert vorige stem</TD>
+</TR>
+</TABLE>
+
+<H4>Brailleïnstellingen</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Braille koppelen aan</TD>
+<TD>NVDA+control+t</TD>
+<TD>NVDA+control+t</TD>
+<TD>Hiermee kunt u bepalen of de leesregel de systeemfocus dan wel de navigatorobject- / reviewcursor moet volgen</TD>
+</TR>
+</TABLE>
+
+<H4>Instellingen toetsenbord (NVDA+control+k)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Getypte karakters uitspreken</TD>
+<TD>NVDA+2</TD>
+<TD>NVDA+2</TD>
+<TD>Door het selectievakje in te schakelen worden alle karakters die u op het toetsenbord typt uitgesproken.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Getypte woorden uitspreken</TD>
+<TD>NVDA+3</TD>
+<TD>NVDA+3</TD>
+<TD>Door dit selectievakje in te schakelen wordt elk woord dat u getypt hebt uitgesproken.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Commandotoetsen uitspreken</TD>
+<TD>NVDA+4</TD>
+<TD>NVDA+4</TD>
+<TD>Door het selectievakje in te schakelen worden alle niet-karaktertoetsen (bij voorbeeld de pijltjestoetsen, de DEL-toets, etc.) uitgesproken. Dit geldt ook voor, bij voorbeeld, de Ctrl-toets in combinatie met een letter.</TD>
+</TR>
+</TABLE>
+
+<A NAME="MouseSettings"></A>
+<H4>Muisinstellingen(NVDA+control+m)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Muis volgen</TD>
+<TD>NVDA+m</TD>
+<TD>| NVDA+m</TD>
+<TD>| Door het selectievakje in te schakelen wordt de tekst gelezen die zich onder de muisaanwijzer bevindt bij verplaatsing van de muis over het scherm. U kunt dus naar iets zoeken door de muis zelf te verplaatsen in plaats van zoeken met objectnavigatie.</TD>
+</TR>
+</TABLE>
+
+<H4>Instellingen review cursor (leescursor)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Ssysteemfocus volgen</TD>
+<TD>NVDA+7</TD>
+<TD>NVDA+7</TD>
+<TD>Wanneer deze optie is ingeschakeld,wordt de leescursor (review cursor) altijd in hetzelfde object geplaatst als de systeemfocus telkens wanneer de focus zich wijzigt.</TD>
+</TR>
+<TR>
+<TD>Systeemcursor volgen</TD>
+<TD>NVDA+6</TD>
+<TD>NVDA+6</TD>
+<TD>Als dit selectievakje is aangevinkt, volgt de leescursor (review cursor) automatisch de systeemcursor wanneer deze wordt verplaatst</TD>
+</TR>
+</TABLE>
+
+<H4>Objectweergave-instellingen(NVDA+control+o)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Weergave voortgangsbalk</TD>
+<TD>NVDA+u</TD>
+<TD>NVDA+u</TD>
+<TD>Via de vervolgkeuzelijst kunt u kiezen hoe u wilt worden geïnformeerd over de voortgang van de voortgangsbalk.</TD>
+</TR>
+<TR>
+<TD ALIGN="center">Dynamische inhoudsveranderingen melden</TD>
+<TD>NVDA+5</TD>
+<TD>NVDA+5</TD>
+<TD>Schakelt het automatisch melden van nieuwe inhoud aan of uit voor bepaalde besturingselementen zoals terminalvensters of chatgeschiedenis.</TD>
+</TR>
+</TABLE>
+
+<H4>Bladermodus-instellingen (NVDA+control+b)</H4>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD ALIGN="center">Schermlay-out gebruiken</TD>
+<TD>NVDA+v</TD>
+<TD>NVDA+v</TD>
+<TD>Hiermee kunt u bepalen hoe de inhoud van een document in bladermodus moet worden weergegeven. Wilt u dat inhoud zoals links en andere velden op een aparte regel komen te staan of moet alles blijven zoals het wordt getoond. Als het selectievakje is ingeschakeld blijft alles staan zoals weergegeven. Als u het vinkje weghaalt, worden de velden op aparte regels getoond.</TD>
+</TR>
+</TABLE>
+
+<H3>De configuratie opslaan en opnieuw laden</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Desktoptoets</TH>
+<TH>Laptoptoets</TH>
+<TH>Beschrijving</TH>
+</TR>
+<TR>
+<TD>Configuratie opslaan</TD>
+<TD>NVDA+control+c</TD>
+<TD>NVDA+control+c</TD>
+<TD>Hiermee worden de huidige instellingen opgeslagen zodat deze niet verloren gaan als NVDA wordt afgesloten.</TD>
+</TR>
+<TR>
+<TD>Configuratie terugzetten</TD>
+<TD>NVDA+control+r</TD>
+<TD>NVDA+control+r</TD>
+<TD>Door eenmaal drukken  worden de instellingen hersteld zoals deze waren toen u de configuratie de laatste keer hebt opgeslagen. Bij driemaal drukken worden de fabrieksinstellingen hersteld.</TD>
+</TR>
+</TABLE>
+
+<H3>Configuratieprofielen</H3>
+<H4>Basisbeheer</H4>
+<UL>
+<LI>NVDA+control+p: Het dialoogvenster Configuratieprofielen  weergeven.
+</UL>
+
+<P></P>
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>Ondersteunde Brailleleesregels</H2>
+<H3>Freedom Scientific Focus/PAC Mate Series</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets (van leesregel)</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>topRouting1 (eerste braillecel)</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruitscrollen</TD>
+<TD>topRouting20/40/80 (laatste braillecel)</TD>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>leftAdvanceBar (linker advance-balk)</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruitscrollen</TD>
+<TD>rightAdvanceBar (rechter advance-balk)</TD>
+</TR>
+<TR>
+<TD>Braillevolgmodus wisselen</TD>
+<TD>linker GDF-knop+rechter GDF-knop</TD>
+</TR>
+<TR>
+<TD>Functie linker WizWheel wisselen</TD>
+<TD>Linker WizWheel  indrukken</TD>
+</TR>
+<TR>
+<TD>Achteruit scrollen met gebruik van linker WizWheel</TD>
+<TD>Linker WizWheel omhoog</TD>
+</TR>
+<TR>
+<TD>Vooruit scrollen met gebruik  linker WizWheel</TD>
+<TD>Linker WizWheel omlaag</TD>
+</TR>
+<TR>
+<TD>Functie rechter WizWheel wisselen</TD>
+<TD>Rechter WizWheel indrukken</TD>
+</TR>
+<TR>
+<TD>Achteruitscrollen met gebruik van rechter WizWheel</TD>
+<TD>Rechter WizWheel omhoog</TD>
+</TR>
+<TR>
+<TD>Vooruit sscrollen met gebruik van rechter WizWheel</TD>
+<TD>RechterWizWheel omlaag</TD>
+</TR>
+<TR>
+<TD>Naar braillecel gaan</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>BackSpace</TD>
+<TD>punt7</TD>
+</TR>
+<TR>
+<TD>Entertoets</TD>
+<TD>punt8</TD>
+</TR>
+<TR>
+<TD>Shift+tab</TD>
+<TD>spatiebalk+punt1+punt2</TD>
+</TR>
+<TR>
+<TD>Tab</TD>
+<TD>spatiebalk+punt4+punt5</TD>
+</TR>
+<TR>
+<TD>Pijl omhoog</TD>
+<TD>spatiebalk+punt1</TD>
+</TR>
+<TR>
+<TD>Pijl omlaag</TD>
+<TD>spatiebalk+punt4</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl links</TD>
+<TD>spatiebalk+punt2</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl rechts</TD>
+<TD>spatiebalk+punt5</TD>
+</TR>
+<TR>
+<TD>Pijl links</TD>
+<TD>spatiebalk+punt3</TD>
+</TR>
+<TR>
+<TD>Pijl rechts</TD>
+<TD>spatiebalk+punt6</TD>
+</TR>
+<TR>
+<TD>Home</TD>
+<TD>spatiebalk+punt1+punt3</TD>
+</TR>
+<TR>
+<TD>End</TD>
+<TD>spatiebalk+punt4+punt6</TD>
+</TR>
+<TR>
+<TD>Ctrl+Home</TD>
+<TD>spatiebalk+punt1+punt2+punt3</TD>
+</TR>
+<TR>
+<TD>Ctrl+End</TD>
+<TD>spatiebalk+punt4+punt5+punt6</TD>
+</TR>
+<TR>
+<TD>Alt</TD>
+<TD>spatiebalk+punt1+punt3+punt4</TD>
+</TR>
+<TR>
+<TD>Alt+tab</TD>
+<TD>spatiebalk+punt2+punt3+punt4+punt5</TD>
+</TR>
+<TR>
+<TD>Escape</TD>
+<TD>spatiebalk+punt1+punt5</TD>
+</TR>
+<TR>
+<TD>windows-toets</TD>
+<TD>spatiebalk+punt2+punt4+punt5+punt6</TD>
+</TR>
+<TR>
+<TD>Spatiebalk</TD>
+<TD>braillespatiebalk</TD>
+</TR>
+<TR>
+<TD>Windows+d (alle toepassingen minimaliseren)</TD>
+<TD>spatiebalk+punt1+punt2+punt3+punt4+punt5+punt6</TD>
+</TR>
+<TR>
+<TD>Huidige regel weergeven</TD>
+<TD>spatiebalk+punt1+punt4</TD>
+</TR>
+<TR>
+<TD>NVDA-menu</TD>
+<TD>spatiebalk+punt1+punt3+punt4+punt5</TD>
+</TR>
+</TABLE>
+
+<P>
+Voor de nieuwere Focusmodellen die uitgerust zijn met "rocker bar" toetsen (Focus 40, Focus 80 en Focus Blue):
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toetscombinatie</TH>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>linkerRockerBarOmhoog, rechterRockerBarOmhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>linkerRockerBarOmlaag, rechterRockerBarOmlaag</TD>
+</TR>
+</TABLE>
+
+<P>
+ Alleen voor de Focus 80:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toetscombinatie</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>linkerBumperBarOmhoog, rechterBumperBarOmhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel verder scrollen</TD>
+<TD>linkerBumperBarOmlaag, rechterBumperBarOmlaag</TD>
+</TR>
+</TABLE>
+
+<H3>Optelec ALVA BC640/680</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel achteruit scrollen</TD>
+<TD>t1 of etouch1</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar voorafgaande regel brengen</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>Naar huidige focus verplaatsen</TD>
+<TD>t3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel brengen</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>t5 of etouch3</TD>
+</TR>
+<TR>
+<TD>Naar braillecel gaan| Routing</TD>
+</TR>
+<TR>
+<TD>Naar bovenste regel verplaatsen in leesmodus</TD>
+<TD>t1+t2</TD>
+</TR>
+<TR>
+<TD>Naar onderste regel verplaatsen in leesmodus</TD>
+<TD>t4+t5</TD>
+</TR>
+<TR>
+<TD>Braillevolgmodus wisselen (tethered) naar</TD>
+<TD>t1+t3</TD>
+</TR>
+<TR>
+<TD>Titel weergeven</TD>
+<TD>etouch2</TD>
+</TR>
+<TR>
+<TD>Statusbalk weergeven</TD>
+<TD>etouch4</TD>
+</TR>
+<TR>
+<TD>Shift+Tabtoets</TD>
+<TD>Sp1</TD>
+</TR>
+<TR>
+<TD>Alt-Toets</TD>
+<TD>Sp2</TD>
+</TR>
+<TR>
+<TD>Escape-toets</TD>
+<TD>Sp3</TD>
+</TR>
+<TR>
+<TD>Tab-toets</TD>
+<TD>Sp4</TD>
+</TR>
+<TR>
+<TD>Pijltoets omhoog</TD>
+<TD>SpUp</TD>
+</TR>
+<TR>
+<TD>Pijltoets omlaag</TD>
+<TD>SpDown</TD>
+</TR>
+<TR>
+<TD>Pijltoets naar links</TD>
+<TD>SpLinks</TD>
+</TR>
+<TR>
+<TD>Pijltoets naar rechts</TD>
+<TD>SpRechts</TD>
+</TR>
+<TR>
+<TD>Enter-toets</TD>
+<TD>SpEnter</TD>
+</TR>
+<TR>
+<TD>Datum/tijd weergeven</TD>
+<TD>sp1+sp2</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>Sp1+Sp3</TD>
+</TR>
+<TR>
+<TD>Windows-Toets+D (alle toepassingenn minimaliseren)</TD>
+<TD>Sp1+Sp4</TD>
+</TR>
+<TR>
+<TD>windows toets+b(focus op systeemvak)</TD>
+<TD>sp3+sp4</TD>
+</TR>
+<TR>
+<TD>Windows-Toets</TD>
+<TD>Sp2+Sp3</TD>
+</TR>
+<TR>
+<TD>Alt+Tabtoets</TD>
+<TD>Sp2+Sp4</TD>
+</TR>
+<TR>
+<TD>control+home-toets</TD>
+<TD>t3+spOmhoog</TD>
+</TR>
+<TR>
+<TD>control+end-toets</TD>
+<TD>t3+spOmlaag</TD>
+</TR>
+<TR>
+<TD>home-toets</TD>
+<TD>t3+spLinks</TD>
+</TR>
+<TR>
+<TD>end-toets</TD>
+<TD>t3+spRechts</TD>
+</TR>
+</TABLE>
+
+<H3>Handy Tech Leesregels</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel achteruit scrollen</TD>
+<TD>Links, omhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>Rechts, omlaag</TD>
+</TR>
+<TR>
+<TD>Een regel naar boven</TD>
+<TD>B4</TD>
+</TR>
+<TR>
+<TD>Een regel naar beneden</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD ALIGN="right">Naar braillecel springen</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Shift+Tabtoets</TD>
+<TD>ESC</TD>
+</TR>
+<TR>
+<TD>Alt-Toets</TD>
+<TD>B2+B4+B5</TD>
+</TR>
+<TR>
+<TD>Escape-Toets</TD>
+<TD>B4+B6</TD>
+</TR>
+<TR>
+<TD>Tabtoets</TD>
+<TD>Enter</TD>
+</TR>
+<TR>
+<TD>Enter-toets</TD>
+<TD>ESC+Enter</TD>
+</TR>
+<TR>
+<TD>Pijltoets omhoog</TD>
+<TD>Linker spatietoets</TD>
+</TR>
+<TR>
+<TD>Pijltoets omlaag</TD>
+<TD>Rechter spatietoets</TD>
+</TR>
+<TR>
+<TD>NVDA-Menü</TD>
+<TD>B2+B4+B5+B6</TD>
+</TR>
+<TR>
+<TD>HandyTech-configuratie</TD>
+<TD>B4+B8</TD>
+</TR>
+</TABLE>
+
+<H3>MDV Lilli</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel achteruit scrollen</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel bewegen</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel bewegen</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Cursor naar Braillecel verplaatsen</TD>
+<TD>route</TD>
+</TR>
+<TR>
+<TD>Shift+Tabtoets</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>Tabtoets</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>Alt+Tabtoets</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>Alt+Shift+Tabtoets</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<H3>Brailleleesregels van Baum/HumanWare/APH/Orbit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+Voor leesregels die een Joystick hebben, geldt:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Toets "pijl omhoog"</TD>
+<TD>omhoog</TD>
+</TR>
+<TR>
+<TD>Toets "Pijl omlaag"</TD>
+<TD>omlaag</TD>
+</TR>
+<TR>
+<TD>Toets "Pijl links"</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Toets "Pijl rechts"</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Enter-toets</TD>
+<TD>selecteren</TD>
+</TR>
+</TABLE>
+
+<H3>Hedo Profiline usb</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>B3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Koppeling van leesregel omschakelen</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>alles lezen</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>Hedo MobilLine USB</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>B3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Koppeling van leesregel omschakelen</TD>
+<TD>K2</TD>
+</TR>
+<TR>
+<TD>alles lezen</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare Brailliant BI/B-Serie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>Links</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>Rechts</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>Omhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>Omlaag</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Leesregel koppelen aan/uit</TD>
+<TD>omhoog+omlaag</TD>
+</TR>
+<TR>
+<TD>Toets Pijl omhoog</TD>
+<TD>Spatiebalk+Punt1</TD>
+</TR>
+<TR>
+<TD>Toets Pijl omlaag</TD>
+<TD>Spatiebalk+Punt4</TD>
+</TR>
+<TR>
+<TD>Toets Pijl links</TD>
+<TD>Spatiebalk+Punt3</TD>
+</TR>
+<TR>
+<TD>Toets Pijl rechts</TD>
+<TD>Spatiebalk+Punt6</TD>
+</TR>
+<TR>
+<TD>NVDA-menu</TD>
+<TD>c1+c3+c4+c5 (commando n)</TD>
+</TR>
+<TR>
+<TD>Shift+Tab-toets</TD>
+<TD>Spatiebalk+Punt1+Punt3</TD>
+</TR>
+<TR>
+<TD>Tab-Toets</TD>
+<TD>Spatiebalk+Punt4+Punt6</TD>
+</TR>
+<TR>
+<TD>Alt-Toets</TD>
+<TD>Spatiebalk+Punt1+Punt3+Punt4 (spatiebalk+m)</TD>
+</TR>
+<TR>
+<TD>Escape-toets</TD>
+<TD>Spatiebalk+Punt1+Punt5 (spatiebalk+e)</TD>
+</TR>
+<TR>
+<TD>Enter-toets</TD>
+<TD>Punt8</TD>
+</TR>
+<TR>
+<TD>Windows-toets+d (alle toepassingen minimaliseren)</TD>
+<TD>c1+c4+c5 (commando d)</TD>
+</TR>
+<TR>
+<TD>Windows-toets</TD>
+<TD>Spatiebalk+Punt3+Punt4</TD>
+</TR>
+<TR>
+<TD>Alt+Tabtoets</TD>
+<TD>Spatiebalk+Punt2+Punt3+Punt4+Punt5 (spatiebalk+t)</TD>
+</TR>
+<TR>
+<TD>Alles lezen</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<H3>HIMS Braille Sense/Braille EDGE/Smart Beetle Serie</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>Omlaag scrollen aan  linkerkant</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>Omlaag Scrollen aan rechterkant</TD>
+</TR>
+<TR>
+<TD>Naar vorige regel verplaatsen</TD>
+<TD>Omhoog scrollen aan linkerkant</TD>
+</TR>
+<TR>
+<TD>Naar volgende regel verplaatsen</TD>
+<TD>Omhoog scrollen aan rechterkant</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel brengen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Toetscombinatie Shift+Tab</TD>
+<TD>Punt 1+Punt 2+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Alttoets</TD>
+<TD>Punt 1+Punt 3+Punt 4+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Esc-toets</TD>
+<TD>Punt 1+Punt 5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Tabtoets</TD>
+<TD>Punt 4+Punt 5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Enter-toets</TD>
+<TD>Punt8</TD>
+</TR>
+<TR>
+<TD>BackSpace</TD>
+<TD>Punt7</TD>
+</TR>
+<TR>
+<TD>Pijl Omhoog</TD>
+<TD>Punt1+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Pijl Omlaag</TD>
+<TD>Punt 4+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>CapsLock-toets</TD>
+<TD>punt1+Punt3+Punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Shiftt+alt+tab</TD>
+<TD>Advance2+Advance3+Advance1</TD>
+</TR>
+<TR>
+<TD>Alt+tab</TD>
+<TD>Advance2+Advance3</TD>
+</TR>
+<TR>
+<TD>End</TD>
+<TD>Punt4+Punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+End</TD>
+<TD>Punt4+Punt5+Punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Home-toets</TD>
+<TD>Punt1+Punt3+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+Home</TD>
+<TD>Punt1+Punt2+Punt3+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Pijl links</TD>
+<TD>Punt3+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+Shift+Pijl links</TD>
+<TD>Punt2+Punt8+Spatiebalk+Advance1</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl links</TD>
+<TD>Punt2+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Shift+alt+Pijl links</TD>
+<TD>Punt2+Punt7+Advance1</TD>
+</TR>
+<TR>
+<TD>Alt+Pijl links</TD>
+<TD>Punt2+Punt7</TD>
+</TR>
+<TR>
+<TD>Pijl rechts</TD>
+<TD>Punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+Shift+Pijl rechts</TD>
+<TD>punt5+punt8+Spatiebalk+Advance1</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl rechts</TD>
+<TD>punt5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Shift+Alt+Pijl rechts</TD>
+<TD>punt5+punt7+Advance1</TD>
+</TR>
+<TR>
+<TD>Alt+Pijl rechts</TD>
+<TD>punt5+punt7</TD>
+</TR>
+<TR>
+<TD>PageUp</TD>
+<TD>punt1+punt2+punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+PageUp</TD>
+<TD>punt1+punt2+punt6+punt8+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+Shift+Pijl omhoog</TD>
+<TD>punt2+punt3+punt8+Spatiebalk+Advance1</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl omhoog</TD>
+<TD>punt2+punt3+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Shift+Alt+Pijl omhoog</TD>
+<TD>punt2+punt3+punt7+Advance1</TD>
+</TR>
+<TR>
+<TD>Alt+Pijl omhoog</TD>
+<TD>punt2+punt3+punt7</TD>
+</TR>
+<TR>
+<TD>Shift+Pijl omhoog</TD>
+<TD>Omlaag scrollen aan linker kant +Spatiebalk</TD>
+</TR>
+<TR>
+<TD>PageDown</TD>
+<TD>punt3+punt4+punt5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+PageDown</TD>
+<TD>punt3+punt4+punt5+punt8+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Ctrl+Shift+Pijl omlaag</TD>
+<TD>punt5+punt6+punt8+Spatiebalk+Advance1</TD>
+</TR>
+<TR>
+<TD>Ctrl+Pijl omlaag</TD>
+<TD>punt5+punt6+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Shift+Alt+Pijl omlaag</TD>
+<TD>punt5+punt6+punt7+Advance1</TD>
+</TR>
+<TR>
+<TD>Alt+Pijl omlaag</TD>
+<TD>punt5+punt6+punt7</TD>
+</TR>
+<TR>
+<TD>Shift+Pijl omlaag</TD>
+<TD>Omlaag scrollen aan rechterkant+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>Del</TD>
+<TD>punt1+punt3+punt5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>F1</TD>
+<TD>punt1+punt2+punt5+Spatiebalk</TD>
+</TR>
+<TR>
+<TD>F3</TD>
+<TD>punt1+punt2+punt4+punt8</TD>
+</TR>
+<TR>
+<TD>F4</TD>
+<TD>punt7+Advance3</TD>
+</TR>
+<TR>
+<TD>windows+b</TD>
+<TD>punt1+punt2+Advance1</TD>
+</TR>
+<TR>
+<TD>windows+d</TD>
+<TD>punt1+punt4+punt5+Advance1</TD>
+</TR>
+</TABLE>
+
+<H3>HIMS SyncBraille</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>Omlaag scrollen aan de linkerkant</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>Omlaag scrollen aan de rechterkant</TD>
+</TR>
+<TR>
+<TD>Cursornaar Braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<H3>Seika Brailleleesregels</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>B3</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>Br</TD>
+</TR>
+<TR>
+<TD>Cursor naar braillecel verplaatsen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Koppeling van leesregel omschakelen</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>alles lezen</TD>
+<TD>B6</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>B1</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>b1+b2</TD>
+</TR>
+<TR>
+<TD>NVDA-menu</TD>
+<TD COLSPAN="2">links+rechts</TD>
+</TR>
+</TABLE>
+
+<H3>Papenmeier Braillex Nieuwere Modellen</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruitscrollen</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>omhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>omlaag</TD>
+</TR>
+<TR>
+<TD>Cursor naar Braillecel verplaatsen</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Teken onder cursor voorlezen</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Huidige navigatorobject activeren</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Wissel Braille gekoppeld aann</TD>
+<TD>r2</TD>
+</TR>
+<TR>
+<TD>Titel van actieve venster weergeven</TD>
+<TD>l1+omhoog</TD>
+</TR>
+<TR>
+<TD>Statusbalk actieve venster weergeven</TD>
+<TD>l2+omlaag</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar hoger niveau verplaatsen</TD>
+<TD>omhoog2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject één niveau naar beneden verplaatsen</TD>
+<TD>omlaag2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar volgende Object verplaatsen</TD>
+<TD>links2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar voorafgaand object verplaatsen</TD>
+<TD>rechts2</TD>
+</TR>
+<TR>
+<TD>Documentopmaak weergeven</TD>
+<TD COLSPAN="2">bovenste rij routingtoetsen</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>backspace-toets</TD>
+<TD>punt 7</TD>
+</TR>
+<TR>
+<TD>enter-toets</TD>
+<TD>punt 8</TD>
+</TR>
+<TR>
+<TD>escape-toets</TD>
+<TD>spatie + punt 7</TD>
+</TR>
+<TR>
+<TD>pijl omhoog-toets</TD>
+<TD>spatie + punt 2</TD>
+</TR>
+<TR>
+<TD>linker pijltoets</TD>
+<TD>spatie + punt 1</TD>
+</TR>
+<TR>
+<TD>rechter pijltoets</TD>
+<TD>spatie + punt 4</TD>
+</TR>
+<TR>
+<TD>pijl omlaag-toets</TD>
+<TD>spatie + puunt 5</TD>
+</TR>
+<TR>
+<TD>Ctrl-toets</TD>
+<TD>lt+punt2</TD>
+</TR>
+<TR>
+<TD>alt-toets</TD>
+<TD>lt+punt3</TD>
+</TR>
+<TR>
+<TD>ctrl+escape-toets</TD>
+<TD>spatie + punt 1 2 3 4 5 6</TD>
+</TR>
+<TR>
+<TD>tab-toets</TD>
+<TD>spatie + punt 3 7</TD>
+</TR>
+</TABLE>
+
+<H3>Papenmeier Braille BRAILLEX Oudere Modellen</H3>
+<P>
+Toestellen met EAB:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>links</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruitscrollen</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>omhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>omlaag</TD>
+</TR>
+<TR>
+<TD>Cursor naar Braillecel verplaatsen</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Teken onder cursor voorlezen</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Huidige navigatorobject activeren</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Titel van actieve venster weergeven</TD>
+<TD>l1+omhoog</TD>
+</TR>
+<TR>
+<TD>Statusbalk actieve venster weergeven</TD>
+<TD>l2+omlaag</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar hoger niveau verplaatsen</TD>
+<TD>omhoog2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject één niveau naar beneden verplaatsen</TD>
+<TD>omlaag2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar volgende Object verplaatsen</TD>
+<TD>rechts2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar voorafgaand object verplaatsen</TD>
+<TD>links2</TD>
+</TR>
+<TR>
+<TD>Documentopmaak weergeven</TD>
+<TD>bovenste rij routingtoetsen</TD>
+</TR>
+</TABLE>
+
+<P>
+BRAILLEX Tiny:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Teken onder cursor voorlezen</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Huidige navigatorobject activeren</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruitscrollen</TD>
+<TD>rechts</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>omhoog</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>omlaag</TD>
+</TR>
+<TR>
+<TD>Braillevolgmodus wisselen</TD>
+<TD>r2</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar hoger niveau verplaatsen</TD>
+<TD>r1+up</TD>
+</TR>
+<TR>
+<TD>Navigatorobject één niveau naar beneden verplaatsen</TD>
+<TD>r1+dn</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar voorafgaand Object verplaatsen</TD>
+<TD>r1+left</TD>
+</TR>
+<TR>
+<TD>Navigatorobject naar volgende Object verplaatsen</TD>
+<TD>r1+right</TD>
+</TR>
+<TR>
+<TD>Documentopmaak weergeven</TD>
+<TD>reportf</TD>
+</TR>
+<TR>
+<TD>Titelweergeven</TD>
+<TD>l1+omhoog</TD>
+</TR>
+<TR>
+<TD>Statusbalk weergeven</TD>
+<TD>l2+omlaag</TD>
+</TR>
+</TABLE>
+
+<P>
+BRAILLEX 2D Scherm:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Teken onder cursor voorlezen</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Huidige navigatorobject activeren</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Documentopmaak weergeven</TD>
+<TD>reportf</TD>
+</TR>
+<TR>
+<TD>Naar vorige regel gaan</TD>
+<TD>up/omhoog</TD>
+</TR>
+<TR>
+<TD>Leesregel terugscrollen</TD>
+<TD>left/links</TD>
+</TR>
+<TR>
+<TD>Leesregel vooruitscrollen| right/rechts</TD>
+</TR>
+<TR>
+<TD>Naar volgende regel gaan</TD>
+<TD>dn/omlaag</TD>
+</TR>
+<TR>
+<TD>Naar volgend object gaan</TD>
+<TD>left2/links2</TD>
+</TR>
+<TR>
+<TD>Één niveau omhoog gaan</TD>
+<TD>up2/omhoog2</TD>
+</TR>
+<TR>
+<TD>ÉÉn niveau omlaag gaan</TD>
+<TD>dn2/omlaag2</TD>
+</TR>
+<TR>
+<TD>Naar voorafgaand object gaan</TD>
+<TD>right2/rechts2</TD>
+</TR>
+</TABLE>
+
+<H3>HumanWare BrailleNote</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Leesregel terugscrollen</TD>
+<TD>terug</TD>
+</TR>
+<TR>
+<TD>Leesregel vooruitscrollen</TD>
+<TD>vooruit</TD>
+</TR>
+<TR>
+<TD>Leesregel naar vorige regel verplaatsen</TD>
+<TD>vorige</TD>
+</TR>
+<TR>
+<TD>Leesregel naar volgende regel verplaatsen</TD>
+<TD>volgende</TD>
+</TR>
+<TR>
+<TD>Naar braillecel springen</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Braillevolgmodus wisselen</TD>
+<TD>vorige+volgende</TD>
+</TR>
+<TR>
+<TD>Pijl omhoog</TD>
+<TD>spatie+Punt1</TD>
+</TR>
+<TR>
+<TD>Pijl omlaag</TD>
+<TD>spatie+Punt4</TD>
+</TR>
+<TR>
+<TD>Pijl links</TD>
+<TD>spatie+Punt3</TD>
+</TR>
+<TR>
+<TD>Pijl rechts</TD>
+<TD>spatie+Punt6</TD>
+</TR>
+<TR>
+<TD>Pagina omhoog</TD>
+<TD>spatie+Punt1+punt3</TD>
+</TR>
+<TR>
+<TD>Pagina omlaag</TD>
+<TD>spatie+Punt4+punt6</TD>
+</TR>
+<TR>
+<TD>Home</TD>
+<TD>spatie+Punt1+punt2</TD>
+</TR>
+<TR>
+<TD>End</TD>
+<TD>spatie+Punt4+punt5</TD>
+</TR>
+<TR>
+<TD>Control+home</TD>
+<TD>spatie+punt1+punt2+punt3</TD>
+</TR>
+<TR>
+<TD>Control+end</TD>
+<TD>spatie+punt4+punt5+punt6</TD>
+</TR>
+<TR>
+<TD>Spatiebalk</TD>
+<TD>spatie</TD>
+</TR>
+<TR>
+<TD>Enter</TD>
+<TD>spatie+punt8</TD>
+</TR>
+<TR>
+<TD>Backspace</TD>
+<TD>spatie+punt7</TD>
+</TR>
+<TR>
+<TD>Tab</TD>
+<TD>spatie+punt2+punt3+punt4+punt5 (spatie+t)</TD>
+</TR>
+<TR>
+<TD>Shift+tab</TD>
+<TD>spatie+punt1+punt2+punt5+punt6</TD>
+</TR>
+<TR>
+<TD>Windows-toets</TD>
+<TD>spatie+punt2+punt4+punt5+punt6 (spatie+w)</TD>
+</TR>
+<TR>
+<TD>Alt</TD>
+<TD>spatie+punt1+punt3+punt4 (spatie+m)</TD>
+</TR>
+<TR>
+<TD>Invoerhulp in-/uitschakelen</TD>
+<TD>spatie+punt2+punt3+punt6 (spatie+kleine h)</TD>
+</TR>
+</TABLE>
+
+<H3>EcoBraille</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>brailleleesregel terugscrollen</TD>
+<TD>T2</TD>
+</TR>
+<TR>
+<TD>brailleleesregel vooruitscrollen</TD>
+<TD>T4</TD>
+</TR>
+<TR>
+<TD>brailleleesregel naar vorige regel verplaatsen</TD>
+<TD>T1</TD>
+</TR>
+<TR>
+<TD>brailleleesregel naar volgende regel verplaatsen</TD>
+<TD>T5</TD>
+</TR>
+<TR>
+<TD>Naar braillecel gaan</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Huidige navigatorobject activeren</TD>
+<TD>T3</TD>
+</TR>
+<TR>
+<TD>Naar volgende leesmodus overschakelen</TD>
+<TD>F1</TD>
+</TR>
+<TR>
+<TD>Naar containerobject gaan</TD>
+<TD>F2</TD>
+</TR>
+<TR>
+<TD>Naar vorige leesmodus overschakelen</TD>
+<TD>F3</TD>
+</TR>
+<TR>
+<TD>Naar vorig object gaan</TD>
+<TD>F4</TD>
+</TR>
+<TR>
+<TD>Huidig object melden</TD>
+<TD>F5</TD>
+</TR>
+<TR>
+<TD>Naar volgend object gaan</TD>
+<TD>F6</TD>
+</TR>
+<TR>
+<TD>Naar object gaan dat de focus heeft</TD>
+<TD>F7</TD>
+</TR>
+<TR>
+<TD>Naar eerste “contained” object gaan</TD>
+<TD>F8</TD>
+</TR>
+<TR>
+<TD>Systeemfocus of invoegcursor naar huidige leespositie verplaatsen</TD>
+<TD>F9</TD>
+</TR>
+<TR>
+<TD>Leescursorpositie melden</TD>
+<TD>F0</TD>
+</TR>
+<TR>
+<TD>Wisselknop “braille tethered to”</TD>
+<TD>A</TD>
+</TR>
+</TABLE>
+
+<H3>SuperBraille</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>Toets</TH>
+</TR>
+<TR>
+<TD>Leesregel terugscrollen</TD>
+<TD>numerieke Min-toets</TD>
+</TR>
+<TR>
+<TD>Leesregel vooruitscrollen</TD>
+<TD>numerieke Plus-toets</TD>
+</TR>
+</TABLE>
+
+<H3>BRLTTY</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Naam</TH>
+<TH>BRLTTY-commando</TH>
+</TR>
+<TR>
+<TD>Brailleregel terugscrollen</TD>
+<TD>fwinlt (een scherm naar links bewegen)</TD>
+</TR>
+<TR>
+<TD>Brailleregel vooruit scrollen</TD>
+<TD>fwinrt (een scherm naar rechts bewegen)</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar vorige regel verplaatsen</TD>
+<TD>lnup (een regel omhoog gaan)</TD>
+</TR>
+<TR>
+<TD>Brailleregel naar volgende regel verplaatsen</TD>
+<TD>lndn (een regel omlaag gaan)</TD>
+</TR>
+<TR>
+<TD>Cursor naar Braillecel verplaatsen</TD>
+<TD>route (Cursor naar karakter bewegen)</TD>
+</TR>
+</TABLE>
+
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\nl\keyCommands.t2t -->
+</BODY></HTML>

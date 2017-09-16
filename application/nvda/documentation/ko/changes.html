@@ -1,0 +1,1288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 변경된 사항</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 변경된 사항</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>2017.3</H2>
+<P>
+이번 버전의 주 기능들: 점자 약자 입력; 윈도우 10에서 제공하는 OneCore 보이스 지원; 윈도우 10 OCR을 통한 문자 인식; 점자 및 웹 지원 기능 향상 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>점자 설정 대화상자에 "점자 메시지를 영구적으로 표시" 설정 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6669" target="_blank">#6669</A>)
+<LI>마이크로소프트 Outlook 메시지 목록 탐색 시 메시지 플래그가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6374" target="_blank">#6374</A>)
+<LI>마이크로소프트 파워포인트에서 슬라이드 편집 시 도형 모양(예: 삼각형, 동그라미, 비디오, 화살표 등)이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7111" target="_blank">#7111</A>)
+<LI>구글 크롬 사용 시 수학 컨텐츠(특히 MathML로 표기된 내용) 탐색 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/7184" target="_blank">#7184</A>)
+<LI>윈도우 10 사용 시 윈도우 OneCore(Mobile) 보이스 지원 추가 및 본 옵션이 음성 엔진 목록에 추가됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6159" target="_blank">#6159</A>)
+<LI>레지스트리를 통해 NVDA 설정이 사용자의 local application data 폴더에 저장되도록 설정할 수 있음. 사용 설명서 내 시스템 환경 옵션 섹션을 참조바람. (<A HREF="https://github.com/nvaccess/nvda/issues/6812" target="_blank">#6812</A>)
+<LI>웹 브라우저 사용 시 필드의 place holder(aria-placeholder) 값이 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7004" target="_blank">#7004</A>)
+<LI>마이크로소프트 워드에서 브라우즈 모드 사용 시 w/shift+w를 사용하여 철자 오류 탐색 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/6942" target="_blank">#6942</A>)
+<LI>마이크로소프트 Outlook 내 일정 대화상자 내 날짜 선택 컨트롤 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/7217" target="_blank">#7217</A>)
+<LI>윈도우 10 Mail 받는 사람/CC 필드 및 설정 앱과 같은 컨트롤에서 검색 결과 선택 시 결과가 자동으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>윈도우 10 사용 시 시작 메뉴, Mail 앱 및 설정 앱과 같은 곳에서 검색 결과가 나타날때 이것을 사운드로 알릴 수 있도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>스카이프 비지니스 사용 시 특정 알림(예: 상대방에게서 메시지를 받았을 때)이 자동으로 출력되도록 함.  (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>스카이프 비지니스 사용 시 체팅 도중 새 메시지가 자동으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7286" target="_blank">#7286</A>)
+<LI>마이크로소프트 Edge 사용 시 파일 다운로드 시작과 같은 알림 내용이 자동으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>점자 키보드가 장착된 점자 디스플레이 사용 시 키보드를 사용하여 정자 및 약자 점자 입력 가능. 사용설명서 내 점자 입력 섹션을 참조 바람. (<A HREF="https://github.com/nvaccess/nvda/issues/2439" target="_blank">#2439</A>)
+<LI>유니코드 점자 코드를 사용하여 유니코드 점형을 입력할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/6449" target="_blank">#6449</A>)
+<LI>타이완에서 보급되는 SuperBraille 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/7352" target="_blank">#7352</A>)
+<LI>점자 표기법: 덴마크어 8점 컴퓨터 점자, 리투아니아어, 페르시아어 8점 컴퓨터 점자, 페르시아어 1종 점자및 슬로베니아어 8점 컴퓨터 점자 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6188" target="_blank">#6188</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6550" target="_blank">#6550</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6773" target="_blank">#6773</A>, <A HREF="https://github.com/nvaccess/nvda/issues/7367" target="_blank">#7367</A>)
+<LI>미국 영어 8점 컴퓨터 점자 코드 지원 향상(bullet, 유로, 및 엑센트 글자 추가). (<A HREF="https://github.com/nvaccess/nvda/issues/6836" target="_blank">#6836</A>)
+<LI>윈도우 10 사용 시 윈도우 10이 제공하는 OCR 기능을 사용하여 이미지나 접근이 불편한 앱에서 문자 인식이 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/7361" target="_blank">#7361</A>)
+ <UL>
+ <LI>윈도우 10 OCR 설정을 통해 인식 언어를 지정할 수 있음.
+ <LI>현재 객체의 내용을 문자 인식하려면 NVDA+r을 누르기 바람.
+ <LI>사용설명서 내 문자 인식 섹션을 참조바람.
+ </UL>
+<LI>점자 설정에 추가된 "포커스 내용 출력" 설정을 통해 점자 디스플레이에 포커스 관련 세부 내용이 어떻게 출렭될 것인지를 설정할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/217" target="_blank">#217</A>)
+ <UL>
+ <LI>예를 들어 "포커스 내용 변경 시 출력" 또는 "뒤로 스크롤 시 출력"을 선택하고 목록이나 메뉴를 탐색할 때 내용의 위치가 계속 변경되는 불편함이 어느 정도 해결이 됨.
+ <LI>더 자세한 정보 및 특정 사례에 대해서는 사용설명서 내 "포커스 내용 출력" 섹션을 참고바람.
+ </UL>
+<LI>파이어폭스와 크롬 사용 시 컨텐츠 일부만 보여지는 spreadsheet(특히 ARIA 1.1에 추가된 aria-rowcount, aria-colcount, aria-rowindex 및 aria-colindex 속성이 적용된 complex dynamic grid) 탐색 지원 추가.  (<A HREF="https://github.com/nvaccess/nvda/issues/7410" target="_blank">#7410</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>NVDA를 곧바로 재시작할 수 있는 명령(script_restart, 명령 할당 않됌) 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6396" target="_blank">#6396</A>)
+<LI>NVDA 시작 대화상자에서 키보드 레이아웃을 설정할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/6863" target="_blank">#6863</A>)
+<LI>점자 사용 시 더 많은 컨트롤, 상태 및 랜드마크 정보 내용이 간소화됨. 사용설명서 내 "점자 사용 시 컨트롤, 상태 및 랜드마크 정보 내용" 섹션 참고 바람. (<A HREF="https://github.com/nvaccess/nvda/issues/7188" target="_blank">#7188</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3975" target="_blank">#3975</A>)
+ <UL>
+ <LI>"landmark": "lmk"
+ <LI>"banner": "bnnr"
+ <LI>"complementary": "comp"
+ <LI>"contentinfo": "cinf"
+ <LI>"main": "main"
+ <LI>"navigation": "nav"
+ <LI>"search": "srch"
+ <LI>"form": "frm"
+ <LI>"region": "rgn"
+ <LI>예: "navigation landmark"는 "lmk nav"로 표시.
+ </UL>
+<LI>이스피크 NG 음성 엔진 1.49.1 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/7280" target="_blank">#7280</A>)
+<LI>점자 설정 대화상자 내 점자 입력 및 출력 표 목록이 가나다순으로 정렬되어 나타나도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6113" target="_blank">#6113</A>)
+<LI>리브루이 점자 변환기 3.2.0 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/6935" target="_blank">#6935</A>)
+<LI>기본 점자 표기법이 영어 통합 점자(UEB) 1종 점자로 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6952" target="_blank">#6952</A>)
+<LI>본 버전 이후로 점자 디스플레이 사용 시 포커스된 객체의 내용이 변경되었을 때에만 세부 내용이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/217" target="_blank">#217</A>)
+ <UL>
+ <LI>이전에는 같은 종류의 객체(예: 목록 항목)에 포커스된 경우 같은 세부 내용이 출력되었었음.
+ <LI>이전 방식을 사용하려면 점자 설정 내 포커스 내용 출력에서 "항상 출력" 옵션을 선택 바람.
+ </UL>
+<LI>점자 사용 시 연계 커서(포커스 또는 리뷰(에 따라 커서 점형을 다르게 표시할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/7112" target="_blank">#7112</A>)
+<LI>NVDA 로고가 변경됨. 새 로고는 NV Access의 로고에서 사용된 보라색 바탕에 "NVDA"가 붙여진 텍스트가 하얀색 색상으로 표시되도록 하여 어느 색 바탕에서나 찾기 쉽도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7446" target="_blank">#7446</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>크롬에서 브라우즈 모드 사용 시 편집 가능 div 요소명이 요소의 값으로 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7153" target="_blank">#7153</A>)
+<LI>마이크로소프트 워드에서 빈 문서가 열린 상태에서 브라우즈 모드 사용 시 end 키를 누를 때 RuntimeError가 나지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7009" target="_blank">#7009</A>)
+<LI>마이크로소프트 Edge 사용 시 특정 요소가 ARIA 문서 롤로 표기되었을 때 브라우즈 모드가 제대로 작동하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6998" target="_blank">#6998</A>)
+<LI>브라우즈 모드 사용 시 줄 끝에서 shift+end키를 눌러 줄 끝까지 선택(또는 선택 해제)이 가능하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7157" target="_blank">#7157</A>)
+<LI>진행률 대화상자에서 진행률이 변경될 때 변경된 컨텐츠가 점자로 출력되도록 함(예: NVDA 업데이트 대화상자 내 다운로드 경과 시간 확인이 가능해짐). (<A HREF="https://github.com/nvaccess/nvda/issues/6862" target="_blank">#6862</A>)
+<LI>윈도우 10 사용 시 특정 콤보박스(예: 설정 앱 내 자동 실행 옵션)에서 설정 값 변경 시 새 설정 값이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6337" target="_blank">#6337</A>).
+<LI>마이크로소프트 Outlook 사용 시 새 미팅 또는 일정 대화상자 내 필요 없는 정보가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7216" target="_blank">#7216</A>)
+<LI>값이 없는 징행률 막대(예: 업데이트 확인 대화상자)의 값을 출력 시 만약 진행률 출력이 비프음이 아닌 설정이 적용된 경우 비프음이 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6759" target="_blank">#6759</A>)
+<LI>마이크로소프트 엑셀 2003 및 2007 사용 시 방향키로 worksheet 셀을 탐색할 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/8243" target="_blank">#8243</A>)
+<LI>윈도우 10 크리에이터 업데이트 및 이후 버전의 Mail 앱 사용 시 브라우즈 모드가 작동하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7289" target="_blank">#7289</A>)
+<LI>점자 키보드가 탑재된 점자 디스플레이 사용 시 거의 모든 디스플레이에서 7점을 눌러 이전 글자를 삭제하고 8점을 눌러 엔터키를 입력하도록 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6054" target="_blank">#6054</A>)
+<LI>편집창에서 캐럿을 옮길 때(예: 방향키 사용 또는 백스페이스를 누를 때) 거의 대부분의 편집창에서(예: 크롬 및 터미널 창) NVDA의 음성 반응이 빨라지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6424" target="_blank">#6424</A>)
+<LI>마이크로소프트 Outlook 2016 내 signature 대화상자 내용을 탐색할 수 있도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7253" target="_blank">#7253</A>)
+<LI>Java Swing 기반 프로그램 사용 중 표 탐색 시 가끔 사용 중인 프로그램이 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6992" target="_blank">#6992</A>)
+<LI>윈도우 10 크리에이터 업데이트 사용 시 토스트 알림 내용이 여러번 반복되어 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7128" target="_blank">#7128</A>)
+<LI>윈도우 10 시작 메뉴에서 텍스트 입력 후 엔터키를 눌렀을 때 입력된 검색 텍스트가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/7370" target="_blank">#7370</A>)
+<LI>마이크로소프트 Edge 사용 시 첫 글자를 이용하여 헤딩 탐색 시 명령 반응 속도가 개선됨.  (<A HREF="https://github.com/nvaccess/nvda/issues/7343" target="_blank">#7343</A>)
+<LI>마이크로소프트 Edge 브라우즈 모드 사용 시 특정 문서 내용(예: Wordpress 2015 테마)을 탐색할 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7143" target="_blank">#7143</A>)
+<LI>마이크로소프트 Edge 사용 시 영어 외 타국어 사용 시 랜드마크 이름이 제대로 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7328" target="_blank">#7328</A>)
+<LI>점자 디스플레이의 셀 길이보다 긴 텍스트를 선택할 때 선택 내용이 점자로 제대로 표시되도록 함(예: shift+아래 화살표를 눌러 여러줄 선택 시 마지막 줄의 내용이 점자로 표시되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/5770" target="_blank">#5770</A>)
+<LI>파이어폭스 사용 시 twitter.com에서 트위트를 볼때 "섹션"이 반복되어 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5741" target="_blank">#5741</A>)
+<LI>레이아웃 표에서 문서 서식 대화상자 내 레이아웃 표 알림 옵션이 적용되지 않는한 표 셀 탐색 명령을 사용할 수 없도록 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/7382" target="_blank">#7382</A>)
+<LI>파이어폭스와 크롬에서 브라우즈 모드를 사용하여 표를 탐색 시 셀 탐색 명령이 표에 표시되지 않은 셀을 건너뛰도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6652" target="_blank">#6652</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5655" target="_blank">#5655</A>)
+</UL>
+
+<H3>한국어 번역 관련</H3>
+<UL>
+<LI>마이크로소프트 오피스 관련 문자열 번역이 업데이트됨.
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2017.2</H2>
+<P>
+이번 버전의 주 기능들: 윈도우 10 Creators Update 사용시 오디오 도킹 지원 복원; 브라우즈 모드에서의 텍스트 선택 버그 수정(특히 전체 선택 관련 문제 해결); Edge 브라우저 지원 향상; 브라우저 모드에서의 현재 아이템(aria-current) 인식 지원 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 엑셀 사용 시 NVDA+f 명령을 사용하여 셀 테두리 정보를 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3044" target="_blank">#3044</A>)
+<LI>웹 브라우저 사용 시 aria-current 요소 인식 기능 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6358" target="_blank">#6358</A>)
+<LI>마이크로소프트 Edge 사용 시 자동 언어 변경 기능 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6852" target="_blank">#6852</A>)
+<LI>윈도우 10 Enterprise LTSB (Long-Term Servicing Branch)및 서버 버전 윈도우 계산기 앱 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6914" target="_blank">#6914</A>)
+<LI>현재 줄 읽기 명령을 세번 실행시 줄 철자가 풀이되어 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6893" target="_blank">#6893</A>)
+<LI>새 NVDA 언어: 미얀마어 추가.
+<LI>Unicode 위/아래 화살표 기호 및 분수 기호들이 음성으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3805" target="_blank">#3805</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>심플 리뷰 모드를 사용하여 UIA가 적용된 앱 탐색 시 탐색 효율성을 높이기 위해 컨텐츠가 없는 컨테이너 요소를 건너뛰도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6948" target="_blank">#6948</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6950" target="_blank">#6950</A>) 
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>브라우즈 모드 사용 시 웹 페이지 메뉴 아이템일 활성화될 수 있도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6735" target="_blank">#6735</A>)
+<LI>"사용자 프로필 삭제" 대화상자에서 escape를 누를 시 본 대화상자가 닫혀지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6851" target="_blank">#6851</A>)
+<LI>- 모질라 파이어폭스와 같은 Gecko 기반 프로그램에서 멀티프로세스 기능 사용 시 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6885" target="_blank">#6885</A>)
+<LI>화면 탐색 모드 사용 시 투명한 색 바탕의 텍스트의 배경 색상 정보의 정확도를 높임. (<A HREF="https://github.com/nvaccess/nvda/issues/6467" target="_blank">#6467</A>)
+<LI>인터넷 익스플로러 11 사용 시 웹 페이지에서 제공한 컨트롤 설명 내용(특히 iframe내 aria-describedby 및 다중 ID 제공 시)이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5784" target="_blank">#5784</A>)
+<LI>윈도우 10 Creators Update 내 오디오 도킹()도킹 해제, 음성 출력 시 도킹, 도킹 사용) 기능 복원. (<A HREF="https://github.com/nvaccess/nvda/issues/6933" target="_blank">#6933</A>)
+<LI>핫키 정보가 없는 UIA 객체를 탐색할 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6779" target="_blank">#6779</A>)
+<LI>특정 UIA 객체 핫키 정보 출력 중 두 공백 문자가 추가되어 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6790" target="_blank">#6790</A>)
+<LI>힘스 디스플레이 사용 시 특정 명령(예: space+4점)가 제대로 동작하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3157" target="_blank">#3157</A>)
+<LI>영어 외 다른 특정 언어가 설치된 시스템에서 시리얼 포트로 연결된 점자 디스플레이 사용 시 특정 상황에서 디스플레이와의 연결이 실패하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6845" target="_blank">#6845</A>)
+<LI>윈도우 종료시 NVDA 설정 파일이 깨지는 확률을 최소화하도록 함. 설정 저장시 설정이 임시 파일에 저장된 후 설정 파일을 덮어씌우도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3165" target="_blank">#3165</A>)
+<LI>현재 줄 읽기 명령을 두번 실행시 현재 사용중인 언어를 사용하여 철자가 발음되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6726" target="_blank">#6726</A>)
+<LI>윈도우 10 Creators Update/마이크로소프트 Edge 사용시 줄 단위 이동 속도가 최대 3배 빨라짐. (<A HREF="https://github.com/nvaccess/nvda/issues/6994" target="_blank">#6994</A>)
+<LI>윈도우 10 Creators Update/마이크로소프트 Edge 문서에 포커스될 때 "Web Runtime grouping"이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6948" target="_blank">#6948</A>)
+<LI>이전 및 추후 SecureCRT 버전 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6302" target="_blank">#6302</A>)
+<LI>Adobe Reader 사용 시 특정 PDF 문서(특히 ActualText 요소가 비었을 때)를 불러올때 Adobe Reader가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7021" target="_blank">#7021</A>, <A HREF="https://github.com/nvaccess/nvda/issues/7034" target="_blank">#7034</A>)
+<LI>마이크로소프트 Edge내 브라우즈 모드 사용시 t/shift+t를 사용하여 표를 탐색시 접근 가능한 표(ARIA grids)가 인식되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6977" target="_blank">#6977</A>)
+<LI>브라우즈 모드 사용시 텍스트 선택후 shift+home을 눌렀을때 줄 처음부터 텍스트가 선택되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5746" target="_blank">#5746</A>)
+<LI>브라우즈 모드 사용 시 케럿이 문서 상단이 아닌 곳에 있을 때 전체 선택(control+a) 실행 시 모든 텍스트가 선택되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6909" target="_blank">#6909</A>)
+<LI>브라우즈 모드에서 흖지 않게 나타나던 텍스트 선택 관련 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/7131" target="_blank">#7131</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2017.1</H2>
+<P>
+이번 버전의 주 기능들: 마이크로소프트 워드 내 섹션 및 텍스트 열 수 알림; Kindle PC 앱을 통한 책 독서; Edge 브라우저 지원 향상 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 워드 사용 시 문서 서식 대화상자 내 쪽 수 알림 설정이 선택된 경우 섹션 끝 종류 및 순위가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5946" target="_blank">#5946</A>)
+<LI>마이크로소프트 워드 사용 시 문서 서식 대화상자내 쪽 수 알림 설정이 선택된 경우 텍스트 열이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5946" target="_blank">#5946</A>)
+<LI>WordPad 사용 시 자동 언어 변경 기능 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6555" target="_blank">#6555</A>)
+<LI>마이크로소프트 Edge 브라우즈 모드 사용 시 NVDA의 문자열 찾기 명령(NVDA+control+f) 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/6580" target="_blank">#6580</A>)
+<LI>마이크로소프트 Edge 브라우즈 모드 사용 시 버튼 탐색 명령(b/shift+b) 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/6577" target="_blank">#6577</A>)
+<LI>마이크로소프트 엑셀에서 sheet를 복사 시 행 및 열 머릿말 정보도 복사되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6628" target="_blank">#6628</A>)
+<LI>Kindle 앱 1.19 버전 지원(책 독서중 링크, 각주, 그래픽, 텍스트 하이라이트 및 사용자 노트 탐색 가능). 자세한 정보는 NVDA 사용설명서 내 "Kindle PC 앱" 섹션을 참고바람. (<A HREF="https://github.com/nvaccess/nvda/issues/6247" target="_blank">#6247</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6638" target="_blank">#6638</A>)
+<LI>마이크로소프트 Edge 브라우즈 모드에 표 탐색 명령 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6594" target="_blank">#6594</A>)
+<LI>마이크로소프트 엑셀에서 리뷰 커서 위치 명령(NVDA+numpadDelete (desktop)/NVDA+delete (laptop))을 실행 시 worksheet와 현재 셀 위치가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6613" target="_blank">#6613</A>)
+<LI>NVDA 종료 대화상자에 NVDA 재시작 및 디버그 정보 기록 옵션 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6689" target="_blank">#6689</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>점자 커서 깜박이 설정이 200 ms 이상으로 설정되도록 함(프로필 업그레이드 시 본 설정이 조정되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/6470" target="_blank">#6470</A>)
+<LI>점자 설정에 점자 커서 깜박이 체크박스 추가함(이전에는 깜박이 설정을 0으로 설정하면 커서 깜박이가 꺼졌음). (<A HREF="https://github.com/nvaccess/nvda/issues/6470" target="_blank">#6470</A>)
+<LI>eSpeak NG (commit e095f008, 10 January 2017)으로 업데이트됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6717" target="_blank">#6717</A>)
+<LI>윈도우 10 Creators Update 사용 시 운영체제 사양 변경으로 인해 오디오 도킹 사용(always duck) 옵션을 사용할 수 없음(이전 윈도우 10 버전에는 적용되지 않음). (<A HREF="https://github.com/nvaccess/nvda/issues/6684" target="_blank">#6684</A>)
+<LI>윈도우 10 Creators Update 사용 시 운영체제 사양 변경으로 인해 음성 출력 시 오디오 도킹 사용 옵션 사양이 변경됨(음성 및 사운드 출력 시 배경음 볼륨이 낮추어지지 않은 상태에서 음성 출력이 되거나 음성 출력 후 곧바로 배경음 볼륨이 높아짐). (<A HREF="https://github.com/nvaccess/nvda/issues/6684" target="_blank">#6684</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>마이크로소프트 워드 내 브라우즈 모드를 사용하여 긴 문서를 문단 단위로 이동 시 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6368" target="_blank">#6368</A>)
+<LI>마이크로소프트 엑셀에서 워드로 표를 복사 시 복사된 표가 구조표(layout table)로 인식되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5927" target="_blank">#5927</A>)
+<LI>마이크로소프트 엑셀에서 보호 모드가 설정된 경우 글자 입력 시 경고음이 출력되도록 함(이전에는 실제로 입력되지 않은 글자가 출력되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/6570" target="_blank">#6570</A>)
+<LI>마이크로소프트 엑셀 사용 중 escape를 눌렀을 때 이전에 브라우즈 모드(NVDA+space)를 사용하다가 폼 필드에서 엔터를 눌러 포커스 모드로 전환한 이상 브라우즈 모드가 활성화되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6569" target="_blank">#6569</A>) 
+<LI>마이크로소프트 엑셀 사용 시 행 또는 열 전체가 병합될 때 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6216" target="_blank">#6216</A>)
+<LI>마이크로소프트 엑셀 셀 텍스트의 잘려진/삐져나온 정보 출력이 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6472" target="_blank">#6472</A>)
+<LI>읽기 전용 체크박스가 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6563" target="_blank">#6563</A>)
+<LI>오디오 장치가 없는 컴퓨터에 NVDA 설치 파일을 실행 시 오디오 출력 불가로 인한 로고 재생 관련 경고 대화상자가 나타나지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6289" target="_blank">#6289</A>)
+<LI>마이크로소프트 엑셀 리본 탐색 시 사용할 수 없는 컨트롤의 사용 여부가 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6430" target="_blank">#6430</A>)
+<LI>모든 창을 최소화할 때 "창"이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6671" target="_blank">#6671</A>)
+<LI>윈도우 10 Creators Update에서 마이크로소프트 Edge와 같은 유니버셜(Universal Windows Platform) 앱 사용 시 입력된 글자가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6017" target="_blank">#6017</A>)
+<LI>마우스 위치 추적 기능이 여러 모니터가 있는 컴퓨터의 모든 화면에서 동작함. (<A HREF="https://github.com/nvaccess/nvda/issues/6598" target="_blank">#6598</A>)
+<LI>Windows Media Player 슬라이더 컨트롤에 포커스한 후 프로그램 종료 시 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5467" target="_blank">#5467</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2016.4</H2>
+<P>
+이번 버전의 주 기능들: Edge 브라우저 지원 향상; 브라우즈 모드를 통해 윈도우 10 Mail 앱에서 메시지 읽기; NVDA 대화상자 인터페이스 향상 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>비프음을 사용하여 줄 들여쓰기 값을 알 수 있음(문서 서식 대화상자내 줄 들여쓰기 콤보 박스에서 설정 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/5906" target="_blank">#5906</A>)
+<LI>Orbit Reader 20 점자 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6007" target="_blank">#6007</A>)
+<LI>NVDA 시작 시 음성 출력 뷰어 실행 여부를 묻는 옵션 추가(음성 출력 뷰어에 추가된 체크박스를 통해 설정할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>음성 출력 뷰어 창을 열 때 이전에 사용하던 창 위치 및 크기가 적용되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>마이크로소프트 워드 사용 시 Cross Reference 필드가 링크로 인식되도록 함(다른 링크처럼 동작할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/6102" target="_blank">#6102</A>)
+<LI>Baum SuperVario2, Baum Vario 340 및 휴먼웨어 Brailliant2 점자 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6116" target="_blank">#6116</A>)
+<LI>윈도우 10 Anniversary Update Edge 지원. (<A HREF="https://github.com/nvaccess/nvda/issues/6271" target="_blank">#6271</A>)
+<LI>윈도우 10 Mail 앱에서 이메일을 읽을때 브라우즈 모드가 작동되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6271" target="_blank">#6271</A>)
+<LI>새 NVDA 언어: 리투아니아어 추가.
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>리브루이 점자 변환기 3.0.0 버전 사용. 특히 통합 영어 점자(UEB) 출력이 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6109" target="_blank">#6109</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4194" target="_blank">#4194</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6220" target="_blank">#6220</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6140" target="_blank">#6140</A>)
+<LI>추가 기능 관리자 내 추가 기능 사용(alt+e)/사용 않함(alt+d) 버튼 핫키 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/6388" target="_blank">#6388</A>)
+<LI>여러 NVDA 대화상자 내 컨트롤 간격 및 배치가 조정됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6317" target="_blank">#6317</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5548" target="_blank">#5548</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6342" target="_blank">#6342</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6343" target="_blank">#6343</A>, <A HREF="https://github.com/nvaccess/nvda/issues/6349" target="_blank">#6349</A>)
+<LI>문서 서식 대화상자 컨텐츠가 스크롤되도록 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6348" target="_blank">#6348</A>)
+<LI>기호 발음 설정 대화상자 내 기호 목록 폭이 확대됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6101" target="_blank">#6101</A>)
+<LI>웹브라우저 내에서 브라우즈 모드 사용시 편집창(e/shift+e) 및 폼 필드(f/shift+f) 명령을 사용하여 읽기 전용 편집창으로 이동 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/4164" target="_blank">#4164</A>)
+<LI>문서 서식 정보가 음성 및 점자로 출력되는 까닭에 문서 서식 설정 대화상자내 "Announce formatting changes after the cursor"을 "Report formatting changes after the cursor"로 고침(한국어는 이전 레이블 그대로 사용). (<A HREF="https://github.com/nvaccess/nvda/issues/6336" target="_blank">#6336</A>)
+<LI>NVDA 시작 대화상자 인터페이스가 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6350" target="_blank">#6350</A>)
+<LI>NVDA 대화상자 내 확인(OK) 및 취소(Cancel) 버튼이 화면 우측 하단에 위치하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6333" target="_blank">#6333</A>)
+<LI>숫자 입력을 필요로 하는 설정(예: 보이스 설정 내 대문자 음높이 변경율) 컨트롤이 스핀 컨트롤로 변경됨(원하는 값을 입력하거나 위/아래 방향키로 값을 변경할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/6099" target="_blank">#6099</A>)
+<LI>웹브라우저 사용 시 IFrame(문서내 문서) 컨트롤 정보 출력이 통일됨(특히 파이어폭스에서 IFrame을 "프레임"으로 출력하도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/6047" target="_blank">#6047</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>음성 출력 뷰어 사용 중 NVDA 종료 시 특정 상황에서 오류가 발생하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5050" target="_blank">#5050</A>)
+<LI>모질라 Firefox에서 브라우즈 모드 사용 시 이미지맵이 제대로 나타나지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6051" target="_blank">#6051</A>)
+<LI>음성 발음 사전 대화상자에서 엔터를 누를 시 변경된 내용이 저장되고 대화상자가 닫히도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6206" target="_blank">#6206</A>)
+<LI>입력 모드 변경값(한글/영어, 전값 모드/반값 모드 등)이 점자로도 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5892" target="_blank">#5892</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5893" target="_blank">#5893</A>)
+<LI>추가 기능을 중지호 곧바로 추가 기능을 사용하도록(또는 반대로) 변경 시 이전 추가 기능 사용 유무 설정이 보이도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6299" target="_blank">#6299</A>)
+<LI>마이크로소프트 워드 사용 시 머리말 내 쪽 수 정보 탐색 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/6004" target="_blank">#6004</A>)
+<LI>기호 발음 설정 대화상자에서 마우스를 사용하여 기호 목록과 편집 필드를 오갈 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/6312" target="_blank">#6312</A>)
+<LI>마이크로소프트 워드에서 브라우즈 모드 사용 중 특정 문서에 링크가 잘못 삽입되었을때 요소 목록 대화상자가 나타나지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5886" target="_blank">#5886</A>)
+<LI>작업 표시줄 또는 alt+F4를 눌러 음성 출력 뷰어를 닫았을때 NVDA 메뉴에 있는 음성 뷰어 체크박스 정보가 뷰어 사용 유무를 제대로 표시하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6340" target="_blank">#6340</A>)
+<LI>설정 프로필, 웹 문서 탐색 및 화면 탐색 모드 기능들이 추가 기능 재등록 명령 실행 후 제대로 동작하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2892" target="_blank">#2892</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5380" target="_blank">#5380</A>)
+<LI>윈도우 10 사용 시 NVDA 일반 설정에 있는 언어 목록내 아라곤어 및 여러 항목이 제대로 표시되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6259" target="_blank">#6259</A>)
+<LI>시스템 키 명령(예: 점자 디스플레이를 통해 tab 키를 누를 시) 도움말 및 명령 정보가 현재 사용중인 NVDA 언어로 출력되도록 함(이전까지는 영어로 출력되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/6212" target="_blank">#6212</A>)
+<LI>일반 설정을 통해 NVDA 언어 변경 시 NVDA가 재시작하기 전까지 새 언어가 적용되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4561" target="_blank">#4561</A>)
+<LI>음성 발음 사전 항목 추가 시 기본값(pattern) 필드에 내용이 입력되어야 항목이 추가되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6412" target="_blank">#6412</A>)
+<LI>특정 시스템/상황에서 시리얼 포트 스케닝 도중 여러 점자 디스플레이 드라이버가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6462" target="_blank">#6462</A>)
+<LI>마이크로소프트 워드에서  표 셀 이동 명령 사용 시  셀에 위치한 숫자 bullet 목록이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6446" target="_blank">#6446</A>)
+<LI>단춧키 설정을 통해 Handy Tech 점자 디스플레이에 할당된 명령을 변경할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/6461" target="_blank">#6461</A>)
+<LI>마이크로소프트 엑셀 사용 시 엔터(일반 엔터 또는 numpad 엔터)를 눌렀을때 spreadsheet의 다음 행으로 이동했다는 메시지가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6500" target="_blank">#6500</A>)
+<LI>iTunes 사용 시 iTunes Store, Apple Music 등에서 브라우즈 모드 사용시 프로그램이 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6502" target="_blank">#6502</A>)
+<LI>64비트 모질라 및 크롬 기반 앱 사용 도중 특정 상황에서 사용하던 앱이 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6497" target="_blank">#6497</A>)
+<LI>파이어폭스 multi-process 사용 시 브라우즈 모드 및 편집창 탐색 명령 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/6380" target="_blank">#6380</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2016.3</H2>
+<P>
+이번 버전의 주 기능들: 특정 추가 기능 일시 정지 기능 추가; 엑셀 내 폼 필드 지원; 색상 출력 향상; 여러 점자 디스플레이 관련 버그 수정 및 지원 향상; 마이크로소프트 워드 지원 향상 및 여러 버그 수정 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>윈도우 10 Anniversary Update 사용 시 마이크로소프트 Edge 브라우저내에서 브라우즈 모드를 사용하여 PDF 문서를 읽을 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5740" target="_blank">#5740</A>)
+<LI>마이크로소프트 워드 사용 시 취소선/이중 취소선이 적절하게 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5800" target="_blank">#5800</A>)
+<LI>마이크로소프트 워드 내 표에 이름이 있는 경우 표 이름이 출력되고 표 설명이 있을 경우 브라우즈 모드의 긴 설명 핫키(NVDA+d)를 사용하여 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5943" target="_blank">#5943</A>)
+<LI>마이크로소프트 워드 사용 시 문단 배치 변경(alt+shift+아래쪽 화살표/alt+shift+위쪽 화살표)시 새 위치 정보가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5945" target="_blank">#5945</A>)
+<LI>마이크로소프트 워드 사용 시 줄 간격이 인식되도록 함(서식 정보 명령을 통해 확인 가능, 워드 명령을 통해 간격 변경 시 설정이 출력되도록 함, 문서 서식 설정에서 줄 간격 출력이 활성화된 후 각 줄로 이동 시 간격 변경이 출력되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/2961" target="_blank">#2961</A>)
+<LI>인터넷 익스플로러 사용 시 HTML5 구조 요소가 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5591" target="_blank">#5591</A>)
+<LI>문서 서식 대화상자에 추가된 주석 알림 체크박스를 통해 주석(예: 마이크로소프트 ㅜ어드내 주석) 출력을 설정할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5108" target="_blank">#5108</A>)
+<LI>추가 기능 관리자를 통해 추가 기능을 일시 정지할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3090" target="_blank">#3090</A>)
+<LI>ALVA BC640/680 점자 디스플레이 사용 시 여러 명령 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5206" target="_blank">#5206</A>)
+<LI>점자 디스플레이를 현재 포커스된 객체로 이동할 수 있는 핫키 추가(현재 ALVA BC640/680 디스플레이에만 할당되어 있고 다른 디스플레이 사용자들은 단춧키 설정을 통해 핫키를 설정할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/5250" target="_blank">#5250</A>)
+<LI>마이크로소프트 엑셀 폼 필드 탐색 가능(요소 목록 또는 브라우즈 모드를 사용하여 폼 필드로 이동할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/4953" target="_blank">#4953</A>)
+<LI>단춧키 설정을 사용하여 심플 리뷰 토글 핫키를 할당할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/6173" target="_blank">#6173</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>NVDA의 색상 정보 출력 방식이 변경됨(주관적이고 익숙하지 않은 색상명 대신 9개의 잘 알려진 기본 샞조(color hue)와 3개의 색상 셰이드 및 밝기/흐리기가 출력되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/6029" target="_blank">#6029</A>)
+<LI>NVDA+F9/NVDA+F10 사용 시 F10을 한번 눌러 선택후 두번째 눌렀을때 복사하도록 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4636" target="_blank">#4636</A>)
+<LI>eSpeak NG 음성 엔진 Master 11b1a7b(2016-622) 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/6037" target="_blank">#6037</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>마이크로소프트 워드에서 브라우즈 모드 사용 중 클립보드에 복사시 텍스트 서식이 적용되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5956" target="_blank">#5956</A>)
+<LI>마이크로소프트 워드 사용 시 워드 자체의 표 탐색 명령(alt+home, alt+end, alt+pageUp, alt+pageDown) 및 설정 명령(shift 추가)을 NVDA가 제대로 인식하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5961" target="_blank">#5961</A>)
+<LI>마이크로소프트 워드 대화상자에서의 객체 탐색 향상. (<A HREF="https://github.com/nvaccess/nvda/issues/6036" target="_blank">#6036</A>)
+<LI>특정 프로그램(예: Visual Studio 2015) 사용 시 핫키(예: control+c (복사))가 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6021" target="_blank">#6021</A>)
+<LI>특정 시스템/상황에서 시리얼 포트 스케닝 도중 여러 점자 디스플레이 드라이버가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6015" target="_blank">#6015</A>)
+<LI>마이크로소프트 ㅜ어드 사용 시 오피스 테마가 색상 출력에 반영되도록 함(이를 통해 색상 출력 정확도가 향상됨). (<A HREF="https://github.com/nvaccess/nvda/issues/5997" target="_blank">#5997</A>)
+<LI>2016년 4월 이후 출시된 윈도우 10 빌드에서의 Microsoft Edge 브라우즈 모드 및 시작 메뉴 검색 결과 기능이 동작하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5955" target="_blank">#5955</A>)
+<LI>마이크로소프트 워드 사용 시 자동으로 표 머릿말 읽기가 설정되어 있고 표에 병합된 cell이 있는 경우 표 머릿말이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5926" target="_blank">#5926</A>)
+<LI>윈도우 10 Mail 엡 사용 시 NVDA를 사용하여 메시지 내용을 읽을 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5635" target="_blank">#5635</A>) 
+<LI>명령 출력 사용 시 lock(예: caps lock)이 반복되어 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5490" target="_blank">#5490</A>)
+<LI>윈도우 10 Anniversary Update 내 사용자 계정 컨트롤(UAC) 대화상자 내용이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5942" target="_blank">#5942</A>)
+<LI>out-of-sight.net과 같은 사이트에서 사용중인 Web Conference Plugin에서 마이크 입력 관련 진행률 막대 정보 및 비프음이 들리지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5888" target="_blank">#5888</A>)
+<LI>브라우즈 모드의 다음 및 이전 찾기 기능 사용 시 검색 글자열 대소문자 구별 여부가 반영되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5522" target="_blank">#5522</A>)
+<LI>음성 발음 사전 항목 편집 시 잘못된 정규 표현(regular expression) 관련 피드백이 출력되도록 함. 또한 특정 발음 사전 내 정규 표현 관련 오류로 인해 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4834" target="_blank">#4834</A>)
+<LI>점자 디스플레이가 음답하지 않는 경우(예: 사용 도중 디스플레이와의 연결이 끊켰을때) 디스플레이 사용이 일시 정지되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1555" target="_blank">#1555</A>)
+<LI>특정 상황에서 브라우즈 모드 요소 목록 사용 시 요소 필터링 속도가 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/6126" target="_blank">#6126</A>)
+<LI>마이크로소프트 엑셀에서 배경 패턴 레이블 출력 시 NVDA가 엑셀 자체에서 사용하는 레이블을 사용하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6092" target="_blank">#6092</A>)
+<LI>윈도우 10 로그인 화면 지원 향상(알림 자동 출력 및 터치를 통해 암호 편집창 접근 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/6010" target="_blank">#6010</A>)
+<LI>ALVA BC640/680 디스플레이의 보조 라우팅 버튼이 제대로 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5206" target="_blank">#5206</A>)
+<LI>최신 윈도우 10 빌드 사용 시 토스트 알림 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6096" target="_blank">#6096</A>)
+<LI>Baum/HumanWare Brailliant B 사용 시 가끔 디스플레이 핫키가 인식되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6035" target="_blank">#6035</A>)
+<LI>문서 서식 내 줄 수 알림이 활성화된 경우 줄 수가 점자디스플레이에 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5941" target="_blank">#5941</A>)
+<LI>음성 출력 모드가 꺼짐으로 되어있어도 객체 정보 출력 내용(예: NvDA+tab을 눌러 포커스 확인)이 음성 뷰어에 나타나도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6049" target="_blank">#6049</A>)
+<LI>아웃룩 2016 메시지 목록에서 "연결된 임시 보관함" 정보가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/6219" target="_blank">#6219</A>)
+<LI>Google 크롬 및 크롬 기반 브라우저 사용 시 인터페이스 언어가 영어 외 다른 언어로 설정되어 있을 때 브라우즈 모드가 작동하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6249" target="_blank">#6249</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2016.2.1</H2>
+<P>
+이번 버전에서는 마이크로소프트 워드 사용시 발생하던 여러 문제를 수정하였습니다:
+</P>
+<UL>
+<LI>윈도우 XP에서 마이크로소프트 워드 실행 시 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/6033" target="_blank">#6033</A>)
+<LI>마이크로소프트 ㅜ어드 사용 시 발생하던 여러 문제의 원인이었던 맞춤법 오류 알림 기능 제거. (<A HREF="https://github.com/nvaccess/nvda/issues/5954" target="_blank">#5954</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+</UL>
+
+<H2>2016.2</H2>
+<P>
+이번 버전의 주 기능들: 입력 시 철자 오류 알림; 마이크로소프트 워드 내 문법 오류 인식; 마이크로소프트 오피스 지원 향상 및 버그 수정 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 브라우즈 모드 사용 시 다음 및 이전 주석(a/shift+a) 명령을 사용하여 삽입 또는 삭제된 텍스트로 이동할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5691" target="_blank">#5691</A>)
+<LI>마이크로소프트 엑셀 사용 시 셀 그룹 레벨 및 그룹 확장 또는 축소 여부가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5690" target="_blank">#5690</A>)
+<LI>텍스트 서식 알림 핫키를 두번 누를 시 서식 정보가 브라우즈 모드로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4908" target="_blank">#4908</A>)
+<LI>마이크로소프트 엑셀 2010 이상 사용 시 셀 음영 및 채우기 그라데이션이 출력되도록 함(본 기능은 문서 서식 대화상자내 색상 알림 설정을 통해 조절할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3683" target="_blank">#3683</A>)
+<LI>점자 표기법: 코 이네 그리스어 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5393" target="_blank">#5393</A>)
+<LI>로그 뷰어 사용 중 control+s를 눌러 로그를 저장할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4532" target="_blank">#4532</A>)
+<LI>포커스된 컨트롤이 철자 오류 인식을 지원하고 NVDA내 철자 오류 알림이 선택된 경우 텍스트 입력 시 철자 오류 경고음이 출력되도록 함(본 기능은 키보드 설정에 추가된 입력 중 철자 오류 경고음 재생 옵션을 통해 조절 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/2024" target="_blank">#2024</A>)
+<LI>마이크로소프트 워드 사용 시 맞춤법 오류가 인식되도록 함(본 기능은 문서 서식 대화상자에 추가된 맞춤법 알림 설정을 통해 조절할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>브라우즈 모드와 편집창에서 키패드 enter 키가 제 기능을 하지 못하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5385" target="_blank">#5385</A>)
+<LI>NVDA 기본 음성 엔진을 eSpeak NG로 교체함. (<A HREF="https://github.com/nvaccess/nvda/issues/5651" target="_blank">#5651</A>)
+<LI>마이크로소프트 엑셀 사용 시 열 머릿말과 셀 사이에 빈 열이 있을 경우 특정 행 머릿말이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5396" target="_blank">#5396</A>)
+<LI>마이크로소프트 엑셀 사용 시 셀의 위치가 셀 머릿말에 앞서 출력되도록 하여 머릿말과 콘텐츠간 혼돈을 최소화하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5396" target="_blank">#5396</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>브라우즈 모드 사용 시 첫 글자 핫키로 문서가 지원하지 않는 요소로 옮기고자 할 때 "다음/이전 요소 없음" 대신 "요소 지원 안함"이라고 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5691" target="_blank">#5691</A>)
+<LI>마이크로소프트 엑셀에서 요소 목록 호출 시 차트만 있는 시트도 시트 목록에 포함되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5698" target="_blank">#5698</A>)
+<LI>IntelliJ와 Android Studio 등 여러 개의 창을 가진 Java 응용 프로그램에서 창을 전환할 때 NVDA가 불필요한 정보를 알리지 않음. (<A HREF="https://github.com/nvaccess/nvda/issues/5732" target="_blank">#5732</A>)
+<LI>Notepad ++ 등 Scintilla 기반의 텍스트 편집기에서 점자 디스플레이를 사용하는 경우 커서 이동 시 점자 출력이 제대로 업데이트되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5678" target="_blank">#5678</A>)
+<LI>점자 출력을 활성화 할 때 NVDA가 충돌할 수 있는 문제점 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4457" target="_blank">#4457</A>)
+<LI>마이크로소프트 워드에서 문단 들여쓰기는 항상 사용자가 지정한 길이의 단위 (센티미터와 인치 등)로 알려지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5804" target="_blank">#5804</A>)
+<LI>음성으로 만 출력되던 많은 NVDA 메시지가 점자 디스플레이로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5557" target="_blank">#5557</A>)
+<LI>접근 가능한 Java 응용 프로그램에서 트리 뷰의 항목 수준이 알려지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5766" target="_blank">#5766</A>)
+<LI>모질라 파이어폭스 사용 도중 가끔 Adobe Flash가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5367" target="_blank">#5367</A>)
+<LI>구글 크롬 및 크롬 기반 브라우저에서 대화상자나 응용 프로그램에 포함된 문서를 브라우즈 모드에서 읽을 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5818" target="_blank">#5818</A>)
+<LI>구글 크롬 및 크롬 기반 브라우저에서 웹의 대화상자나 응용 프로그램에서 NVDA를 강제로 브라우즈 모드로 전환할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5818" target="_blank">#5818</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 aria-activedescendant가 사용된 컨트롤(예: Gmail 내 이메일 작성 중 받는이 주소 입력 시 나타나는 검색 결과 목록)에서 브라우즈 모드로 전환되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5676" target="_blank">#5676</A>)
+<LI>마이크로소프트 워드에서 표 행/렬의 머리말 알림이 활성화된 경우 큰 표에서 NVDA가 정지되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5878" target="_blank">#5878</A>)
+<LI>마이크로소프트 워드 사용 시 개요 수준 텍스트(개요 텍스트가 헤딩이 아닐 경우)를 헤딩으로 인식하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5186" target="_blank">#5186</A>)
+<LI>마이크로소프트 워드 내 브라우즈 모드 사용 시 컨테이너 요소 시작 및 끝 명령(comma/shift+comma)을 사용하여 표 시작 및 끝으로 이동할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5883" target="_blank">#5883</A>)
+</UL>
+
+<H3>한국어 번역 관련</H3>
+<UL>
+<LI>문서 서식 대화상자내 "맞춤법 오류"를 "철자 오류"로 변경. (<A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+<LI>철자 오류 서식을 지원하는 컨트롤에서 "맞춤법 오류/철자 오류 끝" 메시지가 "철자 오류"로 통합됨. (<A HREF="https://github.com/nvaccess/nvda/issues/5877" target="_blank">#5877</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2016.1</H2>
+<P>
+이번 버전의 주 기능들: 배경음 볼륨 조절; 점자 디스플레이 지원 향상; 마이크로소프트 오피스 지원 향상; iTunes 브라우즈 모드 관련 여러 문제 수정 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>점자 표기법: 폴란드어 8점 컴퓨터 점자, 몽골리아어 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5537" target="_blank">#5537</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5574" target="_blank">#5574</A>)
+<LI>점자 설정에 점자 커서 출력과 커서 모양 설정 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5198" target="_blank">#5198</A>)
+<LI>HIMS 스마트 비틀 지원 추가 (블루투스로 연결 가능) (<A HREF="https://github.com/nvaccess/nvda/issues/5607" target="_blank">#5607</A>)
+<LI>NVDA가 윈도우 8 이상 시스템에 설치되었을때 배경음 볼륨을 줄일 수 있는 옵션 추가(음성 엔진 대화상자내 오디오 도킹 모드 설정 또는 NVDA+shift+d를 눌러 설정값을 변경할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3830" target="_blank">#3830</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5575" target="_blank">#5575</A>)
+<LI>APH Refreshabraille HID 모드 및 Baum Pronto! 및 VarioUltra USB 연결 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5609" target="_blank">#5609</A>)
+<LI>휴먼웨어 Brailliant BI/B OpenBraille protocol 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5612" target="_blank">#5612</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>강조된 텍스트 알림이 비활성화됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>마이크로소프트 엑셀내 요소 목록 대화상자내 공식(formula) 라디오 버튼 핫키를 Alt+R로 변경하여 검색 핫키와 혼돈되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5527" target="_blank">#5527</A>)
+<LI>리브루이 점자 변환기 2.6.5 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/5574" target="_blank">#5574</A>)
+<LI>포커스나 탐색 객체를 텍스트 객체로 옮길시 "텍스트"(객체 형식)가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5452" target="_blank">#5452</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>iTunes 12에서 iTunes Store 탐색중 새 페이지가 열린 후 브라우즈 모드가 업데이트되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5191" target="_blank">#5191</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 첫 글자 명령을 사용하여 특정 레벨 헤딩으로 옮길시 접근 향상 목적으로 코딩된 헤딩(예: h tag의 레벨이 aria-level로 코딩된 경우)도 탐색이 가능하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5434" target="_blank">#5434</A>)
+<LI>Spotify 사용시 알 수 없는 객체가 포커스되는 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5439" target="_blank">#5439</A>)
+<LI>다른 프로그램에서 Spotify로 옮길시 포커스가 제대로 옮겨지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5439" target="_blank">#5439</A>)
+<LI>브라우즈 모드와 포커스 모드 토글시 점자로 토글 설정이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5239" target="_blank">#5239</A>)
+<LI>특정 윈도우 버전에서 시작 버튼이 목록 또는 선택된것처럼 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5178" target="_blank">#5178</A>)
+<LI>마이크로소프트 아웃룩에서 이메일 작성시 "삽입됨"과 같은 불필요한 메시지가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5486" target="_blank">#5486</A>)
+<LI>점자 디스플레이 사용시 같은 줄에 텍스트가 선택될때(예: 편집창에서 같은 줄이지만 다른 위치의 텍스트가 선택될때) 커서가 새 위치로 옮겨지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5410" target="_blank">#5410</A>)
+<LI>윈도우 10에서 Alt+F4를 눌러 명령 Prompt 종료시 NVDA가 종료되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5343" target="_blank">#5343</A>)
+<LI>브라우즈 모드 사용시 요소 목록 대화상자에서 요소 변경시 검색창 내용이 삭제되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5511" target="_blank">#5511</A>)
+<LI>모질라 기반 프로그램 사용시 마우스를 편집창으로 옮길때 마우스 설정에서 설정된 텍스트 단위(단어, 줄 등)만 출력되도록 함(이전에는 컨텐츠 전체가 출력되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/5535" target="_blank">#5535</A>)
+<LI>모질라 기반 프로그램에서 편집창 내에서 마우스를 옮길시 마우스가 위치한 텍스트 요소(링크 등) 이후 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2160" target="_blank">#2160</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5535" target="_blank">#5535</A>)
+<LI>인터넷 익스플로러에서 shoprite.com 웹사이트 접속시 브라우즈 모드가 작동하지 않던 문제 수정(잘못 코딩된 lang 속성 때문에 페이지가 공백으로 처리됨). (<A HREF="https://github.com/nvaccess/nvda/issues/5569" target="_blank">#5569</A>)
+<LI>마이크로소프트 워드 사용시 track 마커가 존재하지 않는 경우 "삽입됨"과 같은 track 정보가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5566" target="_blank">#5566</A>)
+<LI>시스템 포커스를 토글 버튼으로 옮길때 토글 활성화 상태가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5441" target="_blank">#5441</A>)
+<LI>변경된 마우스 모양이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5595" target="_blank">#5595</A>)
+<LI>줄 들여쓰기 출력시 비 불리 공백(non-breaking space)가 스페이스로 처리되도록 함(예: non-breaking space 셋이 존재할 경우 "스페이스" 3회 출력 대신 "3 스페이스"가 출력되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/5610" target="_blank">#5610</A>)
+<LI>Modern 입력 구성 후보 목록을 닫을때 입력 구성 편집창이나 문서로 빠져나가지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4145" target="_blank">#4145</A>)
+<LI>마이크로소프트 오피스 2013 이상 사용시 ribbon 탭만 표시된 경우 탭 선택시 ribbon 아이템이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5504" target="_blank">#5504</A>)
+<LI>터치스크린 명령 실행 및 할당 관련 여러 문제 수정 및 기능 향상. (<A HREF="https://github.com/nvaccess/nvda/issues/5652" target="_blank">#5652</A>)
+<LI>입력 도움말 사용시 터치스크린 hover 동작이 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5652" target="_blank">#5652</A>)
+<LI>마이크로소프트 엑셀내 merged 셀내 주석이 있는 경우 주석 목록이 요소 목록에 뜨지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5704" target="_blank">#5704</A>)
+<LI>표 행과 열 머릿말 알림 설정이 켜져 있을때 특정 상황에서 마이크로소프트 엑셀내 sheet 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5705" target="_blank">#5705</A>)
+<LI>구글 크롬 사용시 동아시아 입력 구성창 사용시 오류가 발생하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4080" target="_blank">#4080</A>)
+<LI>iTunes내 Apple Music 검색시 검색 결과 문서내 브라우즈 모드가 업데이트되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5659" target="_blank">#5659</A>)
+<LI>마이크로소프트 엑셀에서 shift+f11을 눌러 새 sheet 생성시 새 위치가 출력되도록 함(이전에는 아무런 내용도 출력되지 않았음). (<A HREF="https://github.com/nvaccess/nvda/issues/5689" target="_blank">#5689</A>)
+<LI>한글 입력시 점자가 제대로 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5640" target="_blank">#5640</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2015.4</H2>
+<P>
+이번 버전의 주 기능들: 윈도우 10 지원 향상; 윈도우 8 이상 접근성 센터내 NVDA 추가; 엑셀 지원 향상(sheet 목록 및 이름 변경과 잠겨진 셀로 이동 가능); 모질라 파이어폭스, 구글 크롬 및 모질라 썬더버드에서의 rich text 편집 지원 향상 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>윈도우 8이상 사용시 NVDA가 접근성 센터에 표시되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/308" target="_blank">#308</A>)
+<LI>마이크로소프트 엑셀에서 셀을 옮길때 문서 서식 설정에서 활성화된 서식 정보가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4878" target="_blank">#4878</A>)
+<LI>문서 서식 설정에 "강조 텍스트 알림" 설정(기본적으로 선택되어 있음)을 추가하여 문서내 강조된 텍스트를 자동으로 출력하도록 함(현재 - 인터넷 익스플로러와 같은 MSHTML 컨트롤에서 브라우즈 모드 사용시 em 또는 strong 텍스트에서만 적용됨). (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 브라우즈 모드 사용시 문서 변경 추적 알림이 활성화된 경우 삽입 또는 삭제된 텍스트가 알려지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>마이크로소프트 워드내 요소 목록에 track 변경 나열시 더 많은 정보(예: 서식 변경)가 포함되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>마이크로소프트 엑셀내 요소 목록(NVDA+f7)를 통해 sheet 목록을 보거나 이름 변경을 할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4630" target="_blank">#4630</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4414" target="_blank">#4414</A>)
+<LI>기호 발음 설정을 통해 음성 엔진이 기호를 처리할지(예: 띄어 읽기 또는 억양 조절 등)를 조절할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/5234" target="_blank">#5234</A>)
+<LI>마이크로소프트 엑셀 사용시 sheet 저자가 셀에 입력 메시지를 첨부한 경우 메시지 내용이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5051" target="_blank">#5051</A>)
+<LI>Baum Pronto! V4 및 VarioUltra 지원 추가(블루투스로 연결 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/3717" target="_blank">#3717</A>)
+<LI>모질라 기반 프로그램에서의 rich text 편집 지원 향상(예: 점자 디스플레이 연결 후 파이어폭스에서 Google Docs 문서 편집 또는 썬더버드내 HTML 이메일 작성중). (<A HREF="https://github.com/nvaccess/nvda/issues/1668" target="_blank">#1668</A>)
+<LI>구글 크롬 또는 크롬 기반 브라우저에서의 rich text 편집 지원 향상(예: 점자 디스플레이 연결 후 Google Docs 문서 편집). (<A HREF="https://github.com/nvaccess/nvda/issues/2634" target="_blank">#2634</A>)
+ <UL>
+ <LI>크롬 47 이상 사용 바람.
+ </UL>
+<LI>마이크로소프트 엑셀에서 브라우즈 모드 사용시 방향키를 사용하여 보호된 sheet안에 있는 잠겨진 셀로 이동 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/4952" target="_blank">#4952</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>문서 서식 대화상자내 문서 변경 추적 내용 설정이 기본적으로 선택되도록 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>문서 변경 추적 내용 알림이 선택된 상태에서 마이크로소프트 워드에서 글자 단위로 옮길시 효율성을 높이기 위해 track 변경 내용이 덜 출력되도록 함(자세한 track 변경 정보는 요소 목록에서 확인할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/4920" target="_blank">#4920</A>)
+<LI>리브루이 점자 변환기 2.6.4 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/5341" target="_blank">#5341</A>)
+<LI>기호 발음 설정을 기호(some)로 설정시 더 많은 기호(예: 기본 수학 기호)가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3799" target="_blank">#3799</A>)
+<LI>만약 음성 엔진이 지원할 경우 괄호 및 en dash(–)를 출력시 음성 엔진이 띄어 읽도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3799" target="_blank">#3799</A>)
+<LI>텍스트 선택시 선택된 텍스트가 먼저 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1707" target="_blank">#1707</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>아웃룩 2010/2013 메시지 목록 탐색 속도 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/5268" target="_blank">#5268</A>)
+<LI>마이크로소프트 엑셀 차트를 읽다가 특정 키(예: control+pageUp/control+pageDown을 사용하여 sheet 변경)를 누를시 키가 제대로 동작하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5336" target="_blank">#5336</A>)
+<LI>NVDA 이전 버전 설치 경고 대화상자내 버튼들이 화면에 제대로 나타나지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5325" target="_blank">#5325</A>)
+<LI>윈도우 8 이상 사용시 로그인후 NVDA가 실행되도록 설정했을때 NVDA가 일찍 실행되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/308" target="_blank">#308</A>)
+ <UL>
+ <LI>만약 이전 버전에서 본 설정을 설정했다면 일반 설정에서 본 설정을 해제 후 다시 설정하기 바람. 설정 방법은 다음과 같습니다:
+  <OL>
+  <LI>일반 설정을 호출합니다.
+  <LI>윈도우 로그인 후 NvDA 자동 시작 설정을 해제합니다.
+  <LI>확인 버튼을 선택합니다.
+  <LI>일반 설정을 다시 호출합니다.
+  <LI>윈도우 로그인 후 NvDA 자동 시작 설정을 선택합니다.
+  <LI>확인 버튼을 선택합니다.
+  </OL>
+ </UL>
+<LI>UI Automation 지원 속도 향상됨(예: 파일 탐색기, 작업 전환). (<A HREF="https://github.com/nvaccess/nvda/issues/5293" target="_blank">#5293</A>)
+<LI>모질라 파이어폭스와 같은 Gecko 기반 컨트롤에서 읽기 전용 ARIA grid를 만났을때 포커스 모드로 전환되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5118" target="_blank">#5118</A>)
+<LI>터치스크린 사용시 한 손가락으로 왼쪽으로 쓸어내릴때 이전 객체가 없을 경우 "이전 객체 없음"이라고 출력되도록 함.
+<LI>단춧키 설정내 명령 검색창에 여러 단어를 입력시 오류가 발생하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5426" target="_blank">#5426</A>)
+<LI>휴먼웨어 Brailliant BI/B 디스플레이를 USB로 재연결시 특정 상황에서 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5406" target="_blank">#5406</A>)
+<LI>특정 인도 언어(특히 합성어가 있는 언어) 사용시 대문자 영어 글자가 제대로 풀이되어 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5375" target="_blank">#5375</A>)
+<LI>윈도우 10 사용시 시작 메뉴를 열때 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5417" target="_blank">#5417</A>)
+<LI>Desktop용 스카이프에서 이전 알림이 닫히기 전 새 알림이 뜰때 알림 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4841" target="_blank">#4841</A>)
+<LI>Desktop용 스카이프 7.12 이상에서 스카이프 알림이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5405" target="_blank">#5405</A>)
+<LI>특정 프로그램(예: Jart) 사용중 팝업 메뉴를 닫은 후 포커스된 내용이 제대로 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5302" target="_blank">#5302</A>)
+<LI>윈도우 7 이상에서 특정 프로그램(예: Wordpad) 사용시 색상이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5352" target="_blank">#5352</A>)
+<LI>마이크로소프트 파워포인트에서 문서 편집시 엔터를 눌렀을때 bullet  또는 숫자가 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5360" target="_blank">#5360</A>)
+</UL>
+
+<H2>2015.3</H2>
+<P>
+이번 버전의 주 기능들: 윈도우 10 기본 지원; 브라우즈 모드내에서 첫 글자 명령 임시 중지; 인터넷 엑스플로러 지원 향상; 점자 사용시 발생하던 입력 관련 문제 해결 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>인터넷 익스플로러와 같은 MSHTML 기반 편집창에 있는 철자 오류가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4174" target="_blank">#4174</A>)
+<LI>더 많은 Unicode 수학 기호가 음성으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3805" target="_blank">#3805</A>)
+<LI>윈도우 10 시작 검색창내 검색 결과가 자동으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5049" target="_blank">#5049</A>)
+<LI>EcoBraille 20, EcoBraille 40, EcoBraille 80 및 EcoBraille Plus 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/4078" target="_blank">#4078</A>)
+<LI>브라우즈 모드 사용시 NVDA+shift+space를 사용하여 첫 글자 명령을 해제할 수 있음(Gmail, Twitter, Facebook과 같은 웹 앱 사용시 첫 글자를 앱에서 처리할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3203" target="_blank">#3203</A>)
+<LI>점자 표기법: 핀란드어 6점 1종, 아일랜드어 1종과 2종, 2006년 수정본 한국어 정자와 약자 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5137" target="_blank">#5137</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5074" target="_blank">#5074</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5097" target="_blank">#5097</A>)
+<LI>Papenmeier BRAILLEX Live Plus 디스플레이에 장착된 QWERTY 키보드 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/5181" target="_blank">#5181</A>)
+<LI>윈도우 10의 Edge 브라우저 및 Edge 기반 컨트롤 지원(기초단계임). (<A HREF="https://github.com/nvaccess/nvda/issues/5212" target="_blank">#5212</A>)
+<LI>새 NVDA 언어: 칸나다어 추가.
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>리브루이 점자 변환기 2.6.3 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/5137" target="_blank">#5137</A>)
+<LI>이전 NVDA 버전 설치시 NVDA를 완전 제거후 설치할 것을 권장하는 대화상자가 뜨도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5037" target="_blank">#5037</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 브라우즈 모드 사용시 폼 필드로 이동시 목록 항목이 제외되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4204" target="_blank">#4204</A>)
+<LI>Firefox에서 ARIA tab 페널내 전체 텍스트가 객체 설명으로 인식되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4638" target="_blank">#4638</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 탭으로 섹션, 기사 또는 대화상자로 이동시 컨테이너 내용이 컨트롤 이름으로 인식되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5021" target="_blank">#5021</A>, <A HREF="https://github.com/nvaccess/nvda/issues/5025" target="_blank">#5025</A>) 
+<LI>Baum/HumanWare/APH 디스플레이를 통해 점자 입력시 다른 디스플레이 키에 의해 점자 입력이 중단되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3541" target="_blank">#3541</A>)
+<LI>윈도우 10에서 alt+tab 또는 alt+shift+tab을 사용하여 앱 전환시 불필요한 정보가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5116" target="_blank">#5116</A>)
+<LI>점자 디스플레이 사용시 특정 프로그램(예: 아웃룩)내에서 글자 입력시 입력된 텍스트가 깨졌던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2953" target="_blank">#2953</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 특정 요소가 나타나거나 변경된 후 곧바로 포커스될때 올바른 컨텐츠가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5040" target="_blank">#5040</A>)
+<LI>마이크로소프트 워드에서 브라우즈 모드 사용중 첫 글자로 이동시 점자와 리뷰 커서 위치가 업데이트되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4968" target="_blank">#4968</A>)
+<LI>점자로 컨트롤이나 서식 정보 출력시 정보 사이 또는 뒤에 불필요한 스페이스가 삽입되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5043" target="_blank">#5043</A>)
+<LI>사용중인 프로그램의 응답성이 떨어진 후 다른 프로그램으로 전환시 대부분의 프로그램에서 NVDA의 응답성이 빨라짐. (<A HREF="https://github.com/nvaccess/nvda/issues/3831" target="_blank">#3831</A>)
+<LI>윈도우 10 토스트 알림 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5136" target="_blank">#5136</A>)
+<LI>특정(UI Automation 기반) 콤보박스내 옵션 변경시 선택된 옵션이 제대로 출력되지 않던 문제 수정.
+<LI>웹 브라우저에서 브라우즈 모드 사용시 프레임 문서로 탭한 후 탭 명령이 제대로 작동하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5227" target="_blank">#5227</A>)
+<LI>터치스크린 사용시 윈도우 10 잠금 화면을 닫을 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5220" target="_blank">#5220</A>)
+<LI>윈도우 7 이상에서 점자 디스플레이 사용시 특정 프로그램(예: Wordpad와 Skype) 사용시 점자로 글자 입력시 입력된 텍스트가 깨졌던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4291" target="_blank">#4291</A>)
+<LI>윈도우 10 잠금 화면에서 클립보드 내용 읽기, 리뷰 커서를 통한 다름 프로그램 접근, 설정 저장 등 여러 기능이 실행되지 못하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/5269" target="_blank">#5269</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2015.2</H2>
+<P>
+이번 버전의 주 기능들: 마이크로소프트 엑셀에 삽입된 차트 읽기 및 수학 컨텐츠 탐색 기능 추가 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 워드와 아웃룩 사용시 alt+아래 방향키와 alt+위 방향키를 사용하여 다음 및 이전 문장으로 이동 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/3288" target="_blank">#3288</A>)
+<LI>여러 인도 언어 점자 표기법 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/4778" target="_blank">#4778</A>)
+<LI>마이크로소프트 엑셀에서 여러 셀에 걸쳐있는 정보가 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3040" target="_blank">#3040</A>)
+<LI>마이크로소프트 엑셀 사용시 요소 목록(NVDA+F7)을 사용하여 차트와 공식 또는 주석이 있는 셀 목록을 ㅗ학인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/1987" target="_blank">#1987</A>)
+<LI>마이크로소프트 엑셀 차트 지원 추가(NvDA+F7을 눌러 요소 목록을 호출하고 타츠를 선택한 후 방향키를 이용하여 데이타 확인 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/1987" target="_blank">#1987</A>)
+<LI>Design Science MathPlayer 4를 이용하여 웹브라우저, 마이크로소프트 워드 및 파워포인트 문서에 삽입된 수학 컨텐츠를 읽거나 집중 탐색할 수 있음(NVDA 사용설명서에 있는 수학 컨텐츠 섹션 참고 바람). (<A HREF="https://github.com/nvaccess/nvda/issues/4673" target="_blank">#4673</A>)
+<LI>단춧키 설정을 통해 모든 NvDA 설정 대화상자 및 문서 서식 설정 관련 명령(키보드, 터치 명령 등)을 할당할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4898" target="_blank">#4898</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>문서 서식 설정에 있는 글꼴명, 줄, 링크 및 목록 설정 핫키가 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4650" target="_blank">#4650</A>)
+<LI>마우스 설정에 있는 마우스 좌표 비프음 출력과 밝기에 대한 비프음 볼륨 설정에 핫키가 추가됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4916" target="_blank">#4916</A>)
+<LI>이전보다 더 많은 색상을 인식 및 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4984" target="_blank">#4984</A>)
+<LI>리브루이 점자 변환기 2.6.2 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/4777" target="_blank">#4777</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>특정 인도 언어 사용중 합성어로 된 글자가 제대로 풀이되어 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4582" target="_blank">#4582</A>)
+<LI>보이스 설정에 있는 "음성 데이타 사용" 옵션을 선택시 기호 발음 설정에 나열된 기호를 현재 사용중인 언어로 출력하도록 함. 또한 사용중인 언어가 본 대화상자의 제목표시줄에 표시되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4930" target="_blank">#4930</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 편집 콤보 박스(예: 구글 검색창)에 입력된 글자가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4976" target="_blank">#4976</A>)
+<LI>마이크로소프트 오피스 사용중 색상을 선택시 선택된 색상이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3045" target="_blank">#3045</A>)
+<LI>댄마크어 점자 출력 기능 복원. (<A HREF="https://github.com/nvaccess/nvda/issues/4986" target="_blank">#4986</A>)
+<LI>파워포인트 슬라이드쇼중 page up과 page down을 사용하여 슬라이드로 이동하지 못하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4850" target="_blank">#4850</A>)
+<LI>Desktop용 Skype 7.2 이후 버전 사용시 타이핑 알림 출력 및 대화 내용에서 벗어난 후의 포커스 문제 해결. (<A HREF="https://github.com/nvaccess/nvda/issues/4972" target="_blank">#4972</A>)
+<LI>단축키 설정에 있는 검색 필드에서 특정 구두점(예: 대괄호) 입력이 처리되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/5060" target="_blank">#5060</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 g 또는 shift+g를 통해 그래픽을 탐색시 접근 향상 목적으로 이미지로 처리된 요소도 포함하도록 함(예: ARIA role img). (<A HREF="https://github.com/nvaccess/nvda/issues/5062" target="_blank">#5062</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2015.1</H2>
+<P>
+이번 버전의 주 기능들: 마이크로소프트 워드와 아웃룩 문서 및 메시지에서의 브라우즈 모드 기능, Skype 지원 향상 및 인터넷 익스플로러 사용시 발생하던 여러 중대 버그 수정 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>구두점/기호 발음 설정에 새 기호를 추가할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4354" target="_blank">#4354</A>)
+<LI>단축키 설정에 있는 검색 필드를 사용하여 원하는(검색 문자열이 들어간) 명령을 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4458" target="_blank">#4458</A>)
+<LI>mintty 사용시 새 컨텐츠가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4588" target="_blank">#4588</A>)
+<LI>브라우즈 모드 검색(찾기) 대화상자에 대소문자 구분 검색 옵션 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/4584" target="_blank">#4584</A>)
+<LI>마이크로소프트 ㅜ어드 사용중 NvDA+SPACE를 눌러 브라우즈 모드로 전환후 첫 글자 명령(예: 헤딩 (H)) 및 요소 목록 (NVDA+F7) 호출 등을 사용할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2975" target="_blank">#2975</A>)
+<LI>마이크로소프트 아웃룩 2007 이상에서 브라우즈 모드를 사용하여 HTML 이메일을 읽을 수 있음(만약 브라우즈 모드가 자동으로 적용되지 않았을 경우 NVDA+SPACE를 눌러 수동으로 브라우즈 모드를 선택바람). (<A HREF="https://github.com/nvaccess/nvda/issues/2975" target="_blank">#2975</A>) 
+<LI>마이크로소프트 워드 문서 저자가 표 속성 중 열 머릿말 행을 표시한 경우 표의 열 머릿말이 자동으로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4510" target="_blank">#4510</A>) 
+ <UL>
+ <LI>그러나 표 행이 중복되는 경우 적용되지 않을 수 있음(이때 NVDA+shift+c를 눌러 열 머릿말을 설정하기 바람).
+ </UL>
+<LI>Desktop용 스카이프에서 뜨는 알림을 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4741" target="_blank">#4741</A>)
+<LI>Desktop용 스카이프 사용시 NVDA+control+1부터 NVDA+control+0을 눌러 최근 메시지 리뷰시 메시지를 출력하도록 함(예: NVDA+control+1을 눌러 최근 메시지를 NVDA+control+0을 눌러 최근 열번째 메시지 확인). (<A HREF="https://github.com/nvaccess/nvda/issues/3210" target="_blank">#3210</A>)
+<LI>Desktop용 스카이프로 메시지를 주고받을때 친구가 타이핑을 하는지를 출력함. (<A HREF="https://github.com/nvaccess/nvda/issues/3506" target="_blank">#3506</A>)
+<LI>NVDA 실행 명령 목록에 --install-silent 옵션을 통해 NvDA 설치 후 자동으로 실행하는것을 차단할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/4206" target="_blank">#4206</A>)
+<LI>페이펀마이어 BRAILLEX Live 20, BRAILLEX Live 및 BRAILLEX Live Plus 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/4614" target="_blank">#4614</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>문서 서식 알림 설정에 있는 철자 오류 알림 옵션에 핫키(Alt+R) 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/793" target="_blank">#793</A>)
+<LI>자동 언어 변경 설정에 관계없이 현재 사용되는 음성 엔진 언어로 기호 및 구두점을 출력하도록 함(보이스 설정에 추가된 보이스 언어 데이타 사용 설정을 해제하여 NVDA 인터페이스 언어를 사용하도록 할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/4210" target="_blank">#4210</A>)
+<LI>Newfon 음성 엔진을 추가 기능으로 전환함. (<A HREF="https://github.com/nvaccess/nvda/issues/3184" target="_blank">#3184</A>)
+<LI>스카이프 사용시 스카이프 7 이상 사용 바람. (<A HREF="https://github.com/nvaccess/nvda/issues/4218" target="_blank">#4218</A>)
+<LI>NVDA 업데이트 다운로드 보안 강화(HTTPS 연결 및 다운로드후 파일 hash 검사 추가). (<A HREF="https://github.com/nvaccess/nvda/issues/4716" target="_blank">#4716</A>)
+<LI>이스피크 음성 엔진 1.48.04 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/4325" target="_blank">#4325</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>마이크로소프트 엑셀에서 통합된 머릿말 셀(예: A1과 B1이 통합되었을때)의 머릿말이 출력되도록 함(이전엔 아무것도 출력되지 않았음). (<A HREF="https://github.com/nvaccess/nvda/issues/4617" target="_blank">#4617</A>)
+<LI>파워포인트 2003에서 편집창의 내용을 편집시 줄 단위 이동이 불편했던 문제 수정(이전에는 다음 및 이전 문단으로 이동시 줄의 오른쪽으로 커서가 이동했었음). (<A HREF="https://github.com/nvaccess/nvda/issues/4619" target="_blank">#4619</A>)
+<LI>NVDA의 모든 대화상자를 중앙에 고정시켜 시각적 프레즌테이션 및 편의성을 높임. (<A HREF="https://github.com/nvaccess/nvda/issues/3148" target="_blank">#3148</A>)
+<LI>Desktop용 스카이프에서 친구 추가 메시지 편집시 메시지 읽기 및 편집 기능이 제대로 작동하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3661" target="_blank">#3661</A>)
+<LI>Eclipse IDE내 체크박스에서 트리뷰 항목으로 옮길때 체크박스가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4586" target="_blank">#4586</A>)
+<LI>마이크로소프트 워드의 철자 및 문법 오류 대화상자에서 현재 오류를 변경 또는 무시 후 다음 오류가 알리지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1938" target="_blank">#1938</A>)
+<LI>Tera Term Pro 터미널창 및 Balabolka 문서내 텍스트를 읽을 수 없었던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4229" target="_blank">#4229</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 프레임 내에 있는 입력창에 한국어 및 다른 동아시아 글자 입력 후 프레임으로 포커스가 되지않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4045" target="_blank">#4045</A>)
+<LI>단춧키 설정을 통해 단춧키 추가중 키보드 배열 선택 메뉴에서 ESC를 눌렀을때 메뉴 대신 단춧키 설정 대화상자가 닫히던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3617" target="_blank">#3617</A>)
+<LI>추가 기능 제거후 추가 기능 폴더가 삭제되도록 함(이전에는 NVDA를 한번 더 재시작한 후 추가 기능 폴더가 삭제되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/3461" target="_blank">#3461</A>)
+<LI>스카이프 7 사용시 존재하던 중대 버그들 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4218" target="_blank">#4218</A>)
+<LI>스카이프에서 메시지 전송시 메시지가 두번 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3616" target="_blank">#3616</A>)
+<LI>스카이프 사용중 가끔 메시지 내용(일부분 또는 전체)이 갑자기 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4644" target="_blank">#4644</A>)
+<LI>시간 및 날짜 출력시 사용자가 지정한 국가 설정을 반영하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2987" target="_blank">#2987</A>) 
+<LI>브라우즈 모드에서 그래픽 텍스트 출력시 여러줄에 걸쳐있는 불필요한 텍스트(특히 Base64로 처리된 그래픽(예: 구글 그룹))가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4793" target="_blank">#4793</A>)
+<LI>일시 중단된 메트로 앱을 빠져나갈때 NVDA가 몇초동안 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4572" target="_blank">#4572</A>)
+<LI>모질라 파이어폭스에서 실시간 구역내 위치한 atomic 요소 변경시 aria-atomic 속성이 반영되도록 함(이전에는 본 요소내 하위 요소에만 적용되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/4794" target="_blank">#4794</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤안에 위치한 ARIA 앱에서 브라우즈 모드 사용시 실시간 정보 업데이트 출력 및 브라우즈 모드에 반영되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4798" target="_blank">#4798</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에 위치한 실시간 구역의 텍스트가 병경되었을때 저자가 업데이트 정보가 필요하다고 표시한 텍스트만 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4800" target="_blank">#4800</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 필요한 경우 aria-labelledby로 처리된 컨텐츠가 이전에 있던 컨텐츠를 대신하여 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4575" target="_blank">#4575</A>)
+<LI>마이크로소프트 아웃룩 2013에서 철자 오류 검사시 철자 오류가 있는 단어가 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4848" target="_blank">#4848</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 visibility:hidden로 처리된 요소내 컨텐츠가 브라우즈 모드에 나타나지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4839" target="_blank">#4839</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3776" target="_blank">#3776</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 폼 컨트롤의 title 속성이 다른 레이블 표시를 대신해 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4491" target="_blank">#4491</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 aria-activedescendant 속성 때문에 본 컨트롤에 포커스가 가지않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4667" target="_blank">#4667</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2014.4</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>새 NVDA 언어: 콜롬비아 스페인어, 펀자브어 추가.
+<LI>NVDA 종료 대화상자에 NVDA 재시작 및 추가 기능 미사용 옵션 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/4057" target="_blank">#4057</A>)
+ <UL>
+ <LI>NVDA 실행시 --disable-addons 실행 명령을 통해 추가 기능을 일시적으로 정지시킬 수 있음.
+ </UL>
+<LI>발음 사전에 단어 입력시 페턴(이전값)을 단어 단위(즉 단어의 일부분이 아님)로 처리하도록 지정 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/1704" target="_blank">#1704</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>객체 탐색을 사용하여 브라우즈 모드 문서외 객체에서 문서내 객체로 옮길시 문서 탐색 모드가 자동으로 활성되도록 함 (이전에는 포커스 변경시에만  적용되었음). (<A HREF="https://github.com/nvaccess/nvda/issues/4369" target="_blank">#4369</A>)
+<LI>점자 디스플레이 및 음성 엔진 목록이 가나다순(음성 끝/점자 출력 끔은 마지막에 표시)으로 정렬하여 각 설정 대화상제에 나타나도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2724" target="_blank">#2724</A>)
+<LI>리브루이 점자 변환기 2.6.0 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/4434" target="_blank">#4434</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3835" target="_blank">#3835</A>)
+<LI>브라우즈 모드 사용시 E/Shift+E(편집창 이동)를 누를때 편집 콤보 박스로도 이동하도록 함(예: 최신 구글 검색 페이지). (<A HREF="https://github.com/nvaccess/nvda/issues/4436" target="_blank">#4436</A>)
+<LI>알림 영역에 있는 NVDA 아이콘을 왼쪽 마우스 버튼으로 클릭시 NVDA 메뉴가 호출되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4459" target="_blank">#4459</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>포커스를 브라우즈 모드 문서로 옮길시(예: Alt+Tab을 눌러 열려있는 사이트로 옮길때) 리뷰 커서가 포커스된 요소가 아닌(예: 커서 근처의 링크) 가상 케럿 위치에 위치하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4369" target="_blank">#4369</A>)
+<LI>파워포인트 슬라이드쇼중 리뷰 커서가 가상 케럿을 제대로 따라가도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4370" target="_blank">#4370</A>)
+<LI>모질라 파이어폭스와 같은 Gecko 기반 프로그램에서 실시간 구역(live region)을 제공하는 객체의 상위 객체의 ARIA 구역 정보가 다르더라도(예: "polite" 컨텐츠 구역에 "assertive" 컨텐츠가 출력될 경우) 새 내용이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4169" target="_blank">#4169</A>).
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 특정 문서내 문서(예: frameset내 frameset)의 내용을 제대로 접근할 수 없었던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4418" target="_blank">#4418</A>)
+<LI>HandyTech 디스플레이 사용시 NVDA가 특정 상황에서 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3709" target="_blank">#3709</A>)
+<LI>특정 윈도우 비스타 시스템에서 NVDA 실행시(예: 바탄 화면 아이콘 클릭 또는 동작키 사용) "Entry Point Not Found" 대화상자가 떴던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4235" target="_blank">#4235</A>)
+<LI>최신 Eclipse 버전에서 대화상자내 편집창에서 일어났던 중대한 문제들 해결. (<A HREF="https://github.com/nvaccess/nvda/issues/3872" target="_blank">#3872</A>)
+<LI>Outlook 2010에서 일정 및 회의 요청 장소 필드에서 케럿이 제대로 움직이지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4126" target="_blank">#4126</A>)
+<LI>라이브 구역내 라이브 구역이 아닌 지역(예: aria-live="off")을 무시하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4405" target="_blank">#4405</A>)
+<LI>상태표시줄 내용을 알릴시 상태표시줄 이름이 있는 경우 표시줄 이름과 내용의 첫 글자간 공백을 두어 표시하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4430" target="_blank">#4430</A>)
+<LI>입력된 단어를 읽도록 설정한후 암호 편집창에서 새 단어 입력전 별표가 여러번 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4402" target="_blank">#4402</A>)
+<LI>Outlook 메시지 목록에 있는 항목이 데이타 항목으로 잘못 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4439" target="_blank">#4439</A>)
+<LI>Eclipse IDE 코드 편집창에서 텍스트를 선택시 선택된 내용 전부가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2314" target="_blank">#2314</A>)
+<LI>Eclipse의 파생본(예: Spring Tool Suite와 앤드로이드 개발 도구)가 Eclipse로 취급되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4360" target="_blank">#4360</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4454" target="_blank">#4454</A>)
+<LI>고급 DPI와 줌 변경시 인터넷 익스플로러와 같은 MSHTML 컨트롤(예: 윈도우 8 앱들)에서 마우스나 터치 탐색 기능이 제대로 동작하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3494" target="_blank">#3494</A>) 
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 마우스나 터치 탐색 사용시 버튼명이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4173" target="_blank">#4173</A>)
+<LI>Papenmeier/BrxCom 사용시 디스플레이의 키가 동작하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4614" target="_blank">#4614</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2014.3</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>일반 설정에 NVDA 시작 및 종료음 재생 여부를 설정하는 옵션 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/834" target="_blank">#834</A>)
+<LI>추가 기능이 도움말 기능을 지원하는 경우 추가 기능 관리자를 통하여 특정 추가 기능의 도움말을 열 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2694" target="_blank">#2694</A>)
+<LI>아웃룩 달력 지원(아웃룩 2007 이상) (<A HREF="https://github.com/nvaccess/nvda/issues/2943" target="_blank">#2943</A>):
+ <UL>
+ <LI>방향키를 사용하여 시간대 확인 가능
+ <LI>선택된 시간에 대한 일정 유무 확인 가능
+ <LI>탭을 사용하여 일정 확인 가능
+ <LI>다른 날로 옮길시 선택된 시간대나 일정이 다른 요일에 속할때에만 알리도록 함.
+ </UL>
+<LI>아웃룩 2010 이상에서의 inbox 및 메시지 목록 지원 향상 (<A HREF="https://github.com/nvaccess/nvda/issues/3834" target="_blank">#3834</A>):
+ <UL>
+ <LI>문서 서식 알림에서 표 머릿말 설정을 해제하여 메시지 목록의 머릿말(보낸이, 제목 등) 출력을 정지시킬 수 있음.
+ <LI>표 탐색 명령(Control+Alt+방향키)을 사용하여 각 열 정보를 확인할 수 있음.
+ </UL>
+<LI>마이크로소프트 워드에서 문서내 이미지에 alt text가 존재하지 않는 경우 문서 저자가 제공한 이미지의 제목을 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4193" target="_blank">#4193</A>)
+<LI>마이크로소프트 워드 사용시 서식 정보(NVDA+F) 호출시 문단 들여쓰기 값도 출력하도록 함. 또한 문서 서식 알림 설정에 있는 문단 들여쓰기 알림을 선택한 경우 이 정보를 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4165" target="_blank">#4165</A>)
+<LI>편집참과 문서에서 엔터를 눌렀을때 자동으로 삽입된 텍스트(예: 새 글 머리 기호 항목(bullet), 숫자, 탭 등)이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4185" target="_blank">#4185</A>)
+<LI>마이크로소프트 워드에서 현재 문서 위치에 주석이 존재하는 경우 NvDA+Alt+C를 눌러 주석을 확인할 수 ㅣㅇㅆ음. (<A HREF="https://github.com/nvaccess/nvda/issues/3528" target="_blank">#3528</A>)
+<LI>마이크로소프트 엑셀에서의 행과 열 머릿말 알림 기능 향상 (<A HREF="https://github.com/nvaccess/nvda/issues/3568" target="_blank">#3568</A>):
+ <UL>
+ <LI>엑셀에서 제공하는 셀 이름 범위 기능을 사용하여 머릿말 셀을 지정할 수 있음 (조스와 호환 가능)
+ <LI>열 머릿말 설정(NVDA+Shift+C)과 행 머릿말 설정(NVDA+Shift+R)값이 문서에 저장되어 후에 문서를 불러올때 적용됨. 또한 타 스크린 리더가 셀 이름 범위 기능 지원시 이를 사용할 수 있음.
+ <LI>위 명령들을 사용하여 한 문서에 구역에 따라 여러 머릿말 행과 열을 설정할 수 있음.
+ </UL>
+<LI>마이크로소프트 워드에서 행과 열 머릿말 알림 기능 추가 (<A HREF="https://github.com/nvaccess/nvda/issues/3110" target="_blank">#3110</A>):
+ <UL>
+ <LI>워드에서 제공하는 책갈피 기능을 사용하여 머릿말 셀을 지정할 수 있음 (조스와 호환 가능)
+ <LI>표의 첫 머릿말 셀에서 열 머릿말(NVDA+Shift+C)과 행 머릿말(NVDA+Shift+R) 지정 명령을 사용하여 행 및 열 머릿말을 지정했을때 본 값이  문서에 저장되어 후에 문서를 불러올때 적용됨. 또한 타 스크린 리더가 워드 책갈피 기능 지원시 이를 사용할 수 있음.
+ </UL>
+<LI>마이크로소프트 워드에서 탭을 누를때 페이지 좌측 가장자리로부터의 간격을 알리도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1353" target="_blank">#1353</A>)
+<LI>마이크로소프트 워드 사용시 여러 서식(굵게 쓰기, 이태릭, 밑줄, 표시, outline 레벨 등) 변환 명령이 음성과 점자로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1353" target="_blank">#1353</A>)
+<LI>마이크로소프트 엑셀에서 현재 셀에 주석이 존재하는 경우 NvDA+Alt+C를 눌러 주석을 확인할 수 ㅣㅇㅆ음. (<A HREF="https://github.com/nvaccess/nvda/issues/2920" target="_blank">#2920</A>)
+<LI>마이크로소프트 엑셀에서 Shift+F2를 눌러 주석 편집 모드를 선택한 후 NVDA가 제공하는 주석 편집 대화상자를 통해 포커스된 셀에 주석을 삽입할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2920" target="_blank">#2920</A>)
+<LI>마이크로소프트 엑셀 사용시 더 많은 셀 선택 및 이동 명령에 대한 피드백을 음성 및 점자로 확인 가능 (<A HREF="https://github.com/nvaccess/nvda/issues/4211" target="_blank">#4211</A>):
+ <UL>
+ <LI>수직으로  페이지 이동 (pageUp/pageDown)
+ <LI>수평으로 페이지 이동 (alt+pageUp/alt+pageDown)
+ <LI>선택 확장 (위 키에 shift를 더함)
+ <LI>현재 영역 선택 (control+shift+8)
+ </UL>
+<LI>마이크로소프트 엑셀에서 서식 정보(NVDA+F) 호출시 셀의 정렬(수직 및 수평 배치)도 출력하도록 함. 또한 문서 서식 알림 설정에 있는 배치 알림을 선택한 경우 이 정보를 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4212" target="_blank">#4212</A>)
+<LI>마이크로소프트 엑셀에서 서식 정보(NVDA+F) 호출시 셀의 스타일이 출력되도록 함. 또한 문서 서식 알림 설정에 스타일 알림을 선택한 경우 이 정보를 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4213" target="_blank">#4213</A>)
+<LI>마이크로소프트 파워포인트에서 방향키를 이용하여 셰이프(shape)를 옮길시 셰이프의 위치가 출력되도록 함 (<A HREF="https://github.com/nvaccess/nvda/issues/4214" target="_blank">#4214</A>):
+ <UL>
+ <LI>슬라이드내 셰이프의 위치(즉 가장자리로부터의 위치) 출력
+ <LI>한 셰이프가 다른 셰이프를 덮을때 덮이 크기 및 덮어지는 셰이프 출력
+ <LI>위치 정보 명령(NVDA+delete)을 사용하여 셰이프를 옮기지 않고도 위 정보를 확인할 수 있음.
+ <LI>셰이프를 선택할때 다른 셰이프가 이 셰이프를 덮은 경우 덮어졌다고 출력
+ </UL>
+<LI>위치 정보 명령(NVDA+delete) 실행시 상황에 적합한 정보를 알리도록 함 (<A HREF="https://github.com/nvaccess/nvda/issues/4219" target="_blank">#4219</A>):
+ <UL>
+ <LI>편집창과 브라우즈 모드에서는 현재 커서 위치(퍼센트)와 화면 좌표 출력.
+ <LI>파워포인트에서는 선택된 셰이프가 슬라이드내 위치하는 자리 및 다른 셰이프와의 거리 출력.
+ <LI>본 명령을 두번 누르면 이전처럼 특정 컨트롤이 차지하는 위치를 확인할 수 ㅣㅇㅆ음.
+ </UL>
+<LI>새 NVDA 언어: 카탈로니아어 추가.
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>리브루이 점자 변환기 2.5.4 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/4103" target="_blank">#4103</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>구글 크롬이나 크롬 기반 브라우저 사용시 경고나 대화상자 텍스트중 특정 텍스트(특히 특정 서식이 적용된 텍스트)가 반복으로 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4066" target="_blank">#4066</A>)
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 특정 버튼(예: 페이스북 사이트 상단에 있는 버튼)에서 엔터를 누를때 버튼이 활성화되지 않거나 다른 버튼이 활성화되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4106" target="_blank">#4106</A>)
+<LI>iTunes에서 탭을 누를때 필요없는 정보가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4128" target="_blank">#4128</A>)
+<LI>iTunes내 특정 목록(예: 음악 목록)에서 객체 탐색을 이용하여 다음 항목으로 이동이 불가능하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4129" target="_blank">#4129</A>)
+<LI>인터넷 익스플로러 사용시 첫 글자 명령을 사용하여 WAI ARIA 코드로 처리된 헤딩 HTML 요소로 접근 가능 및 본 헤딩이 브라우즈 요소 목록에 포함되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4140" target="_blank">#4140</A>)
+<LI>최신 인터넷 익스플로러 버전에서 같은 페이지 링크를 활성화할때 링크가 가리키는 위치 출력 및  브라우즈 커서가 본 위치로 움직이도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4134" target="_blank">#4134</A>)
+<LI>마이크로소프트 아웃룩 2010 이상에서 새 계정 및 이메일 계정 설정과 같은 보안용 대화상자의 접근성이 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/4090" target="_blank">#4090</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4091" target="_blank">#4091</A>, <A HREF="https://github.com/nvaccess/nvda/issues/4095" target="_blank">#4095</A>)
+<LI>여러 아웃룩 대화상자에서 불필요한 command toolbar 내용이 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4096" target="_blank">#4096</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3407" target="_blank">#3407</A>)
+<LI>마이크로소프트 워드에서 탭을 이용하여 표의 빈 셀로 옮길때 표 끝이라고 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4151" target="_blank">#4151</A>)
+<LI>마이크로소프트 워드에서 표 이후 글자(표 밖에 있는 빈칸 등)가 표 내 글자로 인식되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4152" target="_blank">#4152</A>)
+<LI>마이크로소프트 워드 2010 철자 오류 대화상자에서 철자 오류가 있는 단어 대신 첫 굵게 표시된 단어가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3431" target="_blank">#3431</A>) 
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 브라우즈 모드 사용시 탭을 누르거나 글자키로 폼 필드로 이동시 필드 제목(HTML 레이블 요소가 사용된 경우)이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4170" target="_blank">#4170</A>)
+<LI>마이크로소프트 워드에서 주석 존재 여부 및 위치 알림 정확도가 향상됨. (<A HREF="https://github.com/nvaccess/nvda/issues/3528" target="_blank">#3528</A>)
+<LI>마이크로소프트 오피스 프로그램(예: 워드, 엑셀, 아웃룩) 사용시 여러 대화상자에서 불필요한 command toolbar 컨테이너 내용이 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4198" target="_blank">#4198</A>)
+<LI>마이크로소프트 워드, 엑셀 또는 다른 프로그램 실행시 클립보드 메니저와 파일 복구와 같은 테스크 페인이 포커스되는 것을 방지하여 사용자가 다른 프로그램으로 전환하다가 돌아오는 것을 최소화하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4199" target="_blank">#4199</A>)
+<LI>최신 윈도우 버전 사용시 사용자 언어가 세르비아 라틴어로 설정되었을때 NVDA가 실행되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4203" target="_blank">#4203</A>)
+<LI>입력 도움말 모드 사용중 numlock을 눌렀을때 numlock이 토글되도록 하여 키보드와 운영체제간 numlock 토글에 대한 혼돈을 줄임. (<A HREF="https://github.com/nvaccess/nvda/issues/4226" target="_blank">#4226</A>)
+<LI>구글 크롬에서 탭 전환시 페이지 제목이 출력되지 않던 문제 수정(NVDA 2014.2 사용시 특정 상황에서 이 문제가 발생했었음). (<A HREF="https://github.com/nvaccess/nvda/issues/4222" target="_blank">#4222</A>)
+<LI>구글 크롬이나 크롬 기반 브라우저 사용시 문서 URL(주소)가 문서와 함께 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4223" target="_blank">#4223</A>)
+<LI>"음성 출력 끔" 음성 엔진을 사용(자동 테스트에 유용함)하여 모두 읽기 실행시 문서 전체를 읽도록 함(이전에는 몇 줄만 읽었음). (<A HREF="https://github.com/nvaccess/nvda/issues/4225" target="_blank">#4225</A>)
+<LI>마이크로소프트 아웃룩 서명 편집창 접근 향상 (커서 이동 및 서식 정보 확인 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/3833" target="_blank">#3833</A>) 
+<LI>마이크로소프트 워드에서 표 셀의 마지막 줄을 읽을때 표 셀의 내용이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3421" target="_blank">#3421</A>)
+<LI>마이크로소프트 워드에서 목차의 첫줄 또는 마지막 줄을 읽을때 목차의 내용이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3421" target="_blank">#3421</A>)
+<LI>입력된 단어 출력 및 여러 상황에서 인도어 모음 또는 virama 글자 입력시 입력된 단어가 깨지는 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4254" target="_blank">#4254</A>)
+<LI>골드웨이브에서 숫자 입력창을 제대로 처리하지 못하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/670" target="_blank">#670</A>)
+<LI>마이크로소프트 워드에서 control+아래 방향키 또는 control+위 방향키를 사용하여 다음 및 이전 문단을 읽을때 bullet 또는 숫자 목록에서 본 명령을 두번 눌러야 문단을 이동하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3290" target="_blank">#3290</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2014.2</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>특정 편집창(특히 디스플레이모델이 사용된 필드)에서 선택된 문자가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/770" target="_blank">#770</A>)
+<LI>자바 기반 프로그램에서 라디오 버튼과 같은 그루핑 컨트롤 값의 위치 정보를 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3754" target="_blank">#3754</A>)
+<LI>자바 기반 프로그램에서 특정 컨트롤에 키보드 핫키가 부여된 경우 이를 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3881" target="_blank">#3881</A>)
+<LI>브라우즈 모드에서 랜드마크 레이블 인식 가능 및 요소 목록에 나타나도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1195" target="_blank">#1195</A>)
+<LI>브라우즈 모드에서 레이블이 있는 구역이 랜드마크로 처리되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3741" target="_blank">#3741</A>)
+<LI>인터넷 익스플로러 기반 프로그램 및 문서내 라이브 구역(W3C ARIA)를 지원함에 따라 웹페이지 저자가 지정한 라이브 구역내 내용이 변경될때마다 이를 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1846" target="_blank">#1846</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>브라우즈 모드 사용시 웹페이지 대화상자나 앱을 빠져나갈때 브라우즈 모드 문서의 이름과 형식이 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4069" target="_blank">#4069</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>자바 기반 프로그램 사용시 일반 윈도우 시스템 메뉴 내용이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3882" target="_blank">#3882</A>)
+<LI>화면 탐색 모드 사용중 텍스트를 복사시 줄 끝이 짤리지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3900" target="_blank">#3900</A>)
+<LI>특정 프로그램에서 포커스 이동 또는 심플 객체 탐색 사용시 필요없는 공백 객체를 무시하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3839" target="_blank">#3839</A>)
+<LI>NVDA의 여러 대화상자가 열릴때 이전 음성 출력이 중지되도록 함.
+<LI>브라우즈 모드에서 링크와 버튼 등의 컨트롤 레이블이 접근성 편의상 웹페이지 저자에 의해 가려졌을때에도(예: aria-label/aria-labelledby 사용시) 제대로 인식되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1354" target="_blank">#1354</A>)
+<LI>인터넷 익스플로러에서 브라우즈 모드 사용시 ARIA presentation으로 처리된 컨테이너 요소의 내용이 무시되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4031" target="_blank">#4031</A>)
+<LI>Unikey 소프트웨어를 이용한 베트남어 입력이 불가능하던 문제 수정(키보드 설정에 추가된 다른 프로그램에서의 키보드 입력 처리 옵션을 해제하고 사용 바람). (<A HREF="https://github.com/nvaccess/nvda/issues/4043" target="_blank">#4043</A>)
+<LI>브라우즈 모드 사용시 라디오 버튼 및 체크박스 메뉴 아이템이 컨트롤 대신 클릭 가능 텍스트로 인식되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4092" target="_blank">#4092</A>)
+<LI>브라우즈 모드에서 라디오 버튼 및 체크박스 메뉴 아이템에 포커스된 경우 포커스 모드에서 브라우즈 모드로 전환되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4092" target="_blank">#4092</A>)
+<LI>마이크로소프트 파워포인트 사용시 입력된 단어 읽기를 선택한 후 벡스페이스를 누를때 삭제된 글자가 이후 입력된 단어에 이어 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3231" target="_blank">#3231</A>)
+<LI>마이크로소프트 오피스 2010 설정 대화상자에 ㅣㅇㅆ는 콤보박스의 이름이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/4056" target="_blank">#4056</A>)
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 첫 글자 탐색을 이용하여 다음 및 이전 버튼이나 폼필드로 이동시 토글 버튼으로 접근이 불가능했던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/4098" target="_blank">#4098</A>)
+<LI>모질라 프로그램 사용시 주의(alert) 내용이 두번 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3481" target="_blank">#3481</A>)
+<LI>브라우즈 모드에서 컨테이너나 랜드마크의 내용을 읽는중 페이지 컨텐츠가 변경될때(예: 페이스북과 트위터 사이트 사용시) 컨테이너나 랭드마크의 내용이 반복으로 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2199" target="_blank">#2199</A>)
+<LI>응답하지 않는 프로그램에서 빠져나갈때 NVDA가 가끔 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3825" target="_blank">#3825</A>)
+<LI>편집창의 내용이 화면에 표시된(그려진) 경우 모두 읽기시 케럿(편집 커서)이 업데이트되지 않던 문제 수정.  (<A HREF="https://github.com/nvaccess/nvda/issues/4125" target="_blank">#4125</A>)
+</UL>
+
+<H2>2014.1</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 파워포인트 2013 지원 (단 보안 모드는 지원않함). (<A HREF="https://github.com/nvaccess/nvda/issues/3578" target="_blank">#3578</A>)
+<LI>마이크로소프트 워드ㅗ아 엑셀의 기호 삽입 대화상자에서 삽입하고자 하는 기호가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3538" target="_blank">#3538</A>)
+<LI>문서 서식 알림 설정에 클릭 가능 요소 알림 설정을 추가하여 문서의 클릭 가능한 요소가 알려질지 설정할 수 있도록 함 (기본으로 설정되어 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3556" target="_blank">#3556</A>)
+<LI>Widcomm 블루투스 드라이버가 설치된 컴퓨터에서 블루투스 점자 디스플레이 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2418" target="_blank">#2418</A>)
+<LI>파워포인트에서 텍스트를 편집할때 링크 텍스트가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3416" target="_blank">#3416</A>)
+<LI>ARIA 앱이나 대화상자에서 NVDA+SPACE를 눌러 브라우즈 모드로 전환 후 일반 웹페이지처럼 앱이나 대화상자내 내용을 읽을 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2023" target="_blank">#2023</A>)
+<LI>아웃룩 엑스프레스/Windows Mail/Windows Live Mail에서 메시지가 플래그되었거나 첨부 파일이 있을때 그 정보를 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1594" target="_blank">#1594</A>)
+<LI>Java 기반 프로그램내 표 이동시 셀의 행 및 열 위치 및 머릿말 정보(머릿말이 있는 경우)가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3756" target="_blank">#3756</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>페이펀마이어 디스플레이 명령 중 고정 리뷰/포커스로 이동 명령 삭제함 (필요시 기능키 설정을 사용하여 추가할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3652" target="_blank">#3652</A>)
+<LI>마이크로소프트 VC Runtime 11 사용으로 인해 윈도우 XP 서비스팩 2 또는 윈도우 서버 2003 서비스팩 1 이전 시스템에서 NVDA 실행 불가능.
+<LI>별표(*)와 드하기(+) 문자가 기호 발음 출력을 기호 출력으로 설정했을때에도 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3614" target="_blank">#3614</A>)
+<LI>이스피크 음성 엔진 1.48.04 사용 및 이에 따른 여러 버그 및 언어 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3842" target="_blank">#3842</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3739" target="_blank">#3739</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>마이크로소프트 엑셀에서 셀로 이동 또는 선택할때 엑셀이 다운될때 새 셀이 아닌 이전 셀이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3558" target="_blank">#3558</A>)
+<LI>마이크로소프트 엑셀에서 셀의 팝업 메뉴를 눌렀을때 나타나는 드랍다운 목록을 제대로 처리하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3586" target="_blank">#3586</A>)
+<LI>iTunes 11에서 스토어를 처음 열때나 스토어 페이지에서 링크를 선택하였을때 브라우즈 모드를 통해 새 컨텐츠를 읽지못하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3625" target="_blank">#3625</A>)
+<LI>iTunes 11 스토어에서 송 미리듣기 버튼 레이블이 브라우즈 모드에서 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3638" target="_blank">#3638</A>)
+<LI>구글 크롬에서 브라우즈 모드 사용시 체크박스와 라디오 버튼의 레이블이 잘못 출력되던 문제 수정.  (<A HREF="https://github.com/nvaccess/nvda/issues/1562" target="_blank">#1562</A>)
+<LI>인스턴트버드에서 주소록에서 각 항목으로 이동시 불필요한 정보가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2667" target="_blank">#2667</A>)
+<LI>어도비 리더 문서 읽을때 버튼과 같은 컨트롤의 레이블이 툴팁이나 다른 방법으로 덮더씌워졌들때 컨트롤 레이블이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3640" target="_blank">#3640</A>)
+<LI>어도비 리더 문서 읽을때 "mc-ref" 텍스트가 있는 그래픽 출력 제외됨. (<A HREF="https://github.com/nvaccess/nvda/issues/3645" target="_blank">#3645</A>)
+<LI>마이크로소프트 엑셀에서 모든 셀의 서식 정보가 밑줄이 적용된 것처럼 출력되는 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3669" target="_blank">#3669</A>)
+<LI>브라우즈 모드에서 불필요한 유니코드 문자가 문서 탐색을 방해하던 문제 수정(이로 인해 레이블에서 불필요한 문자열 출력이 거의 사라졌음). (<A HREF="https://github.com/nvaccess/nvda/issues/2963" target="_blank">#2963</A>)
+<LI>PuTTY 사용시 아시아 문자 입력이 제대로 처리되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3432" target="_blank">#3432</A>)
+<LI>모두 읽기 정지후 문서를 읽을시 읽고있는 텍스트가 아직 읽지않은 요소(예: 표)의 끝이라고 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3688" target="_blank">#3688</A>)
+<LI>브라우즈 모드에서 모두 읽기시 건너뛰어 읽기를 선택하고 모두 읽기를 진행하던 중 첫 글자로 다음 요소로 이동시 요소 텍스트 뿐 아니라 요소명(예: 헤딩이라고 출력)도 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3689" target="_blank">#3689</A>)
+<LI>건너뛰어 읽기 도중 컨테이너 전후 이동키가 본 설정에 상관없이 모두 읽기를 중지하던 문제 수정(즉 모두 읽기시 컨테이너 밖의 텍스트로부터 모두 읽기가 진행되도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/3675" target="_blank">#3675</A>)
+<LI>단축키 설정에 나열된 터치스크린 명령이 영어 외 타국어로도 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3624" target="_blank">#3624</A>)
+<LI>특정 편집창(TRichEdit)이 있는 프로그램(예: Jarte 5.1, BRfácil) 사용시 마우스 커서를 편집창으로 옮길때 프로그램이 종료되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3693" target="_blank">#3693</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3603" target="_blank">#3603</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3581" target="_blank">#3581</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 ARIA presentation으로 처리된 컨테이너(예: 표)가 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3713" target="_blank">#3713</A>)
+<LI>마이크로소프트 워드 사용시 표 셀의 행 및 열 정보가 반복으로 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3702" target="_blank">#3702</A>)
+<LI>프랑스어나 독일어와 같이 공백으로 숫자 그루핑을 나눌때 각 숫자 그루핑이 한 숫자로 출력되던 문제 수정(특히 표 셀에 숫자가 있을 경우 문제가 발생했음). (<A HREF="https://github.com/nvaccess/nvda/issues/3698" target="_blank">#3698</A>)
+<LI>마이크로소프트 워드 2013에서 시스템 케럿 이동시 점자 커서가 제대로 움직이지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3784" target="_blank">#3784</A>)
+<LI>마이크로소프트 워드에서 점자 디스플레이 커서가 헤딩 문자열의 첫 글자에 위치한 경우 헤딩 레벨 등과 같은 헤딩 정보가 점자로 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3701" target="_blank">#3701</A>)
+<LI>사용자 프로필이 지정된 프로그램이 종료되었을때 프로그램 프로필이 제대로 해제되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3732" target="_blank">#3732</A>)
+<LI>여러 NVDA 입력창(예: 브라우즈 모드 문자열 찾기 대화상자)에서 아시아 글자 입력시 후보 대신 NVDA가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3726" target="_blank">#3726</A>)
+<LI>아웃룩 2013 옵션 대화상자내 탭이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3826" target="_blank">#3826</A>)
+<LI>모질라 파이어폭스와 같은 Gecko 기반 프로그램에서 ARIA live regions 지원 향상됨:
+ <UL>
+ <LI>aria-atomic 업데이트 지원 향상 및 aria-busy 업데이트 처리 향상. (<A HREF="https://github.com/nvaccess/nvda/issues/2640" target="_blank">#2640</A>)
+ <LI>특정 Alt 텍스트(예: Aria-label) 인식 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/3329" target="_blank">#3329</A>)
+ <LI>포커스 이동시 live regiions 텍스트가 업데이트된 경우 업데이트 텍스트도 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3777" target="_blank">#3777</A>)
+ </UL>
+<LI>모질라 파이어폭스와 같은 Gecko 기반 프로그램에서 브라우즈 모드 사용시 특정 presentation 컨트롤(특히 ARIA 포커스 가능)이 더이상 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3781" target="_blank">#3781</A>)
+<LI>마이크로소프트 ㅜ어드 사용시 철자 오류가 ㅣㅇㅆ는 문서를 읽을때 NVDA의 반응 속도가 개선됨. (<A HREF="https://github.com/nvaccess/nvda/issues/3785" target="_blank">#3785</A>)
+<LI>여러 Java 기반 프로그램 접근성 관련 문제 해결:
+ <UL>
+ <LI>프레임이나 창 내에 위치한 컨트롤이 포커스되어 있는 경우 포커스된 컨트롤이 인식되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3753" target="_blank">#3753</A>)
+ <LI>1/1과 같은 불필요한 라디오 버튼 위치 정보가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3754" target="_blank">#3754</A>)
+ <LI>JComboBox 컨트롤 정보가 제대로 출력되게 함(컨트롤이 HTML로 인식되던 문제, 확대/축소 정보가 제대로 인식되지 않던 문제 수정). (<A HREF="https://github.com/nvaccess/nvda/issues/3755" target="_blank">#3755</A>)
+ <LI>대화상자 텍스트 출력시 이전에 누락되었던 텍스트가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3757" target="_blank">#3757</A>)
+ <LI>포커스된 컨트롤의 이름, 값 및 설명 변경 정보가 더 정확하게 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3770" target="_blank">#3770</A>)
+ </UL>
+<LI>윈도우 8 사용시 NVDA 로그 뷰어와 windbg와 같이 여러줄 텍스트가 있는 RichEdit 컨트롤에서 NVDA가 강제 종료되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3867" target="_blank">#3867</A>)
+<LI>고급 DPI 값이 설정된 시스템(특히 최근에 출시된 스크린이 장착된 컴퓨터) 사용시 여러 프로그램에서 마우스 위치가 제대로 추적되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3758" target="_blank">#3758</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3703" target="_blank">#3703</A>)
+<LI>웹브라우저 사용시 NVDA가 갑자기 다운되던 문제 수정 (이때 NVDA를 재시작하여야 제대로 동작함). (<A HREF="https://github.com/nvaccess/nvda/issues/3804" target="_blank">#3804</A>)
+<LI>Papenmeier 점자 디스플레이가 초기에 USB로 연결되지 않아도 본 디스플레이 선택후 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/3712" target="_blank">#3712</A>)
+<LI>Papenmeier Braillex 구형 모델을 선택하였음에도 디스플레이가 연결되어있지 않을때 NVDA가 다운되던 문제 수정.
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2013.3</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 워드 문서 폼 필드 인식 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2295" target="_blank">#2295</A>)
+<LI>마이크로소프트 워드에서 트랙 변경을 설정하고 NVDA 문서 서식 설정에서 문서 리비전 알림을 선택한 경우 리비전이 출력되도록 함 (본 NvDA 설정은 해제되어 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/1670" target="_blank">#1670</A>)
+<LI>마이크로소프트 엑셀 2003-2010 사용시 드랍다운 목록을 열고 탐색시 항목이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3382" target="_blank">#3382</A>)
+<LI>키보드 설정의 "모두 읽기 사용시 건너뛰어 읽기 사용"을 활용하여 모두 읽기 사용중 다음/이전 줄/문단/웹 요소로 건너뛸때 모두 읽기가 계속 실행되도록 함 (기본적으로 본 옵션은 해제되어 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/2766" target="_blank">#2766</A>)
+<LI>새 NVDA 단축키 설정을 사용하여 사용자가 손쉽게 NvDA 단축키를 조정할 수 있도록 함 (예: 키보드 명령 조정 등). (<A HREF="https://github.com/nvaccess/nvda/issues/1532" target="_blank">#1532</A>)
+<LI>상황에 따라 다른 사용자 환경 프로필을 사용할 수 있음 (수동 또는 프로그램 실행과 같이 자동으로 적용 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/87" target="_blank">#87</A>, <A HREF="https://github.com/nvaccess/nvda/issues/667" target="_blank">#667</A>, <A HREF="https://github.com/nvaccess/nvda/issues/1913" target="_blank">#1913</A>)
+<LI>마이크로소프트 엑셀에서 셀이 링크인 경우 링크로 인식하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3042" target="_blank">#3042</A>)
+<LI>마이크로소프트 엑셀에서 셀에 코멘트가 있는 경우 코멘트 정보도 확인 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2921" target="_blank">#2921</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>Zend Studio 개발 도구 사용시 Eclipse 사용할때와 똑같이 NVDA가 작동하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3420" target="_blank">#3420</A>)
+<LI>마이크로소프트 아웃룩 2010 사용시 메시지 규칙 대화상자에 있는 여러 체크박스의 선택 및 해제 상태가 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3063" target="_blank">#3063</A>)
+<LI>모질라 파이어폭스와 같은 프로그램에서 특정 컨트롤이 핀(pinned)된 경우 이를 인식할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3372" target="_blank">#3372</A>)
+<LI>Windows 키나 Alt 키를 NVDA 명령 조합키(modifier key)로 할당할 수 있음 (이전 버전에서 만약 이 키들이 명령에 할당되면 명령 실행시 시작 메뉴나 메뉴바가 간혹 열렸었음). (<A HREF="https://github.com/nvaccess/nvda/issues/3472" target="_blank">#3472</A>)
+<LI>여러 키보드 배열이 설치된 컴퓨터에서 브라우즈 모드 문서에서 텍스트 선택 명령(예: Control+Shift+End) 실행시 키보드 배열이 변경되는 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3472" target="_blank">#3472</A>)
+<LI>인터넷 익스플로러 사용시 NvDA가 종료된 후 프로그램이 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3397" target="_blank">#3397</A>)
+<LI>신형 컴퓨터에서 물리적 컴퓨터 이동 또는 여러 이벤트가 NVDA 명령으로 인식되던 문제 수정 (예전이는 이 이벤트들이 음성을 중지시키거나 다른 NVDA 명령을 실행하였음). (<A HREF="https://github.com/nvaccess/nvda/issues/3468" target="_blank">#3468</A>)
+<LI>Poedit 1.5.7 사용시 NVDA가 이전 버전과 동일하게 동작하도록 함 (Poedit 업데이트 권장). (<A HREF="https://github.com/nvaccess/nvda/issues/3485" target="_blank">#3485</A>)
+<LI>보안 처리가 된 마이크로소프트 워드 2010 문서를 읽을시 워드가 종료되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1686" target="_blank">#1686</A>)
+<LI>NVDA 페키지 실행시 부정확한 명령 스위치를 입력하였을때 연속으로 오류 메시지가 뜨던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3463" target="_blank">#3463</A>)
+<LI>마이크로소프트 워드 사용시 그래픽이나 객체의 alt tag 텍스트에 따옴표와 같은 특정 문자열이 있는 경우 alt tag 텍스트가 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3579" target="_blank">#3579</A>)
+<LI>브라우즈 모드에서 가로로 표시된 목록의 항목수가 어떤때 두배로 알려지던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2151" target="_blank">#2151</A>)
+<LI>마이크로소프트 엑셀에서 CTRL+A를 눌렀을때 선택 변경 내용이 제대로 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3043" target="_blank">#3043</A>)
+<LI>XHTML 문서를 인터넷 익스플로러와 같은 MSHTML 기반 프로그램에서 제대로 읽을 수 있도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3542" target="_blank">#3542</A>)
+<LI>키보드 설정에서 NVDA 기능키 설정이 모두 해제된 경우 이에 대한 오류 메시지가 뜨도록 함 (기능키를 최소한 하나 이상 설정 바람). (<A HREF="https://github.com/nvaccess/nvda/issues/2871" target="_blank">#2871</A>)
+<LI>마이크로소프트 엑셀에서 다중 선택된 셀과 통합된 셀이 다르게 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3567" target="_blank">#3567</A>)
+<LI>브라우즈 모드 사용시 웹사이트에 표시된 대화상자나 앱에서 빠져나갈때 커서 위치가 다른 곳에 위치하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3145" target="_blank">#3145</A>)
+<LI>특정 시스템에서 휴멍웨어 Brailliant B/BI 디스플레이가 USB로 연결되었음에도 NVDA가 인식하지 않던 문제 수정.
+<LI>탐색 객체가 화면(위치)에 존재하지 않을때 화면 탐색 모드로 전환되지 못하는 문제 수정 (이때 리뷰 커서는 화면 상단에 ㅜ이치하게 됨). (<A HREF="https://github.com/nvaccess/nvda/issues/3454" target="_blank">#3454</A>)
+<LI>특정 시스템에서 Freedom Scientific 디스플레이가 USB로 연결되었음에도 NVDA가 인식하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3509" target="_blank">#3509</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3662" target="_blank">#3662</A>)
+<LI>Freedom Scientific 디스플레이 사용시 여러 키들이 동작하지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3401" target="_blank">#3401</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3662" target="_blank">#3662</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2013.2</H2>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>Chromium Embedded Framework 컨트롤을 기반으로한 여러 웹 앱 지원. (<A HREF="https://github.com/nvaccess/nvda/issues/3108" target="_blank">#3108</A>)
+<LI>새 이스피크 보이스: Iven3.
+<LI>스카이프 체팅창이 포커스된 경우 새 메시지를 자동으로 읽도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2298" target="_blank">#2298</A>)
+<LI>Tween 지원: 탭 이름 및 트위트 읽을시 필요없는 내용 출력하지 않도록 함.
+<LI>점자 설정에서 메시지 알림 시간을 0초로 한 경우 NVDA 메시지가 점자로 출력되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2482" target="_blank">#2482</A>)
+<LI>추가 기능 관리자의 추가 기능 탐색 버튼을 사용하여 추가 기능 모음 웹사이트에 접속 및 본 사이트에서 더 많은 추가 기능을 다운받아 설치할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3209" target="_blank">#3209</A>)
+<LI>NVDA 시작 대화상자(NVDA가 처음 실행될때 열림)에 NvDA를 윈도우 로그언 후 실행할지를 묻는 체크상자 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/2234" target="_blank">#2234</A>)
+<LI>Dolphin Cicero 사용시 NVDA가 임시 종료되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2055" target="_blank">#2055</A>)
+<LI>Miranda IM/Miranda NG x64 (64 비트 버전) 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/3296" target="_blank">#3296</A>)
+<LI>윈도우 8.1 시작 화면의 검색 결과를 자동으로 알림. (<A HREF="https://github.com/nvaccess/nvda/issues/3322" target="_blank">#3322</A>)
+<LI>엑셀 2013 지원 (표 탐색 및 셀 데이타를 편집할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/3360" target="_blank">#3360</A>)
+<LI>포커스 14 Blue, 80 Blue 및 신형 포커스 40 Blue를 블루투스로 연결하여 사용할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3307" target="_blank">#3307</A>)
+<LI>마이크로소프트 아웃룩 2010에서 자동 끝내기 알림 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/2816" target="_blank">#2816</A>)
+<LI>점자 표기법: 영국 영어 컴퓨터 점자, 한국어 2종 (약자) 및 러시아어 컴퓨터용 점자 표기법 추가.
+<LI>새 NVDA 언어: 파르시어 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/1427" target="_blank">#1427</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>터치스크린 사용시 객체 탐색 모드에서 한손까락 왼쪽/오른쪽 쓸어내리기를 실행할때 현재 컨테이너 (창)에 있는 객체 뿐 아니라 화면 전체에 있는 객체로도 이동할 수 있음. 이전 방식을 원하면 두손까락 쓸어내리기를 실행바람.
+<LI>브라우즈 모드 설정에 있는 구조 테이블 알림이 구조 테이블 인식으로 변경됨 (즉 첫 글자를 사용하여 읽을때 본 체크박스가 해제되어 있으면 구조 테이블이 인식되지 않도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/3140" target="_blank">#3140</A>)
+<LI>고정 리뷰가 객체, 문서 및 화면 탐색 모드로 세분화됨. (<A HREF="https://github.com/nvaccess/nvda/issues/2996" target="_blank">#2996</A>)
+ <UL>
+ <LI>객체 탐색 모드는 현 탐색 객체의 내용을, 문서 탐색 모드는 브라우즈 모드 문서가 있을시 문서의 내용을, 화면 탐색 모드는 현 프로그램 화면에 있는 내용을 읽을시 사용.
+ <LI>고정 리뷰를 토글하던 명령은 위 탐색 모드 선택 명령으로 교체됨.
+ <LI>문서 및 화면 탐색 모드 사용시 탐색 객체는 리뷰 커서 위치에 있는 객체에 위치하게 됨.
+ <LI>화면 탐색 모드로 변경 후 사용자가 객체나 문서 탐색 모드로 변경할때까지 계속 화면 탐색 모드로 유지됨.
+ <LI>브라우즈 모드 문서 유무에 따라 객체 또는 문서 탐색 모드로 자동으로 전환됨.
+ </UL>
+<LI>리브루이 점자 변환기 2.5.3 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/3371" target="_blank">#3371</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>화면 객체를 엑션하기전 엑션을 활성 이전에 알리도록 함 (예: 열리기 전 열림이라고 알림). (<A HREF="https://github.com/nvaccess/nvda/issues/2982" target="_blank">#2982</A>)
+<LI>최신 스카이프 버전 사용시 검색 및 체팇창에서의 커서 따라가기 및 글자 읽기 관련 버그 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1601" target="_blank">#1601</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3036" target="_blank">#3036</A>)
+<LI>스카이프 최신 체팅창에서 새 이벤트 수가 표시된 경우 이를 알리도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/1446" target="_blank">#1446</A>)
+<LI>아랍어와 같은 RTL 언어 텍스트 읽기 및 커서 정보 확인 기능이 향상됨 (예: 엑셀에서 RTL 사용이 편리해졌음). (<A HREF="https://github.com/nvaccess/nvda/issues/1601" target="_blank">#1601</A>)
+<LI>인터넷 익스플로러에서 버튼이나 폼 필드로 이동할때 사이트 접근성 향상용으로 표시된 버튼 링크도 인식하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2750" target="_blank">#2750</A>)
+<LI>브라우즈 모드 사용시 문서를 읽는데 방해가 되지 않도록 트리뷰 내용이 나타나지 않도록 함 (트리뷰 내용을 보려면 트리뷰에서 엔터를 눌러 확인하기 바람). (<A HREF="https://github.com/nvaccess/nvda/issues/3023" target="_blank">#3023</A>)
+<LI>포커스 모드 사용시 콤보 박스에서 Alt+위나 아래 화살표로 콤보박스를 열시 브라우즈 모드로 전환되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2340" target="_blank">#2340</A>)
+<LI>인터넷 익스플로러 10에서 표 셀로 움직일때 사이트 저자에 의해 표 셀이 포커스되지 않도록 한 경우 포커스 모드로 전환되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3248" target="_blank">#3248</A>)
+<LI>업데이트 확인 시점보다 시스템 시간이 빠른 경우 NVDA 재시작시 NVDA가 실행되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3260" target="_blank">#3260</A>)
+<LI>알림 표시줄의 내용이 점자에 표시되었을때 표시줄 변경값을 점자로도 확인할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3258" target="_blank">#3258</A>)
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 표에 대한 켑션이 두번 출력되던 문제 수정. 또한 표 켑션과 설명이 있을때 설명도 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3196" target="_blank">#3196</A>)
+<LI>윈도우 8에서 키보드 언어 변경시 새 입력 언어명이 출력되도록 함 (예전에는 이전 사용하던 언어명이 출력되었음).
+<LI>윈도우 8에서 IME 변경시 변경값이 제대로 출력되도록 함.
+<LI>구글 일본어 또는 Atok IME 입력 방식 사용시 바탕 화면에서 필요 없는 내용이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3234" target="_blank">#3234</A>)
+<LI>윈도우 7 이상 사용시 언어 전환시 음성 인식 또는 터치 입력이 전환 언어로 출력되던 문제 수정.
+<LI>특정 문서 편집기에서 입력한 글자 읽기를 활성화하고 control+backspace를 누를시 NVDA가 특수 문자(0x7f)를 말하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3315" target="_blank">#3315</A>)
+<LI>이스피크가 XML이나 특정 컨트롤 글자 읽을때 음성 설정 (크기, 고저 등)이 변경되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3334" target="_blank">#3334</A>) (<A HREF="https://github.com/nvaccess/nvda/issues/437" target="_blank">#437</A> 문제 되풀이됨)
+<LI>Java 기반 프로그램 사용시 포커스된 컨트롤의 이름 또는 값의 변경값 알림 및 그 후 확인시 제대로 된 내용이 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3119" target="_blank">#3119</A>)
+<LI>Scintilla 컨트롤에서 단어 끊기 기능 사용시 각 줄이 제대로 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/885" target="_blank">#885</A>)
+<LI>모질라 프로그램에서 읽기 전용 목록 항목들(예: twitter.com에서 포커스 모드를 사용하여 트위트를 읽을때)이 제대로 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3327" target="_blank">#3327</A>)
+<LI>오피스 2013의 확인 대화상자의 내용이 자동으로 읽지않던 문제 수정.
+<LI>마이크로소프트 워드에서 특정 표를 읽을시 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3326" target="_blank">#3326</A>)
+<LI>마이크로소프트 워드에서 표의 셀이 여러 행에 걸쳐 있는 경우 NVDA의 표 탐색 명령(Control+Alt+방향키) 실행시 다운되던 문제 수정.
+<LI>추가 기능 관리자는 이미 열려 있고 사용자가 관리자를 재실행할때 (예: NVDA 도구 메뉴에서 선택하거나 추가 기능 파일을 연 경우) 추가 기능 관리자를 닫을 수 없던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3351" target="_blank">#3351</A>)
+<LI>오피스 2010 중국어 또는 일본어 IME 사용시 특정 대화상자에서 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3064" target="_blank">#3064</A>)
+<LI>점자 디스플레이 사용시 여러 빈 칸이 하나의 빈 칸으로 압축되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1366" target="_blank">#1366</A>)
+<LI>Zend Eclipse PHP 개발 도구 사용시 Eclipse 사용할때와 똑같이 NVDA가 작동하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/3353" target="_blank">#3353</A>)
+<LI>인터넷 익스플로러에서 임베디드 객체 (예: 플래시 컨텐츠)에서 엔터를 누른 후 탭을 누르지 않고도 컨텐츠의 기능을 이용할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/3364" target="_blank">#3364</A>)
+<LI>파워포인트에서 문서를 편집시 맨 아래 줄이 비어있을때 맨 아래줄로 이동시 이전 줄이 알려지던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3403" target="_blank">#3403</A>)
+<LI>마이크로소프트 파워포인트에서 특정 객체를 선택 또는 편집할때 객체값이 두번 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3394" target="_blank">#3394</A>)
+<LI>Adobe Reader 사용시 서식이 잘못 적용된 문서(특히 표 밖에 표 행이 존재하는 경우)를 읽을때 NVDA가 프로그램을 다운되게 하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3399" target="_blank">#3399</A>)
+<LI>파워포인트의 thumbnails view를 사용하여 슬라이드 목록을 편집시 선택된 슬라이드가 삭제된 후 다음 슬라이드에 포커스가 옮겨지도록 함.. (<A HREF="https://github.com/nvaccess/nvda/issues/3415" target="_blank">#3415</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2013.1.1</H2>
+<P>
+본 버전의 주요 특징은 최신 번역본 추가 및 아일랜드어 사용시 NVDA가 실행되지 않던 문제 수정 및 기타 버그 수정입니다.
+</P>
+<H3>버그 수정</H3>
+<UL>
+<LI>한국어나 일본어 입력 방식 사용시 (특히 본 방식이 기본 입력 방식인 경우) NVDA 인터페이스에서 글자가 제대로 입력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2909" target="_blank">#2909</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 잘못 입력된 필드 정보가 있는 필드가 제대로 처리되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3256" target="_blank">#3256</A>)
+<LI>아일랜드어 NVDA 실행시 실행되지 않던 문제 수정.
+</UL>
+
+<H2>2013.1 (한글판: 2013.1K)</H2>
+<P>
+이번 버전의 주 기능들: 더 효율적인 노트북 키보드 레이아웃, 파워포인트 문서 편집 지원, 웹브라우저에서의 긴 설명 확인 및 점자 키보드가 탑제된 디스플레이에서의 문자 입력 등입니다.
+</P>
+<H3>꼭 읽어주세요</H3>
+<H4>새 노트북 키보드 레이아웃</H4>
+<P>
+사용자의 편의와 효율성을 높이기 위해 노트북 레이아웃을 변경하였습니다.
+새 레이아웃에서 리뷰 커서 사용시 NVDA 키 및 다른 명령키와 방향키를 사용하도록 하였습니다.
+</P>
+<P>
+새 명령키는 다음과 같습니다:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>이름</TH>
+<TH>키</TH>
+</TR>
+<TR>
+<TD>모두 읽기</TD>
+<TD>NVDA+a</TD>
+</TR>
+<TR>
+<TD>현재 줄 읽기</TD>
+<TD>NVDA+l</TD>
+</TR>
+<TR>
+<TD>현재 선택된 텍스트 읽기</TD>
+<TD>NVDA+shift+s</TD>
+</TR>
+<TR>
+<TD>상태 표시줄 읽기</TD>
+<TD>NVDA+shift+end</TD>
+</TR>
+</TABLE>
+
+<P>
+이 외 객체 탐색, 리뷰 커서, 마우스 조작 및 음성 설정 명령들이 변경되었습니다.
+자세한 사항은 <A HREF="keyCommands.html" target="_blank">기능키 목록</A> 문서를 참조하십시오.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>마이크로소프트 파워포인트 문서 읽기 및 편집 기능 지원 (기초단계임) (<A HREF="https://github.com/nvaccess/nvda/issues/501" target="_blank">#501</A>)
+<LI>Lotus Notes 8.5에서의 메시지 작성 및 읽기 기능 지원 (기초 단계). (<A HREF="https://github.com/nvaccess/nvda/issues/543" target="_blank">#543</A>)
+<LI>자동 언어 변경 기능을 마이크로소프트 워드 문서 읽을때에도 적용. (<A HREF="https://github.com/nvaccess/nvda/issues/2047" target="_blank">#2047</A>) 
+<LI>인터넷 익스플로러와 같은 MSHTML과 Firefox와 같은 Gecko 기반 프로그램에서 긴 설명 (long description) 인식 가능 (NVDA+D를 사용하여 긴 설명을 새창에 띄워 확인할 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/809" target="_blank">#809</A>)
+<LI>인터넷 익스플로러 9 이상에서 파일 다운로드 상태와 같은 알림 메시지가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2343" target="_blank">#2343</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 브라우즈 모드 문서에서 표의 행 및 열 머릿말이 자동으로 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/778" target="_blank">#778</A>)
+<LI>새 NVDA 언어: 아라곤어 및 아일랜드어 추가.
+<LI>점자 표기법: 뎀마크어 2종 및 한국어 1종 (정자) 표기법 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/2737" target="_blank">#2737</A>)
+<LI>도시바 블루투스 드라이버가 설치된 컴퓨터에서 블루투스 점자 디스플레이 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2419" target="_blank">#2419</A>)
+<LI>Freedom Scientific 디스플레이 사용시 연결 포트 설정 가능 (자동 연결, USB 또는 블루투스 중 선택 가능).
+<LI>휴먼웨어 브레일노트 지원 추가 (브레일노트에서 터미널 모드 진입후 사용 가능). (<A HREF="https://github.com/nvaccess/nvda/issues/2012" target="_blank">#2012</A>)
+<LI>구형 페이펀마이어 BRAILLEX 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/2679" target="_blank">#2679</A>)
+<LI>점자 디스플레이가 점자 키보드를 탑제한 경우 컴퓨터 점자를 사용하여 텍스트 입력 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/808" target="_blank">#808</A>) 
+<LI>키보드 설정에 텍스트 입력 또는 엔터키 입력시 음성이 정지할 것인지에 대한 설정 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/698" target="_blank">#698</A>)
+<LI>여러 구글 크롬을 기반으로 한 웹 브라우저 지원 추가: Rockmelt, BlackHawk, Comodo Dragon, SRWare Iron. (<A HREF="https://github.com/nvaccess/nvda/issues/2236" target="_blank">#2236</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2813" target="_blank">#2813</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2814" target="_blank">#2814</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2815" target="_blank">#2815</A>)
+</UL>
+
+<H3>변경된 기능들</H3>
+<UL>
+<LI>리브루이 점자 변환기 2.5.2 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/2737" target="_blank">#2737</A>)
+<LI>사용자 편의 및 효율성을 높이기 위해 노트북 키보드 레이아웃 변경됨. (<A HREF="https://github.com/nvaccess/nvda/issues/804" target="_blank">#804</A>)
+<LI>이스피크 음성 엔진 1.47.11 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/2680" target="_blank">#2680</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3124" target="_blank">#3124</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3132" target="_blank">#3132</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3141" target="_blank">#3141</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3143" target="_blank">#3143</A>, <A HREF="https://github.com/nvaccess/nvda/issues/3172" target="_blank">#3172</A>)
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 다음과 이전 구분선(separator)으로 움직이는 핫키가 제대로 동작하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2781" target="_blank">#2781</A>)
+<LI>NVDA 실행시 사용중이던 음성 엔진 실행이 실패하여 음성 엔진 설정이 eSpeak나 엔진 없음으로 변경된 경우 새로 변경된 설정이 저장되지 않도록 설정 (즉 NVDA가 다시 실행시 이전에 사용하던 음성 엔진을 실행하도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/2589" target="_blank">#2589</A>)
+<LI>NVDA 실행시 사용중이던 점자 디스플레이와의 연결이 실패하여 점자 디스플레이 설정이 점자 출력 끔으로 변경된 경우 새로 변경된 설정이 저장되지 않도록 설정 (즉 NVDA가 다시 실행시 이전에 사용하던 디스플레이와 연결을 시도하도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/2264" target="_blank">#2264</A>)
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 표에 대한 업데이트 정보가 출력되지 않던 문제 수정 (예: 특정 셀이 업데이트되었을 때 행과 열의 좌표가 표시되지 않거나 표 탐색 기능이 제대로 동작하지 않던 문제 수정). (<A HREF="https://github.com/nvaccess/nvda/issues/2784" target="_blank">#2784</A>)
+<LI>웹브라우저에서 브라우즈 모드 사용시 클릭 가능한 그래픽 (특히 레이블이 표시되지 않는 그래픽)이 제대로 표시되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2838" target="_blank">#2838</A>)
+<LI>SecureCRT: 이전 및 최신 버전 지원. (<A HREF="https://github.com/nvaccess/nvda/issues/2800" target="_blank">#2800</A>)
+<LI>윈도우 XP에서 Easy Dots IME과 같은 입력 방식 사용시 문자열이 처리되지 않던 문제 수정.
+<LI>윈도우 7에서 Microsoft Pinyin 중국어 입력 방식 사용시 후보자 목록에서 왼쪽 및 오른쪽 화살표로 페이지를 변경하거나 Home을 눌러 후보자를 열때 후보자를 읽지않던 문제 수정.
+<LI>기호 및 구두점 발음 설정에서 특정 기호의 발음 정보를 저장할때 "preserve" 고급 필드가 사라지던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2852" target="_blank">#2852</A>)
+<LI>자동 업데이트 사용을 해제한 후 NVDA가 재시작하지 않고도 새 설정이 적용되도록 함.
+<LI>추가 기능 삭제중 다른 응용 프로그램이 추가 기능이 설치된 폴더를 엑세스할 경우 NVDA를 재시작하고자 할때 실행이 되지않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2860" target="_blank">#2860</A>)
+<LI>고정 리뷰를 사용하여 Dropbox의 설정 대화상자에 있는 탭 레이블을 확인할 수 있음.
+<LI>윈도우 기본값 외 입력 언어 사용시 명령 및 입력 도움말에서 입력된 글자가 인식되지 않던 문제 수정.
+<LI>독일어와 같이 플러스 (+)키가 키보드 키 중 하나일 경우 "plus" 단어를 사용하여 해당키에도 명령을 할당할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2898" target="_blank">#2898</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 컨트롤에서 인용 문구 (block quote)가 제데로 알려지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2888" target="_blank">#2888</A>)
+<LI>휴먼웨어 Brailliant BI/B 디스플레이가 블루투스로 연결되었을때 USB로 연결하지 않고도 선택하여 사용 가능.
+<LI>브라우즈 모드의 구성 요소 목록에서 대문자가 포함된 요소명을 찾을때 대소문자 관계없이 찾고자 하는 요소명이 뜨도록 함 (이전에는 목록이 비어있었음). (<A HREF="https://github.com/nvaccess/nvda/issues/2951" target="_blank">#2951</A>)
+<LI>모질라 브라우저에서 플래시 컨텐츠에서 브라우즈 모드를 사용할 수 없었던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2546" target="_blank">#2546</A>)
+<LI>약자 점자 사용시 컴퓨터 점자로 풀이 설정을 선택한 경우 커서 위치에 있는 단어가 여러 셀로 표시될 경우 (예: 대문자 표시) 커서가 제대로 옮겨지도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2947" target="_blank">#2947</A>)
+<LI>마이크로소프트 워드 2003과 인터넷 익스플로러 편집창과 같은 컨트롤에서 선택된 텍스트가 점자로 제대로 표시되도록 함.
+<LI>점자 디스플레이 사용시 마이크로소프트 워드에서 반대 방향으로 글자 선택이 되지 않던 문제 해결.
+<LI>Scintilla 편집창에서 다중 문자를 읽을때나 삭제시 문자가 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2855" target="_blank">#2855</A>)
+<LI>- 사용자 경로에 다중 글자가 사용된 경우 NVDA가 설치되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2729" target="_blank">#2729</A>)
+<LI>64비트 프로그램에서 리스트뷰 (SysListview32) 그루핑을 알릴때 오류가 발생하던 문제 수정.
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 특정 상황에서 텍스트 컨텐츠가 편집 가능한 텍스트로 잘못 인식되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2959" target="_blank">#2959</A>)
+<LI>IBM Lotus Symphony와 오픈오피스에서 케럿이 움직일때 리뷰 커서도 움직이도록 함.
+<LI>윈도우 8에서 인터넷 익스플로러 사용시 어도비 플래시 컨텐츠를 접근할 수 없던 문제 해결. (<A HREF="https://github.com/nvaccess/nvda/issues/2454" target="_blank">#2454</A>)
+<LI>Papenmeier Braillex Trio 사용시 나타나던 블루투스 연결 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2995" target="_blank">#2995</A>)
+<LI>NVDA에서 특정 SAPI5 엔진 (예: Koba)을 사용할 수 없었던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2629" target="_blank">#2629</A>)
+<LI>자바 엑세스 브리지 기반 프로그램 사용시 편집창에서 점자가 케럿을 제대로 따라가지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3107" target="_blank">#3107</A>) 
+<LI>랜드마크가 사용된 문서에서 폼 (form) 랜드마크 인식 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2997" target="_blank">#2997</A>) 
+<LI>이스피크를 사용하여 글자 단위로 읽을때 나타나던 문제 (예: 외국어 글자의 이름 대신 소리나 일반 이름이 출력되던 문제) 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3106" target="_blank">#3106</A>)
+<LI>사용자 경로에 ASCII 외 글자가 포함된 경우 사용자 설정을 시스템 설정으로 복사 시도중(예: 로그언 창이나 보안 화면에서 사용하고자 할때) 복사 작업이 실패하던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3092" target="_blank">#3092</A>)
+<LI>특정 .net 프로그램에서 아시아 글자 입력시 NVDA가 다운되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3005" target="_blank">#3005</A>)
+<LI>인터넷 익스플로러 10 기준 모드(예: <A HREF="http://www.gmail.com" target="_blank">www.gmail.com</A>의 로그인 페이지)에서 브라우즈 모드를 사용할 수 없었던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/3151" target="_blank">#3151</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>2012.3 (한글판: 2012.3K)</H2>
+<P>
+이번 버전의 주 기능들: 아시아 글자 입력 기능; 윈도우 8에서의 기초적인 터치스크린 탐색 지원; 마이크로소프트 엑셀에서의 행 및 열 제목 설정 기능; 여러 점자 디스플레이 지원 추가 등입니다.
+</P>
+<H3>새로 추가된 기능들</H3>
+<UL>
+<LI>IME와 TSF 써비스를 이용한 아시아 글자 입력 기능:
+ <UL>
+ <LI>후보자 알림 및 탐색
+ <LI>입력 글쇠 알림 및 탐색
+ <LI>읽기 문자열 알림
+ </UL>
+<LI>어도비 문서에서 및줄 및 스트라이크 문자 알림 가능 (<A HREF="https://github.com/nvaccess/nvda/issues/2410" target="_blank">#2410</A>)
+<LI>스티키 키 작동시 NVDA 기능키도 스티키 키로 사용 가능 (<A HREF="https://github.com/nvaccess/nvda/issues/230" target="_blank">#230</A>)
+<LI>마이크로소프트 엑셀에서 행과 열 머릿말 알림 기능 추가. NVDA+Shift+C를 눌러 현재 행을 열 머릿말 행으로, NVDA+Shift+R을 눌러 현재 열을 행 머릿말 열로 지정; 이 키들을 두번 눌러 머릿말 설정을 해제할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/1519" target="_blank">#1519</A>)
+<LI>힘스 한소네, 브레일 에지 및 싱크브레일 지원 추가 (<A HREF="https://github.com/nvaccess/nvda/issues/1266" target="_blank">#1266</A>, <A HREF="https://github.com/nvaccess/nvda/issues/1267" target="_blank">#1267</A>)
+<LI>윈도우 8에서 만약 도움말 알림이 설정되었다면 토스트 알림창 읽기 가능 (<A HREF="https://github.com/nvaccess/nvda/issues/2143" target="_blank">#2143</A>)
+<LI>윈도우 8에서의 기초적인 터치스크린 탐색 기능 추가:
+ <UL>
+ <LI>손가락이 위치한 곳의 문자열 읽기
+ <LI>터치 명령으로 객체 탐색, 텍스트 읽기 및 여러 다른 명령 사용 가능
+ </UL>
+<LI>VIP Mud 지원 추가 (<A HREF="https://github.com/nvaccess/nvda/issues/1728" target="_blank">#1728</A>)
+<LI>어도비 리더 사용시 만약 테이블에 줄거리가 있는 경우 줄거리 내용 표시. (<A HREF="https://github.com/nvaccess/nvda/issues/2465" target="_blank">#2465</A>)
+<LI>어도비 리더에서 테이블 행과 열에 머릿말이 있는 경우 머릿말 읽기 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2193" target="_blank">#2193</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2527" target="_blank">#2527</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2528" target="_blank">#2528</A>)
+<LI>NVDA 번역본: 네팔어, 슬로베니아어, 에디오피아어, 한국어 추가.
+<LI>마이크로소프트 아웃룩 2007에서 이메일 주소 입력시 자동 끝내기 알림 추가 (<A HREF="https://github.com/nvaccess/nvda/issues/689" target="_blank">#689</A>)
+<LI>새 이스피크 보이스: Gene, Gene2. (<A HREF="https://github.com/nvaccess/nvda/issues/2512" target="_blank">#2512</A>)
+<LI>어도비 리더에서 쪽수 알림 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2534" target="_blank">#2534</A>)
+ <UL>
+ <LI>어도비 리더 XI 사용시 쪽수 레이블이 인는 경우 (예: 섹션별로 쪽수가 다를때) 레이블을 인식하도록 함 (예전에는 쪽수가 순차적으로 출력되었음).
+ </UL>
+<LI>CTRL+NVDA+R을 세번 누르거나 NVDA 메뉴에 있는 "NVDA 환경 설정 초기화"를 사용하여 설정을 초기화할 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/2086" target="_blank">#2086</A>)
+<LI>니판텔레소프트 Seika 3, 4, 5 및 Seika80 디스플레이 지원 추가 (<A HREF="https://github.com/nvaccess/nvda/issues/2452" target="_blank">#2452</A>)
+<LI>포커스나 펙메이트 디스플레이 사용시 윗줄 라우팅 버튼 중 첫째와 마지막 버튼을 사용하여 디스플레이 이동 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2556" target="_blank">#2556</A>)
+<LI>포커스 디스플레이 지원 향상됨 (advance bar, 스크롤 라커를 사용한 기능키 및 그 외 여러 점자 기능키 추가). (<A HREF="https://github.com/nvaccess/nvda/issues/2516" target="_blank">#2516</A>)
+<LI>모질라 프로그램들과 같이 IAccessible2 기술을 사용하는 프로그램에서 브라우즈 모드 외에서도 테이블 행 및 열 머릿말 알림 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/926" target="_blank">#926</A>)
+<LI>마이크로소프트 워드 2013에서의 문서 컨트롤 지원 (기본 지원 단계). (<A HREF="https://github.com/nvaccess/nvda/issues/2543" target="_blank">#2543</A>)
+<LI>모질라 프로그램과 같은 IAccessible2를 사용하는 프로그램에서 텍스트의 위치 확인 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2612" target="_blank">#2612</A>)
+<LI>여러 열을 지니고 있는 테이블 행이나 윈도우 목록 컨트롤에서 테이블 탐색 키를 사용하여 각 열을 읽을 수 있음. (<A HREF="https://github.com/nvaccess/nvda/issues/828" target="_blank">#828</A>)
+<LI>점자 표기법: 에스토니아어 0종 점자, 포르투갈어 8점 컴퓨터 점자 및 이탈리아어 6점 컴퓨터 점자 표기법 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/2319" target="_blank">#2319</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2662" target="_blank">#2662</A>)
+<LI>NVDA가 시스템에 설치되었다면 NVDA 추가 기능 설치 파일을 실행할때 NVDA가 처리하도록 함 (예: 윈도우 탐색기나 파일 다운로드 후 파일을 실행할 경우). (<A HREF="https://github.com/nvaccess/nvda/issues/2306" target="_blank">#2306</A>)
+<LI>신형 페이펀마이어 BRAILLEX 디스플레이 지원 추가. (<A HREF="https://github.com/nvaccess/nvda/issues/1265" target="_blank">#1265</A>)
+<LI>윈도우 7 이상의 탐색기나 위치 정보가 있는 컨트롤에서의 위치 정보 알림 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2643" target="_blank">#2643</A>)
+</UL>
+
+<H3>수정된 기능들</H3>
+<UL>
+<LI>NVDA 리뷰 커서 설정에 있는 "Follow keyboard focus" 옵션을 "Follow system focus" (한국어: 시스템 포커스 따라가기)로 변경하여 다른 NVDA 메시지들과 용어를 통일함.
+<LI>점자 출력이 리뷰 커서에 연동되어 있고 현재 객체가 텍스트 객체가 아닌 경우 (예: 편집창) 라우팅 키를 눌러 객체를 활성화 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2386" target="_blank">#2386</A>)
+<LI>새 환경 설정을 설정하는 경우 "환경 저장" 옵션이 기본으로 선택되도록 수정.
+<LI>이전 설치된 NVDA를 업데이트하는 경우 만약 사용자가 NVDA 핫키를 변경하였다면 업데이트시 NVDA 기본 핫키 (CTRL+Alt+N)가 적용되지 않도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2572" target="_blank">#2572</A>)
+<LI>추가 기능 목록에서 기능 이름이 기능 실행 상태 이전에 표시되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2548" target="_blank">#2548</A>)
+<LI>설치하고자 하는 추가 기능이 이미 NVDA에 설치되어 있고 설치할 버전이 설치된 버전과 같거나 이후 버전인 경우 오류 대화상자 대신 업데이트 하겠는지에 대해 질문하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2501" target="_blank">#2501</A>)
+<LI>현재 객체 알림 외 다른 객체 탐색 명령 실행시 알려주던 정보가 축소됨 (더 만읂 정보를 확인하려면 현재 객체 알림 명령을 실행하십시오). (<A HREF="https://github.com/nvaccess/nvda/issues/2560" target="_blank">#2560</A>)
+<LI>리브루이 점자 변환기 2.5.1 버전 사용. (<A HREF="https://github.com/nvaccess/nvda/issues/2319" target="_blank">#2319</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2480" target="_blank">#2480</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2662" target="_blank">#2662</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2672" target="_blank">#2672</A>)
+<LI>터치스크린 명령어 추가로 인해 "키보드 기능키 목록"이 "기능키 목록"으로 변경됨.
+<LI>NVDA 실행시 두번 이상 요소 목록 대화상자를 연 경우 이전에 검색한 요소의 목록을 보여주도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/365" target="_blank">#365</A>)
+<LI>거의 모든 윈도우 8의 메트로 프로그램에서 프로그램 전체가 브라우즈 모드로 인식 불가됨.
+<LI>Handy Tech BrailleDriver COM-Server 1.4.2.0 버전 사용.
+</UL>
+
+<H3>버그 수정</H3>
+<UL>
+<LI>윈도우 비스타 이상에서 Win+L로 컴퓨터를 잠근 후 잠금을 풀때에 윈도우 키가 스티키 키로 처리되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1856" target="_blank">#1856</A>)
+<LI>어도비 리더에서 테이블 행이 머릿말로 인식되지 않던 문제 수정 (이로 인해 테이블 탐색 명령을 사용하여 행 머릿말을 읽을 수 있음). (<A HREF="https://github.com/nvaccess/nvda/issues/2444" target="_blank">#2444</A>)
+<LI>어도비 리더에서 특정 테이블 셀이 두개 이상의 행이나 열을 차지할때 셀이 제대로 처리되지 않던 문제 수정 (<A HREF="https://github.com/nvaccess/nvda/issues/2437" target="_blank">#2437</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2438" target="_blank">#2438</A>, <A HREF="https://github.com/nvaccess/nvda/issues/2450" target="_blank">#2450</A>)
+<LI>NVDA 설치 파일 실행전 설치 프로그램이 파일의 건강 상태를 확인한 후 실행하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2475" target="_blank">#2475</A>)
+<LI>NVDA 업데이트 다운로드가 실패한 경우 임시 다운로드 파일을 삭제하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2477" target="_blank">#2477</A>)
+<LI>NVDA 사용자 환경을 시스템 환경으로 복사시 (예: 보안창에서 실행하고자 할 경우) NVDA가 다운되던 문제 수정 (이때 NVDA는 관리자 개정으로 실행됨). (<A HREF="https://github.com/nvaccess/nvda/issues/2485" target="_blank">#2485</A>)
+<LI>윈도우 8 시작 화면 타일에서의 음성 및 점자 출력 개선 (타일명이 반복되어 출력되던 문제, 모든 타일이 "선택 해제"로 표시되던 문제 및 현재 날씨와 같은 라이브 정보가 출력되지 않던 문제 수정).
+<LI>마이크로소프트 아웃룩이나 다른 비밀번호 편집창과 같은 비밀번호 입력창에서 비밀번호가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2021" target="_blank">#2021</A>)
+<LI>어도비 리더에서 폼 필드 내 변경된 정보가 브라우즈 모드에서 읽어지도록 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2529" target="_blank">#2529</A>)
+<LI>윈도우 비스타 이상 컴퓨터에 NVDA가 설치된 경우 마이크로소프트 워드의 문법 확인 기능 지원 개선 (예: 문법 오류 표시 향상).
+<LI>거의 대부분의 타국어 추가 기능 (설치 파일 내에 영어 외 타국어로 된 파일명이 있는 파일) 설치 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2505" target="_blank">#2505</A>)
+<LI>어도비 리더에서 문서 탐색시 특정 언어로 된 텍스트가 읽어지지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2544" target="_blank">#2544</A>)
+<LI>영어 외 타국어 추가 기능 설치시 확인 대화상자에서 가능하면 타국어로 된 기능명 표시 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2422" target="_blank">#2422</A>)
+<LI>.net와 실버라이트와 같은 UI 자동화를 사용하는 프로그램에서 슬라이더와 같은 컨트롤에서의 숫자 값 계산 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2417" target="_blank">#2417</A>)
+<LI>진행률 표시 설정값이 NVDA 설치 및 휴대용 버전 생성 진행률과 같은 미지의 진행률에도 적용되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2574" target="_blank">#2574</A>)
+<LI>윈도우 잠금 화면과 같은 보안 화면에서 점자 디스플레이에서의 NVDA 명령 실행 불가. (<A HREF="https://github.com/nvaccess/nvda/issues/2449" target="_blank">#2449</A>)
+<LI>브라우즈 모드내 내용이 변경된 경우 점자로도 변경된 내용을 출력하도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2074" target="_blank">#2074</A>)
+<LI>잠금 화면과 같은 보안 화면에서 NVDA를 사용하여 음성이나 점자를 표시하는 프로그램 메시지 내용을 읽을 수 없음.
+<LI>브라우즈 모드에서 마지막 글자에서 오른쪽 화살표를 누르거나 마지막 컨테이너에서 다음 컨테이너로 이동할때 커서가 문서 외부로 이동되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2463" target="_blank">#2463</A>)
+<LI>특정 웹 에플리케이션 대화상자내에서 (특히 ARIA describedby 속성이 없는 경우) 불필요한 내용이 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2390" target="_blank">#2390</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 창에서 만약 ARIA 특정 구성이 설정된 경우 특정 입력창 정보를 알리거나 입력창을 찾던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2435" target="_blank">#2435</A>)
+<LI>윈도우 컨설창에서 백스페이스를 눌러 입력된 단어 읽을때 백스페이스키가 제대로 처리되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2586" target="_blank">#2586</A>)
+<LI>마이크로소프트 엑셀에서 셀 좌표가 점자로 표시되지 않던 문제 수정.
+<LI>마이크로소프트 워드에서 숫자나 리스트로된 문단에서 왼쪽 화살표나 CTRL+왼쪽 화살표를 누를때 이전 문단의 내용이 목록 서식으로 된 내용으로 인식되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2402" target="_blank">#2402</A>)
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 특정 리스트 박스(특히 ARIA 리스트 박스)애에 있는 내용이 잘못 표시되던 문제 수정.
+<LI>모질라 프로그램에서 특정 컨트럴의 레이블이 잘못 출력되거나 공백으로 처리되던 문제 수정.
+<LI>모질라 프로그램에서 브라우즈 모드 사용시 불필요한 공백이 사라짐.
+<LI>웹브라우저에서 브라우즈 모드 사용시 특정 그래픽에 얼트태그가 없는 경우 (예: 프레즌테이션형 그림과 같이 alt=""를 사용하여 설명을 추가하지 않았을때) 그래픽을 무시하도록 함.
+<LI>웹브라우저에서 스크린 리더에게서 숨기고자 하는 컨텐츠(ARIA hidden(숨김) 속성 사용)가 있는 경우 출력 않하도록 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2117" target="_blank">#2117</A>)
+<LI>음수로된 화폐값(예: -$123)이 기호 레벨에 상관없이 "마이너스" 화폐값으로 출력되도록 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2625" target="_blank">#2625</A>)
+<LI>모두 읽기 사용시 특정 줄이 문장 끝이 아닐때 음성 언어가 기본 언어로 변경되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2630" target="_blank">#2630</A>)
+<LI>어도비 리더 10.1 이상에서 정확한 폰트 정보가 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2175" target="_blank">#2175</A>)
+<LI>어도비 리더 문서 읽을때 특정 내용의 대체 내용이 있을 경우 대체 내용이 출력되도록 함 (불필요한 내용이 출력되지 않도록 수정). (<A HREF="https://github.com/nvaccess/nvda/issues/2174" target="_blank">#2174</A>)
+<LI>특정 문서에 에플리케이션이 삽입되어 있을때 모르고 에플리케이션이 진입하지 않도록 브라우즈 모드 탐색에서 제거 (에플리케이션을 사용하려면 임베디드 객체 사용 요령을 참조바람). (<A HREF="https://github.com/nvaccess/nvda/issues/990" target="_blank">#990</A>)
+<LI>모질라 프로그램에서 스핀 버튼의 변경값이 출력되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2653" target="_blank">#2653</A>)
+<LI>어도비 디지털 에디션 2.0 지원. (<A HREF="https://github.com/nvaccess/nvda/issues/2688" target="_blank">#2688</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 창에 있는 콤보박스에서 NVDA+위쪽 화살표를 누를때 선택된 항목만 읽도록 함 (예전에는 콤보박스에 있는 모든 항목을 읽었음). (<A HREF="https://github.com/nvaccess/nvda/issues/2337" target="_blank">#2337</A>)
+<LI>음성 발음 사전에서 이전값과 변경값에 숫자 기호 (#)가 삽입된 경우 사전이 저장되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/961" target="_blank">#961</A>)
+<LI>인터넷 익스플로러와 같은 MSHTML 창에 있는 숨김 내용 중 보여지도록 한 내용을 읽도록 함 (즉 visibility:hidden에 있는 내용중 visibility:visible 내용을 읽도록 함). (<A HREF="https://github.com/nvaccess/nvda/issues/2097" target="_blank">#2097</A>)
+<LI>윈도우 XP 보안 센터내 링크 내용후 이상한 글자가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1331" target="_blank">#1331</A>)
+<LI>윈도우 7 시작 검색창과 같은 UI 자동화 컨트롤를 마우스로 탐색할때 내용이 출력되지 않던 문제 수정.
+<LI>문서 모두 읽기 도중 키보드 레이아웃 변경 메시지가 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/1676" target="_blank">#1676</A>)
+<LI>윈도우 7과 8의 검색창과 같은 UI 자동화 컨트럴내 내용이 변경될때마다 변경 내용이 반복적으로 출력되지 않도록 함.
+<LI>윈도우 8 시작 화면내 타일 그룹끼리 이동할때 그룹명이 없는 경우 첫 타일명이 그룹명으로 출력되던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2658" target="_blank">#2658</A>)
+<LI>윈도우 8 시작 화면 호출시 루트 타일이 아닌 첫 타일이 포커스되도록 함. (<A HREF="https://github.com/nvaccess/nvda/issues/2720" target="_blank">#2720</A>)
+<LI>사용자 경로에 다중 글자(특히 영어 외 타국어 글자)가 사용된 경우 NVDA가 실행되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2729" target="_blank">#2729</A>)
+<LI>구글 크롬에서 브라우즈 모드 사용시 탭 내용이 잘못 출력되던 문제 수정.
+<LI>브라우즈 모드에서 메뉴 버튼이 제데로 출력되도록 함.
+<LI>OpenOffice.org/LibreOffice Calc 사용시 스프레드 시트 셀 정보가 제대로 출력되지 않던 문제 수정. (<A HREF="https://github.com/nvaccess/nvda/issues/2765" target="_blank">#2765</A>)
+<LI>인터넷 익스플로러를 사용하여 이전처럼 Yahoo! 메일 리스트 사용 가능. (<A HREF="https://github.com/nvaccess/nvda/issues/2780" target="_blank">#2780</A>)
+</UL>
+
+<H3>개발자를 위한 내용</H3>
+<P>
+개발자를 위한 내용에 대해서는 영어판 changes.html 문서를 참조하세요.
+</P>
+<H2>이전 버전</H2>
+<P>
+2012.3 이전 버전에서의 변경된 사항에 대해서는 영어판 changes.html 파일을 참고하시기 바랍니다.
+</P>
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\ko\changes.t2t -->
+</BODY></HTML>

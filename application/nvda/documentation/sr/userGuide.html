@@ -1,0 +1,5217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>NVDA 2017.3 korisničko uputstvo</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>NVDA 2017.3 korisničko uputstvo</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<A NAME="toc"></A>
+<H2>Sadržaj</H2>
+  <UL>
+
+  <LI><A HREF="#toc2">1. Uvod</A>
+    <UL>
+    <LI><A HREF="#toc3">1.1. Opšte karakteristike</A>
+    <LI><A HREF="#toc4">1.2. Internacionalizacija</A>
+    <LI><A HREF="#toc5">1.3. Podrška za sintetizatore govora</A>
+    <LI><A HREF="#toc6">1.4. Podrška za brajeve redove</A>
+    <LI><A HREF="#toc7">1.5. Licenca i autorska prava</A>
+    </UL>
+  <LI><A HREF="#toc8">2. Sistemski zahtevi</A>
+  <LI><A HREF="#toc9">3. Dobijanje i podešavanje programa NVDA</A>
+    <UL>
+    <LI><A HREF="#toc10">3.1. Ograničenja prenosive i privremene kopije</A>
+    <LI><A HREF="#toc11">3.2. Instaliranje programa NVDA</A>
+      <UL>
+      <LI><A HREF="#toc12">3.2.1. Pokreni na Windows ekranu za prijavu</A>
+      <LI><A HREF="#toc13">3.2.2. Napravi prečicu na radnoj površini (ctrl+alt+n)</A>
+      <LI><A HREF="#toc14">3.2.3. Kopiraj podešavanja prenosne kopije u trenutni nalog</A>
+      </UL>
+    <LI><A HREF="#toc15">3.3. Pravljenje prenosive kopije</A>
+    </UL>
+  <LI><A HREF="#toc16">4. Početak sa programom NVDA</A>
+    <UL>
+    <LI><A HREF="#toc17">4.1. Pokretanje programa NVDA</A>
+    <LI><A HREF="#toc18">4.2. O NVDA prečicama</A>
+      <UL>
+      <LI><A HREF="#toc19">4.2.1. NVDA taster</A>
+      <LI><A HREF="#toc20">4.2.2. Rasporedi tastature</A>
+      </UL>
+    <LI><A HREF="#toc21">4.3. NVDA prečice za ekrane osetljive na dodir</A>
+      <UL>
+      <LI><A HREF="#toc22">4.3.1. Istraživanje ekrana</A>
+      <LI><A HREF="#toc23">4.3.2. Pokreti</A>
+      <LI><A HREF="#toc24">4.3.3. Režimi dodira</A>
+      </UL>
+    <LI><A HREF="#toc25">4.4. Režim pomoći za unos</A>
+    <LI><A HREF="#toc26">4.5. NVDA meni</A>
+    <LI><A HREF="#toc27">4.6. Osnovne NVDA komande</A>
+    <LI><A HREF="#toc28">4.7. Prijavljivanje sistemskih informacija</A>
+    </UL>
+  <LI><A HREF="#toc29">5. Navigacija sa NVDA-om</A>
+    <UL>
+    <LI><A HREF="#Objects">5.1. Objekti</A>
+    <LI><A HREF="#SystemFocus">5.2. Navigacija sa sistemskim fokusom</A>
+    <LI><A HREF="#SystemCaret">5.3. Navigacija sa sistemskim kursorom</A>
+    <LI><A HREF="#ObjectNavigation">5.4. Navigacija objekata</A>
+    <LI><A HREF="#ReviewingText">5.5. Pregled teksta</A>
+    <LI><A HREF="#ReviewModes">5.6. Režimi pregleda</A>
+      <UL>
+      <LI><A HREF="#ObjectReview">5.6.1. Pregled objekata</A>
+      <LI><A HREF="#DocumentReview">5.6.2. Pregled dokumenta</A>
+      <LI><A HREF="#ScreenReview">5.6.3. Pregled ekrana</A>
+      </UL>
+    <LI><A HREF="#toc39">5.7. Navigacija sa mišem</A>
+    </UL>
+  <LI><A HREF="#BrowseMode">6. Režim pretraživanja</A>
+    <UL>
+    <LI><A HREF="#toc41">6.1. Navigacija jednim slovom</A>
+    <LI><A HREF="#toc42">6.2. Lista elemenata</A>
+    <LI><A HREF="#toc43">6.3. Umetnuti objekti</A>
+    </UL>
+  <LI><A HREF="#toc44">7. Čitanje matematičkog sadržaja</A>
+    <UL>
+    <LI><A HREF="#toc45">7.1. Interaktivna navigacija</A>
+    </UL>
+  <LI><A HREF="#toc46">8. Brajevo pismo</A>
+    <UL>
+    <LI><A HREF="#toc47">8.1. Skraćenice za vrste kontrola, stanje i orjentire</A>
+    <LI><A HREF="#toc48">8.2. Brajev unos</A>
+    </UL>
+  <LI><A HREF="#toc49">9. Prepoznavanje sadržaja</A>
+    <UL>
+    <LI><A HREF="#Win10Ocr">9.1. Windows 10 OCR</A>
+    </UL>
+  <LI><A HREF="#toc51">10. Posebne karakteristike za aplikacije</A>
+    <UL>
+    <LI><A HREF="#toc52">10.1. Microsoft Word</A>
+      <UL>
+      <LI><A HREF="#toc53">10.1.1. Automatsko čitanje zaglavlja kolona i redova</A>
+      <LI><A HREF="#toc54">10.1.2. Režim pretraživanja u programu Microsoft Word</A>
+      <LI><A HREF="#toc55">10.1.3. Prijavljivanje komentara</A>
+      </UL>
+    <LI><A HREF="#toc56">10.2. Microsoft Excel</A>
+      <UL>
+      <LI><A HREF="#toc57">10.2.1. Automatsko čitanje zaglavlja redova i kolona</A>
+      <LI><A HREF="#toc58">10.2.2. Lista elemenata</A>
+      <LI><A HREF="#toc59">10.2.3. Prijavljivanje komentara</A>
+      <LI><A HREF="#toc60">10.2.4. Čitanje zaštićenih ćelija</A>
+      <LI><A HREF="#toc61">10.2.5. Polja za unos</A>
+      </UL>
+    <LI><A HREF="#toc62">10.3. Microsoft PowerPoint</A>
+    <LI><A HREF="#toc63">10.4. foobar2000</A>
+    <LI><A HREF="#toc64">10.5. Miranda IM</A>
+    <LI><A HREF="#toc65">10.6. Poedit</A>
+    <LI><A HREF="#toc66">10.7. Skype</A>
+    <LI><A HREF="#toc67">10.8. Kindle za PC</A>
+      <UL>
+      <LI><A HREF="#toc68">10.8.1. Izbor teksta</A>
+      <LI><A HREF="#toc69">10.8.2. Korisničke napomene</A>
+      </UL>
+    </UL>
+  <LI><A HREF="#toc70">11. Podešavanje programa NVDA</A>
+    <UL>
+    <LI><A HREF="#toc71">11.1. Podešavanja</A>
+      <UL>
+      <LI><A HREF="#toc72">11.1.1. Opšta podešavanja (NVDA+kontrol+g)</A>
+      <LI><A HREF="#toc73">11.1.2. Izbor sintetizatora(NVDA+kontrol+s)</A>
+      <LI><A HREF="#VoiceSettings">11.1.3. Glasovna podešavanja(NVDA+control+v)</A>
+      <LI><A HREF="#SynthSettingsRing">11.1.4. Krug sintetizatora</A>
+      <LI><A HREF="#BrailleSettings">11.1.5. Podešavanja brajevog reda</A>
+      <LI><A HREF="#toc77">11.1.6. Podešavanja tastature(NVDA+kontrol+k)</A>
+      <LI><A HREF="#MouseSettings">11.1.7. Podešavanja miša(NVDA+kontrol+m)</A>
+      <LI><A HREF="#toc79">11.1.8. Podešavanja preglednog kursora</A>
+      <LI><A HREF="#toc80">11.1.9. Podešavanja predstavljanja objekata(NVDA+kontrol+o)</A>
+      <LI><A HREF="#toc81">11.1.10. Podešavanja ulaznog sastava</A>
+      <LI><A HREF="#toc82">11.1.11. Podešavanja režima pretraživanja(NVDA+control+b)</A>
+      <LI><A HREF="#DocumentFormattingSettings">11.1.12. Podešavanja formatiranja dokumenta(NVDA+kontrol+d)</A>
+      <LI><A HREF="#Win10OcrSettings">11.1.13. Windows 10 OCR podešavanja</A>
+      <LI><A HREF="#toc85">11.1.14. Govorni rečnici</A>
+      <LI><A HREF="#SymbolPronunciation">11.1.15. Izgovor znakova interpunkcije/simbola</A>
+      <LI><A HREF="#InputGestures">11.1.16. Ulazne komande</A>
+      </UL>
+    <LI><A HREF="#toc88">11.2. Чуванје и поновно учитаванје подешаванја</A>
+    <LI><A HREF="#toc89">11.3. Профили подешаванја</A>
+      <UL>
+      <LI><A HREF="#toc90">11.3.1. Основно управлјанје</A>
+      <LI><A HREF="#toc91">11.3.2. Правлјенје профила</A>
+      <LI><A HREF="#ConfigProfileManual">11.3.3. Ručna aktivacija</A>
+      <LI><A HREF="#ConfigProfileTriggers">11.3.4. Aktivatori</A>
+      <LI><A HREF="#toc94">11.3.5. Uređivanje profila</A>
+      <LI><A HREF="#toc95">11.3.6. Privremeno onemogući aktivatore</A>
+      </UL>
+    <LI><A HREF="#toc96">11.4. Lokacija datoteka podešavanja</A>
+    </UL>
+  <LI><A HREF="#toc97">12. Dodatni alati</A>
+    <UL>
+    <LI><A HREF="#toc98">12.1. Pregled dnevnika</A>
+    <LI><A HREF="#toc99">12.2. Pregled govora</A>
+    <LI><A HREF="#toc100">12.3. Upravljanje dodacima</A>
+    <LI><A HREF="#toc101">12.4. Python konzola</A>
+    <LI><A HREF="#toc102">12.5. Ponovo učitaj dodatke</A>
+    </UL>
+  <LI><A HREF="#SupportedSpeechSynths">13. Podržani sintetizatori govora</A>
+    <UL>
+    <LI><A HREF="#toc104">13.1. eSpeak NG</A>
+    <LI><A HREF="#toc105">13.2. Microsoft Speech API version 4 (SAPI 4)</A>
+    <LI><A HREF="#toc106">13.3. Microsoft Speech API version 5 (SAPI 5)</A>
+    <LI><A HREF="#toc107">13.4. Microsoft Speech Platform</A>
+    <LI><A HREF="#toc108">13.5. Windows OneCore glasovi</A>
+    <LI><A HREF="#toc109">13.6. Audiologic Tts3</A>
+    <LI><A HREF="#toc110">13.7. Nuance Vocalizer za NVDA</A>
+    </UL>
+  <LI><A HREF="#SupportedBrailleDisplays">14. Podržani brajevi redovi</A>
+    <UL>
+    <LI><A HREF="#toc112">14.1. Brajevi redovi Freedom Scientific Focus/PAC Mate</A>
+    <LI><A HREF="#toc113">14.2. Optelec ALVA BC640/680</A>
+    <LI><A HREF="#toc114">14.3. Handy Tech brajevi redovi</A>
+    <LI><A HREF="#toc115">14.4. MDV Lilli</A>
+    <LI><A HREF="#toc116">14.5. Baum/Humanware/APH/Orbit Brajevi Redovi</A>
+    <LI><A HREF="#toc117">14.6. hedo ProfiLine USB</A>
+    <LI><A HREF="#toc118">14.7. Hedo MobilLine USB</A>
+    <LI><A HREF="#toc119">14.8. HumanWare Brailliant BI/B Serije</A>
+    <LI><A HREF="#toc120">14.9. HIMS Braille Sense/Braille EDGE  smart beetle Serije</A>
+    <LI><A HREF="#toc121">14.10. HIMS SyncBraille</A>
+    <LI><A HREF="#toc122">14.11. Seika brajični retci</A>
+    <LI><A HREF="#toc123">14.12. Papenmeier BRAILLEX Noviji Modeli</A>
+    <LI><A HREF="#toc124">14.13. Papenmeier Braille BRAILLEX stariji modeli</A>
+    <LI><A HREF="#toc125">14.14. HumanWare BrailleNote</A>
+    <LI><A HREF="#toc126">14.15. EcoBraille</A>
+    <LI><A HREF="#toc127">14.16. SuperBraille</A>
+    <LI><A HREF="#toc128">14.17. BRLTTY</A>
+    </UL>
+  <LI><A HREF="#toc129">15. Napredne teme</A>
+    <UL>
+    <LI><A HREF="#CommandLineOptions">15.1. Opcije komandne linije</A>
+    <LI><A HREF="#SystemWideParameters">15.2. Sistemski parametri</A>
+    </UL>
+  <LI><A HREF="#toc132">16. Dodatne informacije</A>
+  </UL>
+
+<P></P>
+<A NAME="toc2"></A>
+<H2>1. Uvod</H2>
+<P>
+Dobrodošli u  NVDA!
+</P>
+<P>
+NonVisual Desktop Access (NVDA) je besplatan čitač ekrana otvorenog koda za Microsoft Windows.
+Pružajući informacije koristeći sintetizatore govora i brajev red, omogućava slepim korisnicima pristup Windows operativnom sistemu uz jednake troškove videćim osobama.
+NVDA razvija<A HREF="https://www.nvaccess.org/">NV Access</A>, uz saradnju zajednice.
+</P>
+<A NAME="toc3"></A>
+<H3>1.1. Opšte karakteristike</H3>
+<P>
+NVDA omogućava interakciju sa Windows operativnim sistemom i puno drugih aplikacija.
+</P>
+<P>
+Glavne karakteristike uključuju:
+</P>
+<UL>
+<LI>Podrška za popularne aplikacije uključujući web preglednike, email klijente, programe za internet ćaskanje i Office pakete
+<LI>Ugrađen sintetizator govora koji podržava preko 80 jezika
+<LI>Prijavljivanje informacija o formatiranju teksta gde je to moguće uključujući ime fonta i veličina, still i greške u pravopisu
+<LI>Automatski izgovor teksta ispod miša i korišćenje zvučnih informacija o poziciji miša
+<LI>Podrška za puno brajevih redova, uključujući unos teksta za brajeve redove koji imaju tastaturu
+<LI>Sposobnost da se u potpunosti pokrene sa USB memorije bez potrebe za instalacijom
+<LI>Govorna instalacija koja je laka za korišćenje
+<LI>Preveden na 50 jezika
+<LI>Podrška za moderne Windows operativne sisteme uključujući 32 bitne i 64 bitne verzije
+<LI>Sposobnost da se pokrene na Windows ekranu za prijavljivanje i drugim bezbednim ekranima
+<LI>Podrška za standardne interfejse pristupačnosti kao što su Microsoft Active Accessibility, Java Access Bridge, IAccessible2 i UI Automation (UI Automation podržan samo na Windowsu 7 i novijim)
+<LI>Podrška za Windows komandnu liniju i druge konzolne aplikacije
+</UL>
+
+<P></P>
+<A NAME="toc4"></A>
+<H3>1.2. Internacionalizacija</H3>
+<P>
+Važno je da ljudi gde god da se nalaze na svetu, bez obzira koji jezik govore, dobiju jednak pristup tehnologiji.
+Pored Engleskog, NVDA je preveden na 50 jezika uključujući: Afrikanski, Albanski, Amharski, Arapski, Aragoneski, Brazilsko Portugalski, Bugarski, Burmese, Katalonski, Kolumbijsko Španski, Hrvatski, Češki, Danski, Holandski, Farsi, Finski, Francuski, Galski, Gruzijski, Nemački, Grčki, Hebrejski, Indijski, Mađarski, Islandski, Irski, Italijanski, Japanski, Kannada, Korejski, Litvanski, Nepali, Norveški, Poljski, Portugalski, Pundžabi, Rumunski, Ruski, Srpski, Slovački, Slovenski, Španski, Švetski, Tamil, Tajvanski, Tradicionalan i pojednostavljen Kineski, Turski, Ukrajinski i Vijetnamski.
+</P>
+<A NAME="toc5"></A>
+<H3>1.3. Podrška za sintetizatore govora</H3>
+<P>
+Pored pružanja svojih poruka i interfejsa na jednom od podržanih jezika, NVDA takođe dozvoljava korisniku da čita tekst na bilo kom jeziku, dokle god imaju sintetizator koji podržava taj jezik.
+</P>
+<P>
+NVDA dolazi sa sintetizatorom<A HREF="https://github.com/espeak-ng/espeak-ng">eSpeak NG</A>, besplatnom, otvorenog koda, višejezičnom sintezom.
+</P>
+<P>
+Informacije o sintezama koje NVDA podržava možete pronaći u delu<A HREF="#SupportedSpeechSynths">Podržani sintetizatori govora</A>.
+</P>
+<A NAME="toc6"></A>
+<H3>1.4. Podrška za brajeve redove</H3>
+<P>
+Za korisnike koji imaju brajev red, NVDA može pružati informacije na brajevom pismu.
+Skraćen i standardan unos brajevih znakova je podržan.
+Molimo vas da pogledate deo<A HREF="#SupportedBrailleDisplays">Podržani brajevi redovi</A> za informacije o podržanim brajevim redovima.
+</P>
+<P>
+NVDA podržava brajeve kodove za puno jezika, uključujući skraćene, standardne i kompjuterske brajeve kodove.
+</P>
+<A NAME="toc7"></A>
+<H3>1.5. Licenca i autorska prava</H3>
+<P>
+NVDA je pod autorskim pravima 2006-2017 NVDA saradnici.
+</P>
+<P>
+NVDA je zaštićen GNU General Public licencom(verzija 2).
+Možete menjati ovaj program dok god date izvorni kod onima koji to žele i dok je pod zaštitom ove licence.
+Ovo važi za originalne i različite verzije ovog programa, plus bilo koji drugi rad.
+Za više detalja, možete<A HREF="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">videti celu licencu.</A>
+</P>
+<A NAME="toc8"></A>
+<H2>2. Sistemski zahtevi</H2>
+<UL>
+<LI>Operativni sistemi: sve 32-bitne i 64-bitne verzije Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 i Windows 10 (uključujući server operativne sisteme)
+ <UL>
+ <LI>za  Windows XP 32-bit, NVDA zahteva Service Pack 2 ili noviji.
+ <LI>Za Windows Server 2003, NVDA zahteva Service Pack 1 ili noviji.
+ <LI>Za Windows Vista, NVDA zahteva Service Pack 2 i<A HREF="https://support.microsoft.com/en-us/kb/2763674">KB2763674</A> ažuriranje.
+ Oba trebaju biti instalirana ako su primenjena sva ažuriranja koristeći Windows Update.
+ </UL>
+<LI>Memorija: 256 mb ili više RAM memorije
+<LI>Brzina procesora: 1.0 ghz ili više
+<LI>Oko 90 MB prostora.
+</UL>
+
+<P></P>
+<A NAME="toc9"></A>
+<H2>3. Dobijanje i podešavanje programa NVDA</H2>
+<P>
+Ako još uvek niste preuzeli NVDA, možete ga preuzeti sa stranice <A HREF="http://www.nvaccess.org/">www.nvaccess.org</A>.
+</P>
+<P>
+U sekciji download pronaćićete link ka najnovijoj verziji programa NVDA.
+</P>
+<P>
+Pokretanje datoteke koja je preuzeta započeće privremenu kopiju programa NVDA.
+Zatim ćete biti upitani da li želite da instalirate NVDA, napravite prenosnu kopiju ili da samo nastavite korišćenje privremene kopije.
+</P>
+<P>
+Ako planirate da uvek koristite NVDA na ovom računaru, izabraćete instalaciju programa NVDA.
+Instaliranje programa NVDA pruža dodatne funkcije kao što su automatsko pokretanje nakon prijavljivanja u Windows, sposobnost da čitate Windows ekran za prijavu i druge sigurnosne ekrane(što nije moguće sa prenosivom i privremenom kopijom) i pravljenje prečice na radnoj površini i u start meniju.
+Instalirana kopija takođe može napraviti prenosivu kopiju u bilo kom trenutku.
+</P>
+<P>
+Ako želite da nosite NVDA sa sobom na USB-u ili drugim prenosivim medijima, u tom slučaju trebate izabrati opciju pravljenja prenosive kopije.
+Prenosiva kopija takođe poseduje sposobnost instalacije na nekom računaru.
+Međutim, ako želite da kopirate NVDA na medijima koji su samo za čitanje kao što je CD, kopirajte samo preuzetu datoteku.
+Pokretanje prenosive kopije sa takvih medija trenutno nije podržano.
+</P>
+<P>
+Korišćenje programa NVDA kao privremena kopija je takođe jedna od opcija(na primer u svrhu demonstracije), ali pokretanje programa NVDA svaki put na ovaj način može izgubiti dosta vremena.
+</P>
+<A NAME="toc10"></A>
+<H3>3.1. Ograničenja prenosive i privremene kopije</H3>
+<P>
+Pored toga što ne mogu da se pokrenu nakon i u toku prijave u Windows, privremena i prenosiva kopija takođe imaju sledeća ograničenja:
+</P>
+<UL>
+<LI>Nemogućnost interakcije sa aplikacijama koje su pokrenute sa administratorskim privilegijama, osim ako se NVDA ne pokrene sa administratorskim privilegijama(što nije preporučeno).
+<LI>Nemogućnost čitanja ekrana kontrole korisničkog naloga(UAC) kada pokušate da pokrenete neku aplikaciju sa administratorskim privilegijama.
+<LI>Windows 8 i noviji: Nemogućnost podrške unosa uz pomoć ekrana osetljivog na dodir.
+<LI>Windows 8 i noviji: nemogućnost pružanja režima pretraživanja i izgovora unetih znakova u aplikacijama iz Windows prodavnice.
+<LI>Windows 8 I noviji: stišavanje pozadinskih zvukova nije podržano.
+</UL>
+
+<P></P>
+<A NAME="toc11"></A>
+<H3>3.2. Instaliranje programa NVDA</H3>
+<P>
+Ako instalirate NVDA iz preuzete datoteke, pritisnite dugme instaliraj NVDA.
+Ako ste zatvorili ovaj dijalog ili želite da instalirate NVDA iz prenosive kopije, izaberite instaliraj NVDA u NVDA meniju iz podmenija alati.
+</P>
+<P>
+Dijalog za instalaciju će zatražiti potvrdu i takođe reći da li ova instalacija ažurira neku postojeću instalaciju.
+Aktiviranjem dugmeta nastavi počinje instalacija NVDA.
+Tu takođe imate nekoliko opcija koje su objašnjene u nastavku.
+Kada se instalacija završi, pojaviće se poruka koja će vam reći da li je instalacija uspela.
+Aktiviranje dugmeta  OK će pokrenuti novu kopiju NVDA.
+</P>
+<A NAME="toc12"></A>
+<H4>3.2.1. Pokreni na Windows ekranu za prijavu</H4>
+<P>
+Ova opcija odlučuje da li NVDA treba biti pokrenut na Windows ekranu za prijavljivanje, pre nego što unesete vašu lozinku.
+Ovo takođe uključuje kontrolu korisničkog ekrana i druge bezbednosne ekrane.
+</P>
+<A NAME="toc13"></A>
+<H4>3.2.2. Napravi prečicu na radnoj površini (ctrl+alt+n)</H4>
+<P>
+Ova opcija određuje da li NVDA treba da napravi prečicu za pokretanje na radnoj površini. 
+Ako je napravljena, ona takođe dobija prečicu sa tastature control+alt+n, kako biste mogli da pokrenete NVDA u bilo kom trenutku sa ovom prečicom.
+</P>
+<A NAME="toc14"></A>
+<H4>3.2.3. Kopiraj podešavanja prenosne kopije u trenutni nalog</H4>
+<P>
+Ova opcija bira da li konfiguracija trenutno pokrenute kopije NVDA treba da se kopira za korisnika koji je trenutno prijavljen, za instaliranu kopiju NVDA. 
+Ovo neće kopirati podešavanja za druge korisnike ni za korišćenje na Windows ekranu za prijavljivanje i drugim bezbednosnim ekranima.
+Ova opcija je dostupna samo kada se instalira iz prenosive kopije, ne i kada se instalira iz preuzete datoteke.
+</P>
+<A NAME="toc15"></A>
+<H3>3.3. Pravljenje prenosive kopije</H3>
+<P>
+Ako pravite prenosivu kopiju iz preuzete datoteke, jednostavno aktivirajte dugme napravi prenosivu kopiju.
+Ako ste zatvorili ovaj dijalog ili ste instalirali NVDA, Izaberite opciju napravi prenosivu kopiju u NVDA meniju a zatim u podmeniju alati.
+</P>
+<P>
+Dijalog koji se otvori nakon toga vam omogućava izbor gde prenosiva kopija treba da bude napravljena.
+Ovo može biti lokacija na hard disku ili nekim drugim prenosivim medijima.
+Tu takođe imate opciju koja bira da li treba kopirati trenutna podešavanja u prenosivu kopiju.
+ Ova opcija je dostupna samo kada se pravi prenosiva kopija iz instalirane kopije, ne i kada se pravi iz preuzete datoteke.
+Aktiviranje dugmeta nastavi pravi prenosivu kopiju.
+Nakon što se pravljenje završi, poruka će se pojaviti koja će vas obavestiti da je bilo uspešno.
+Pritisnite OK da zatvorite ovaj dijalog.
+</P>
+<A NAME="toc16"></A>
+<H2>4. Početak sa programom NVDA</H2>
+<A NAME="toc17"></A>
+<H3>4.1. Pokretanje programa NVDA</H3>
+<P>
+Ako ste instalirali NVDA, pokretanje NVDA možete ostvariti prečicom control+alt+n, ili izborom NVDA u start meniju.
+Takođe možete upisati NVDA u dialog za otvaranje i pritisnuti enter.
+Takođe možete dodati<A HREF="#CommandLineOptions">opcije komandne linije</A> koje vam dozvoljavaju da ponovo pokrenete NVDA(-r), izađete(-q), onemogućite dodatke(--disable-addons), i tako dalje.
+</P>
+<P>
+Za instalirane kopije, NVDA NVDA čuva podešavanja u roaming app data folderu trenutnog korisnika po podrazumevanim podešavanjima(Na primer "C:\Users\&lt;korisnik&gt;\AppData\Roaming").
+Moguće je promeniti ovo tako da NVDA učitava svoja podešavanja iz foldera local u folderu app data.
+Pogledajte deo o <A HREF="parametrima#SystemWideParameters">sistemskim</A> za više detalja.
+</P>
+<P>
+Da pokrenete prenosivu kopiju, potrebno je ući u folder u kojem ste napravili prenosivu kopiju, i pritisnite enter ili kliknite dva puta na datoteku nvda.exe.
+</P>
+<P>
+Dok se NVDA pokreće, čućete niz tonova(koji vam govore da se NVDA učitava).
+U zavisnosti od brzine vašeg računara, ili ako pokrećete NVDA sa sporijeg medija, možda će ovo malo duže trajati.
+Ako traje duže, NVDA će reći"Učitavanje NVDA. molimo sačekajte..."
+</P>
+<P>
+Ako ne čujete ništa od ovoga, ili čujete Windows zvuk za grešku, ili silazne tonove, to znači da NVDA ima grešku, i možda ćete morati da prijavite grešku programerima.
+Molimo proverite NVDA sajt da saznate kako to da uradite.
+</P>
+<P>
+Kada se NVDA pokrene po prvi put, dobićete dijalog sa osnovnim informacijama o NVDA tasteru i NVDA meniju.
+(Molimo pogledajte naredne sekcije o ovim temama.)
+Dijalog takođe sadrži izborni okvir i tri izborna polja.
+Izborni okvir vam omogućava da izaberete raspored tastature.
+Prvo izborno polje vam dozvoljava da izaberete da li NVDA treba da koristi Capslock kao njegov taster.
+Drugi vam omogućava da podesite da li NVDA treba automatski da se pokrene nakon prijave u Windows i dostupan je samo za instalirane kopije.
+Treći vam dozvoljava da podesite da li ovaj dijalog dobrodošlice treba da se prikaže svaki put kada se NVDA pokrene.
+</P>
+<A NAME="toc18"></A>
+<H3>4.2. O NVDA prečicama</H3>
+<A NAME="toc19"></A>
+<H4>4.2.1. NVDA taster</H4>
+<P>
+Većina prečica koje NVDA koristi zahteva od vas da pritisnete određen taster koji se zove NVDA taster zajedno sa jednim ili više tastera.
+Bitni izuzeci ovome su komande za pregled teksta u desktop rasporedu koje koriste tastere sa numeričke tastature samostalno, ali postoje i drugi izuzeci.
+</P>
+<P>
+NVDA može biti podešen tako da numerički insert, prošireni insert ili caps lock mogu da se koriste kao NVDA tasteri.
+Po podrazumevanim podešavanjima, numerički insert i prošireni insert su podešeni kao NVDA tasteri.
+</P>
+<P>
+Ako želite da koristite neki od ovih tastera kao da NVDA nije pokrenut(na primer želite da uključite caps lock kada ste podesili ovaj taster kao NVDA taster), možete pritisnuti taster dva puta za redom.
+</P>
+<A NAME="toc20"></A>
+<H4>4.2.2. Rasporedi tastature</H4>
+<P>
+NVDA dolazi sa dva rasporeda komandi (poznati kao rasporedi tastature): Desktop raspored i laptop raspored.
+Po podrazumevanim podešavanjima, NVDA  je podešen da koristi desktop raspored, ali možete promeniti raspored u podešavanjima tastature, koja se nalaze u podešavanjima u NVDA meniu.
+</P>
+<P>
+Desktop raspored koristi numeričku tastaturu(sa numlock tasterom isključenim).
+Iako većina laptopova nema numeričku tastaturu, neki laptopovi mogu da koriste FN taster zajedno sa brojevima na desnoj strani tastature(7, 8, 9, u, i, o, j, k, l, i tako dalje.).
+Ako vaš laptop ne može da uradi ovo ili vam ne dozvoljava da isključite numlock, možda ćete želeti da pređete na laptop raspored.
+</P>
+<A NAME="toc21"></A>
+<H3>4.3. NVDA prečice za ekrane osetljive na dodir</H3>
+<P>
+Ako koristite NVDA sa ekranom osetljivim na dodir i imate Windows 8 ili noviji, možete da koristite NVDA direktno sa ekrana.
+Dok je NVDA pokrenut, sve akcije sa ekrana preuzima NVDA. 
+Tako da, radnje koje normalno funkcionišu bez NVDA-a neće raditi.
+</P>
+<A NAME="toc22"></A>
+<H4>4.3.1. Istraživanje ekrana</H4>
+<P>
+Naj osnovnija radnja sa ekrana osetljivog na dodir je izgovor teksta bilo gde na ekranu.
+Da biste to uradili, stavite vaš prst bilo gde na ekranu.
+Takođe možete držati prst na ekranu i kretati se po njemu kako bi NVDA izgovarao tekst ispod vašeg prsta.
+</P>
+<A NAME="toc23"></A>
+<H4>4.3.2. Pokreti</H4>
+<P>
+Kada NVDA komande budu kasnije opisane u ovom vodiču, mogu da sadrže pokret koji možete da koristite sa ekrana osetljivog na dodir kako biste aktivirali tu komandu.
+U nastavku su uputstva kako uspešno izvesti neke pokrete na ekranu.
+</P>
+<H5>Dodiri</H5>
+<P>
+Dodirnite ekran brzo sa jednim ili više prsta.
+</P>
+<P>
+Jednostruki dodir jednim prstom se jednostavnije zove dodir.
+Istovremeni dodir sa dva prsta je dodir sa dva prsta i tako dalje.
+</P>
+<P>
+Ako se ekran dodirne više puta za redom, NVDA će tretirati ovo kao pokret sa više dodira.
+Dodirivanje dva puta je dvostruki dodir.
+Dodirivanje tri puta je trostruki dodir i tako dalje.
+Naravno, ovi dvostruki dodiri takođe prepoznaju koliko prsta je na ekranu, tako da je moguće imati pokrete kao što su dvostruki dodir sa dva prsta, dodir sa četiri prsta, i tako dalje. 
+</P>
+<H5>Prevlačenja</H5>
+<P>
+Brzo prevucite prst preko ekrana.
+</P>
+<P>
+Postoji četiri ovakva pokreta u zavisnosti od pravca prevlačenja: Prevlačenje ulevo, Prevlačenje udesno, Prevlačenje nagore I prevlačenje nadole.
+</P>
+<P>
+Kao i dodiri, više od jednog prsta se može koristiti za pokrete.
+Tako da, pokreti kao što su prevlačenje sa četiri prsta nagore ili dva prsta nadole su mogući.
+</P>
+<A NAME="toc24"></A>
+<H4>4.3.3. Režimi dodira</H4>
+<P>
+Budući da postoji mnogo više NVDA prečica nego pokreta sa ekrana, NVDA ima više režima koji omogućavaju više različitih komandi.
+Dva režima su režim teksta i režim objekata. 
+Određene komande u ovom dokumentu će možda imati režim dodira u zagradama nakon pokreta.
+Na primer, prevlačenje nagore(režim teksta) znači da će komanda biti izvršena ako prevučete nagore, ali samo kada ste u režimu teksta.
+Ako komanda nema režim, radiće u bilo kom režimu.
+</P>
+<P>
+Da se prebacite između različitih režima dodira, dodirnite jednom sa tri prsta
+</P>
+<A NAME="toc25"></A>
+<H3>4.4. Režim pomoći za unos</H3>
+<P>
+Puno komandi je spomenuto kroz ovaj vodič, ali lak način da saznate šta svaka komanda radi je da uključite pomoć za unos.
+</P>
+<P>
+Da uključite pomoć za unos, pritisnite NVDA+1.
+Da je isključite, pritisnite NVDA+1 ponovo.
+Dok ste u režimu pomoći za unos, korišćenje bilo koje komande(kao što je pritiskanje tastera ili pokreti sa ekrana) će prijaviti komandu i šta ona radi(ako radi nešto).
+Komande neće ništa uraditi dok ste u režimu pomoći za unos.
+</P>
+<A NAME="toc26"></A>
+<H3>4.5. NVDA meni</H3>
+<P>
+NVDA meni vam dozvoljava da kontrolišete NVDA podešavanja, Dobijete pomoć, Sačuvate/vratite se na sačuvana podešavanja, menjate govorne rečnike, pristupite dodatnim alatima i izađete iz programa NVDA.
+</P>
+<P>
+Da biste ušli u NVDA meni gde god da se nalazite u Windowsu dok je NVDA pokrenut, pritisnite NVDA+n na tastaturi ili na ekranu koristite dvostruki dodir sa dva prsta.
+Takođe možete ući u NVDA meni iz Windows sistemske trake.
+Ili desnim klikom na NVDA ikonu u sistemskoj traci, ili pristupite sistemskoj traci koristeći komandu Windows+b, krećite se strelicom dole do NVDA ikone i pritisnite aplikacijski taster koji se nalazi pored desnog kontrol tastera na većini tastatura.
+Kada se meni pojavi, možete koristiti strelice da se krećete kroz meni, i taster enter da aktivirate stavku.
+</P>
+<A NAME="toc27"></A>
+<H3>4.6. Osnovne NVDA komande</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Ekran osetljiv na dodir| Opis</TH>
+</TR>
+<TR>
+<TD>Zaustavi govor</TD>
+<TD>Kontrol</TD>
+<TD>Kontrol</TD>
+<TD>dodir sa dva prsta| govor prestaje|</TD>
+</TR>
+<TR>
+<TD>Pauziraj govor</TD>
+<TD>Šift| Šift| Nema komande| pauzira govor. Ako se pritisne ponovo govor se nastavlja gde je stao(ako trenutni sintetizator podržava pauziranje)</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>NVDA+n</TD>
+<TD>NVDA+n</TD>
+<TD>dvostruki dodir sa dva prsta| otvara NVDA meni kako biste pristupili podešavanjima, alatima, dobili pomoć, i tako dalje.</TD>
+</TR>
+<TR>
+<TD>Prebaci režim govora| NVDA+s</TD>
+<TD>NVDA+s</TD>
+<TD>Nema komande</TD>
+<TD>Prebacuje režime govora između govor, pištanja i isključen.</TD>
+</TR>
+<TR>
+<TD>Uključuje i isključuje pomoć za unos| NVDA+1</TD>
+<TD>NVDA+1</TD>
+<TD>Nema komande</TD>
+<TD>pritiskanje bilo kog tastera u ovom režimu prijavljuje ime tastera, i opis komande koju NVDA koristi|</TD>
+</TR>
+<TR>
+<TD>Izlaz iz NVDA| NVDA+q</TD>
+<TD>NVDA+q</TD>
+<TD>Nema komande</TD>
+<TD>izlazi iz NVDA|</TD>
+</TR>
+<TR>
+<TD>Ignoriši sledeći taster| NVDA+f2</TD>
+<TD>NVDA+f2</TD>
+<TD>Nema komande</TD>
+<TD>govori NVDA-u da sledeći taster pošalje kroz aplikaciju, čak i ako je to NVDA komanda|</TD>
+</TR>
+<TR>
+<TD>Uključuje i isključuje režim spavanja za trenutnu aplikaciju| NVDA+šift+s</TD>
+<TD>NVDA+šift+z</TD>
+<TD>Nema komande</TD>
+<TD>Režim spavanja isključuje sav govor ili brajev izlaz za trenutnu aplikaciju. Ovo je najviše korisno u aplikacijama koje već imaju karakteristike čitanja ekrana. Ponovo pritisnite ovu komandu da isključite režim spavanja.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc28"></A>
+<H3>4.7. Prijavljivanje sistemskih informacija</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi datum/vreme| NVDA+f12</TD>
+<TD>Ako se pritisne jednom prijavljuje trenutni datum, ako se pritisne dva puta prijavljuje trenutno vreme|</TD>
+</TR>
+<TR>
+<TD>Prijavi stanje baterije| NVDA+šift+b</TD>
+<TD>prijavljuje stanje baterije da li je punjač uključen i trenutan procenat.</TD>
+</TR>
+<TR>
+<TD>Prijavi tekst privremene memorije| NVDA+c</TD>
+<TD>prijavljuje tekst privremene memorije ako ima teksta.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc29"></A>
+<H2>5. Navigacija sa NVDA-om</H2>
+<P>
+NVDA vam dozvoljava navigaciju sistemom na nekoliko načina, uključujući standardnu interakciju i pregled.
+</P>
+<A NAME="Objects"></A>
+<H3>5.1. Objekti</H3>
+<P>
+Svaka aplikacija i operativni sistem se sastoji iz puno objekata.
+Objekat je jedna stavka kao što je deo teksta, dugme, polje za potvrdu, klizač, lista ili polje za unos teksta.
+</P>
+<A NAME="SystemFocus"></A>
+<H3>5.2. Navigacija sa sistemskim fokusom</H3>
+<P>
+Sistemski fokus, takođe poznat kao fokus, je[objekat#Objects] koji prima tastere sa tastature.
+Na primer, ako pišete u polju za unos teksta, polje za unos teksta ima fokus.
+</P>
+<P>
+Najčešći način navigacije kroz Windows sa programom NVDA je pomeranje sistemskog fokusa standardnim komandama sa tastature, kao što je pritiskanje tastera tab ili šift+tab da se krećete napred i nazad kroz kontrole, pritiskanje tastera alt da uđete u traku menija a zatim korišćenje strelica za kretanje kroz meni, i korišćenje kombinacije alt+tab da se krećete kroz otvorene programe.
+Dok to radite, NVDA će prijavljivati informacije o objektima, kao što su njegovo ime, tip, vrednost, stanje, opis, tasterska prečica i informacije o poziciji.
+</P>
+<P>
+Postoje određene komande koje mogu biti korisne u navigaciji sa sistemskim fokusom:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi trenutni fokus| NVDA+tab</TD>
+<TD>NVDA+tab</TD>
+<TD>Izgovara trenutni objekat ili kontrolu koja ima sistemski fokus. Ako se pritisne dva puta informacija se sriče|</TD>
+</TR>
+<TR>
+<TD>Prijavi naslov| NVDA+t</TD>
+<TD>NVDA+t</TD>
+<TD>Prijavi naslov trenutno aktivnog prozora. Ako se pritisne dva puta informacija se sriče. Ako se pritisne tri puta informacija se kopira u privremenu memoriju|</TD>
+</TR>
+<TR>
+<TD>Čitaj aktivan prozor| NVDA+b</TD>
+<TD>NVDA+b</TD>
+<TD>Čita sve kontrole u trenutnom prozoru(korisno za dijaloge)</TD>
+</TR>
+<TR>
+<TD>Prijavi statusnu traku| NVDA+end</TD>
+<TD>NVDA+Šift+end</TD>
+<TD>Prijavljuje statusnu traku ako je NVDA pronađe. Takođe pomera navigacioni objekat. Ako se pritisne dva puta informacija se sriče|</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemCaret"></A>
+<H3>5.3. Navigacija sa sistemskim kursorom</H3>
+<P>
+Kada je neki <A HREF="#Objects">objekat</A> koji dozvoljava navigaciju ili uređivanje <A HREF="#SystemFocus">fokusiran</A>, možete se kretati kroz tekst koristeći sistemski kursor, takođe poznat kao kursor za uređivanje.
+</P>
+<P>
+Kada je fokus na objektu koji ima sistemski kursor, možete koristiti strelice, page up, page down, home, end, i tako dalje. Da se krećete kroz tekst.
+Možete takođe uređivati tekst ako kontrola podržava uređivanje.
+NVDA će izgovarati kada se krećete znak po znak, reč i red, i takođe će izgovarati dok birate ili uklanjate izbor teksta.
+</P>
+<P>
+NVDA Pruža sledeće komande za sistemski kursor:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>opis</TH>
+</TR>
+<TR>
+<TD>Izgovori sve</TD>
+<TD>NVDA+Strelica dole</TD>
+<TD>NVDA+a</TD>
+<TD>Počinje čitanje od trenutne pozicije sistemskog kursora, pomerajući ga dok čita|</TD>
+</TR>
+<TR>
+<TD>Pročitaj trenutni red| NVDA+Strelica gore| NVDA+l</TD>
+<TD>Čita red na kom se sistemski kursor nalazi. Ako se pritisne dva puta red se sriče. Ako se pritisne tri puta sriče red koristeći opise znakova.</TD>
+</TR>
+<TR>
+<TD>Pročitaj trenutni izbor teksta| NVDA+šift+strelica gore</TD>
+<TD>NVDA+šift+s</TD>
+<TD>Čita trenutno odabran tekst|</TD>
+</TR>
+<TR>
+<TD>Sledeća rečenica</TD>
+<TD>alt+strelica dole</TD>
+<TD>alt+strelica dole</TD>
+<TD>Pomera kursor na sledeću rečenicu i izgovara je. (Podržano samo u Microsoft Word i Outlook)</TD>
+</TR>
+<TR>
+<TD>Prethodna rečenica</TD>
+<TD>alt+strelica gore</TD>
+<TD>alt+Strelica gore</TD>
+<TD>Pomera kursor na prethodnu rečenicu i izgovara je. (Podržano samo u Microsoft Word i Outlook)</TD>
+</TR>
+</TABLE>
+
+<P>
+Kada ste u tabeli, Sledeće komande su takođe dostupne:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Pomeri na prethodnu kolonu| Kontrol+alt+strelica levo</TD>
+<TD>Pomera sistemski kursor na prethodnu kolonu(ostajete u istom redu)</TD>
+</TR>
+<TR>
+<TD>Pomeri na sledeću kolonu| Kontrol+alt+strelica desno</TD>
+<TD>Pomera sistemski kursor na sledeću kolonu(ostajete u istom redu)</TD>
+</TR>
+<TR>
+<TD>Pomeri na prethodni red</TD>
+<TD>control+alt+strelica gore</TD>
+<TD>Pomera sistemski kursor na prethodni red(ostajete u istoj koloni)</TD>
+</TR>
+<TR>
+<TD>Pomeri na sledeći red| control+alt+strelica dole</TD>
+<TD>Pomera sistemski kursor na sledeći red(ostajete u istoj koloni)</TD>
+</TR>
+</TABLE>
+
+<A NAME="ObjectNavigation"></A>
+<H3>5.4. Navigacija objekata</H3>
+<P>
+Uglavnom, radićete u aplikacijama koristeći komande koje pomeraju[fokus#SystemFocus] i<A HREF="#SystemCaret">kursor</A>.
+Ali, nekada, možda ćete želeti da istražite aplikaciju ili operativni sistem bez pomeranja fokusa ili kursora.
+Možda ćete takođe želeti da radite sa<A HREF="#Objects">objektima</A> kojima se ne može pristupiti uz pomoć tastature.
+U tim slučajevima, možete da koristite navigaciju objekata.
+</P>
+<P>
+Navigacija objekata vam omogućava da dobijate informacije o pojedinačnim<A HREF="#Objects">objektima</A>.
+Kada dođete do objekta, NVDA će ga izgovoriti slično kao što izgovara sistemski fokus.
+Za pregled teksta kao što se pojavljuje na ekranu, možete da koristite<A HREF="ekrana#ScreenReview">pregled</A>.
+</P>
+<P>
+Umesto da se pomerate po svakom objektu na sistemu, objekti su organizovani hierarhiski.
+Ovo znači da neki objekti sadrže dodatne objekte i morate ući u objekat da bi ste pristupili objektima koje taj objekat sadrži.
+Na primer, lista sadrži stavke te liste, pa morate da uđete u listu kako biste pristupili njenim stavkama.
+Ako ste se pomerili na stavku liste, komande za sledeći i prethodni objekat će ići kroz stavke te iste liste.
+Ako se pomerite na objekat u kojem je stavka liste sadržana vratićete se na listu.
+Nakon toga se možete kretati dalje od liste da biste pristupili drugim objektima.
+Slično, alatna traka sadrži kontrole, pa morate ući u alatnu traku da pristupite kontrolama.
+</P>
+<P>
+Objekat koji se trenutno pregleda se zove navigacioni objekat.
+Kada stignete do nekog objekta, možete pregledati njegov sadržaj koristeći<A HREF="teksta#ReviewingText">komande za pregled</A> dok ste u<A HREF="objekata#ObjectReview">režimu pregleda</A>.
+Po podrazumevanim podešavanjima, navigacioni objekat se pomera zajedno sa sistemskim fokusom, ali ovo se može promeniti.
+</P>
+<P>
+Napomena da brajev red prati[fokus#SystemFocus] i<A HREF="#SystemCaret">kursor</A> po podrazumevanim podešavanjima, a ne navigaciju objekata i pregled teksta.
+Ako želite da prati navigaciju objekata i pregled teksta, morate<A HREF="#BrailleTether">da podesite brajev red da prati navigaciju objekata</A>.
+</P>
+<P>
+Za navigaciju između objekata, koristite sledeće komande:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Pokret| Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi trenutni objekat| NVDA+numeričko5</TD>
+<TD>NVDA+šift+o</TD>
+<TD>Nema komande</TD>
+<TD>Prijavljuje trenutni navigacioni objekat. Ako se pritisne dva puta informacija se sriče, i pritiskanjem 3 puta informacija i vrednost se kopira u privremenu memoriju.</TD>
+</TR>
+<TR>
+<TD>Premesti se na sadržani objekat</TD>
+<TD>NVDA+numeričko8</TD>
+<TD>NVDA+šift+strelica gore</TD>
+<TD>prevuci nagore(režim objekata)</TD>
+<TD>premešta se na objekat koji sadrži trenutni navigacioni objekat|</TD>
+</TR>
+<TR>
+<TD>Premesti se na prethodni objekat</TD>
+<TD>NVDA+numeričko4</TD>
+<TD>NVDA+šift+strelica levo</TD>
+<TD>prevlačenje nalevo(režim objekata)</TD>
+<TD>pomera se na objekat pre trenutnog navigacionog objekta|</TD>
+</TR>
+<TR>
+<TD>Premesti na sledeći objekat</TD>
+<TD>NVDA+numeričko6</TD>
+<TD>NVDA+šift+strelica desno</TD>
+<TD>prevlačenje nadesno(režim objekata)</TD>
+<TD>premešta se na objekat posle trenutnog navigacionog objekta|</TD>
+</TR>
+<TR>
+<TD>Premesti se na prvi sadržan objekat| NVDA+numeričko2</TD>
+<TD>NVDA+šift+strelica dole</TD>
+<TD>prevlačenje nadole (režim objekata)</TD>
+<TD>Premešta se na prvi objekat sadržan od strane navigacionog objekta|</TD>
+</TR>
+<TR>
+<TD>Premesti se na fokusiran objekat| NVDA+numerički minus</TD>
+<TD>NVDA+taster za brisanje unazad</TD>
+<TD>Nema komande</TD>
+<TD>Premešta se na objekat koji trenutno ima sistemski fokus, i takođe postavlja pregledni kursor na poziciju sistemskog kursora, ako je prikazan|</TD>
+</TR>
+<TR>
+<TD>Aktiviraj trenutni navigacioni objekat| NVDA+numerički enter</TD>
+<TD>NVDA+enter</TD>
+<TD>dupli dodir</TD>
+<TD>aktivira trenutni navigacioni objekat(slično kliku mišem ili pritiskanju tastera razmak kada ima sistemski fokus)</TD>
+</TR>
+<TR>
+<TD>Premesti sistemski fokus ili kursor na poziciju pregleda| NVDA+šift+numerički minus</TD>
+<TD>NVDA+šift+taster za brisanje unazad</TD>
+<TD>Nema komande</TD>
+<TD>Ako se pritisne jednom pomera sistemski fokus na mesto navigacionog objekta, ako se pritisne dva puta pomera sistemski kursor na poziciju preglednog kursora|</TD>
+</TR>
+<TR>
+<TD>Prijavi lokaciju preglednog kursora| NVDA+numerički taster za brisanje</TD>
+<TD>NVDA+taster za brisanje</TD>
+<TD>nema komande</TD>
+<TD>Prijavljuje informacije o lokaciji teksta ispod preglednog kursora. Na primer, ovo može uključiti procente u dokumentu, daljina od ivica strana ili poziciju na ekranu. Ako se pritisne dva puta može se dobiti više informacija.</TD>
+</TR>
+</TABLE>
+
+<P>
+Napomena: Komande sa numeričke tastature zahtevaju da num lock taster  bude isključen kako bi ispravno radile.
+</P>
+<A NAME="ReviewingText"></A>
+<H3>5.5. Pregled teksta</H3>
+<P>
+NVDA Vam dozvoljava da čitate sadržaj <A HREF="#ScreenReview">ekrana</A>, trenutnog<A HREF="#DocumentReview">dokumenta</A> ili trenutnog<A HREF="#ObjectReview">objekta</A> znak po znak, reč po reč ili red po red.
+Ovo je veoma korisno u mestima kao što su(Windows komandna linija) gde ne postoji<A HREF="kursor#SystemCaret">sistemski</A>.
+Na primer, možete ovo da koristite da pročitate tekst duge informacije u dijalogu.
+</P>
+<P>
+Kada pomerate pregledni kursor, sistemski kursor se ne pomera, pa možete da pregledate tekst bez gubljenja vaše pozicije uređivanja teksta.
+Ali, po podrazumevanim podešavanjima, kada se sistemski kursor pomera, pregledni kursor ga prati.
+Ovo se može uključiti i isključiti.
+</P>
+<P>
+Napomena da brajev red prati[fokus#SystemFocus] i<A HREF="#SystemCaret">kursor</A> po podrazumevanim podešavanjima, a ne navigaciju objekata i pregled teksta.
+Ako želite da prati navigaciju objekata i pregled teksta, morate<A HREF="#BrailleTether">da podesite brajev red da prati navigaciju objekata</A>.
+</P>
+<P>
+Sledeće komande su dostupne za pregled teksta:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Pokret</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Premesti na prvi red pregleda| Šift+numeričko7</TD>
+<TD>NVDA+control+home</TD>
+<TD>Nema komande</TD>
+<TD>Premešta pregledni kursor na prvi red teksta|</TD>
+</TR>
+<TR>
+<TD>Premesti na prethodni red pregleda| Numeričko7</TD>
+<TD>NVDA+strelica gore</TD>
+<TD>Prevlačenje nagore(režim teksta)</TD>
+<TD>Pomera pregledni kursor na prethodni red teksta|</TD>
+</TR>
+<TR>
+<TD>Prijavi trenutni red pregleda</TD>
+<TD>numpad8</TD>
+<TD>NVDA+šift+.</TD>
+<TD>Nema komande</TD>
+<TD>Izgovara trenutni red na kom se nalazi pregledni kursor. Ako se pritisne dva puta red se sriče. Ako se pritisne tri puta red se sriče koristeći opise znakova.</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći red pregleda| Numeričko9</TD>
+<TD>NVDA+strelica dole</TD>
+<TD>Prevlačenje nadole(režim teksta)</TD>
+<TD>Premesti pregledni kursor na sledeći red teksta|</TD>
+</TR>
+<TR>
+<TD>Premesti se na poslednji red pregleda| Šift+numeričko9</TD>
+<TD>NVDA+control+end</TD>
+<TD>Nema komande</TD>
+<TD>Pomera pregledni kursor na poslednji red u dokumentu|</TD>
+</TR>
+<TR>
+<TD>Premesti se na prethodnu reč pregleda| Numeričko4</TD>
+<TD>NVDA+control+strelica levo</TD>
+<TD>Prevlačenje sa 2 prsta nalevo(Režim teksta)</TD>
+<TD>Pomera pregledni kursor na prethodnu reč u tekstu|</TD>
+</TR>
+<TR>
+<TD>Prijavi trenutnu reč pregleda| Numeričko5</TD>
+<TD>NVDA+control+.</TD>
+<TD>Nema komande</TD>
+<TD>Izgovara trenutnu reč teksta na kom se nalazi pregledni kursor. Ako se pritisne dva puta reč se sriče. Ako se pritisne tri puta reč se sriče koristeći opise znakova.</TD>
+</TR>
+<TR>
+<TD>Premesti se na sledeću reč pregleda| Numeričko6</TD>
+<TD>NVDA+control+strelica desno</TD>
+<TD>Prevlačenje dva prsta nadesno(režim teksta)</TD>
+<TD>Premešta pregledni kursor na sledeću reč|</TD>
+</TR>
+<TR>
+<TD>Premesti se na početak reda u pregledu| Šift+numeričko1</TD>
+<TD>NVDA+home</TD>
+<TD>Nema komande</TD>
+<TD>Premešta pregledni kursor na početak reda|</TD>
+</TR>
+<TR>
+<TD>Premesti se na prethodni znak pregleda| Numeričko1</TD>
+<TD>NVDA+strelica levo</TD>
+<TD>Prevlačenje nalevo(režim teksta)</TD>
+<TD>Premešta pregledni kursor na prethodno slovo u trenutnom redu teksta|</TD>
+</TR>
+<TR>
+<TD>Prijavi trenutni znak pregleda| Numeričko2</TD>
+<TD>NVDA+.</TD>
+<TD>Nema komande</TD>
+<TD>Izgovara trenutni znak u redu na kom se pregledni kursor nalazi. Ako se pritisne dva puta pruža se opis ili primer tog znaka. Ako se pritisne tri puta izgovara se decimalna i hexadecimalna vrednost tog znaka.</TD>
+</TR>
+<TR>
+<TD>Premesti se na sledeći znak pregleda| Numeričko3</TD>
+<TD>NVDA+strelica desno</TD>
+<TD>Prevlačenje nadesno(režim teksta)</TD>
+<TD>Premešta pregledni kursor na sledeći znak u trenutnom redu teksta|</TD>
+</TR>
+<TR>
+<TD>Premesti se na kraj reda pregleda| Šift+numeričko3</TD>
+<TD>NVDA+end</TD>
+<TD>Nema komande</TD>
+<TD>Premešta pregledni kursor na kraj trenutnog reda u tekstu|</TD>
+</TR>
+<TR>
+<TD>Izgovori sve uz pregled| Numerički plus</TD>
+<TD>NVDA+šift+a</TD>
+<TD>Prevlačenje nadole sa 3 prsta(režim teksta)</TD>
+<TD>Čita od trenutne pozicije preglednog kursora, pomerajući ga u toku čitanja|</TD>
+</TR>
+<TR>
+<TD>Izaberi a zatim kopiraj iz preglednog kursora| NVDA+f9</TD>
+<TD>NVDA+f9</TD>
+<TD>Nema komande</TD>
+<TD>Počinje izbor teksta koji treba da se kopira iz preglednog kursora. Kopiranje nije odrađeno dok ne kažete programu NVDA gde se nalazi kraj vašeg odabira|</TD>
+</TR>
+<TR>
+<TD>Izaberi a zatim kopiraj pregledni kursor| NVDA+f10</TD>
+<TD>NVDA+f10</TD>
+<TD>Nema komande</TD>
+<TD>Ako se pritisne jednom, tekst od početnog markera pa sve do kraja uključujući i trenutnu poziciju preglednog kursora je odabran. Nakon što se ova komanda pritisne drugi put, tekst se kopira u Windows privremenu memoriju|</TD>
+</TR>
+<TR>
+<TD>Prijavi formatiranje teksta| NVDA+f</TD>
+<TD>NVDA+f</TD>
+<TD>Nema komande</TD>
+<TD>Prijavljuje informacije o formatiranju teksta na poziciji preglednog kursora. Ako se pritisne dva puta informacije se prikazuju u režimu pretraživanja|</TD>
+</TR>
+</TABLE>
+
+<P>
+Napomena: Tasteri sa numeričke tastature zahtevaju da taster numlock bude isključen kako bi ispravno radili.
+</P>
+<P>
+Dobar način da zapamtite desktop raspored ovih prečica je da ih zamislite kao mrežu 3 sa 3, koja od vrha ka dnu pregleda redove, reči i znakove a s leva na desno pomera kursor na prethodni, izgovara trenutni ili sledeći.
+Izgled je ovako ilustrovan:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>prethodni red</TD>
+<TD>Trenutni red</TD>
+<TD>Sledeći red</TD>
+</TR>
+<TR>
+<TD>Prethodna reč</TD>
+<TD>Trenutna reč</TD>
+<TD>Sledeća reč</TD>
+</TR>
+<TR>
+<TD>Prethodni znak</TD>
+<TD>trenutni znak</TD>
+<TD>Sledeći znak</TD>
+</TR>
+</TABLE>
+
+<A NAME="ReviewModes"></A>
+<H3>5.6. Režimi pregleda</H3>
+<P>
+Komande programa NVDA<A HREF="teksta#ReviewingText">za pregled</A> mogu pregledati sadržaj trenutnog navigacionog objekta, trenutnog dokumenta ili ekrana, u zavisnosti od toga koji je režim pregleda odabran.
+Režimi pregleda su zamena za stari način pregleda programa NVDA.
+</P>
+<P>
+Sledeće komande menjaju režime pregleda:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Pokret</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći režim pregleda| NVDA+numeričko7</TD>
+<TD>NVDA+pageUp</TD>
+<TD>Prevlačenje nagore sa dva prsta| Prelazi na sledeći dostupan režim pregleda|</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prethodni režim pregleda</TD>
+<TD>NVDA+numeričko1</TD>
+<TD>NVDA+pageDown</TD>
+<TD>Prevlačenje nadole sa dva prsta| Prelazi na prethodni dostupan režim pregleda|</TD>
+</TR>
+</TABLE>
+
+<A NAME="ObjectReview"></A>
+<H4>5.6.1. Pregled objekata</H4>
+<P>
+Dok ste u režimu pregleda objekata, možete pregledati samo sadržaj trenutnog<A HREF="objekta#ObjectNavigation">navigacionog</A>.
+Za objekte kao što su polja za unos teksta ili druge osnovne tekstualne kontrole, ovo će obično biti tekstualni sadržaj.
+Za druge objekte, ovo može biti ime ili vrednost.
+</P>
+<A NAME="DocumentReview"></A>
+<H4>5.6.2. Pregled dokumenta</H4>
+<P>
+Kada je<A HREF="objekat#ObjectNavigation">navigacioni</A> u dokumentu koji je u režimu pretraživanja(na primer Web stranica) ili drugom obimnijem dokumentu(na primer dokument programa Lotus Symphony ), moguće je prebaciti se na režim pregleda dokumenta.
+Režim pregleda dokumenta vam dozvoljava da pregledate tekst celog dokumenta.
+</P>
+<P>
+Kada pređete iz režima pregled objekata u pregled dokumenta, pregledni kursor je postavljen u dokument na poziciji navigacionog objekta.
+Kada se krećete kroz dokument koristeći komande za pregled, navigacioni objekat se ažurira kako bi bio na trenutnoj poziciji preglednog kursora u dokumentu.
+</P>
+<P>
+Napomena da će NVDA preći iz režima pregleda objekata u pregled dokumenta kada ste u dokumentima koji su u režimu pretraživanja.
+</P>
+<A NAME="ScreenReview"></A>
+<H4>5.6.3. Pregled ekrana</H4>
+<P>
+Pregled ekrana vam dozvoljava da pregledate tekst kao što izgleda na ekranu u jednoj aplikaciji.
+Ovo je slično funkciji pregleda ekrana ili kursora miša u drugim Windows čitačima ekrana.
+</P>
+<P>
+Kada pređete u režim pregleda ekrana, pregledni kursor je na mestu trenutnog <A HREF="objekta#ObjectNavigation">navigacionog</A>.
+Kada se krećete po ekranu koristeći komande pregleda, navigacioni objekat ažurira svoju poziciju kako bi bio na mestu trenutnog objekta na ekranu.
+</P>
+<P>
+Napomena da u nekim novijim aplikacijama, NVDA možda neće videti deo teksta ili čitav tekst zbog novijih tehnologija slikanja ekrana koje nisu trenutno podržane.
+</P>
+<A NAME="toc39"></A>
+<H3>5.7. Navigacija sa mišem</H3>
+<P>
+Kada pomerate miš, NVDA po podrazumevanim podešavanjima prijavljuje tekst koji je ispod pokazivača miša dok pomerate miš.
+Gde je to podržano, NVDA će pročitati blizak pasus teksta, ali neke kontrole se mogu čitati samo po redovima.
+</P>
+<P>
+NVDA takođe može biti podešen da izgovori vrstu[objekta#Objects] ispod miša dok se pomera(na primer lista, dugme, i tako dalje.).
+Ovo može biti korisno za potpuno slepe korisnike, zbog toga što ponekad, tekst nije dovoljan.
+</P>
+<P>
+NVDA pruža način da saznate gde se miš nalazi tako što reprodukuje zvučne signale u zavisnosti od dimenzije ekrana.
+Što je miš visočije na ekranu, visočija je visina signala.
+Što je miš dalje od leve ili desne strane, signal će biti reprodukovan sa leve ili desne strane(ukoliko korisnik ima stereo zvučnike ili slušalice).
+</P>
+<P>
+Ove dodatne karakteristike miša nisu uključene po podrazumevanim podešavanjima u programu NVDA.
+Ako želite da iskoristite njihove prednosti, možete da ih podesite iz[podešavanja miša#MouseSettings], iz opcije podešavanja u NVDA meniu.
+</P>
+<P>
+Iako bi trebalo koristiti fizički miš za navigaciju sa mišem, NVDA ima nekoliko glavnih komandi koje su vezane za miš:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>opis</TH>
+</TR>
+<TR>
+<TD>Klik levog tastera miša| Numeričko podeljeno</TD>
+<TD>NVDA+[</TD>
+<TD>Izvršava levi klik tastera miša jednom. Dvostruki klik se može izvršiti brzim pritiskanjem ove komande dva puta|</TD>
+</TR>
+<TR>
+<TD>Zaključavanje levog tastera miša| Šift+numeričko podeljeno</TD>
+<TD>NVDA+control+[</TD>
+<TD>Zaključava levi taster miša. Pritisnite ponovo da ga otpustite. Da vučete miš, pritisnite ovu komandu a zatim ili pomerajte miš fizički ili koristite jednu od dostupnih komandi za prebacivanje miša|</TD>
+</TR>
+<TR>
+<TD>Desni klik miša| Numeričko puta</TD>
+<TD>NVDA+]</TD>
+<TD>Izvršava desni klik miša.</TD>
+</TR>
+<TR>
+<TD>Zaključavanje desnog tastera miša</TD>
+<TD>Šift+numeričko puta</TD>
+<TD>NVDA+control+]</TD>
+<TD>Zaključava desni taster miša. Pritisnite ponovo da ga otpustite. Da vučete miš, pritisnite ovu komandu a zatim ili pomerajte miš fizički ili koristite jednu od dostupnih komandi za prebacivanje miša|</TD>
+</TR>
+<TR>
+<TD>Prebaci miš na trenutni navigacioni objekat| NVDA+numeričko podeljeno</TD>
+<TD>NVDA+šift+m</TD>
+<TD>Pomera miš na lokaciju trenutnog navigacionog objekta i preglednog kursora|</TD>
+</TR>
+<TR>
+<TD>Navigacija do objekta ispod miša| NVDA+Numeričko puta</TD>
+<TD>NVDA+šift+n</TD>
+<TD>Postavlja navigacioni objekat na trenutnu lokaciju miša|</TD>
+</TR>
+</TABLE>
+
+<A NAME="BrowseMode"></A>
+<H2>6. Režim pretraživanja</H2>
+<P>
+Veći dokumenti koji su samo za čitanje kao što su Web stranice se pregledaju koristeći režim pretraživanja programa NVDA.
+Ovo uključuje dokumente u programima Mozilla Firefox, Microsoft Internet Explorer, Mozilla Thunderbird, HTML poruke u Microsoft Outlook, Google Chrome, Adobe Reader i Adobe Flash.
+Režim pretraživanja je takođe dostupan u Microsoft Word dokumentima.
+</P>
+<P>
+U režimu pretraživanja, tekst je predstavljen jednostavnije tako da možete da se krećete standardnim komandama kursora kao da koristite standardan tekstualni dokument.
+Sve komande programa NVDA<A HREF="#SystemCaret">za sistemski kursor</A> će raditi u ovom režimu; na primer izgovori sve, prijavi formatiranje, komande za kretanje kroz tabelu, i tako dalje.
+Informacije o tome da li je tekst link, naslov, i tako dalje. Se prijavljuju zajedno sa tekstom u toku kretanja.
+</P>
+<P>
+Ponekad, moraćete da koristite određene komande direktno u dokumentu.
+Na primer, ovo morate da radite u poljima za unos teksta i listama kako biste mogli da upisujete tekst i da koristite komande kursora.
+Ovo radite prebacivanjem u režim fokusiranja, gde su skoro svi tasteri prebačeni do kontrole.
+Kada ste u režimu pretraživanja, po podrazumevanim podešavanjima, NVDA će automatski preći u režim fokusiranja kada tasterom tab dođete do kontrole koja to zahteva.
+Slično, ako se koristi taster tab ili se aktivira kontrola koja ne zahteva režim fokusiranja bićete prebačeni u režim pretraživanja.
+Takođe možete pritisnuti enter ili razmak na kontrolama da se prebacujete između ovih režima.
+Ako se pritisne escape vratićete se u režim pretraživanja.
+Takođe, možete ručno ući u režim fokusiranja, kada će on ostati omogućen dok ga vi ne onemogućite.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prebacivanje režima| NVDA+razmak</TD>
+<TD>Prebacuje se između režima fokusiranja i režima pretraživanja|</TD>
+</TR>
+<TR>
+<TD>Izlaz iz režima fokusiranja| escape</TD>
+<TD>Vraća se u režim pretraživanja ako ste automatski ušli u režim fokusiranja|</TD>
+</TR>
+<TR>
+<TD>Osvežava dokument režima pretraživanja| NVDA+f5</TD>
+<TD>Ponavlja učitavanje trenutnog dokumenta(korisno ako određen sadržaj nedostaje u dokumentu. nije dostupno u programima Microsoft Word i Outlook.)</TD>
+</TR>
+<TR>
+<TD>Pronađi</TD>
+<TD>NVDA+control+f</TD>
+<TD>Otvara dijalog u kome možete da upišete tekst koji želite da pronađete u dokumentu|</TD>
+</TR>
+<TR>
+<TD>Pronađi sledeće| NVDA+f3</TD>
+<TD>Pretražuje sledeću pojavu teksta koji ste prethodno pretražili u dokumentu|</TD>
+</TR>
+<TR>
+<TD>Pronađi prethodno</TD>
+<TD>NVDA+šift+f3</TD>
+<TD>Pretražuje prethodnu pojavu teksta koju ste pronašli u dokumentu|</TD>
+</TR>
+<TR>
+<TD>Otvara duži opis| NVDA+d</TD>
+<TD>Otvara novi prozor koji sadrži duži opis elementa ako element ima duži opis.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc41"></A>
+<H3>6.1. Navigacija jednim slovom</H3>
+<P>
+Dok ste u režimu pretraživanja, za bržu navigaciju, NVDA takođe pruža prečice navigacije jednim slovom kako biste došli do posebnih elemenata.
+Napomena da nisu sve komande podržane u svim vrstama dokumenata.
+</P>
+<P>
+Sledeći tasteri skaču na sledeći dostupan element, dok dodavanje šift tastera skače na prethodni element:
+</P>
+<UL>
+<LI>h: Naslov
+<LI>l: Lista
+<LI>i: Stavka liste
+<LI>t: Tabela
+<LI>k: link
+<LI>n: Tekst koji nije link
+<LI>f: Polje unosa
+<LI>u: Neposećen link
+<LI>v: Posećen link
+<LI>e: Polje za unos teksta
+<LI>b: Dugme
+<LI>x: Izborno polje
+<LI>c: Izborni okvir
+<LI>r: radio dugme
+<LI>q: Citat
+<LI>s: separator
+<LI>m: Okvir
+<LI>g: Slika
+<LI>d: Region
+<LI>o: Umetnuti objekat
+<LI>1 do 6: Naslovi nivoa 1 do 6
+<LI>a: Napomena (komentar, revizija autora, i tako dalje.)
+<LI>w: Greška u pravopisu
+</UL>
+
+<P>
+Da se pomerate na početak i kraj elemenata kao što su liste i tabele:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Pomeri se na početak sadržaja| Šift+zarez</TD>
+<TD>Premešta se na početak sadržaja(lista, tabela, i tako dalje.) Gde se nalazi kursor|</TD>
+</TR>
+<TR>
+<TD>Pomeri se na kraj sadržaja| Zarez</TD>
+<TD>Pomera se na kraj sadržaja(liste, tabele, i tako dalje.) Gde se nalazi kursor|</TD>
+</TR>
+</TABLE>
+
+<P>
+Neke Web aplikacije kao što su Gmail, Twitter i Facebook koriste slova kao prečice.
+Ako želite da ih koristite i da u isto vreme koristite vaš kursor da čitate sadržaj u režimu pretraživanja, možete privremeno onemogućiti navigaciju slovima programa NVDA.
+Da isključite i uključite navigaciju slovima za trenutni dokument, pritisnite NVDA+šift+razmak.
+</P>
+<A NAME="toc42"></A>
+<H3>6.2. Lista elemenata</H3>
+<P>
+Lista elemenata pruža listu različitih vrsta elemenata dokumenta u zavisnosti od trenutne aplikacije.
+Na primer, u Web pretraživačima, Lista elemenata može prikazati listu linkova, naslova ili regiona.
+Radio dugme vam dozvoljava da menjate vrstu elementa.
+U dijalogu takođe postoji polje za unos teksta uz pomoć kojeg možete da pretražujete stranicu.
+Nakon što izaberete stavku, možete koristiti dva dugmeta u dijalogu da dođete do stavke ili da je aktivirate.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Lista elemenata u režimu pretraživanja</TD>
+<TD>NVDA+f7</TD>
+<TD>Prikazuje listu različitih vrsta elemenata u dokumentu|</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc43"></A>
+<H3>6.3. Umetnuti objekti</H3>
+<P>
+Stranice mogu uključiti obogaćene elemente koristeći tehnologije kao što su Adobe Flash i Sun Java, kao i aplikacije i dijaloge.
+Kada naiđete na njih u dokumentu režima pretraživanja, NVDA će izgovoriti"Umetnuti objekat", "Aplikacija" ili"Dijalog".
+Možete pritisnuti enter na ovakve objekte da ih aktivirate.
+Ako je pristupačan, možete koristiti taster tab za interakciju kao i u drugim aplikacijama.
+Postoji komanda za vraćanje na stranicu koja sadrži ovakav objekat:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Premesti se na sadržan dokument režima pretraživanja| NVDA+control+razmak</TD>
+<TD>Prebacuje fokus van umetnutog objekta i vraća ga na dokument koji ga sadrži|</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc44"></A>
+<H2>7. Čitanje matematičkog sadržaja</H2>
+<P>
+Koristeći program MathPlayer 4 kompanije Design Science, NVDA može čitati matematički sadržaj.
+Ovo zahteva da program MathPlayer 4 bude instaliran na računaru.
+MathPlayer je dostupan za besplatno preuzimanje sa: <A HREF="http://www.dessci.com/en/products/mathplayer/">http://www.dessci.com/en/products/mathplayer/</A>
+</P>
+<P>
+NVDA podržava sledeće vrste matematičkog sadržaja:
+</P>
+<UL>
+<LI>MathML u programima Mozilla Firefox, Microsoft Internet Explorer i  Google Chrome.
+<LI>Design Science vrsta matematike u programu Microsoft Word i PowerPoint. Ova vrsta mora prvo da bude instalirana da bi ovo radilo. Probna verzija je dovoljna.
+<LI>MathML u programu Adobe Reader. Napomena da ovo još uvek nije zvaničan standard, tako da trenutno nema javno dostupnog programa koji može praviti ovakav sadržaj.
+</UL>
+
+<P></P>
+<P>
+Kada čitate dokument, NVDA će izgovoriti sav podržan matematički sadržaj na mestima na kojima se pojavi.
+Ako koristite brajev red, takođe će biti prikazan na brajevom pismu.
+</P>
+<A NAME="toc45"></A>
+<H3>7.1. Interaktivna navigacija</H3>
+<P>
+Ako uglavnom radite uz govor, u većini slučajeva, želećete da pročitate izraz u manjim delovima, umesto da čujete ceo izraz odjednom.
+</P>
+<P>
+Ako ste u režimu pretraživanja, ovo možete uraditi tako što ćete pomeriti kursor na matematički sadržaj i pritisnuti enter.
+</P>
+<P>
+Ako niste u režimu pretraživanja:
+</P>
+<OL>
+<LI>Prebacite kursor na matematički sadržaj.
+Podrazumevano, pregledni kursor prati sistemski kursor, tako da obično možete da koristite sistemski kursor da dođete do sadržaja.
+<LI>Zatim, aktivirajte sledeću komandu:
+</OL>
+
+<P></P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Interakcija sa matematičkim sadržajem| NVDA+alt+m</TD>
+<TD>Počinje interakciju sa matematičkim sadržajem.</TD>
+</TR>
+</TABLE>
+
+<P>
+Nakon toga, možete koristiti komande programa MathPlayer kao što su strelice da istražujete sadržaj.
+Na primer, možete se pomerati kroz izraz koristeći strelice levo i desno kao i uveličati deo izraza strelicom dole.
+Molimo pročitajte dokumentaciju programa MathPlayer za više informacija.
+</P>
+<P>
+Kada želite da se vratite u dokument, jednostavno pritisnite taster escape.
+</P>
+<A NAME="toc46"></A>
+<H2>8. Brajevo pismo</H2>
+<P>
+Ako koristite brajev red, NVDA može prikazati informacije na brajevom pismu.
+Ako vaš brajev red ima tastaturu, takođe možete pisati u skraćenom i standardnom  brajevom pismu.
+</P>
+<P>
+Molimo pročitajte <A HREF="redovi#SupportedBrailleDisplays">podržani brajevi</A> deo za informacije o posebnim komandama za brajeve redove.
+Možete podesiti brajev red korišćenjem dijaloga [brajeva podešavanja#BrailleSettings].
+</P>
+<A NAME="toc47"></A>
+<H3>8.1. Skraćenice za vrste kontrola, stanje i orjentire</H3>
+<P>
+Kako bi što je više informacija moguće stalo na brajev red, sledeće skraćenice su dodate za vrste kontrola stanje kao i orjentire.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Skraćenica</TH>
+<TH>Vrsta kontrole</TH>
+</TR>
+<TR>
+<TD>app</TD>
+<TD>Aplikacija</TD>
+</TR>
+<TR>
+<TD>bqt</TD>
+<TD>Citat</TD>
+</TR>
+<TR>
+<TD>btn</TD>
+<TD>Dugme</TD>
+</TR>
+<TR>
+<TD>drbtn</TD>
+<TD>Dugme padajućeg menija|</TD>
+</TR>
+<TR>
+<TD>spnbtn</TD>
+<TD>Kružno dugme</TD>
+</TR>
+<TR>
+<TD>splbtn</TD>
+<TD>Dugme za razdvajanje|</TD>
+</TR>
+<TR>
+<TD>tgbtn</TD>
+<TD>Dugme prekidača</TD>
+</TR>
+<TR>
+<TD>cbo</TD>
+<TD>Izborni okvir</TD>
+</TR>
+<TR>
+<TD>chk</TD>
+<TD>Izborno polje</TD>
+</TR>
+<TR>
+<TD>dlg</TD>
+<TD>dialog</TD>
+</TR>
+<TR>
+<TD>doc</TD>
+<TD>Dokument</TD>
+</TR>
+<TR>
+<TD>edt</TD>
+<TD>Polje za unos teksta</TD>
+</TR>
+<TR>
+<TD>pwdedt</TD>
+<TD>Polje za unos lozinke</TD>
+</TR>
+<TR>
+<TD>Umetnuti</TD>
+<TD>Umetnuti objekat</TD>
+</TR>
+<TR>
+<TD>enote</TD>
+<TD>Završna napomena</TD>
+</TR>
+<TR>
+<TD>fnote</TD>
+<TD>Fusnote</TD>
+</TR>
+<TR>
+<TD>gra</TD>
+<TD>Slika|</TD>
+</TR>
+<TR>
+<TD>grp</TD>
+<TD>Grupisanje</TD>
+</TR>
+<TR>
+<TD>hN</TD>
+<TD>Naslov  na nivou n, na primer h1, h2.</TD>
+</TR>
+<TR>
+<TD>hlp</TD>
+<TD>Pomoćni balon</TD>
+</TR>
+<TR>
+<TD>lmk</TD>
+<TD>Orjentir</TD>
+</TR>
+<TR>
+<TD>lnk</TD>
+<TD>link</TD>
+</TR>
+<TR>
+<TD>lst</TD>
+<TD>Lista</TD>
+</TR>
+<TR>
+<TD>vlnk</TD>
+<TD>Posećen link</TD>
+</TR>
+<TR>
+<TD>mnu</TD>
+<TD>Meni</TD>
+</TR>
+<TR>
+<TD>mnubar</TD>
+<TD>Traka menija</TD>
+</TR>
+<TR>
+<TD>mnubtn</TD>
+<TD>Dugme menija</TD>
+</TR>
+<TR>
+<TD>mnuitem</TD>
+<TD>Stavka menija</TD>
+</TR>
+<TR>
+<TD>pnl</TD>
+<TD>panel</TD>
+</TR>
+<TR>
+<TD>prgbar</TD>
+<TD>Traka napredovanja</TD>
+</TR>
+<TR>
+<TD>rbtn</TD>
+<TD>radio dugme</TD>
+</TR>
+<TR>
+<TD>scrlbar</TD>
+<TD>Klizna traka</TD>
+</TR>
+<TR>
+<TD>sect</TD>
+<TD>Sekcija</TD>
+</TR>
+<TR>
+<TD>stbar</TD>
+<TD>Statusna traka</TD>
+</TR>
+<TR>
+<TD>tabctl</TD>
+<TD>Kontrola kartice</TD>
+</TR>
+<TR>
+<TD>tbl</TD>
+<TD>Tabela</TD>
+</TR>
+<TR>
+<TD>cN</TD>
+<TD>kolona tabele sa brojem  n, na primer c1, c2.</TD>
+</TR>
+<TR>
+<TD>rN</TD>
+<TD>Red tabele sa brojem n, na primer  r1, r2.</TD>
+</TR>
+<TR>
+<TD>term</TD>
+<TD>terminal</TD>
+</TR>
+<TR>
+<TD>tlbar</TD>
+<TD>Traka sa alatima</TD>
+</TR>
+<TR>
+<TD>tltip</TD>
+<TD>Opis alata</TD>
+</TR>
+<TR>
+<TD>tv</TD>
+<TD>Prikaz stabla</TD>
+</TR>
+<TR>
+<TD>tvbtn</TD>
+<TD>Dugme prikaza stabla</TD>
+</TR>
+<TR>
+<TD>tvitem</TD>
+<TD>Stavka prikaza stabla</TD>
+</TR>
+<TR>
+<TD>lv N</TD>
+<TD>Stavka prikaza stabla na nivou N|</TD>
+</TR>
+<TR>
+<TD>wnd</TD>
+<TD>Prozor</TD>
+</TR>
+<TR>
+<TD>⠤⠤⠤⠤⠤</TD>
+<TD>separator</TD>
+</TR>
+</TABLE>
+
+<P>
+Sledeći pokazivači stanja su takođe definisani:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Skraćenica</TH>
+<TH>Stanje kontrole</TH>
+</TR>
+<TR>
+<TD>...</TD>
+<TD>Prikazuje se kada objekat podržava automatsko dopunjavanje|</TD>
+</TR>
+<TR>
+<TD>⢎⣿⡱</TD>
+<TD>Prikazano kada objekat (Na primer dugme prekidača) je pritisnut|</TD>
+</TR>
+<TR>
+<TD>⢎⣀⡱</TD>
+<TD>Prikazano kada objekat (na primer dugme prekidača) nije pritisnut|</TD>
+</TR>
+<TR>
+<TD>⣏⣿⣹</TD>
+<TD>Prikazano kada je objekat (na primer izborno polje ) označen|</TD>
+</TR>
+<TR>
+<TD>⣏⣸⣹</TD>
+<TD>Prikazano kada je objekat (na primer izborno polje ) polovično označen|</TD>
+</TR>
+<TR>
+<TD>⣏⣀⣹</TD>
+<TD>Prikazano kada objekat (na primer izborno polje ) nije označen|</TD>
+</TR>
+<TR>
+<TD>-</TD>
+<TD>Prikazano kada objekat(na primer stavka prikaza stabla) se može skupiti|</TD>
+</TR>
+<TR>
+<TD>+</TD>
+<TD>Prikazano kada objekat(na primer stavka prikaza stabla) se može proširiti|</TD>
+</TR>
+<TR>
+<TD>***</TD>
+<TD>Prikazano kada naiđete na zaštićen dokument ili kontrolu|</TD>
+</TR>
+<TR>
+<TD>clk</TD>
+<TD>Prikazano kada se na objekat može kliknuti|</TD>
+</TR>
+<TR>
+<TD>cmnt</TD>
+<TD>Prikazano kada postoji komentar za ćeliju u tabeli ili deo teksta u dokumentu|</TD>
+</TR>
+<TR>
+<TD>frml</TD>
+<TD>Prikazano kada postoji formula u ćeliji tabele|</TD>
+</TR>
+<TR>
+<TD>Neispravan</TD>
+<TD>Prikazano kada dođe do neispravnog unosa|</TD>
+</TR>
+<TR>
+<TD>ldesc</TD>
+<TD>Prikazano kada objekat (obično slika) ima dug opis|</TD>
+</TR>
+<TR>
+<TD>mln</TD>
+<TD>Prikazano kada polje za unos teksta dozvoljava unos više redova na primer polja za unos komentara na sajtovima|</TD>
+</TR>
+<TR>
+<TD>req</TD>
+<TD>Prikazano kada je polje za unos obavezno|</TD>
+</TR>
+<TR>
+<TD>ro</TD>
+<TD>Prikazano kada objekat(na primer polje za unos teksta) je samo za čitanje|</TD>
+</TR>
+<TR>
+<TD>sel</TD>
+<TD>Prikazano kada je objekat izabran|</TD>
+</TR>
+<TR>
+<TD>nsel</TD>
+<TD>Prikazano kada objekat nije izabran|</TD>
+</TR>
+<TR>
+<TD>sorted asc</TD>
+<TD>Prikazano kada je objekat sortiran uzlazno|</TD>
+</TR>
+<TR>
+<TD>sorted desc</TD>
+<TD>Prikazano kada je objekat sortiran silazno|</TD>
+</TR>
+<TR>
+<TD>submnu</TD>
+<TD>Prikazano kada objekat ima dodatni prozor(obično podmeni)</TD>
+</TR>
+</TABLE>
+
+<P>
+Takođe, sledeće skraćenice za orjentire su definisane:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Skraćenica</TH>
+<TH>Orjentir</TH>
+</TR>
+<TR>
+<TD>bnnr</TD>
+<TD>baner</TD>
+</TR>
+<TR>
+<TD>cinf</TD>
+<TD>Informacije o sadržaju</TD>
+</TR>
+<TR>
+<TD>cmpl</TD>
+<TD>Dodatni</TD>
+</TR>
+<TR>
+<TD>form</TD>
+<TD>Formular</TD>
+</TR>
+<TR>
+<TD>main</TD>
+<TD>Glavni</TD>
+</TR>
+<TR>
+<TD>navi</TD>
+<TD>Navigacija|</TD>
+</TR>
+<TR>
+<TD>srch</TD>
+<TD>Pretraga</TD>
+</TR>
+<TR>
+<TD>rgn</TD>
+<TD>region</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc48"></A>
+<H3>8.2. Brajev unos</H3>
+<P>
+NVDA podržava unos skraćenog i standardnog brajevog pisma.
+Možete izabrati brajevu tabelu koja se koristi za prevod korišćenjem <A HREF="#BrailleInputTable">opcije ulazna tabela</A> u dijalogu brajeva podešavanja.
+</P>
+<P>
+Kada se koristi standardan brajev unos, tekst se ubacuje čim se napiše.
+Kada se koristi skraćen brajev unos, tekst se ubacuje kada pritisnete razmak ili enter na kraju reči.
+Napomena da brajev prevod uzima u obzir samo reč koju upišete i ne može zavisiti od prethodnih reči.
+Na primer, ako koristite brajev  kod u kojem brojevi počinju sa znakom za broj i ako pritisnete taster za brisanje da dođete do kraja broja, moraćete ponovo da upišete znak za broj za dodatne brojeve.
+</P>
+<P>
+Pritiskanje tačke 7 briše zadnji upisan znak.
+Tačka 8 prevodi bilo koji brajev unos i pritiska enter.
+Pritiskanje tačke7 i 8 prevodi brajev unos, bez pritiskanja tastera enter.
+</P>
+<A NAME="toc49"></A>
+<H2>9. Prepoznavanje sadržaja</H2>
+<P>
+Kada autori ne pruže dovoljno informacija za korisnike čitača ekrana o sadržaju, razni alati se mogu koristiti za pokušaj prepoznavanja sadržaja sa slike.
+NVDA podržava optičko prepoznavanje znakova (eng. OCR) funkciju koja je ugrađena u Windows 10 za prepoznavanje teksta sa slike.
+Dodatni pružaoci prepoznavanja se mogu dobiti instaliranjem NVDA dodataka.
+</P>
+<P>
+Kada koristite komandu za prepoznavanje sadržaja, NVDA prepoznaje sadržaj trenutnog <A HREF="#ObjectNavigation">navigacionog objekta</A>.
+Po podrazumevanim podešavanjima, navigacioni objekat prati sistemski fokus ili kursor režima pretraživanja, tako da obično možete jednostavno da pomerite kursor na mesto na koje je potrebno.
+Na primer, ako pomerite kursor režima pretraživanja na sliku, prepoznavanje će prepoznati tekst te slike po podrazumevanim podešavanjima.
+Ali, možda ćete takođe želeti da koristite navigaciju objekata, da na primer, prepoznate sadržaj prozora cele aplikacije.
+</P>
+<P>
+Kada je prepoznavanje završeno, rezultat će biti prikazan u dokumentu koji je sličan režimu pretraživanja, kako biste mogli da čitate informacije pomeranjem kursora, i drugim komandama.
+Pritiskanje tastera enter aktivira (izvršava klik miša ) tekst na poziciji kursora ako je moguće.
+Pritiskanje tastera ESC odbacuje rezultat prepoznavanja.
+</P>
+<A NAME="Win10Ocr"></A>
+<H3>9.1. Windows 10 OCR</H3>
+<P>
+Windows 10 uključuje  OCR za puno jezika.
+NVDA može da koristi ovo za prepoznavanje teksta sa slika ili nepristupačnih aplikacija.
+</P>
+<P>
+Možete podesiti jezik za prepoznavanje korišćenjem <A HREF="#Win10OcrSettings">Windows 10 OCR</A> dijaloga podešavanja.
+Dodatni jezici se mogu instalirati otvaranjem start menija, biranjem opcije podešavanja, zatim opcije vreme i jezik -&gt; region i jezik a nakon toga izabrati opciju dodaj jezik.
+</P>
+<P>
+Da prepoznate tekst trenutnog navigacionog objekta koristeći Windows 10 OCR, pritisnite NVDA+r.
+</P>
+<A NAME="toc51"></A>
+<H2>10. Posebne karakteristike za aplikacije</H2>
+<P>
+NVDA pruža određene dodatne karakteristike za neke aplikacije koje ili omogućavaju lakše izvršavanje određenog zadatka ili čine delove koji nisu bili pristupačni korisnicima čitača ekrana aplikacije pristupačnim .
+</P>
+<A NAME="toc52"></A>
+<H3>10.1. Microsoft Word</H3>
+<A NAME="toc53"></A>
+<H4>10.1.1. Automatsko čitanje zaglavlja kolona i redova</H4>
+<P>
+NVDA može automatski čitati zaglavlja redova i kolona tabela u programu Microsoft Word.
+Ovo zahteva da opcija prijavi zaglavlja redova i kolona bude uključena u formatiranju dokumenta.
+Takođe, NVDA mora da zna koje kolone ili redovi sadrže zaglavlje tabele.
+Nakon što dođete do prve ćelije koja sadrži zaglavlja redova i kolona, koristite jednu od sledećih komandi:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Postavi zaglavlja kolona| NVDA+šift+c</TD>
+<TD>Ako se pritisne jednom govori programu NVDA da je ovo prva ćelija koja sadrži red sa zaglavljem kolona, koja treba automatski biti izgovorena kada se pomerate ispod kolona ovog reda. Pritiskanje dva puta briše podešavanje.</TD>
+</TR>
+<TR>
+<TD>Podesi zaglavlje redova| NVDA+šift+r</TD>
+<TD>Ako se pritisne jednom govori programu NVDA da je ovo prva ćelija koja sadrži kolone zaglavlja redova, Što treba automatski biti izgovoreno kada se krećete između kolona ovog reda. Pritiskanje dva puta briše podešavanje.</TD>
+</TR>
+</TABLE>
+
+<P>
+Ova podešavanja se čuvaju u dokumentu kao markeri i kompatibilna su sa drugim čitačima ekrana kao što je Jaws.
+Ovo znači da korisnici drugih čitača ekrana koji kasnije otvore ovaj dokument već imaju podešena zaglavlja redova i kolona.
+</P>
+<A NAME="toc54"></A>
+<H4>10.1.2. Režim pretraživanja u programu Microsoft Word</H4>
+<P>
+Slično Webu, režim pretraživanja može da se koristi u programu Microsoft Word u cilju brze navigacije i pristupu liste elemenata.
+Da uključite ili isključite režim pretraživanja u programu Microsoft Word, pritisnite NVDA+razmak.
+Za dodatne informacije o režimu pretraživanja i brzoj navigaciji, pogledajte[deo režim pretraživanja#BrowseMode].
+</P>
+<H5>10.1.2.1. Lista elemenata</H5>
+<P>
+Dok ste u režimu pretraživanja u programu Microsoft Word, možete pristupiti listi elemenata komandom NVDA+f7.
+Lista elemenata može prikazati naslove, linkove, napomene (što uključuje komentare i praćenje izmena) i greške(trenutno ograničeno na greške u pravopisu).
+</P>
+<A NAME="toc55"></A>
+<H4>10.1.3. Prijavljivanje komentara</H4>
+<P>
+Da čujete bilo koji komentar na trenutnoj poziciji kursora, pritisnite NVDA+alt+c.
+Svi komentari za dokument, zajedno sa drugim ispraćenim promenama, mogu se takođe prikazati u listi elemenata kada izaberete napomene kao tip elemenata.
+</P>
+<A NAME="toc56"></A>
+<H3>10.2. Microsoft Excel</H3>
+<A NAME="toc57"></A>
+<H4>10.2.1. Automatsko čitanje zaglavlja redova i kolona</H4>
+<P>
+NVDA može automatski izgovarati ispravna zaglavlja redova i kolona kada se krećete kroz Excel radne listove.
+Ovo zahteva da opcija prijavi zaglavlja redova i kolona bude uključena u formatiranju dokumenta.
+Takođe, NVDA mora da zna koje kolone ili redovi sadrže zaglavlje tabele.
+Nakon što dođete do prve ćelije koja sadrži zaglavlja redova i kolona, koristite jednu od sledećih komandi:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Postavi zaglavlja kolona| NVDA+šift+c</TD>
+<TD>Ako se pritisne jednom govori programu NVDA da je ovo prva ćelija koja sadrži red sa zaglavljem kolona, koja treba automatski biti izgovorena kada se pomerate ispod kolona ovog reda. Pritiskanje dva puta briše podešavanje.</TD>
+</TR>
+<TR>
+<TD>Podesi zaglavlje redova| NVDA+šift+r</TD>
+<TD>Ako se pritisne jednom govori programu NVDA da je ovo prva ćelija koja sadrži kolone zaglavlja redova, Što treba automatski biti izgovoreno kada se krećete između kolona ovog reda. Pritiskanje dva puta briše podešavanje.</TD>
+</TR>
+</TABLE>
+
+<P>
+Ova podešavanja će biti upisana u radnu svesku kompatibilna sa drugim čitačima ekrana kao što je Jaws.
+Ovo znači da korisnici drugih čitača ekrana koji kasnije otvore ovu radnu svesku automatski imaju zaglavlja redova i kolona podešeni. 
+</P>
+<A NAME="toc58"></A>
+<H4>10.2.2. Lista elemenata</H4>
+<P>
+Slično Webu, NVDA ima listu elemenata za Microsoft excel koja vam dozvoljava pristup različitim vrstama informacija.
+Da pristupite listi elemenata u programu Excel, pritisnite NVDA+f7.
+Različite vrste informacija u listi elemenata su:
+</P>
+<UL>
+<LI>Grafikoni: Ovo prikazuje sve grafikone na aktivnom radnom listu. 
+Izbor grafikona i pritiskanje tastera enter ili aktiviranje dugmeta za pomeranje na element fokusira grafikon za čitanje i navigaciju sa strelicama.
+<LI>Komentari: Ovo prikazuje sve ćelije na aktivnom radnom listu koje sadrže komentare. 
+Adresa ćelije je prikazana zajedno sa njenim komentarom. 
+Pritiskanje entera ili dugmeta za pomeranje na element će vas prebaciti na tu ćeliju.
+<LI>Formule: Ovo prikazuje sve ćelije na trenutnom radnom listu koje sadrže formule. 
+Adresa ćelije je prikazana zajedno sa formulom za svaku ćeliju.
+Pritiskanje entera ili dugmeta za pomeranje na element će vas prebaciti na tu ćeliju. 
+<LI>Listovi: Ovo prikazuje sve listove u trenutnoj radnoj svesci. 
+Pritiskanje tastera f2 na nekom od listova vam dozvoljava da preimenujete list. 
+Pritiskanje entera ili dugmeta za pomeranje na element vam dozvoljava da pređete na taj list.
+<LI>Polja za unos: Ovo prikazuje sva polja za unos na trenutnom listu.
+Za svako polje, lista elemenata prikazuje alternativan tekst polja zajedno sa adresama ćelija koje pokriva.
+Pritiskanje entera ili dugmeta za pomeranje na element vas prebacuje na to polje u režimu pretraživanja.
+</UL>
+
+<P></P>
+<A NAME="toc59"></A>
+<H4>10.2.3. Prijavljivanje komentara</H4>
+<P>
+Da čujete sve komentare za trenutno fokusiranu ćeliju, pritisnite NVDA+alt+c.
+Svi komentari za radni list se takođe mogu prikazati u listi elemenata.
+</P>
+<A NAME="toc60"></A>
+<H4>10.2.4. Čitanje zaštićenih ćelija</H4>
+<P>
+Ako je radna sveska zaštićena, neće biti moguće pomeranje fokusa na ćelije koje su zaključane za uređivanje.
+Da biste dozvolili pomeranje na zaključane ćelije, prebacite se u režim pretraživanja pritiskajući NVDA+space, a zatim koristite standardne Excel komande za kretanje kao što su strelice za pomeranje na sve ćelije na trenutnom radnom listu.
+</P>
+<A NAME="toc61"></A>
+<H4>10.2.5. Polja za unos</H4>
+<P>
+Excel radni listovi mogu da sadrže polja za unos.
+Možete da im pristupite iz liste elemenata ili tasterima f i šift+f u navigaciji jednim slovom.
+Nakon što dođete do polja za unos u režimu pretraživanja, možete da pritisnete enter ili razmak da aktivirate kontrolu ili pređete u režim fokusiranja, u zavisnosti od kontrole.
+Za dodatne informacije o režimu pretraživanja i navigaciji jednim slovom, pročitajte[deo režim pretraživanja#BrowseMode].
+</P>
+<A NAME="toc62"></A>
+<H3>10.3. Microsoft PowerPoint</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Uključi i isključi čitanje napomena za predavača| kontrol+šift+s</TD>
+<TD>Kada ste u slajd šou koji je pokrenut, ova komanda prebacuje između čitanja napomena za predavača i čitanja slajdova. Ovo uključuje samo šta NVDA čita, a ne šta je prikazano na ekranu.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc63"></A>
+<H3>10.4. foobar2000</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi preostalo vreme| Kontrol+šift+r</TD>
+<TD>Prijavljuje preostalo vreme pesme koja se trenutno reprodukuje, ukoliko se nešto reprodukuje.</TD>
+</TR>
+</TABLE>
+
+<P>
+Napomena: prečica za prijavljivanje preostalog vremena radi samo sa podrazumevanim formatom statusne trake programa Foobar2000.
+</P>
+<A NAME="toc64"></A>
+<H3>10.5. Miranda IM</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi jednu od poslednjih poruka| NVDA+kontrol+1-4</TD>
+<TD>Prijavljuje jednu od poslednjih poruka, u zavisnosti od pritisnutog broja; Na primer NVDA+kontrol+2 čita drugu najnoviju poruku.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc65"></A>
+<H3>10.6. Poedit</H3>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prijavi prozor sa komentarima</TD>
+<TD>Kontrol+šift+c</TD>
+<TD>Prijavljuje sve komentare u prozoru sa komentarima.</TD>
+</TR>
+<TR>
+<TD>Prijavi napomene za prevodioce| Kontrol+šift+a</TD>
+<TD>Prijavljuje sve napomene za prevodioce.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc66"></A>
+<H3>10.7. Skype</H3>
+<P>
+Kada ste u ćaskanju:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Pregled poruke| NVDA+Kontrol+1-0</TD>
+<TD>Prijavljuje i pomera pregledni kursor na jednu od poslednjih poruka, u zavisnosti od pritisnutog broja; Na primer NVDA+Kontrol+2 čita drugu najnoviju poruku.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc67"></A>
+<H3>10.8. Kindle za PC</H3>
+<P>
+NVDA Podržava čitanje knjiga u programu Amazon Kindle za PC.
+Ovo je dostupno samo za knjige sa"čitač ekrana: Podržan" oznakom što možete da proverite na stranici sa detaljima knjige.
+</P>
+<P>
+Režim pretraživanja se koristi za čitanje knjiga.
+Automatski je omogućen kada otvorite knjigu ili se fokusirate na prostor knjige.
+Stranice se automatski menjaju kada pomerate kursor ili koristite komandu izgovori sve.
+Možete ručno preći na prethodnu stranicu tasterom page up ili na sledeću tasterom page down.
+</P>
+<P>
+Navigacija jednim slovom je podržana za slike i linkove, ali samo na trenutnoj stranici.
+Navigacija linkovima takođe uključuje fusnote.
+</P>
+<A NAME="toc68"></A>
+<H4>10.8.1. Izbor teksta</H4>
+<P>
+Kindle vam dozvoljava više različitih funkcija sa izabranim tekstom, uključujući pretragu definicije iz rečnika, dodavanje napomena i obeležavanje, kopiranje teksta u privremenu memoriju i pretraga Weba.
+Da to uradite, izaberite tekst kao i obično u režimu pretraživanja korišćenjem tastera šift i tastera za pomeranje kursora.
+Kada izaberete tekst, pritisnite aplikacioni taster ili šift+f10 kako biste prikazali opcije za rad sa odabranim tekstom.
+Ako uradite ovo kada nema izabranog teksta, opcije će biti prikazane za reč na kojoj se nalazi kursor.
+</P>
+<A NAME="toc69"></A>
+<H4>10.8.2. Korisničke napomene</H4>
+<P>
+Možete dodati napomenu za reč ili deo teksta.
+Da uradite ovo, prvo izaberite željen tekst i pristupite opcijama izbora koje su opisane iznad.
+Zatim, izaberite dodaj napomenu.
+</P>
+<P>
+Kada čitate u režimu pretraživanja, NVDA smatra ove napomene kao komentare.
+</P>
+<P>
+Da prikažete, uredite ili obrišete napomenu:
+</P>
+<OL>
+<LI>Prebacite kursor na tekst koji sadrži napomenu.
+<LI>Pristupite opcijama izbora koje su opisane iznad.
+<LI>Izaberite uredi napomenu.
+</OL>
+
+<P></P>
+<A NAME="toc70"></A>
+<H2>11. Podešavanje programa NVDA</H2>
+<A NAME="toc71"></A>
+<H3>11.1. Podešavanja</H3>
+<P>
+Većina podešavanja programa NVDA može biti promenjena korišćenjem dodatnih dijaloga koji se nalaze u podmeniju podešavanja NVDA menija.
+U svim dijalozima podešavanja programa NVDA, pritisnite dugme uredu da prihvatite promene koje ste izvršili.
+Da otkažete promene, pritisnite dugme otkaži ili taster escape.
+Neka podešavanja takođe mogu biti promenjena korišćenjem prečica, koje su prikazane u sekcijama ispod.
+</P>
+<P>
+Napomena da po podrazumevanim podešavanjima, nije moguće pristupiti svim dijalozima podešavanja koristeći ulazne komande(komande sa tastature, pokreti sa ekrana osetljivog na dodir, itd.).
+Ako želite da pristupite dijalozima koji nemaju dodeljene prečice, koristite<A HREF="komande#InputGestures">dijalog ulazne</A> da dodate prilagođenu prečicu za taj dijalog.
+</P>
+<A NAME="toc72"></A>
+<H4>11.1.1. Opšta podešavanja (NVDA+kontrol+g)</H4>
+<P>
+Dijalog opšta podešavanja se nalazi u podmeniju podešavanja.
+Sadrži sledeće opcije:
+</P>
+<H5>Jezik</H5>
+<P>
+Ovo je izborni okvir koji vam dozvoljava da izaberete jezik interfejsa i poruka programa NVDA.
+Postoji puno jezika, ali podrazumevana opcija je"Korisnički podrazumevani, Windows".
+Ova opcija govori programu NVDA da koristi onaj jezik na kojem je Windows trenutno.
+</P>
+<P>
+Napomena da NVDA mora biti ponovo pokrenut kada menjate jezik.
+NVDA će vas pitati da li želite ponovo da ga pokrenete ako promenite izbor.
+Pritisnite uredu, i NVDA će se ponovo pokrenuti.
+</P>
+<H5>Sačuvaj podešavanja pri izlazu</H5>
+<P>
+Ova opcija je izborno polje koje, kada je označeno, govori programu NVDA da automatski sačuva podešavanja pri izlazu.
+</P>
+<H5>Prikazivanje dodatnih opcija kada izađete iz programa NVDA</H5>
+<P>
+Ova opcija je izborno polje koje kontroliše da li pri izlazu treba da se pokaže dijalog koji vas pita šta želite da uradite.
+Kada je označeno, dijalog će se pojaviti kada izađete iz programa NVDA koji vas pita da li želite da izađete, ponovo pokrenete program ili ponovo pokrenete program bez dodataka.
+Kada nije označeno, NVDA će odmah izaći.
+</P>
+<H5>Reprodukuj zvukove kada se NVDA zaustavlja i pokreće</H5>
+<P>
+Ova opcija je izborno polje koje, kada je označeno, govori programu NVDA da reprodukuje zvukove kada se pokreće ili zaustavlja.
+</P>
+<H5>Nivo evidentiranja u dnevniku</H5>
+<P>
+Ovo je izborni okvir koji vam dozvoljava da izaberete koliko će evidencije NVDA voditi u svom dnevniku dok je pokrenut.
+Obično korisnici ovo ne treba da menjaju kako se nebi evidentiralo previše informacija.
+Ali, ako želite da pružite dodatne informacije kada prijavljujete grešku, može biti korisna opcija.
+</P>
+<H5>Automatski pokreni NVDA nakon što se prijavim u Windows</H5>
+<P>
+Ako je ova opcija omogućena, NVDA će se pokrenuti odmah nakon što se prijavite u Windows.
+Ova opcija je dostupna samo za instalirane kopije programa NVDA.
+</P>
+<H5>Koristi NVDA na Windows ekranu za prijavljivanje (zahteva administratorske privilegije)</H5>
+<P>
+Ako se prijavljujete u Windows upisivanjem korisničkog imena i lozinke, omogućavanjem ove opcije NVDA će se pokrenuti na ekranu za prijavljivanje.
+Ova opcija je dostupna samo za instalirane kopije programa NVDA.
+</P>
+<H5>Koristi trenutno sačuvana podešavanja na ekranu za prijavljivanje i drugim bezbednosnim ekranima (zahteva administratorske privilegije )</H5>
+<P>
+Pritiskanje ovog dugmeta kopira trenutno sačuvana podešavanja programa NVDA u folder sistemskih podešavanja, tako da NVDA može da ih koristi kada je pokrenut na ekranu za prijavljivanje, ekranu kontrole korisničkog naloga(UAC) i drugim bezbednim Windows ekranima.
+Da se uverite da su sva vaša podešavanja uspešno prebačena, prvo sačuvajte vaša podešavanja prečicom kontrol+NVDA+c ili opciom sačuvaj podešavanja u NVDA meniju.
+Ova opcija je dostupna samo za instalirane kopije programa NVDA.
+</P>
+<H5>Automatski proveri dostupna ažuriranja za NVDA</H5>
+<P>
+Ako je ovo omogućeno, NVDA će automatski proveravati novija ažuriranja i obavestiće vas ako je novije ažuriranje dostupno.
+Možete takođe ručno proveriti ažuriranja izborom opcije proveri ažuriranja u meniju pomoć NVDA menija.
+</P>
+<A NAME="toc73"></A>
+<H4>11.1.2. Izbor sintetizatora(NVDA+kontrol+s)</H4>
+<P>
+Dijalog sintetizator, koji se nalazi u delu"sintetizator..." u meniju podešavanja, vam dozvoljava da izaberete koji sintetizator NVDA treba da koristi u toku izgovaranja.
+Nakon što izaberete sintetizator, možete aktivirati dugme uredu i NVDA će učitati izabrani sintetizator.
+Ako dođe do greške pri učitavanju sintetizatora, NVDA će vas obavestiti porukom, i nastaviće da koristi prethodni sintetizator.
+</P>
+<H5>Sintetizator</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete sintetizator koji NVDA treba da koristi za izgovor.
+</P>
+<P>
+Za listu sintetizatora koje NVDA podržava, molimo pročitajte<A HREF="govora#SupportedSpeechSynths">podržani sintetizatori</A> deo.
+</P>
+<P>
+Jedna posebna stavka koja je uvek prisutna u ovoj listi je"nema govora", koja vam dozvoljava da koristite NVDA bez govornog izlaza.
+Ovo može biti korisno za one koji žele da koriste NVDA sa brajevim redom, ili za programere sa normalnim vidom koji žele da koriste pregled govora.
+</P>
+<H5>Izlazni uređaj</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete zvučnu karticu kroz koju sintetizator govora treba da govori.
+</P>
+<H5>Režim stišavanja pozadinskih zvukova</H5>
+<P>
+Komanda: NVDA+šift+d
+</P>
+<P>
+Na Windowsu 8 i novijim, ova opcija vam dozvoljava da izaberete da li NVDA treba da utiša druge aplikacije u toku izgovaranja, ili uvek kada je NVDA pokrenut.
+</P>
+<UL>
+<LI>Bez stišavanja pozadinskih zvukova: NVDA neće nikada utišati druge zvukove. 
+<LI>Utišaj pozadinske zvukove u toku izgovaranja: NVDA će utišati druge zvukove samo u toku izgovaranja ili reprodukcije svojih zvukova. Ovo možda neće raditi za sve sintetizatore. 
+<LI>Uvek utišaj pozadinske zvukove: NVDA će utišati ostale zvukove dok god je pokrenut.
+</UL>
+
+<P></P>
+<P>
+Ova opcija je dostupna samo ako je NVDA instaliran.
+Nije moguće podržati stišavanje pozadinskih zvukova za privremene i prenosive kopije programa NVDA.
+</P>
+<A NAME="VoiceSettings"></A>
+<H4>11.1.3. Glasovna podešavanja(NVDA+control+v)</H4>
+<P>
+Dijalog glasovna podešavanja, koji se nalazi u meniju podešavanja, sadrži opcije koje vam dozvoljavaju da promenite kako govor zvuči.
+Za brži način menjanja opcija govora bilo gde da se nalazite, pročitajte<A HREF="sintetizatora#SynthSettingsRing">brže menjanje podešavanja</A> deo.
+</P>
+<P>
+Dijalog glasovna podešavanja sadrži sledeće opcije:
+</P>
+<H5>Glas</H5>
+<P>
+Prvi izborni okvir na koji naiđete u ovom dijalogu prikazuje sve glasove trenutnog sintetizatora koje imate instalirane.
+Možete koristiti strelice da čujete različite glasove.
+Strelice levo i gore vas pomeraju gore u listi, dok vas strelice desno i dole pomeraju dole u listi.
+</P>
+<H5>Varijanta</H5>
+<P>
+Ako koristite sintetizator Espeak NG koji dolazi uz NVDA, ovo je izborni okvir uz pomoć kojeg birate varijantu kojom sintetizator treba da govori.
+Varijante sintetizatora Espeak NG su više kao glasovi, zbog toga što oni pružaju izmenjene atribute Espeak NG glasu.
+Neke varijante će zvučati kao muškarac, neke kao žena, a neke čak i kao žaba.
+</P>
+<H5>Brzina</H5>
+<P>
+Ova opcija vam dozvoljava da promenite brzinu glasa.
+Ovo je klizač koji ide od 0 do 100, (gde je 0 naj sporije, a 100 je naj brže).
+</P>
+<H5>Visina</H5>
+<P>
+Ova opcija vam dozvoljava da promenite visinu trenutnog glasa.
+To je klizač koji ide od 0 do 100, (gde je 0 naj niža visina a 100 je naj viša).
+</P>
+<H5>Jačina</H5>
+<P>
+Ova opcija je klizač koji ide od 0 do 100, (gde je 0 minimalna jačina a 100 maksimalna jačina).
+</P>
+<H5>Modulacija</H5>
+<P>
+Ova opcija je klizač koji vam dozvoljava da izaberete sa kojom modulacijom(menjanje intonacije) sintetizator treba da govori. (Jedini sintetizator koji pruža ovu opciju trenutno je eSpeak NG).
+</P>
+<H5>Automatska promena jezika</H5>
+<P>
+Ova opcija je izborno polje koje kontroliše da li izabran sintetizator treba da menja svoj jezik kada se čita tekst koji je prikazao jezik.
+Ova opcija je omogućena po podrazumevanim podešavanjima.
+Trenutno samo Espeak NG podržava automatsku promenu jezika.
+</P>
+<H5>Automatska promena dijalekta</H5>
+<P>
+Ovo izborno polje vam dozvoljava da kontrolišete da li se dijalekat treba menjati, a ne samo jezik.
+Na primer, ako čitate tekst na Američkom Engleskom ali dokument je na Britanskom Engleskom, sintetizator će promeniti akcenat ako je ova opcija omogućena.
+Ova opcija je onemogućena po podrazumevanim podešavanjima.
+</P>
+<H5>Nivo izgovora znakova interpunkcije/simbola</H5>
+<P>
+Komanda: NVDA+p
+</P>
+<P>
+Ovo vam dozvoljava da izaberete količinu simbola koji trebaju biti izgovoreni kao reči.
+Na primer, kada je opcija podešena na sve simbole, svi simboli će biti izgovoreni kao reči.
+Ova opcija se primenjuje na sve sintetizatore, ne samo na trenutno aktivnog sintetizatora.
+</P>
+<H5>Koristi jezik glasa za obradu znakova i simbola</H5>
+<P>
+Uključena po podrazumevanim podešavanjima, ova opcija govori programu NVDA da li treba koristiti jezik trenutnog glasa za izgovor simbola.
+Ako primetite da NVDA čita simbole na pogrešnom jeziku za trenutni glas, možda ćete želeti da isključite ovu opciju kako bi NVDA koristio svoj podrazumevani jezik.
+</P>
+<H5>Procenat promene visine za velika slova</H5>
+<P>
+Ovo polje za unos teksta vam dozvoljava da upišete vrednost u kojoj visina glasa treba da se menja za velika slova.
+Ova vrednost je procenat, gde negativna vrednost smanjuje visinu a pozitivna je povećava.
+Ako ne želite promene u visini možete upisati 0.
+</P>
+<H5>Izgovori "Veliko" pre velikog slova</H5>
+<P>
+Ovo podešavanje je izborno polje koje, kada je označeno, govori programu NVDA da izgovori reč"veliko" pre svakog velikog slova kada se čita kao samostalan znak na primer u toku sricanja.
+Obično, NVDA poveća visinu za svako veliko slovo, ali neki sintetizatori možda ne podržavaju ovo, pa ova opcija može biti korisna.
+</P>
+<H5>Pišti za velika slova</H5>
+<P>
+Ako je ovo izborno polje označeno, NVDA će reprodukovati zvučni signal kada naiđe na veliko slovo.
+Kao i"izgovori veliko za velika slova" izborno polje, ovo je korisno za sintetizatore koji ne mogu da menjaju visinu za velika slova.
+</P>
+<A NAME="VoiceSpellingFunctionality"></A>
+<H5>Iskoristi funkciju sricanja ako je podržana</H5>
+<P>
+Neke reči sadrže samo jedno slovo, ali izgovor se razlikuje u zavisnosti od toga da li se znak izgovara kao jedan znak(kao u toku sricanja) ili reč.
+Na primer, na Engleskom, "a" je reč i slovo i izgovara se različito u oba slučaja.
+Ova opcija dozvoljava sintetizatoru da razlikuje ova dva slučaja ako sintetizator to podržava.
+Većina sintetizatora ovo podržava.
+</P>
+<P>
+Ova opcija bi obično trebala da bude omogućena.
+Ali, neki Microsoft Speech API sintetizatori ne podržavaju ovo i čudno se ponašaju kada je opcija omogućena.
+Ako imate probleme sa izgovorom pojedinačnih slova, pokušajte da onemogućite ovu opciju.
+</P>
+<A NAME="SynthSettingsRing"></A>
+<H4>11.1.4. Krug sintetizatora</H4>
+<P>
+Ako želite brzo da menjate podešavanja govora bez ulaza u dijalog glasovnih podešavanja, NVDA ima nekoliko komandi za pomeranje kroz neka od često korišćenih podešavanja govora:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Desktop komanda</TH>
+<TH>Laptop komanda</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>Prebaci se na sledeće podešavanje govora| NVDA+kontrol+strelica desno</TD>
+<TD>NVDA+šift+kontrol+strelica desno</TD>
+<TD>Premešta se na sledeće dostupno podešavanje govora, vraćajući se na prvo podešavanje nakon poslednjeg|</TD>
+</TR>
+<TR>
+<TD>Premešta se na prethodno podešavanje govora</TD>
+<TD>NVDA+kontrol+strelica levo</TD>
+<TD>NVDA+šift+kontrol+strelica levo</TD>
+<TD>Premešta se na prethodno podešavanje govora, vraćajući se na poslednje podešavanje nakon prvog|</TD>
+</TR>
+<TR>
+<TD>Povećaj trenutno podešavanje govora| NVDA+kontrol+strelica gore</TD>
+<TD>NVDA+šift+kontrol+strelica gore</TD>
+<TD>Povećava trenutno podešavanje govora na kome se nalazite. Na primer povećava brzinu, bira sledeći glas, pojačava ton|</TD>
+</TR>
+<TR>
+<TD>Smanjuje trenutno podešavanje govora| NVDA+kontrol+strelica dole</TD>
+<TD>NVDA+šift+kontrol+strelica dole</TD>
+<TD>Smanjuje trenutno podešavanje govora na kome se nalazite. Na primer smanjuje brzinu, bira prethodni glas, smanjuje ton|</TD>
+</TR>
+</TABLE>
+
+<A NAME="BrailleSettings"></A>
+<H4>11.1.5. Podešavanja brajevog reda</H4>
+<P>
+Dijalog podešavanja brajevog reda se može aktivirati iz menija podešavanja u NVDA meniju.
+</P>
+<H5>Brajev red</H5>
+<P>
+Prva opcija u ovom dijalogu na koju naiđete je izborni okvir koji se zove"brajev red".
+Imaćete nekoliko opcija u zavisnosti od dostupnih drajvera za brajeve redove na vašem sistemu.
+Pomerajte se kroz ove opcije koristeći strelice.
+</P>
+<P>
+Bez brajevog reda znači da ne koristite brajev red.
+</P>
+<P>
+Molimo pročitajte<A HREF="redovi#SupportedBrailleDisplays">podržani brajevi</A> deo za više informacija o podržanim brajevim redovima.
+</P>
+<H5>Port</H5>
+<P>
+Ova opcija, ako je dostupna, vam dozvoljava da izaberete koji port ili vrsta veze se koristi za komunikaciju sa brajevim redom.
+To je izborni okvir koji sadrži dostupne opcije za vaš brajev red.
+</P>
+<P>
+Po podrazumevanim podešavanjima, NVDA koristi automatsko prepoznavanje porta, što znači da će veza sa brajevim redom automatski biti uspostavljena skeniranjem dostupnih USB i Bluetooth uređaja na sistemu.
+Ali, za neke brajeve redove, moćićete da izaberete koji port treba da se koristi.
+Česte opcije su"Automatski" (što govori programu NVDA da koristi podrazumevano automatsko prepoznavanje porta), "USB", "Bluetooth" i serijski portovi ako vaš brajev red podržava ovu vrstu komunikacije.
+</P>
+<P>
+Ova opcija neće biti dostupna ako vaš brajev red podržava samo automatsko prepoznavanje porta.
+</P>
+<P>
+Možete pogledati dokumentaciju za vaš brajev red u delu<A HREF="redovi#SupportedBrailleDisplays">podržani brajevi</A> za više detalja o podržanim komunikacijama i vrstama portova.
+</P>
+<H5>Izlazna tabela</H5>
+<P>
+Sledeća opcija u ovom dijalogu je izborni okvir izlazna tabela.
+U ovom izbornom okviru, pronaćićete različite brajeve tabele za različite jezike, brajeve standarde i stepene.
+Izabrana tabela će se koristiti za prevod teksta na brajevo pismo za prikazivanje na vašem brajevom redu.
+Možete se pomerati po tabelama koristeći strelice.
+</P>
+<A NAME="BrailleInputTable"></A>
+<H5>Ulazna tabela</H5>
+<P>
+Nakon prethodne opcije, sledeća opcija na koju ćete naići je izborni okvir za izbor ulazne tabele.
+Izabrana tabela će se koristiti za prevođenje unetog teksta na brajevoj tastaturi u tekst.
+Možete se pomerati kroz tabele sa strelicama.
+</P>
+<P>
+Napomena da je ova opcija korisna samo ako vaš brajev red ima brajevu tastaturu i ako je ona podržana od strane odgovarajućeg drajvera.
+Ako unos nije podržan na brajevom redu koji ima tastaturu, ovo će biti napomenuto u<A HREF="redovi#SupportedBrailleDisplays">delu podržani brajevi</A>.
+</P>
+<H5>Proširi na kompjuterski brajev kod za reč na poziciji kursora</H5>
+<P>
+Ova opcija dozvoljava da reč na poziciji kursora bude prikazana na kompjuterskom brajevom kodu.
+</P>
+<H5>Prikaži kursor</H5>
+<P>
+Ova opcija dozvoljava da isključite i uključite brajev kursor.
+Primenjuje se na sistemski i pregledni kursor, ali ne i na pokazivač izabranog teksta.
+</P>
+<H5>Treperenje kursora</H5>
+<P>
+Ova opcija dozvoljava brajevom kursoru da treperi.
+Ako je treperenje isključeno, brajev kursor će uvek biti na"gornjoj" poziciji.
+Ova opcija ne utiče na pokazivač izbora, uvek izbor pokazuju tačke 7 i 8 bez treperenja.
+</P>
+<H5>Brzina treperenja kursora(milisekundi)</H5>
+<P>
+Ova opcija je brojčano polje koje vam dozvoljava da promenite brzinu treperenja kursora.
+</P>
+<H5>Oblik kursora za fokus</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete oblik(raspored tačaka) brajevog kursora kada brajev red prati fokus.
+Ova opcija ne utiče na pokazivač izbora, uvek izbor pokazuju tačke 7 i 8 bez treperenja.
+</P>
+<H5>Oblik kursora za pregled</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete oblik(raspored tačaka) brajevog kursora kada brajev red prati pregled.
+Ova opcija ne utiče na pokazivač izbora, uvek izbor pokazuju tačke 7 i 8 bez treperenja.
+</P>
+<H5>Vreme isteka poruke (u sekundama)</H5>
+<P>
+Ova opcija je brojčano polje koje bira koliko dugo se poruke zadržavaju na brajevom redu.
+Upisivanje broja 0 isključuje ovakve poruke.
+</P>
+<H5>Beskonačno prikaži poruke</H5>
+<P>
+Ova opcija dozvoljava da NVDA poruke budu beskonačno prikazane na brajevom redu.
+</P>
+<A NAME="BrailleTether"></A>
+<H5>brajev red vezan za</H5>
+<P>
+Komanda: NVDA+control+t
+</P>
+<P>
+Ova opcija vam dozvoljava da izaberete da li brajev red treba da prati sistemski fokus, ili navigacioni objekat/ pregledni kursor.
+</P>
+<H5>Čitaj po pasusima</H5>
+<P>
+Ako je omogućeno, brajevo pismo će se prikazivati po pasusima umesto po redovima.
+Takođe, komande za sledeći i prethodni red će se pomerati po pasusima.
+Ovo znači da ne morate da pomerate brajev red na kraju reda svaki put čak i kada više teksta može da stane na njemu.
+Ovo može poboljšati čitanje dužih tekstova.
+Onemogućeno je po podrazumevanim opcijama.
+</P>
+<H5>Izbegavaj razdvajanje reči kada je moguće</H5>
+<P>
+Ako je ovo omogućeno, reč koja je previše velika da stane na kraju brajevog reda se neće odvajati.
+Umesto toga, ostaće određen prazan prostor na kraju reda.
+Kada pomerite red, moćićete da pročitate celu reč.
+Ovo se takođe zove"vraćanje reči".
+Napomena da ako je reč previše velika da sama stane na brajev red, reč mora da se odvoji.
+</P>
+<P>
+Ako je ovo onemogućeno, onoliko koliko je moguće će biti prikazano, ali ostatak će biti odvojen.
+Kada pomerite red, moćićete da pročitate celu reč.
+</P>
+<P>
+Uključivanje ove opcije može dozvoliti lepše čitanje, ali obično zahteva više pomeranja brajevog reda.
+</P>
+<H5>Predstavljanje sadržaja fokusa</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete koje informacije NVDA treba da prikaže na brajevom redu kada neki objekat dobije fokus.
+u informacije o sadržaju spada hierarhija objekata sa fokusom.
+Na primer, kada se fokusirate na stavku liste, ova stavka liste je deo liste.
+Ova lista može biti u dijalogu, i tako dalje.
+Molimo pogledajte deo o <A HREF="#ObjectNavigation">navigaciji objekata</A> za više informacija o hierarhiji koja važi za objekte u programu  NVDA.
+</P>
+<P>
+Kada je podešen da prikaže promene na brajevom redu, NVDA će pokušati da prikaže što je više informacija moguće na brajevom redu, ali samo za delove sadržaja koji su promenjeni.
+Za primer iznad, ovo znači da kada prebacite fokus na listu, NVDA će prikazati stavku liste na brajevom redu.
+Takođe, ako ima dovoljno prostora na brajevom redu, NVDA će pokazati da je stavka liste deo liste.
+Ako nakon toga počnete da se krećete kroz listu koristeći strelice, podrazumeva se da znate da ste idalje u listi.
+Zbog toga, za preostale stavke na koje se fokusirate, NVDA će prikazati samo fokusiranu stavku na brajevom redu.
+Kako biste mogli da pročitate sadržaj ponovo(npr. da ste u listi i da je lista deo dijaloga), morate da pomerite vaš brajev red nazad.
+</P>
+<P>
+Kada  je ova opcija podešena da uvek popuni brajev red, NVDA će pokušati da prikaže što je više informacija moguće na brajevom redu, bez obzira na to da li ste videli ove informacije ranije.
+Ovo ima prednost da će NVDA uvek popuniti brajev red.
+Ali, mana je da je mesto na kome je prikazan fokus na brajevom redu uvek različito.
+Ovo može učiniti težim prelazak kroz veliku listu, na primer, budući da ćete stalno morati da pomerate prst da biste našli stavku.
+Ovo je bilo podrazumevano podešavanje za  NVDA 2017.2 i starije verzije.
+</P>
+<P>
+Kada podesite opciju predstavljanja sadržaja fokusa da prikaže informacije o sadržaju samo kada pomerate brajev red unazad, NVDA nikada ne prikazuje informacije o sadržaju na brajevom redu.
+Zbog toga, u primeru iznad, NVDA će prikazati da ste se fokusirali na stavku liste.
+Ali, da biste pročitali sadržaj (npr. da ste u listi i da je lista deo dijaloga), moraćete da vratite brajev red unazad.
+</P>
+<P>
+Da biste menjali opcije predstavljanja sadržaja fokusa bilo gde, molimo podesite komandu koristeći <A HREF="#InputGestures">dijalog ulazne komande</A>.
+</P>
+<A NAME="toc77"></A>
+<H4>11.1.6. Podešavanja tastature(NVDA+kontrol+k)</H4>
+<P>
+Ovaj dijalog se nalazi u meniju podešavanja, u opciji"podešavanja tastature...".
+Sadrži sledeće opcije:
+</P>
+<H5>Raspored tastature</H5>
+<P>
+Ovaj izborni okvir vam dozvoljava da izaberete koji raspored tastature NVDA treba da koristi. Trenutno dva rasporeda koji dolaze uz NVDA su desktop i laptop.
+</P>
+<H5>Koristite caps lock kao NVDA taster</H5>
+<P>
+Ako je ovo izborno polje označeno, capslock može da se koristi kao NVDA taster.
+</P>
+<H5>Koristi prošireni insert kao NVDA taster</H5>
+<P>
+Ako je ovo izborno polje označeno, prošireni insert taster(obično iznad strelica, blizu tastera home i end) može da se koristi kao NVDA taster.
+</P>
+<H5>Koristi numerički insert kao NVDA taster</H5>
+<P>
+Ako je ovo izborno polje označeno, insert taster na numeričkoj tastaturi može da se koristi kao NVDA taster.
+</P>
+<P>
+Ako niste izabrali nijedan taster kao NVDA taster možda nećete imati pristup nekim komandama programa NVDA.
+Zbog toga, dijalog za podešavanja tastature će prikazati grešku ako pritisnete taster uredu kada nijedan taster nije označen.
+Nakon što odbacite poruku sa greškom, morate označiti barem jedan taster pre nego što zatvorite dijalog.
+</P>
+<H5>Izgovaraj ukucane znakove</H5>
+<P>
+Komanda: NVDA+2
+</P>
+<P>
+Kada je omogućeno, NVDA će izgovoriti sve znakove koje upišete na tastaturi.
+</P>
+<H5>Izgovaraj ukucane reči</H5>
+<P>
+Komanda: NVDA+3
+</P>
+<P>
+Kada je omogućeno, NVDA će izgovoriti sve reči koje upišete na tastaturi.
+</P>
+<H5>Prekid u izgovoru ukucanih znakova</H5>
+<P>
+Ako je uključena, ova opcija će izazvati prekid govora uvek kada se upiše novi znak. Uključena je po podrazumevanim podešavanjima.
+</P>
+<H5>Prekid izgovora za taster Enter</H5>
+<P>
+Ako je uključena, ova opcija će izazvati prekid govora kada se pritisne taster Enter. Uključena je po podrazumevanim podešavanjima.
+</P>
+<H5>Dozvoli površno čitanje u Izgovori sve režimu</H5>
+<P>
+Ako je uključeno, određene komande navigacije(kao što je brza navigacija u režimu pretraživanja i kretanje po redovima i pasusima) ne zaustavljaju režim izgovori sve, već ovaj režim nastavlja čitanje i skače na novu poziciju.
+</P>
+<H5>Pišti ako se kucaju mala slova kada je uključen taster za velika slova</H5>
+<P>
+Kada je omogućeno, pištanje upozorenja će se čuti kada se slova pišu dok se drži taster šift i taster caps lock je uključen.
+Obično, pisanje ovakvih slova je nenamerno i dešava se kada ne znamo da je caps lock uključen.
+Zbog toga, može biti veoma korisno da dobijete upozorenje o tome.
+</P>
+<H5>Izgovaraj komandne tastere</H5>
+<P>
+Komanda: NVDA+4
+</P>
+<P>
+Kada je omogućeno, NVDA će izgovoriti sve tastere koji nisu znakovi na tastaturi. Ovo uključuje kombinacije kao što su kontrol+ dodatno slovo.
+</P>
+<H5>reprodukuj zvukove za greške u pravopisu u toku pisanja</H5>
+<P>
+Kada je omogućeno, kratak zvučni signal će biti reprodukovan kada napravite grešku u toku pisanja.
+Ova opcija je dostupna samo ako je opcija prijavi greške u pravopisu omogućena u<A HREF="#DocumentFormattingSettings">podešavanjima formatiranja dokumenta</A>.
+</P>
+<H5>Kontroliši tastere iz drugih aplikacija</H5>
+<P>
+Ova opcija vam dozvoljava da kontrolišete da li tasteri pritisnuti od strane drugih aplikacija kao što su aplikacije za prepoznavanje govora i tastature na ekranu NVDA treba da koristi. 
+Ova opcija je uključena po podrazumevanim podešavanjima, ali određeni korisnici će možda želeti da je isključe, na primer oni koji pišu Vijetnamski sa programom Unikey kako nebi dobili neispravne znakove.
+</P>
+<A NAME="MouseSettings"></A>
+<H4>11.1.7. Podešavanja miša(NVDA+kontrol+m)</H4>
+<P>
+Dijalog podešavanja miša se nalazi u meniju podešavanja, opcija"podešavanja miša...".
+Sadrži sledeće opcije:
+</P>
+<H5>Izveštavaj o promenama oblika miša</H5>
+<P>
+Izborno polje, koje kada je označeno znači da će NVDA izgovoriti oblik miša kada se promeni.
+miš u Windowsu menja oblik da prikaže određene informacije kao što su kada nešto može da se uredi, ili kada se nešto učitava.
+</P>
+<H5>Omogući praćenje miša</H5>
+<P>
+Komanda: NVDA+m
+</P>
+<P>
+Kada je omogućeno, NVDA će izgovoriti tekst ispod miša, dok ga pomerate po ekranu. Ovo vam dozvoljava da pronađete stvari na ekranu, fizičkim pomeranjem miša, umesto da ih tražite navigaciom objekata.
+</P>
+<H5>Rezolucija jedinice teksta</H5>
+<P>
+Ako je NVDA podešen da izgovori tekst ispod miša dok ga pomerate, ova opcija vam dozvoljava da izaberete koliko teksta će biti izgovoreno.
+Opcije su znak, reč, red i pasus.
+</P>
+<H5>Prijavi funkciju kada miš uđe u objekat</H5>
+<P>
+Ako je ovo izborno polje označeno, NVDA će izgovoriti funkciju(vrstu) objekta dok pomerate miš.
+</P>
+<H5>Reprodukuj zvučne koordinate kada se miš pomera</H5>
+<P>
+Kada je ovo izborno polje označeno NVDA reprodukuje zvučne signale u toku pomeranja miša, kako bi korisnik mogao da zna gde se miš nalazi na ekranu.
+Što je miš visočije na ekranu, visočija je visina pištanja.
+Što je miš više udaljen od leve ili desne strane, signal će biti reprodukovan na levoj ili desnoj strani(ako korisnik ima stereo zvučnike ili slušalice).
+</P>
+<H5>Osvetljenje kontroliše jačinu zvučnih koordinata</H5>
+<P>
+Ako je izborno polje"reprodukuj zvučne koordinate dok se miš pomera" označeno, onda kada se označi ovo polje jačina zvučnih koordinata zavisi od svetline ekrana na delu ispod miša.
+Ovo polje nije označeno po podrazumevanim podešavanjima.
+</P>
+<A NAME="toc79"></A>
+<H4>11.1.8. Podešavanja preglednog kursora</H4>
+<P>
+Nalazi se u meniju podešavanja opcija"pregledni kursor...".
+Ovaj dijalog sadrži sledeće opcije:
+</P>
+<H5>Prati sistemski fokus</H5>
+<P>
+Komanda: NVDA+7
+</P>
+<P>
+Kada je omogućeno, pregledni kursor će uvek biti postavljen na objekat sistemskog fokusa kada se fokus promeni.
+</P>
+<H5>Prati sistemski kursor</H5>
+<P>
+Komanda: NVDA+6
+</P>
+<P>
+Kada je omogućeno, pregledni kursor će uvek biti postavljen na poziciju sistemskog kursora kada kursor promeni poziciju.
+</P>
+<H5>Prati kursor miša</H5>
+<P>
+Kada je omogućeno, pregledni kursor prati miš u toku pomeranja.
+</P>
+<H5>Jednostavan režim pregleda</H5>
+<P>
+Kada je omogućeno, NVDA će filtrirati objekte u toku pregleda kako bi isključio objekte koji nisu bitni za korisnika; na primer nevidljivi objekti i objekti koji se koriste samo u svrhu izgleda.
+</P>
+<P>
+Da isključite i uključite režim jednostavnog pregleda bilo gde, dodajte prilagođenu komandu koristeći<A HREF="komande#InputGestures">dijalog za ulazne</A>.
+</P>
+<A NAME="toc80"></A>
+<H4>11.1.9. Podešavanja predstavljanja objekata(NVDA+kontrol+o)</H4>
+<P>
+Nalazi se u meniju podešavanja opcija"predstavljanje objekata...".
+Ovaj dijalog sadrži sledeće opcije:
+</P>
+<H5>Prijavi opise alata</H5>
+<P>
+Izborno polje koje kada je označeno govori programu NVDA da čita opise alata kada se pojave.
+Puno prozora i kontrola prikazuju male poruke(ili opise alata) Kada pomerite miš preko njih, ili nekada kada se fokusirate na njih.
+</P>
+<H5>Prijavi balone za pomoć</H5>
+<P>
+Ovo polje za potvrdu kada je označeno govori programu NVDA da čita balone za pomoć kada se pojave.
+Baloni za pomoć su kao opisi alata, ali su obično veći, i obaveštavaju o sistemskim događajima kao što su isključivanje mrežnog kabla, ili da vas upozore o Windows sigurnosnim problemima.
+</P>
+<H5>Prijavi prečice sa tastature za objekte</H5>
+<P>
+Kada je ovo izborno polje označeno, NVDA će uključiti prečicu koju neka kontrola poseduje kada čita tu kontrolu.
+Na primer meni datoteka na traci menija može imati prečicu alt+f.
+</P>
+<H5>Prijavi informacije o poziciji objekta</H5>
+<P>
+Ova opcija vam dozvoljava da izaberete da li želite da čujete poziciju objekta(na primer 1 od 4) kada se krećete po objektima fokusiranjem ili objekatskom navigaciom.
+</P>
+<H5>Pogodi poziciju &amp;objekta kada nije dostupna</H5>
+<P>
+Ako je prijavljivanje informacija o poziciji uključeno, ova opcija govori programu NVDA da pogodi informacije o poziciji kada nisu dostupne za neku kontrolu.
+</P>
+<P>
+Kada je uključena, NVDA će prijaviti informacije o poziciji za više kontrola kao što su meniji i alatne trake, ali ove informacije mogu biti neprecizne.
+</P>
+<H5>Prijavi opis objekta</H5>
+<P>
+Nemojte označiti ovo polje ako ne želite da čujete opis zajedno sa objektom.
+</P>
+<H5>Informacije o traci napredovanja</H5>
+<P>
+Komanda: NVDA+u
+</P>
+<P>
+Ova opcija kontroliše kako NVDA prijavljuje ažuriranja trake napredovanja.
+</P>
+<P>
+Ima sledeće opcije:
+</P>
+<UL>
+<LI>Isključeno: Promene trake napredovanja neće biti prijavljene.
+<LI>Izgovaranje: Ova opcija govori programu NVDA da izgovara promene trake napredovanja. Svaki put kada se traka napredovanja promeni, NVDA će izgovoriti novu vrednost.
+<LI>Pištanja: Ova opcija govori programu NVDA da reprodukuje pištanja kada se traka napredovanja promeni. Što su pištanja visočija, traka napredovanja je bliža kraju.
+<LI>Pištanja i izgovaranje: Ova opcija govori programu NVDA da izgovara i reprodukuje pištanja za promene trake napredovanja.
+</UL>
+
+<P></P>
+<H5>Obaveštavaj o pozadinskim trakama napredovanja</H5>
+<P>
+Ovo je opcija koja, kada je označena, govori programu NVDA da obaveštava o traci napredovanja, čak i kada je u pozadini.
+Ako umanjite ili izađete iz prozora koji sadrži traku napredovanja, NVDA će nastaviti da je prati, što vam dozvoljava da radite druge stvari dok vas NVDA obaveštava o trakama napredovanja.
+</P>
+<H5>Obaveštavaj o dinamičkim promenama sadržaja</H5>
+<P>
+Komanda: NVDA+5
+</P>
+<P>
+Uključuje i isključuje izgovor novog sadržaja a posebno objekata kao što su terminali i istorije ćaskanja.
+</P>
+<H5>Reprodukuj zvuk kada se pojave automatski predlozi</H5>
+<P>
+Uključuje i isključuje prijavu pojave automatskih predloga, i ako je omogućeno, NVDA će reprodukovati zvuk.
+Automatski predlozi su lista predloga na osnovu teksta koji je upisan u određenim poljima pretrage ili dokumentima.
+Na primer, kada upišete tekst u start meni Windowsa Vista ili novijeg, Windows prikazuje listu predloga na osnovu upisanog teksta.
+Za određena polja pretrage u Windowsu 10, NVDA vas može obavestiti da se lista predloga pojavila kada upišete tekst u polje.
+Lista automatskih predloga će se zatvoriti kada izađete iz polja za unos, i za neka polja, NVDA vas može obavestiti o tome.
+</P>
+<A NAME="toc81"></A>
+<H4>11.1.10. Podešavanja ulaznog sastava</H4>
+<P>
+Podešavanja ulaznog sastava se nalaze u meniju podešavanja.
+Ovaj dijalog vam dozvoljava da podesite kako NVDA izgovara unos azijskih znakova, kao što je unos sa IME ili unos tekstualnih servisa.
+Napomena da zbog toga što se metodi unosa razlikuju u zavisnosti od toga koje informacije pružaju, naj verovatnije će biti potrebno da podesite ulazna podešavanja za svaku vrstu unosa posebno za najbolje pisanje.
+</P>
+<H5>Automatski izvesti o svim dostupnim kandidatima</H5>
+<P>
+Ova opcija, koja je podrazumevano uključena,  vam dozvoljava da izaberete da li treba prijaviti sve kandidate kada se pojave ili kada se promeni stranica.
+Ova opcija je korisna za unose kao što su Kineski novi ChangJie ili Boshiami, kako biste mogli odmah da čujete sve simbole i brojeve i možete odmah da ih izaberete.
+Ali, za fonetske unose kao što su Kineski novi fonetski, možda će biti korisnije da isključite ovu opciju, budući da će sve informacije zvučati isto i moraćete da proverite svaki kandidat ručno kako biste čuli opise znakova.
+</P>
+<H5>Izgovori izabran kandidat</H5>
+<P>
+Ova opcija, uključena po podrazumevanim podešavanjima, kontroliše da li NVDA treba da izgovara izabran kandidat kada se izbor menja ili kada pristupite listi kandidata.
+Za unose gde se izbor može menjati sa strelicama(kao što su Kineski novi fonetski) ovo je potrebno, ali za neke unose pisanje će biti efikasnije sa ovom opcijom isključenom.
+Napomena da i kada je ova opcija isključena, pregledni kursor će biti postavljen na izabran kandidat kako biste mogli da koristite pregledni kursor/navigaciju objekata kako biste mogli da pregledate kandidate.
+</P>
+<H5>Uvek uključi kratke opise za dostupne kandidate</H5>
+<P>
+Ova opcija, koja je omogućena po podrazumevanim podešavanjima, vam dozvoljava da izaberete da li NVDA treba da pruži kratak opis za kandidate, ili kada je izabran ili kada se lista kandidata pojavi.
+Napomena da za jezike kao što je Kineski, izgovor opisa za dodatne kandidate se ne menja.
+Ova opcija može biti korisna za Korejski i Japanski.
+</P>
+<H5>Prijavi izmene u nizu karaktera koji se čita</H5>
+<P>
+Neki metodi znosa kao što su Chinese novi fonetski i novi ChangJie imaju niz čitanja(takođe zvan niz pre sastava).
+Možete izabrati da li se ove promene prijavljuju.
+Ova opcija je uključena po podrazumevanim podešavanjima.
+Napomena da neki stariji metodi unosa kao što su Kineski ChangJie možda neće imati niz čitanja, ali će koristiti niz sastava. Molimo pogledajte sledeću opciju za podešavanje niza sastava.
+</P>
+<H5>Prijavi promene u nizu sastava</H5>
+<P>
+Nakon što se podaci povežu u spravan simbol, većina metoda unosa to čuva u niz sastava.
+Ova opcija bira da li će NVDA prijaviti ovakve simbole.
+Uključena je po podrazumevanim podešavanjima.
+</P>
+<A NAME="toc82"></A>
+<H4>11.1.11. Podešavanja režima pretraživanja(NVDA+control+b)</H4>
+<P>
+Dijalog za podešavanja režima pretraživanja se nalazi u meniju podešavanja, opcija"režim pretraživanja...".
+</P>
+<P>
+Dijalog sadrži sledeće opcije:
+</P>
+<H5>Maksimalan broj znakova u jednom redu</H5>
+<P>
+Ovo polje postavlja maksimalnu dužinu reda u režimu pretraživanja(u znakovima).
+</P>
+<H5>Broj redova po stranici</H5>
+<P>
+Ovo polje podešava za koliko redova ćete se pomeriti tasterima page up i page down u režimu pretraživanja.
+</P>
+<H5>Koristi izgled ekrana</H5>
+<P>
+Komanda: NVDA+v
+</P>
+<P>
+Ova opcija kontroliše da li u režimu pretraživanja sadržaj kao što su linkovi i druga polja treba da bude u posebnom redu, ili u tekstu onako kako se vizuelno pojavljuju na ekranu. Ako je opcija omogućena sadržaj će ostati onakav kakav se vizuelno prikazuje, ali ako je onemogućena polja će biti u posebnim redovima.
+</P>
+<H5>Automatski Izgovori sve režim kada se učita stranica</H5>
+<P>
+Ovo izborno polje uključuje i isključuje automatsko čitanje stranice u režimu pretraživanja kada se učita.
+Ova opcija je omogućena po podrazumevanim podešavanjima.
+</P>
+<H5>Uključi tabele za izgled</H5>
+<P>
+Ova opcija menja kako NVDA učitava tabele koje se koriste za izgled.
+Kada je uključena, NVDA će ih smatrati kao normalne tabele, i prijavljivaće ih na osnovu<A HREF="dokumenta#DocumentFormattingSettings">podešavanja formatiranja</A> i dolazak na njih uz pomoć brze navigacije je moguć.
+Kada je isključena, neće biti izgovorene niti je ih moguće naći brzom navigacijom.
+Ali, sadržaj tabela će biti uključen kao normalan tekst.
+Ova opcija je isključena po podrazumevanim podešavanjima.
+</P>
+<H5>Podešavanje prijavljivanja polja kao što su linkovi i naslovi</H5>
+<P>
+Molimo pročitajte opcije u<A HREF="dokumenta#DocumentFormattingSettings">dijalogu podešavanja formatiranja</A> da podesite polja koja se prijavljuju u toku navigacije, kao što su linkovi, naslovi i tabele.
+</P>
+<H5>Automatski režim fokusiranja za promene fokusa</H5>
+<P>
+Ova opcija dozvoljava aktiviranje režima fokusiranja ako se fokus promeni.
+Na primer, kada ste na Web stranici, ako pritisnete tab i dođete do polja za unos, ako je ova opcija omogućena, režim fokusiranja će automatski biti aktiviran.
+</P>
+<H5>Automatski režim fokusiranja za pomeranje kursora</H5>
+<P>
+Ova opcija, kada je omogućena, dozvoljava programu NVDA da uđe i izađe iz režima fokusiranja kada koristite strelice.
+Na primer, ako koristite strelice da se krećete po Web stranici i dođete do polja za unos teksta, NVDA će automatski ući u režim fokusiranja. Ako izađete iz polja sa strelicama, NVDA će se vratiti u režim pretraživanja.
+</P>
+<H5>Zvučna potvrda za režime fokusiranja i pretraživanja</H5>
+<P>
+Ako je ova opcija omogućena, NVDA će reprodukovati posebne zvukove kada se prebacuje između režima fokusiranja i pretraživanja, umesto da izgovori promenu.
+</P>
+<H5>Spreči sve prečice koje nisu komande da dođu u susret sa dokumentom</H5>
+<P>
+Omogućena po podrazumevanim podešavanjima, ova opcija vam dozvoljava da izaberete da li tasteri(koji nisu komande), trebaju biti sprečeni da dođu do dokumenta na kome ste trenutno fokusirani. 
+Kao primer, ako je omogućena, ako se pritisne slovo j, neće doći do dokumenta, zato što nije komanda brze navigacije i verovatno da nije komanda aplikacije.
+</P>
+<A NAME="DocumentFormattingSettings"></A>
+<H4>11.1.12. Podešavanja formatiranja dokumenta(NVDA+kontrol+d)</H4>
+<P>
+Ovaj dijalog se nalazi u meniju podešavanja, opcija "Formatiranje dokumenta...".
+</P>
+<P>
+Većina izbornih polja u ovom dijalogu vam dozvoljava da izaberete informacije koje trebaju biti prijavljivane u toku kretanja kroz dokument.
+Na primer, ako označite polje prijavi ime fonta, kada dođete do teksta sa različitim fontom, ime fonta će biti izgovoreno.
+</P>
+<P>
+Opcije formatiranja dokumenta su organizovane po grupama.
+Možete podesiti prijavljivanje sledećih elemenata:
+</P>
+<UL>
+<LI>Font
+ <UL>
+ <LI>Ime fonta
+ <LI>Veličina fonta
+ <LI>Karakteristike fonta
+ <LI>Naglašenost teksta
+ <LI>Stil
+ <LI>Boje
+ </UL>
+<LI>Informacije o dokumentu
+ <UL>
+ <LI>Komentari
+ <LI>Uređivačke izmene
+ <LI>Greške u pravopisu
+ </UL>
+<LI>Strane i odvajanja
+ <UL>
+ <LI>Brojevi strana
+ <LI>Brojevi redova
+ <LI>Prijavljivanje uvlačenja redova<A HREF="#lineIndentationOptions">(isključeno, govor, tonovi, govor i tonovi)</A>
+ <LI>Uvlačenja pasusa(na primer puno uvlačenje, uvučen prvi red)
+ <LI>Odvajanje redova (Pojedinačno, dvostruko i tako dalje)
+ <LI>Poravnanje
+ </UL>
+<LI>Informacije o tabelama
+ <UL>
+ <LI>Tabele
+ <LI>Zaglavlja redova/kolona
+ <LI>Koordinati ćelija
+ <LI>Granice ćelija [(isključeno, stilovi, boje i stilovi)
+ </UL>
+<LI>Elementi
+ <UL>
+ <LI>Naslovi
+ <LI>Linkovi
+ <LI>Liste
+ <LI>Citati
+ <LI>Regioni
+ <LI>Okviri
+ <LI>Može se kliknuti
+ </UL>
+</UL>
+
+<P></P>
+<P>
+Da uključite i isključite ova podešavanja bilo gde, podesite prilagođene komande koristeći<A HREF="komande#InputGestures">dijalog ulazne</A>.
+</P>
+<H5>Prijavi promene formatiranja nakon pomeranja kursora</H5>
+<P>
+Ako je omogućena, ova opcija govori programu NVDA da pokuša da prepozna sve promene u formatiranju u toku izgovaranja redova, čak iako će to usporiti NVDA.
+</P>
+<P>
+Po podrazumevanim podešavanjima, NVDA će prepoznati formatiranje na poziciji sistemskog i preglednog kursora, i u nekim slučajevima može prepoznati formatiranje na ostatku reda, samo ako to neće usporiti program.
+</P>
+<P>
+Omogućite ovu opciju kada proveravate izgled dokumenata u programima kao što je WordPad, gde je formatiranje važno.
+</P>
+<A NAME="lineIndentationOptions"></A>
+<H5>Prijavljivanje uvlačenja redova</H5>
+<P>
+Ova opcija vam dozvoljava da podesite kako se uvlačenje na početku redova prijavljuje.
+Izborni okvir prijavi uvlačenje redova ima četiri opcije.
+</P>
+<UL>
+<LI>Isključeno: NVDA neće obraćati pažnju na uvlačenje redova.
+<LI>Govor: Ako je govor izabran, kada se količina uvlačenja promeni, NVDA će reći"dvanaest razmaka" ili"Četiri tabulatora."
+<LI>Tonovi: Ako su tonovi izabrani, kada se količina uvlačenja promeni, tonovi označavaju količinu uvlačenja.
+Ton će povećati visinu za svaki razmak, a za tabulator, povećaće visinu jednakoj četiri razmaka.
+<LI>Govor i tonovi: Ova opcija čita uvlačenja koristeći obe opcije.
+</UL>
+
+<P></P>
+<A NAME="Win10OcrSettings"></A>
+<H4>11.1.13. Windows 10 OCR podešavanja</H4>
+<P>
+Ovom dijalogu možete pristupiti iz menija podešavanja u NVDA meniju i dozvoljava vam da podesite <A HREF="#Win10Ocr">Windows 10 OCR</A>.
+</P>
+<H5>Jezik prepoznavanja</H5>
+<P>
+Ovaj izborni okvir vam dozvoljava da izaberete jezik za prepoznavanje teksta.
+</P>
+<A NAME="toc85"></A>
+<H4>11.1.14. Govorni rečnici</H4>
+<P>
+Meni govornog rečnika(koji se nalazi u meniju podešavanja) sadrži dijaloge koji vam dozvoljavaju da promenite kako NVDA izgovara reči ili fraze.
+Trenutno postoje tri vrste govornih rečnika.
+One su:
+</P>
+<UL>
+<LI>Podrazumevani: Pravila u ovom rečniku važe za celokupan izgovor programa NVDA.
+<LI>Glasovni: Pravila u ovom rečniku važe za glas koji se trenutno koristi.
+<LI>Privremeni: Pravila u ovom rečniku se primenjuju za celokupan govor u programu NVDA, ali samo za trenutno pokretanje. Ova pravila su privremena i biće izgubljena ako se NVDA ponovo pokrene.
+</UL>
+
+<P></P>
+<P>
+Morate podesiti prilagođenu komandu koristeći<A HREF="komande#InputGestures">dijalog ulazne</A> ako želite da otvorite neki od ovih dijaloga bilo gde.
+</P>
+<P>
+Svi dijalozi sadrže listu pravila koja se koriste za izgovor.
+Dijalog takođe sadrži tastere dodaj, uredi i ukloni.
+</P>
+<P>
+Da dodate novo pravilo u rečnik, aktivirajte dugme dodaj, popunite polja u dijalogu koji se pojavi i aktivirajte dugme uredu.
+Videćete novo pravilo u listi pravila.
+Ali, kako biste bili sigurni da se vaše pravilo sačuvalo, aktivirajte dugme uredu da izađete iz dijaloga rečnika kada završite sa uređivanjem i dodavanjem pravila.
+</P>
+<P>
+Pravila za NVDA govorne rečnike vam dozvoljavaju da promenite izgovor teksta.
+Na primer, možete napraviti pravilo koje govori da NVDA treba da izgovori reč"Žaba" umesto reči"Ptica" kada naiđete na reč"Ptica".
+U dijalogu za dodavanje pravila, najlakši način da uradite ovo je da upišete reč ptica u polju trenutni oblik, i reč žaba u polju zamene.
+Možda želite takođe da upišete opis pravila u polju za komentar(na primer: menja reč žaba u ptica).
+</P>
+<P>
+NVDA govorni rečnici su mnogo korisniji od jednostavne zamene reči.
+Dijalog za dodavanje pravila takođe sadrži izborno polje koje određuje da li pravilo treba da bude osetljivo na velika i mala slova(što znači da će NVDA obraćati pažnju na to da li su znakovi upisani velikim ili malim slovima.
+NVDA ignoriše veličinu po podrazumevanim podešavanjima).
+</P>
+<P>
+Takođe, različiti radio dugmići određuju da li će se vaš oblik primenjivati bilo gde, samo ako je cela reč ili kao"standardan izraz".
+Ako podesite oblik da se primenjuje kao cela reč oblik se primenjuje samo ako nije deo druge reči; to jest znak koji nije alfanumerički znak ili donja crta(ili kada nema znaka uopšte) se nalazi pre i posle oblika.
+Zbog toga, ako koristimo prethodni primer menjanja reči"Ptica" sa"Žaba", ako učinite ovo zamenom celih reči, neće zameniti reči"Ptice" ili "Ptici".
+</P>
+<P>
+Standardan izraz je poseban znak koji vam dozvoljava da promenite više znakova odjednom, ili promena svih brojeva, ili svih slova, kao nekoliko primera.
+Standardni izrazi nisu uključeni u ovo uputstvo, ali postoji puno uputstva na Webu koja vam mogu pružiti više informacija.
+</P>
+<A NAME="SymbolPronunciation"></A>
+<H4>11.1.15. Izgovor znakova interpunkcije/simbola</H4>
+<P>
+Ovaj dijalog vam dozvoljava da promenite način na koji se znakovi interpunkcije izgovaraju, kao i nivo simbola u kojem se izgovaraju.
+</P>
+<P>
+Jezik na kome uređujete simbole će biti prikazan u naslovu dijaloga.
+Napomena da ovaj dijalog poštuje opciju"Koristi jezik glasa za izgovor znakova" koja se nalazi u[dijalogu glasovnih podešavanja#VoiceSettings]; to jest koristi jezik glasa umesto jezika programa NVDA kada je ova opcija omogućena.
+</P>
+<P>
+Da promenite znak, prvo ga izaberite u listi simbola.
+</P>
+<UL>
+<LI>Polje zamene vam dozvoljava da promenite tekst koji se izgovara za ovaj znak.
+<LI>Koristeći polje nivoa, možete promeniti najniži nivo na kojem se ovaj simbol izgovara.
+<LI>Polje za slanje simbola sintetizatoru podešava kada treba poslati simbol(umesto zamenskog teksta) sintetizatoru.
+Ovo je korisno ako simbol izaziva pauzu u čitanju ili menjanje intonacije.
+Na primer, zarez izaziva pauzu u čitanju.
+Postoje tri opcije:
+ <UL>
+ <LI>Nikada: Nikada ne šalji simbol sintetizatoru.
+ <LI>Uvek: Uvek šalji simbol sintetizatoru.
+ <LI>Samo ispod nivoa simbola: Pošalji simbol sintetizatoru samo ako je trenutno podešen nivo simbola niži od nivoa za ovaj simbol.
+ Na primer, možda ćete koristiti ovo da simbol bude pročitan bez pauze na višim nivoima, dok se pauza koristi na nižim nivoima.
+ </UL>
+</UL>
+
+<P></P>
+<P>
+Možete dodati nove simbole koristeći dugme dodaj.
+U dijalogu koji se pojavi, upišite simbol i pritisnite dugme uredu.
+Zatim, promenite polja za simbol kao i za druge simbole.
+</P>
+<P>
+Možete ukloniti znak koji ste prethodno dodali koristeći dugme ukloni.
+</P>
+<P>
+Kada završite, pritisnite dugme uredu da sačuvate vaše promene ili otkaži da ih odbacite.
+</P>
+<A NAME="InputGestures"></A>
+<H4>11.1.16. Ulazne komande</H4>
+<P>
+U ovom dijalogu, možete prilagoditi ulazne komande(tastere na tastaturi, tastere na brajevom реду, итд.) За НВДА команде.
+</P>
+<P>
+Само команде које су доступне када се дијалог отвори су приказане.
+На пример, ако желите да прилагодите команде режима претраживанја, отворите дијалог за улазне команде када сте у режиму претраживанја.
+</P>
+<P>
+Приказ стабла приказује све команде груписане по категоријама.
+Можете да их филтрирате уписиванјем једне или више речи имена команде у полје издвоји по.
+Све команде подешене за одређену функцију су приказане поред функције.
+</P>
+<P>
+Да додате улазну команду за неку функцију, изаберите команду и притисните дугме додај.
+Затим, извршите команду коју желите да подесите; на пример притисните тастер на тастатури или брајевом реду.
+Често, команда се може извршити на више начина.
+На пример, ако притиснете тастер на тастатури, можда ћете желети да важи само за тренутни распоред(на пример Десктоп или Лаптоп) или ћете можда желети да буде применјен за све распореде.
+У овом случају, мени ће се појавити за избор желјене опције.
+</P>
+<P>
+Да уклоните команду са функције, изаберите функцију и притисните дугме уклони.
+</P>
+<P>
+Када завршите са променама, притисните дугме уреду да их сачувате или откажи да их одбаците.
+</P>
+<A NAME="toc88"></A>
+<H3>11.2. Чуванје и поновно учитаванје подешаванја</H3>
+<P>
+По подразумеваним подешаванјима НВДА ће аутоматски сачувати ваша подешаванја при излазу.
+Напомена, да ова опција може бити променјена у општим подешаванјима у НВДА менију.
+Да сачувате подешаванја ручно било када, изаберите ставку сачувај подешаванја у НВДА менију.
+</P>
+<P>
+Ако некада направите грешку са вашим подешаванјима и желите да се вратите на сачувана подешаванја, изаберите ставку"врати се на сачувана подешаванја" у НВДА менију.
+Такође можете вратити подешаванја на подразумевана избором опције врати подешаванја на подразумевана, која се такође налази у НВДА менију.
+</P>
+<P>
+Следеће команде су такође корисне:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Име</TH>
+<TH>Desktop команда</TH>
+<TH>Laptop команда</TH>
+<TH>Опис</TH>
+</TR>
+<TR>
+<TD>Сачувај подешаванја</TD>
+<TD>NVDA+контрол+c</TD>
+<TD>NVDA+контрол+c</TD>
+<TD>Чува ваша тренутна подешаванја тако да нису изгублјена када изађете из програма НВДА|</TD>
+</TR>
+<TR>
+<TD>Врати подешаванја| NVDA+контрол+r</TD>
+<TD>NVDA+контрол+r</TD>
+<TD>Ако се притисне једном подешаванја се враћају на сачувана. Ако се притисне 3 пута подешаванја се враћају на подразумевана.</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc89"></A>
+<H3>11.3. Профили подешаванја</H3>
+<P>
+Некада, можда ћете желети да имате различита подешаванја за различите ситуације.
+На пример, можда ћете желети пријавлјиванје увлаченја редова уклјучено када уређујете документе или име и величину фонта када проверавате изглед докумената.
+NVDA вам дозволјава да урадите ово користећи профиле подешаванја.
+</P>
+<P>
+Профил подешаванја садржи само она подешаванја која се менјају док је профил активан.
+Већина подешаванја се може променити у профилима подешаванја осим оних у дијалогу општих подешаванја, која су применјена кроз цео НВДА.
+</P>
+<P>
+Профили подешаванја могу бити ручно активирани.
+Они такође могу бити активирани користећи активаторе као што су прелазак на одређену апликацију.
+</P>
+<A NAME="toc90"></A>
+<H4>11.3.1. Основно управлјанје</H4>
+<P>
+Управлјате профилима избором опције"профили подешаванја" у НВДА менију.
+Такође можете то урадити користећи команду:
+</P>
+<UL>
+<LI>NVDA+контрол+p: Прикажи дијалог за профиле подешаванја.
+</UL>
+
+<P></P>
+<P>
+Прва контрола у овом дијалогу је листа профила из које можете изабрати један од доступних профила.
+Када отворите дијалог, профил који тренутно уређујете је изабран.
+Додатне информације су такође приказане за активне профиле, које приказују да ли је профил ручно активиран, активиран користећи активаторе или се тренутно уређује.
+</P>
+<P>
+Да преименујете или обришете профил, активирајте тастере преименуј или обриши.
+</P>
+<P>
+Активирајте тастер затвори да затворите дијалог.
+</P>
+<A NAME="toc91"></A>
+<H4>11.3.2. Правлјенје профила</H4>
+<P>
+Da napravite profil, aktivirajte dugme novi.
+</P>
+<P>
+U dijalogu novog profila, možete upisati ime za novi profil.
+Takođe možete izabrati kako se ovaj profil treba koristiti.
+Ako želite da aktivirate ovaj profil ručno, izaberite ručna aktivacija, koja je podrazumevana.
+U suprotnom, izaberite aktivator koji treba da aktivira ovaj profil.
+Za lakše korišćenje, ako niste upisali ime profila, izborom aktivatora ime će biti automatski upisano.
+Pogledajte deo <A HREF="#ConfigProfileTriggers">ispod</A> za više informacija o aktivatorima.
+</P>
+<P>
+Aktiviranje tastera uredu će zatvoriti dijalog i aktivirati profil kako biste mogli da ga uredite.
+</P>
+<A NAME="ConfigProfileManual"></A>
+<H4>11.3.3. Ručna aktivacija</H4>
+<P>
+Možete ručno aktivirati profil izborom profila i aktiviranjem tastera ručne aktivacije.
+Kada je aktiviran, drugi profili takođe mogu biti aktivirani koristeći aktivatore, ali bilo koje podešavanje u trenutno aktiviranom profilu će zameniti podešavanja ostalih profila.
+Na primer, ako je profil aktiviran za trenutno aktivnu aplikaciju i u njemu je prijavljivanje linkova omogućeno a u ručno aktiviranom profilu je onemogućeno, linkovi neće biti prijavljeni.
+Ali, ako ste promenili glas u profilu za trenutnu aplikaciju ali ga niste nikada menjali u ručno aktiviranom profilu, glas iz profila za aplikaciju će se koristiti.
+Sva podešavanja koja promenite se čuvaju u ručno aktiviranom profilu.
+Da deaktivirate ručno aktiviran profil, izaberite ga u listi profila i aktivirajte dugme ručne deaktivacije.
+</P>
+<A NAME="ConfigProfileTriggers"></A>
+<H4>11.3.4. Aktivatori</H4>
+<P>
+Aktiviranje dugmeta aktivatori vam dozvoljava da promenite profile koji se automatski aktiviraju korišćenjem različitih aktivatora.
+</P>
+<P>
+Lista aktivatora prikazuje dostupne aktivatore, a oni su:
+</P>
+<UL>
+<LI>Trenutna aplikacija: Aktivira se kada pređete na određenu aplikaciju.
+<LI>Izgovori sve: Aktivira se kada čitate koristeći komandu izgovori sve.
+</UL>
+
+<P></P>
+<P>
+Da promenite profil koji automatski treba da se aktivira korišćenjem aktivatora, izaberite aktivator a zatim izaberite željeni profil iz liste.
+Možete izabrati"(Standardna podešavanja)" ako ne želite da se profil koristi.
+</P>
+<P>
+Aktivirajte dugme zatvori da se vratite u dijalog profila podešavanja.
+</P>
+<A NAME="toc94"></A>
+<H4>11.3.5. Uređivanje profila</H4>
+<P>
+Ako ste ručno aktivirali profil, sva podešavanja koja promenite se čuvaju u taj profil.
+U suprotnom, sva podešavanja koja promenite se čuvaju u poslednjem aktiviranom profilu aktiviran korišćenjem aktivatora.
+Na primer, ako ste podesili profil za aplikaciju Notepad i ako pređete na nju, sva promenjena podešavanja se čuvaju u taj profil.
+Međutim, ako nijedan profil nije aktiviran, sva podešavanja koja promenite se čuvaju u standardnim podešavanjima.
+</P>
+<P>
+Da uredite profil koji se koristi za režim izgovori sve, morate<A HREF="aktivirati#ConfigProfileManual">ručno</A> taj profil.
+</P>
+<A NAME="toc95"></A>
+<H4>11.3.6. Privremeno onemogući aktivatore</H4>
+<P>
+Nekada, može biti korisno onemogućiti sve aktivatore.
+Na primer, možda želite da uredite vaša standardna podešavanja bez aktivacije ostalih profila.
+Ovo možete da uradite tako štoćete označiti izborno polje privremeno onemogući sve aktivatore u dijalogu profila podešavanja.
+</P>
+<A NAME="toc96"></A>
+<H3>11.4. Lokacija datoteka podešavanja</H3>
+<P>
+Prenosive kopije čuvaju sva podešavanja, sve prilagođene dodatke za aplikacije i drajvere u folderu userConfig, koji se nalazi u NVDA folderu.
+</P>
+<P>
+Instalirane verzije čuvaju sva podešavanja, prilagođene drajvere i dodatke za aplikacije u folderu vašeg Windows korisničkog profila.
+Ovo znači da svaki korisnik sistema može imati svoja podešavanja.
+Da dođete do podešavanja instalirane verzije programa NVDA, u start meniju možete ući u programe-&gt; NVDA -&gt; istraži folder sa korisničkim podešavanjima.
+</P>
+<P>
+Podešavanja za pokretanje programa NVDA na Windows ekranu za prijavljivanje i drugim bezbednosnim ekranima se nalaze u folderu systemConfig u folderu gde je NVDA instaliran.
+Obično, ova podešavanja ne treba menjati.
+Da promenite NVDA podešavanja na bezbednim ekranima, podesite NVDA onako kako želite dok ste prijavljeni u Windows, sačuvajte podešavanja, a zatim aktivirajte"Koristi trenutno sačuvana podešavanja na bezbednim ekranima" dugme u dijalogu opšta podešavanja.
+</P>
+<A NAME="toc97"></A>
+<H2>12. Dodatni alati</H2>
+<A NAME="toc98"></A>
+<H3>12.1. Pregled dnevnika</H3>
+<P>
+Pregled dnevnika, koji se nalazi u alatima u NVDA meniju, vam dozvoljava da pročitate svo evidentiranje u dnevniku od momenta kada pokrenete program do pokretanja ove alatke.
+</P>
+<P>
+Pored čitanja sadržaja, možete takođe sačuvati kopiju datoteke dnevnika, ili da osvežite pregled tako da prikazuje najnovije informacije.
+Ove radnje su dostupne iz menija dnevnika.
+</P>
+<A NAME="toc99"></A>
+<H3>12.2. Pregled govora</H3>
+<P>
+Za programere sa normalnim vidom ili osobe koje pokazuju program NVDA ovakvim osobama, plutajući prozor je dostupan koji vam dozvoljava da vidite sav tekst koji NVDA izgovara.
+</P>
+<P>
+Da omogućite pregled govora, označite stavku"Pregled govora" u alatima u NVDA meniju.
+Kada stavka nije označena biće onemogućena.
+</P>
+<P>
+Prozor pregled govora takođe sadrži izborno polje"Prikaži pregled govora pri pokretanju".
+Ako je označeno, pregled govora će se pokrenuti kada se NVDA pokrene.
+Ovaj prozor će pokušati da se otvori na istoj lokaciji kao i kada je zatvoren poslednji put.
+</P>
+<P>
+Dok je pregled govora omogućen, stalno se ažurira da prikaže tekst koji je izgovoren.
+Ali, ako kliknete ili se fokusirate na pregled govora, NVDA će privremeno zaustaviti ažuriranje teksta, kako biste lakše mogli da kopirate postojeći sadržaj.
+</P>
+<P>
+Da uključite i isključite pregled govora bilo gde, dodajte prilagođenu komandu koristeći<A HREF="komande#InputGestures">dijalog za ulazne</A>.
+</P>
+<A NAME="toc100"></A>
+<H3>12.3. Upravljanje dodacima</H3>
+<P>
+Upravljač dodataka, kome se pristupa izborom opcije upravljanje dodacima u meniju alati u NVDA meniju, vam dozvoljava da instalirate, uklonite, omogućite i onemogućite dodatke za NVDA.
+Ovi dodaci su razvijeni od strane zajednice i mogu dodati nove karakteristike pa čak i podršku za dodatne brajeve redove ili govorne sintetizatore.
+</P>
+<P>
+Upravljač dodataka sadrži listu u kojoj se nalaze svi trenutno instalirani dodaci. 
+Ime dodatka, status, autor i verzija su prikazani za svaki dodatak, ali se dodatne informacije takođe mogu prikazati kao što su adresa i opis izborom dodatka i aktiviranjem dugmeta o dodatku.
+Ako postoji pomoć za odabran dodatak, možete dobiti pomoć aktiviranjem dugmeta pomoć za dodatak.
+</P>
+<P>
+Da pretražujete i preuzmete dodatke sa Interneta, aktivirajte dugme nabavi dodatke.
+Ovo dugme otvara<A HREF="http://addons.nvda-project.org/">NVDA stranicu dodataka</A>.
+Ako je NVDA instaliran i pokrenut na sistemu, možete otvoriti dodatak direktno iz pretraživača da započnete instalaciju.
+U suprotnom, sačuvajte dodatak i pratite uputstva u nastavku.
+</P>
+<P>
+Da instalirate dodatak koji ste prethodno preuzeli, aktivirajte dugme instaliraj.
+Ovo vam dozvoljava da pronađete datoteku sa dodatkom(.nvda-addon datoteku) negde na vašem računaru ili na mreži.
+Kada aktivirate dugme otvori, proces instalacije počinje.
+</P>
+<P>
+Kada instalirate neki dodatak, NVDA će vas prvo pitati da potvrdite da zaista želite da instalirate taj dodatak.
+Budući da je funkcionalnost dodataka neograničena u programu NVDA, što može uključiti pristup vašim ličnim podacima ili čitavom sistemu ako je NVDA instaliran, važno je instalirati dodatke samo iz izvora kojima verujete.
+Kada je dodatak instaliran, NVDA mora biti ponovo pokrenut kako bi dodatak počeo da radi. 
+Dok to ne uradite, status"instaliraj" će biti prikazan za taj dodatak u listi.
+</P>
+<P>
+Da uklonite dodatak, izaberite dodatak u listi i aktivirajte dugme ukloni.
+NVDA će vas pitati da li to stvarno želite da uradite.
+Kao i za instalaciju, NVDA mora biti pokrenut kako bi dodatak bio u potpunosti uklonjen.
+Dok to ne uradite, status"Ukloni" će biti prikazan za taj dodatak u listi.
+</P>
+<P>
+Da onemogućite dodatak, aktivirajte dugme onemogući.
+Da omogućite prethodno onemogućen dodatak, aktivirajte omogući dugme.
+Možete omogućiti dodatak ako je njegov status onemogućen ili suspendovan, ili ga onemogućiti ako je njegov status omogućen ili pokrenut.
+Za svaku aktivaciju dugmeta omogući/onemogući, status dodatka ćese promeniti da prikaže šta će se desiti kada se NVDA ponovo pokrene.
+Kao i kada instalirate ili uklanjate dodatke, morate ponovo pokrenuti NVDA kako bi promene bile primenjene.
+</P>
+<P>
+Upravljač takođe ima dugme zatvori koje zatvara dijalog.
+Ako ste instalirali, uklonili ili promenili status dodatka, NVDA će vas prvo pitati da li da se ponovo pokrene kako bi promene bile primenjene.
+</P>
+<P>
+Ranije,  bilo je moguće dodati nove karakteristike kopiranjem različitih dodataka u vaš folder sa podešavanjima.
+Iako će ih ova verzija programa NVDA možda učitati, oni neće biti prikazani u upravljaču dodataka.
+Najbolje je da ovakve datoteke uklonite i instalirate dodatak ako je dostupan.
+</P>
+<P>
+Da pristupite upravljaču dodataka bilo gde, dodajte prilagođenu komandu koristeći<A HREF="komande#InputGestures">dijalog za ulazne</A>.
+</P>
+<A NAME="toc101"></A>
+<H3>12.4. Python konzola</H3>
+<P>
+NVDA python konzola, koja se nalazi u alatima u NVDA meniju, je alat za programere koji je koristan za otklanjanje grešaka, opšti pristup programu NVDA ili pristup elementima pristupačnosti neke aplikacije.
+Za više informacija, pročitajte uputstvo za programere dostupno u<A HREF="http://community.nvda-project.org/wiki/Development">delu za programere NVDA Web stranice</A>.
+</P>
+<A NAME="toc102"></A>
+<H3>12.5. Ponovo učitaj dodatke</H3>
+<P>
+Ova stavka, kada se aktivira, ponovo učitava dodatke za aplikacije i dodatke bez ponovnog pokretanja programa NVDA, što može biti korisno za programere.
+</P>
+<A NAME="SupportedSpeechSynths"></A>
+<H2>13. Podržani sintetizatori govora</H2>
+<P>
+Ovaj deo sadrži informacije o govornim sintetizatorima koje NVDA podržava.
+Za opširniju listu besplatnih i komercionalnih sintetizatora koje možete preuzeti i kupiti za korišćenje sa programom NVDA, pročitajte stranicu<A HREF="http://www.nvda-project.org/wiki/ExtraVoices">http://www.nvda-project.org/wiki/ExtraVoices</A>.
+</P>
+<A NAME="toc104"></A>
+<H3>13.1. eSpeak NG</H3>
+<P>
+<A HREF="https://github.com/espeak-ng/espeak-ng">eSpeak NG</A> je ugrađen u NVDA i ne zahteva posebne komponente ili drajvere.
+NVDA koristi eSpeak NG po podrazumevanim podešavanjima.
+Budući da je ovaj sintetizator ugrađen u NVDA, ovo je odličan izbor kada se NVDA pokreće sa USB memorije na drugim sistemima.
+</P>
+<P>
+Svaki glas koji dolazi sa sintezom Espeak NG govori drugi jezik.
+Espeak NG podržava preko 43 različitih jezika.
+</P>
+<P>
+Takođe postoji puno različitih varijanti koje menjaju zvuk glasa.
+</P>
+<A NAME="toc105"></A>
+<H3>13.2. Microsoft Speech API version 4 (SAPI 4)</H3>
+<P>
+SAPI 4 je stariji govorni standard za Microsoft sintetizatore.
+NVDA još uvek podržava ovo za korisnike koji imaju SAPI4 sintetizatore instalirane.
+Ali, Microsoft više ne podržava ovo i potrebne komponente nisu dostupne sa njihovog sajta.
+</P>
+<P>
+Kada koristite ovaj sintetizator uz NVDA, dostupni glasovi(kojima pristupate iz[dijaloga glasovnih podešavanja#VoiceSettings] ili<A HREF="sintetizatora#SynthSettingsRing">krugom menjanja podešavanja</A>) će sadržati sve glasove svih SAPI4 sintetizatora na vašem sistemu.
+</P>
+<A NAME="toc106"></A>
+<H3>13.3. Microsoft Speech API version 5 (SAPI 5)</H3>
+<P>
+SAPI 5 je Microsoftov standard za govorne sintetizatore.
+Puno sintetizatora koji podržavaju ovaj standard se mogu kupiti ili besplatno preuzeti od  različitih kompanija, ali vaš sistem će verovatno doći sa barem jednim SAPI5 glasom.
+Kada koristite ovaj sintetizator uz NVDA, dostupni glasovi(kojima pristupate iz[dijaloga glasovnih podešavanja#VoiceSettings] ili<A HREF="sintetizatora#SynthSettingsRing">krugom menjanja podešavanja</A>) će sadržati sve glasove svih SAPI5 sintetizatora na vašem sistemu.
+</P>
+<A NAME="toc107"></A>
+<H3>13.4. Microsoft Speech Platform</H3>
+<P>
+Microsoft Speech Platform Pruža glasove za razne jezike koji se obično koriste za razvoj serverskih govornih aplikacija.
+Ovi glasovi se takođe mogu koristiti sa programom NVDA.
+</P>
+<P>
+Da biste koristili ove glasove, morate da instalirate dve komponente:
+</P>
+<UL>
+<LI>Microsoft Speech Platform - Runtime (verzija 11) , x86: <A HREF="http://www.microsoft.com/download/en/details.aspx?id=27225">http://www.microsoft.com/download/en/details.aspx?id=27225</A>
+<LI>Microsoft Speech Platform - Runtime jezici (verzija 11): <A HREF="http://www.microsoft.com/download/en/details.aspx?id=27224">http://www.microsoft.com/download/en/details.aspx?id=27224</A>
+ <UL>
+ <LI>Ova stranica sadrži različite datoteke za prepoznavanje glasa i pretvaranje teksta u govor.
+ Izaberite datoteke koje sadrže TTS skraćenicu nakon određenog jezika.
+ Na primer, datoteka MSSpeech_TTS_en-US_ZiraPro.msi je glas za Američki Engleski.
+ </UL>
+</UL>
+
+<P></P>
+<A NAME="toc108"></A>
+<H3>13.5. Windows OneCore glasovi</H3>
+<P>
+Windows 10 uključuje nove glasove poznati i kao "OneCore" ili  "Mobilni" glasovi.
+Glasovi su ponuđeni za puno jezika, i oni su brži od Microsoft glasova dostupni korišćenjem opcije Microsoft Speech API verzija  5.
+</P>
+<P>
+Molimo pročitajte ovaj Microsoft članak za listu dostupnih glasova i uputstva za instalaciju: <A HREF="https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices">https://support.microsoft.com/en-us/help/22797/windows-10-narrator-tts-voices</A>
+</P>
+<P>
+Molimo imajte na umu da brzina govora koja je dostupna sa čitačem ekrana Narrator nije dostupna sa čitačem ekrana NVDA.
+Takođe, brzina koju izaberete u Windows podešavanjima utiče na brzinu izabranu u podešavanjima programa NVDA.
+Ovo su problemi koje nemožemo da rešimo bez promena u Windowsu.
+Nadamo se da će ovi problemi biti rešeni u nekom budućem Windows ažuriranju.
+</P>
+<A NAME="toc109"></A>
+<H3>13.6. Audiologic Tts3</H3>
+<P>
+Ovo je komercionalan glas za Italijanski jezik.
+Morate imati sintetizator instaliran kako biste ga koristili uz NVDA.
+Za više informacija, posetite Audiologic websajt na lokaciji <A HREF="http://www.audiologic.it">www.audiologic.it</A>.
+</P>
+<P>
+Ovaj sintetizator ne podržava[sricanje#VoiceSpellingFunctionality].
+</P>
+<A NAME="toc110"></A>
+<H3>13.7. Nuance Vocalizer za NVDA</H3>
+<P>
+Nuance Vocalizer je komercionalan, sintetizator visokog kvaliteta razvijen od strane kompanije Nuance, Inc. i napravljen za NVDA od strane kompanije Tiflotecnia, Lda.
+Sadrži preko 50 različitih glasova koje možete da instalirate, koji govore preko 30 različitih jezika.
+Svi glasovi su napravljeni kao dodaci, što dozvoljava korišćenje u potpunosti u prenosivim kopijama programa NVDA.
+</P>
+<P>
+Možete dobiti više informacija o Vocalizeru za NVDA i da ga kupite na websajtu<A HREF="http://www.vocalizer-nvda.com/">www.vocalizer-nvda.com</A>.
+Procenat od prodaje se donira kompaniji NV access za dodatni razvoj programa NVDA.
+</P>
+<A NAME="SupportedBrailleDisplays"></A>
+<H2>14. Podržani brajevi redovi</H2>
+<P>
+Ovaj deo sadrži informacije o brajevim redovima koje NVDA podržava.
+</P>
+<A NAME="toc112"></A>
+<H3>14.1. Brajevi redovi Freedom Scientific Focus/PAC Mate</H3>
+<P>
+Svi Focus i PAC Mate redovi firme<A HREF="http://www.freedomscientific.com/">Freedom Scientific</A> su podržani kada se povezuju putem USB ili Bluetooth veze.
+Morate instalirati drajvere za freedom scientific brajeve redove.
+Ako ih još uvek nemate, možete ih preuzeti sa adrese <A HREF="http://www2.freedomscientific.com/downloads/focus-40-blue/focus-40-14-blue-downloads.asp">http://www2.freedomscientific.com/downloads/focus-40-blue/focus-40-14-blue-downloads.asp</A>.
+Iako se na ovoj stranici govori o focus blue brajevim redovima, drajveri podržavaju sve focus i Pac mate brajeve redove.
+Ako koristite 64 bitni sistem windows i neki drugi čitač ekrana je instalirao svoj drajver, možda ćete još uvek morati da instalirate drajvere sa ovog linka, jer neke datoteke, koje NVDA zahteva, možda nisu instalirane u sistemu kada su ti određeni drajveri instalirani.
+</P>
+<P>
+Po podrazumevanim podešavanjima, NVDA može automatski prepoznati i uspostaviti vezu sa ovim brajevim redovima ili preko USB ili preko bluetooth-a.
+Međutim, Kada se brajev red povezuje na računar, možete odrediti povezivanje preko "USB-a" ili "Bluetooth-a" da biste ograničili tip veze koji će se koristiti.
+Ovo može biti korisno ako želite koristiti brajev red povezan bluetoot vezom, ali ga još uvek želite puniti preko USB priključka vašeg računara.
+</P>
+<P>
+Sledeća lista prikazuje sve dostupne dodeljene prečice za NVDA.
+Molimo pogledajte dokumentaciju za više informacija o opisu tastera i o tome gde se nalaze.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Prebaci brajev red na prethodni red</TD>
+<TD>PrviTasterZaPomeranje1 (Prva ćelija na brajevom retu)</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>toprouting20/40/80 (zadnja ćelija na brajevom redu)</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red nazad</TD>
+<TD>leviAdvanceBar</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>desniAdvanceBar</TD>
+</TR>
+<TR>
+<TD>Prebacuj se između usmeravanja brajevog pregleda</TD>
+<TD>leviGDFTaster+desniGDFTaster</TD>
+</TR>
+<TR>
+<TD>Uključi ili isključi akciju levog wiz točka</TD>
+<TD>leviWizPritisakWheel</TD>
+</TR>
+<TR>
+<TD>Prebaci se nazad koristeći levi točak</TD>
+<TD>LeviWizWheelGore</TD>
+</TR>
+<TR>
+<TD>Prebaci se napred koristeći levi točak</TD>
+<TD>leviWizWheelDole</TD>
+</TR>
+<TR>
+<TD>Uključi ili isključi desni wizwheel taster</TD>
+<TD>desniWizPritisakWheel</TD>
+</TR>
+<TR>
+<TD>Premesti se nazad koristeći desni točak</TD>
+<TD>DesniWizWheelGore</TD>
+</TR>
+<TR>
+<TD>Premesti se napred koristeći desni točak</TD>
+<TD>desniWizWheelDole</TD>
+</TR>
+<TR>
+<TD>Prebaci se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>BrajevRazmak+tačka1+tačka2</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>BrajevRazmak+tačka4+tačka5</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>BrajevRazmak+tačka1</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>BrajevRazmak+tačka4</TD>
+</TR>
+<TR>
+<TD>Kontrol+strelicaLevo</TD>
+<TD>BrajevRazmak+tačka3</TD>
+</TR>
+<TR>
+<TD>Kontrol+strelicaDesno</TD>
+<TD>BrajevRazmak+tačka5</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>BrajevRazmak+tačka3</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>BrajevRazmak+tačka6</TD>
+</TR>
+<TR>
+<TD>home</TD>
+<TD>BrajevRazmak+tačka1+tačka3</TD>
+</TR>
+<TR>
+<TD>end</TD>
+<TD>BrajevRazmak+tačka4+tačka6</TD>
+</TR>
+<TR>
+<TD>kontrol+home</TD>
+<TD>BrajevRazmak+tačka1+tačka2+tačka3</TD>
+</TR>
+<TR>
+<TD>kontrol+end</TD>
+<TD>BrajevRazmak+tačka4+tačka5+tačka6</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>BrajevRazmak+tačka1+tačka3+tačka4</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>BrajevRazmak+tačka2+tačka3+tačka4+tačka5</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>BrajevRazmak+tačka1+tačka5</TD>
+</TR>
+<TR>
+<TD>windows taster</TD>
+<TD>BrajevRazmak+tačka2+tačka4+tačka5+tačka6</TD>
+</TR>
+<TR>
+<TD>razmak</TD>
+<TD>BrajevRazmak</TD>
+</TR>
+<TR>
+<TD>windows+d (umanji sve aplikacije)</TD>
+<TD>BrajevRazmak+tačka1+tačka2+tačka3+tačka4+tačka5+tačka6</TD>
+</TR>
+<TR>
+<TD>pročitaj trenutni red</TD>
+<TD>BrajevRazmak+tačka1+tačka4</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>BrajevRazmak+tačka1+tačka3+tačka4+tačka5</TD>
+</TR>
+</TABLE>
+
+<P>
+Za novije modele fokus brajevih redova koji na sebi imaju rocker bar tastere (focus 40, focus 80 i focus blue):
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>leviRockerBarGore, desniRockerBarGore</TD>
+</TR>
+<TR>
+<TD>premesti brajev red na sledeći red</TD>
+<TD>leviRockerBarDole, desniRockerBarDole</TD>
+</TR>
+</TABLE>
+
+<P>
+Samo za Focus 80:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad na prethodni red</TD>
+<TD>leviBumperBarGore, desniBumperBarGore</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red za red u napred</TD>
+<TD>leviBumperBarDole, desniBumperBarDole</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc113"></A>
+<H3>14.2. Optelec ALVA BC640/680</H3>
+<P>
+ALVA BC640 i BC680 brajevi retovi firme <A HREF="http://www.optelec.com/">Optelec</A> podržani su kada se povezuju putem USB ili bluetooth veze.
+Ne morate imati specijalne drajvere da biste koristili ove brajeve retove.
+Samo povežite brajev red i podesite NVDA za njegovo korišćenje.
+</P>
+<P>
+Iako ovi brajevi redovi poseduju brajevu tastaturu, oni upravljaju prevodom "Brajevog pisma u tekst" iz samih sebe.
+Dakle, podešavanje ulazna brajeva tabela nije bitno.
+</P>
+<P>
+Slede komande dodeljene za ovaj brajev red za korišćenje sa NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reda da biste pogledali opis i raspored tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red za red unazad</TD>
+<TD>t1 ili etouch1</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>t2</TD>
+</TR>
+<TR>
+<TD>premesti na trenutni fokus</TD>
+<TD>t3</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>t4</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red  napred za red</TD>
+<TD>t5 ili etouch 3|</TD>
+</TR>
+<TR>
+<TD>Prebaci na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>premesti se na najgornji red u pregledu</TD>
+<TD>t1+t2</TD>
+</TR>
+<TR>
+<TD>premesti se na poslednji red u pregledu</TD>
+<TD>t4+t5</TD>
+</TR>
+<TR>
+<TD>prebaci brajev vezan za| t1+t3</TD>
+</TR>
+<TR>
+<TD>pročitaj naslov</TD>
+<TD>etouch2</TD>
+</TR>
+<TR>
+<TD>pročitaj traku statusa</TD>
+<TD>etouch4</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>sp1</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>sp2</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>sp3</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>sp4</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>spUp</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>spDown</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>spLeft</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>spRight</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>spEnter</TD>
+</TR>
+<TR>
+<TD>izgovori datum i vreme</TD>
+<TD>sp1+sp2</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>sp1+sp3</TD>
+</TR>
+<TR>
+<TD>windows+d (umanji sve aplikacije)</TD>
+<TD>sp1+sp4</TD>
+</TR>
+<TR>
+<TD>windows+b taster (fokusiranje sistemske trake)</TD>
+<TD>sp3+sp4</TD>
+</TR>
+<TR>
+<TD>windows taster</TD>
+<TD>sp2+sp3</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>sp2+sp4</TD>
+</TR>
+<TR>
+<TD>ctrl+home</TD>
+<TD>t3+spUp</TD>
+</TR>
+<TR>
+<TD>control+end</TD>
+<TD>t3+spDown</TD>
+</TR>
+<TR>
+<TD>home</TD>
+<TD>t3+spLeft</TD>
+</TR>
+<TR>
+<TD>end</TD>
+<TD>t3+spRight</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc114"></A>
+<H3>14.3. Handy Tech brajevi redovi</H3>
+<P>
+NVDA podržava sve brajeve redove firme <A HREF="http://www.handytech.de/">Handy Tech</A> kada su povezani putem USB ili Bluetooth veze.
+Za starije brajeve redove, koji se povezuju USB vezom, morate instalirati Usb drajvere na vaš sistem.
+</P>
+<P>
+Unos brajevih znakova još nije podržan.
+</P>
+<P>
+Ovo su tasterske prečice za korišćenje ovog brajevog reda uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reda da biste znali gde se određeni tasteri nalaze.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red za red unazad</TD>
+<TD>levo, gore</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red za red  napred</TD>
+<TD>desno, dole</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>b5</TD>
+</TR>
+<TR>
+<TD>Prebaci se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>shift+tab</TD>
+<TD>esc</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>b2+b4+b5</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>b4+b6</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>enter</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>esc+enter</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>leviRazmak</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>desniRazmak</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>b2+b4+b5+b6</TD>
+</TR>
+<TR>
+<TD>Handy Tech podešavanja</TD>
+<TD>b4+b8</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc115"></A>
+<H3>14.4. MDV Lilli</H3>
+<P>
+Brajev red, kojeg prodaje Italijanska firma <A HREF="http://www.mdvbologna.it/">MDV</A> je podržan.
+Ne morate imati instalirane dodatne drajvere da biste koristili ovaj brajev red.
+Samo povežite brajev red i podesite NVDA za njegovo korišćenje.
+</P>
+<P>
+Slede dodeljene tasterske prečice za ovaj brajev red za korišćenje sa NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reta kako biste ustanovili gde se ovi tasteri nalaze, zajedno sa pripadajućim opisom.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red za red unazad</TD>
+<TD>LF</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red za red napred</TD>
+<TD>RG</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>UP</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>DN</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>route</TD>
+</TR>
+<TR>
+<TD>Šift+tab</TD>
+<TD>SLF</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>SRG</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>SDN</TD>
+</TR>
+<TR>
+<TD>alt+šift+tab</TD>
+<TD>SUP</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc116"></A>
+<H3>14.5. Baum/Humanware/APH/Orbit Brajevi Redovi</H3>
+<P>
+Nekoliko <A HREF="http://www.baum.de/cms/en/">Baumovih</A>, <A HREF="http://www.humanware.com/">HumanWare-ovih</A>, <A HREF="http://www.aph.org/">APH-ovih</A> i <A HREF="http://www.orbitresearch.com/">Orbitovih</A> brajevih redova su podržani kada su povezani putem usb, bluetooth ili serijske veze.
+Sledeći brajevi redovi su podržani:
+</P>
+<UL>
+<LI>Baum: SuperVario, PocketVario, VarioUltra, Pronto!, SuperVario2, Vario 340
+<LI>HumanWare: Brailliant, BrailleConnect, Brailliant2
+<LI>APH: Refreshabraille
+<LI>Orbit: Orbit Reader 20
+</UL>
+
+<P>
+Neki brajevi redovi, koje je proizveo baum mogu takođe raditi, iako to nije isprobano.
+</P>
+<P>
+Ako povezujete brajeve redove koji ne koriste hid preko usb veze, morate instalirati usb drajvere proizvođača.
+VarioUltra i Pronto! brajični redovi koriste HID.
+Refreshabraille i Orbit Reader 20 mogu koristiti HID ako su podešeni na određeni način.
+</P>
+<P>
+ USB serijski način u Orbit Reader 20 brajevom redu, trenutno je podržan samo u Windows 10 operativnom sistemu.
+Umesto toga, trebali biste koristiti USB HID.
+</P>
+<P>
+Slede prečice za ovaj brajev red za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reta kako biste saznali listu i raspored tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red unazad</TD>
+<TD>d2</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>d5</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>d1</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>d3</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<P>
+Za brajeve redove koji imaju joystick:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>gore</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>dole</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>levo</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>desno</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>odabir</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc117"></A>
+<H3>14.6. hedo ProfiLine USB</H3>
+<P>
+Hedo ProfiLine USB brajev red firme <A HREF="http://www.hedo.de/">hedo Reha-Technik</A> je podržan.
+Prvo morate instalirati USB drajvere koje je napravio proizvođač.
+</P>
+<P>
+Slede prečice za brajev red za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reda za više informacija o rasporedu i opisu tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red unazad</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Premesti se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Prebacuj brajev vezan za| K2</TD>
+</TR>
+<TR>
+<TD>Izgovori sve</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc118"></A>
+<H3>14.7. Hedo MobilLine USB</H3>
+<P>
+Hedo MobilLine USB firme <A HREF="http://www.hedo.de/">hedo Reha-Technik</A> je podržan.
+Prvo morate instalirati USB drajvere koje je napravio proizvođač.
+</P>
+<P>
+Slede tasterske prečice za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reda kako biste saznali raspored i opis brajevih tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red unazad</TD>
+<TD>K1</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>K3</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>B2</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>B5</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Prebacuj se između brajev vezan na| K2</TD>
+</TR>
+<TR>
+<TD>Izgovori sve</TD>
+<TD>B6</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc119"></A>
+<H3>14.8. HumanWare Brailliant BI/B Serije</H3>
+<P>
+Brailliant BI i B serije brajevih redova firme <A HREF="http://www.humanware.com/">HumanWare</A>, uključujući BI 32, BI 40 i B 80, su podržani kada su povezani putem USB ili Bluetooth veze.
+Ako brajev red povezujete putem USB veze, i protokolom postavljenim na Human Ware prvo morate instalirati USB drajvere koje je napravio proizvođač.
+USB drajveri nisu potrebni ako  je protokol postavljen na OpenBraille.
+</P>
+<P>
+Slede tasterske prečice za ove brajeve redove za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu ovih brajevih redova kako biste saznali opise tastera i njihov raspored.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red unazad</TD>
+<TD>Levo</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>desno</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>gore</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>dole</TD>
+</TR>
+<TR>
+<TD>Premesti se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Prebacuj brajev vezan za| gore+dole</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>razmak+tačka1</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>razmak+tačka4</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>razmak+tačka3</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>razmak+tačka6</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>c1+c3+c4+c5 (komanda n)</TD>
+</TR>
+<TR>
+<TD>Šift+tab</TD>
+<TD>razmak+tačka1+tačka3</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>razmak+tačka4+tačka6</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>razmak+tačka1+tačka3+tačka4 (razmak+m)</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>razmak+tačka1+tačka5 (razmak+e)</TD>
+</TR>
+<TR>
+<TD>enter</TD>
+<TD>tačka8</TD>
+</TR>
+<TR>
+<TD>windows+d (umanji sve aplikacije)</TD>
+<TD>c1+c4+c5 (komanda d)</TD>
+</TR>
+<TR>
+<TD>windows taster</TD>
+<TD>razmak+tačka3+tačka4</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>razmak+tačka2+tačka3+tačka4+tačka5 (razmak+t)</TD>
+</TR>
+<TR>
+<TD>Izgovori sve</TD>
+<TD>c1+c2+c3+c4+c5+c6</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc120"></A>
+<H3>14.9. HIMS Braille Sense/Braille EDGE  smart beetle Serije</H3>
+<P>
+NVDA podržava Braille Sense,  Braille EDGE i SMART BEETLE brajeve redove firme <A HREF="http://www.hims-inc.com/">Hims</A> kada su povezani preko USB ili Bluetooth veze. 
+Ako brajev red povezujete putem USB, morate instalirati USB Hims drajvere na vaš sistem.
+Možete ih preuzeti sa ove stranice: <A HREF="http://www.himsintl.com/?c=2/13&amp;uid=2319">http://www.himsintl.com/?c=2/13&amp;uid=2319</A>
+</P>
+<P>
+Slede dodeljene prečice za ove brajeve redove za NVDA.
+Molimo pogledajte uputstva za upotrebu brajevih redova kako biste saznali raspored i opis tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red unazad</TD>
+<TD>left side scroll down</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>right side scroll down</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>left side scroll up</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>right side scroll up</TD>
+</TR>
+<TR>
+<TD>Premesti se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Šift+tab</TD>
+<TD>Tačka1+tačka2+razmak</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>Tačka1+tačka3+tačka4+Razmak</TD>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>Tačka1+tačka5+Razmak</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>tačka4+tačka5+Razmak</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>Tačka1+razmak</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>Tačka4+Razmak</TD>
+</TR>
+<TR>
+<TD>capsLock</TD>
+<TD>Tačka1+tačka3+tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>Šift+alt+tab</TD>
+<TD>napred2+napred3+napred1</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>napred2+napred3</TD>
+</TR>
+<TR>
+<TD>end</TD>
+<TD>Tačka4+Tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>Kontrol+end</TD>
+<TD>Tačka4+Tačka5+Tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>home</TD>
+<TD>Tačka1+tačka3+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+home</TD>
+<TD>Tačka1+tačka2+tačka3+razmak</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>Tačka3+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+šift+strelicaLevo</TD>
+<TD>Tačka2+tačka8+razmak+napred1</TD>
+</TR>
+<TR>
+<TD>kontrol+strelicaLevo</TD>
+<TD>Tačka2+razmak</TD>
+</TR>
+<TR>
+<TD>Šift+alt+strelicaLevo</TD>
+<TD>Tačka2+tačka7+napred1</TD>
+</TR>
+<TR>
+<TD>alt+strelicaLevo</TD>
+<TD>Tačka2+tačka7</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>Tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+šift+strelicaDesno</TD>
+<TD>Tačka5+tačka8+razmak+napred1</TD>
+</TR>
+<TR>
+<TD>kontrol+strelicaDesno</TD>
+<TD>Tačka5+razmak</TD>
+</TR>
+<TR>
+<TD>Šift+alt+strelicaDesno</TD>
+<TD>Tačka5+tačka7+napred1</TD>
+</TR>
+<TR>
+<TD>alt+strelicaDesno</TD>
+<TD>Tačka5+tačka7</TD>
+</TR>
+<TR>
+<TD>pageUp</TD>
+<TD>Tačka1+tačka2+tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+pageUp</TD>
+<TD>Tačka1+tačka2+tačka6+tačka8+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+šift+strelicaGore</TD>
+<TD>Tačka2+tačka3+tačka8+razmak+napred1</TD>
+</TR>
+<TR>
+<TD>kontrol+strelicaGore</TD>
+<TD>Tačka2+tačka3+razmak</TD>
+</TR>
+<TR>
+<TD>Šift+alt+strelicaGore</TD>
+<TD>tačka2+tačka3+tačka7+napred1</TD>
+</TR>
+<TR>
+<TD>alt+strelicaGore</TD>
+<TD>Tačka2+tačka3+tačka7</TD>
+</TR>
+<TR>
+<TD>Šift+strelicaGore</TD>
+<TD>left side scroll down + razmak</TD>
+</TR>
+<TR>
+<TD>pageDown</TD>
+<TD>Tačka3+tačka4+tačka5+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+pagedown</TD>
+<TD>Tačka3+tačka4+tačka5+tačka8+razmak</TD>
+</TR>
+<TR>
+<TD>kontrol+šift+strelicaDole</TD>
+<TD>Tačka5+tačka6+tačka8+razmak+napred1</TD>
+</TR>
+<TR>
+<TD>kontrol+strelicaDole</TD>
+<TD>Tačka5+tačka6+razmak</TD>
+</TR>
+<TR>
+<TD>Šift+alt+strelicaDole</TD>
+<TD>Tačka5+tačka6+tačka7+napred1</TD>
+</TR>
+<TR>
+<TD>alt+strelicaDole</TD>
+<TD>Tačka5+tačka6+tačka7</TD>
+</TR>
+<TR>
+<TD>Šift+strelicaDole</TD>
+<TD>right side scroll down + razmak</TD>
+</TR>
+<TR>
+<TD>delete</TD>
+<TD>Tačka1+tačka3+tačka5+razmak</TD>
+</TR>
+<TR>
+<TD>f1</TD>
+<TD>Tačka1+tačka2+tačka5+razmak</TD>
+</TR>
+<TR>
+<TD>f3</TD>
+<TD>Tačka1+tačka2+tačka4+tačka8</TD>
+</TR>
+<TR>
+<TD>f4</TD>
+<TD>Tačka7+napred3</TD>
+</TR>
+<TR>
+<TD>windows+b</TD>
+<TD>Tačka1+tačka2+napred1</TD>
+</TR>
+<TR>
+<TD>windows+d</TD>
+<TD>Tačka1+tačka4+tačka5+tačka1</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc121"></A>
+<H3>14.10. HIMS SyncBraille</H3>
+<P>
+NVDA podržava SyncBraille brajev red firme <A HREF="http://www.hims-inc.com/">HIMS</A>.
+Morate instalirati USB drajvere firme Hims na vaš računar.
+</P>
+<P>
+Ovo su prečice za brajev red za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstvo za upotrebu brajevog reda da biste saznali raspored i opis tastera na brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad</TD>
+<TD>left side scroll down</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>right side scroll down</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc122"></A>
+<H3>14.11. Seika brajični retci</H3>
+<P>
+Seika verzije 3, 4 i 5 (40 ćelija) i Seika80 (80 ćelija)brajevi redovi koje je proizvela firma <A HREF="http://www.nippontelesoft.com/">Nippon Telesoft</A> su podržani.
+Za više informacija o ovim brajevim redovima posetite <A HREF="http://www.seika-braille.com/">http://www.seika-braille.com/</A>.
+Prvo morate instalirati USB drajvere koje je proizveo proizvođač.
+</P>
+<P>
+Slede tasterske prečice za ovaj brajev red za korišćenje uz pomoć NVDA.
+Molimo pogledajte uputstva za upotrebu vašeg brajevog reda da biste saznali raspored tastera i njihov opis.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>komanda</TH>
+</TR>
+<TR>
+<TD>pomeri brajev red nazad</TD>
+<TD>levo</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>desno</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>b3</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>b4</TD>
+</TR>
+<TR>
+<TD>Prebacuj se između brajev vezan za| b5</TD>
+</TR>
+<TR>
+<TD>Izgovori sve</TD>
+<TD>b6</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>b1</TD>
+</TR>
+<TR>
+<TD>Šift+tab</TD>
+<TD>b2</TD>
+</TR>
+<TR>
+<TD>alt+tab</TD>
+<TD>b1+b2</TD>
+</TR>
+<TR>
+<TD>NVDA meni</TD>
+<TD>levo+desno</TD>
+</TR>
+<TR>
+<TD>Prebaci se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc123"></A>
+<H3>14.12. Papenmeier BRAILLEX Noviji Modeli</H3>
+<P>
+Sledeći brajevi redovi su podržani: 
+</P>
+<UL>
+<LI>BRAILLEX EL 40c, EL 80c, EL 20c, EL 60c (USB)
+<LI>BRAILLEX EL 40s, EL 80s, EL 2d80s, EL 70s, EL 66s (USB)
+<LI>BRAILLEX Trio (USB i bluetooth)
+<LI>BRAILLEX Live 20, BRAILLEX Live i BRAILLEX Live Plus (USB i bluetooth)
+</UL>
+
+<P></P>
+<P>
+Ako je BrxCom instaliran, NVDA će koristiti BrxCom.
+BrxCom je alat koji omogućava unos sa tastature odvojen od čitača ekrana.
+Papenmeier će uskoro objaviti novu verziju programa BrxCom koja će raditi sa NVDA čitačem ekrana.  
+Unos znakova sa tastature brajevog reda moguć je koristeći Trio i BRAILLEX Live modele brajevih redova.
+</P>
+<P>
+Većina uređaja ima taster Easy Access Bar (EAB) koji omogućava brzo i intuitivno rukovanje.
+EAB može biti premeštan u četiri smera gde u glavnom svaki smer ima dva preklopnika.
+C i live serije su jedina verzija od ovog pravila.
+</P>
+<P>
+C-serija i drugi brajevi redovi imaju dva reda routing tastera gde se gornji red koristi za izveštavanje o oblikovanju teksta.
+Kada držite pritisnutu jedan od gornjih routing tastera i pritiskate EAB na uređajima c-serije emulira stanje drugog preklopnika.
+Brajevi redovi Live serije imaju samo jedan red routing tastera i EAB ima samo jedan korak po smeru.
+Drugi se korak može izvesti tako da pritisnete jedan od routing tastera i EAB u zadanom smeru.
+Kad pritisnete i držite gornje, doljnje, desne i leve tastere (ili EAB) uzrokuje ponavljanje dodeljene akcije.
+</P>
+<P>
+Većinom, sledeći su tasteri dostupni na ovim brajevim redovima:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>taster</TH>
+</TR>
+<TR>
+<TD>l1</TD>
+<TD>Levi prednji taster</TD>
+</TR>
+<TR>
+<TD>l2</TD>
+<TD>Levi zadnji taster</TD>
+</TR>
+<TR>
+<TD>r1</TD>
+<TD>Desni prednji taster</TD>
+</TR>
+<TR>
+<TD>r2</TD>
+<TD>Desni zadnji taster</TD>
+</TR>
+<TR>
+<TD>up</TD>
+<TD>1 korak prema gore</TD>
+</TR>
+<TR>
+<TD>up2</TD>
+<TD>2 koraka gore</TD>
+</TR>
+<TR>
+<TD>left</TD>
+<TD>1 korak levo</TD>
+</TR>
+<TR>
+<TD>left2</TD>
+<TD>2 koraka levo</TD>
+</TR>
+<TR>
+<TD>right</TD>
+<TD>1 korak desno</TD>
+</TR>
+<TR>
+<TD>right2</TD>
+<TD>2 koraka prema desno</TD>
+</TR>
+<TR>
+<TD>dn</TD>
+<TD>1 korak prema dole</TD>
+</TR>
+<TR>
+<TD>dn2</TD>
+<TD>2 koraka prema dole</TD>
+</TR>
+</TABLE>
+
+<P>
+Ovo su Papenmeier prečice dodeljene za korišćenje sa NVDA:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>prebaci brajev red u levo</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>prebaci brajev red u desno</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red u prethodni red</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>dn</TD>
+</TR>
+<TR>
+<TD>Prebaci se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Pročitaj trenutni znak u režimu pregleda</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Aktiviraj trenutni objekat navigacije</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>prebacuj između brajev vezan za| r2</TD>
+</TR>
+<TR>
+<TD>Prijavi naslov</TD>
+<TD>l1+up</TD>
+</TR>
+<TR>
+<TD>Pročitaj statusnu traku</TD>
+<TD>l2+down</TD>
+</TR>
+<TR>
+<TD>Premesti se na sadržan objekat</TD>
+<TD>up2</TD>
+</TR>
+<TR>
+<TD>Premesti se na prvi sadržani objekat</TD>
+<TD>dn2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prethodni objekat</TD>
+<TD>left2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći objekat</TD>
+<TD>right2</TD>
+</TR>
+<TR>
+<TD>Prijavi formatiranje teksta| Gornji red routing tastera</TD>
+</TR>
+</TABLE>
+
+<P>
+Trio model ima četiri dodatna tastera koji se nalaze na prednjoj strani brajeve tastature.
+One su po redu, (poređani od leva prema desno):
+</P>
+<UL>
+<LI>leva palčana tipka (lt)
+<LI>razmak
+<LI>razmak
+<LI>Desna palčana tipka (rt)
+</UL>
+
+<P>
+Trenutno se ne koristi desna palčana tipka.
+Oba dve unutrašnje tipke su približene razmaku.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>escape</TD>
+<TD>razmak sa tačkom 7</TD>
+</TR>
+<TR>
+<TD>strelicaGore</TD>
+<TD>razmak sa tačkom 2</TD>
+</TR>
+<TR>
+<TD>strelicaLevo</TD>
+<TD>razmak sa tačkom 1</TD>
+</TR>
+<TR>
+<TD>strelicaDesno</TD>
+<TD>razmak sa tačkom 4</TD>
+</TR>
+<TR>
+<TD>strelicaDole</TD>
+<TD>razmak sa tačkom 5</TD>
+</TR>
+<TR>
+<TD>kontrol</TD>
+<TD>lt+tačka2</TD>
+</TR>
+<TR>
+<TD>alt</TD>
+<TD>lt+tačka3</TD>
+</TR>
+<TR>
+<TD>kontrol+escape</TD>
+<TD>razmak sa tačkama 1 2 3 4 5 6</TD>
+</TR>
+<TR>
+<TD>tab</TD>
+<TD>razmak sa tačkama 3 7</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc124"></A>
+<H3>14.13. Papenmeier Braille BRAILLEX stariji modeli</H3>
+<P>
+Sledeći su brajevi redovi podržani: 
+</P>
+<UL>
+<LI>BRAILLEX EL 80, EL 2D-80, EL 40 P
+<LI>BRAILLEX Tiny, 2D Screen
+</UL>
+
+<P></P>
+<P>
+Imajte na umu da se ovi brajevi redovi mogu povezati samo preko serijskog priključka.
+Zbog toga, morate označiti priključak putem kojeg je brajev red spojen kad odaberete ovaj drajver u dijaloškom okviru brajev red.
+</P>
+<P>
+Neki od ovih uređaja imaju Easy Access Bar (EAB) taster koji omogućuje intuitivno i brzo rukovanje.
+EAB se može pomerati u četiri smera gde uglavnom svaki smer ima dva preklopnika.
+Kad pritiskate i držite gornji, donji, desni i levi taster (ili EAB) Prouzrokuje ponavljanje dodeljene akcije.
+Stariji uređaji nemaju EAB; tasteri sa prednje strane se koriste umesto EAB.
+</P>
+<P>
+Uobičajeno mogu se naći sledeći tasteri na brajevim redovima:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Taster</TH>
+</TR>
+<TR>
+<TD>l1</TD>
+<TD>Levi prednji taster</TD>
+</TR>
+<TR>
+<TD>l2</TD>
+<TD>Levi zadnji taster</TD>
+</TR>
+<TR>
+<TD>r1</TD>
+<TD>desni prednji taster</TD>
+</TR>
+<TR>
+<TD>r2</TD>
+<TD>desni zadnji taster</TD>
+</TR>
+<TR>
+<TD>up</TD>
+<TD>1 korak prema gore</TD>
+</TR>
+<TR>
+<TD>up2</TD>
+<TD>2 koraka gore</TD>
+</TR>
+<TR>
+<TD>left</TD>
+<TD>1 korak levo</TD>
+</TR>
+<TR>
+<TD>left2</TD>
+<TD>2 koraka levo</TD>
+</TR>
+<TR>
+<TD>right</TD>
+<TD>1 Korak desno</TD>
+</TR>
+<TR>
+<TD>right2</TD>
+<TD>2 Koraka desno</TD>
+</TR>
+<TR>
+<TD>dn</TD>
+<TD>1 korak prema dole</TD>
+</TR>
+<TR>
+<TD>dn2</TD>
+<TD>2 koraka prema dole</TD>
+</TR>
+</TABLE>
+
+<P>
+Slede Papenmeierove dodeljene prečice za korišćenje sa NVDA:
+</P>
+<P>
+Uređaji koji imaju EAB:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodni red</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeći red</TD>
+<TD>dn</TD>
+</TR>
+<TR>
+<TD>Premesti se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Izgovori trenutni znak u režimu pregleda| l1</TD>
+</TR>
+<TR>
+<TD>aktiviraj trenutni objekat navigacije</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>izgovori naslov</TD>
+<TD>l1up</TD>
+</TR>
+<TR>
+<TD>Izgovori statusnu traku</TD>
+<TD>l2down</TD>
+</TR>
+<TR>
+<TD>Premesti se na sadržan objekat</TD>
+<TD>up2</TD>
+</TR>
+<TR>
+<TD>Premesti se na prvi sadržani objekat</TD>
+<TD>dn2</TD>
+</TR>
+<TR>
+<TD>Premesti se na sledeći objekat</TD>
+<TD>right2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prethodni objekat</TD>
+<TD>left2</TD>
+</TR>
+<TR>
+<TD>Prijavi formatiranje teksta</TD>
+<TD>gornji red routing tastera</TD>
+</TR>
+</TABLE>
+
+<P>
+BRAILLEX Tiny:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>izgovori trenutni znak u režimu  pregleda</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Aktiviraj trenutni objekat navigacije</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red nazad</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red na prethodni red</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red na sledeći red</TD>
+<TD>dn</TD>
+</TR>
+<TR>
+<TD>Prebacuj vezivanje brajevog reda na| r2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sadržan objekat</TD>
+<TD>r1+up</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prvi sadržani objekat</TD>
+<TD>r1+dn</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prvi objekat</TD>
+<TD>r1+left</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći objekat</TD>
+<TD>r1+right</TD>
+</TR>
+<TR>
+<TD>Prijavi formatiranje teksta</TD>
+<TD>reportf</TD>
+</TR>
+<TR>
+<TD>Izgovori naslov</TD>
+<TD>l1+gore</TD>
+</TR>
+<TR>
+<TD>izgovori statusnu traku</TD>
+<TD>l2+dole</TD>
+</TR>
+</TABLE>
+
+<P>
+BRAILLEX 2D Screen:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>izgovori trenutni znak u režimu pregleda</TD>
+<TD>l1</TD>
+</TR>
+<TR>
+<TD>Aktiviraj trenutni objekat navigacije</TD>
+<TD>l2</TD>
+</TR>
+<TR>
+<TD>Prebacuj brajev vezan na| r2</TD>
+</TR>
+<TR>
+<TD>Prijavi formatiranje teksta</TD>
+<TD>reportf</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>up</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad</TD>
+<TD>left</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>right</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red na sledeći red</TD>
+<TD>dn</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći objekat</TD>
+<TD>left2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sadržan objekat</TD>
+<TD>up2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prvi sadržani objekat</TD>
+<TD>dn2</TD>
+</TR>
+<TR>
+<TD>Prebaci se na prethodni objekat</TD>
+<TD>right2</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc125"></A>
+<H3>14.14. HumanWare BrailleNote</H3>
+<P>
+NVDA podržava BrailleNote elektronske beležnice firme <A HREF="http://www.humanware.com">Humanware</A> Kada se ponašaju kao brajevi redovi za čitače ekrana.
+Sledeći modeli su podržani:
+</P>
+<UL>
+<LI>BrailleNote Classic (samo serijska veza)
+<LI>BrailleNote PK (serijska i bluetooth veza)
+<LI>BrailleNote MPower (Serijska i Bluetooth veza)
+<LI>BrailleNote Apex (USB i bluetooth veza)
+</UL>
+
+<P></P>
+<P>
+Ako vaš uređaj podržava više od jedne vrste veze, kada spajate vaš BrailleNote za korišćenje sa NVDA, morate postaviti priključak brajevog terminala u podešavanjima brajevog terminala.
+Za više informacija, molimo pogledajte korisničko uputstvo za BrailleNote elektronsku beležnicu.
+Možda ćete morati da podesite priključak u dijaloškom okviru brajeva podešavanja.
+Ako povezujete uređaj putem USB ili bluetooth veze, možete postaviti priključak na "Automatski", "USB" ili "Bluetooth", u zavisnosti od dostupnih opcija.
+Ako za povezivanje koristite serijski priključak (ili pretvarač sa serijskog priključka na USB) ili se ne pojavljuje nijedna od prethodnih opcija, morate tačno odabrati komunikacijski priključak koji će se koristiti pri komunikaciji sa uređajem.
+</P>
+<P>
+Pre povezivanja vašeg BrailleNote Apex uz pomoć njegovog Usb klijenta, morate instalirati drajvere koje je napravila firma Human Ware.
+</P>
+<P>
+Slede BrailleNote prečice za korišćenje sa NVDA čitačem ekrana.
+Molimo pogledajte vaše BrailleNote uputstvo za upotrebu da biste znali gde se nalaze ovi tasteri.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Prebaci brajev red nazad</TD>
+<TD>nazad</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>napred</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na prethodni red</TD>
+<TD>prethodno</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>sledeće</TD>
+</TR>
+<TR>
+<TD>Prebaci se na brajevu ćeliju</TD>
+<TD>routing</TD>
+</TR>
+<TR>
+<TD>Prebacuj brajev vezan za| Prethodni+Sledeći</TD>
+</TR>
+<TR>
+<TD>Strelica Gore</TD>
+<TD>razmak+tačka1</TD>
+</TR>
+<TR>
+<TD>Strelica Dole</TD>
+<TD>razmak+tačka4</TD>
+</TR>
+<TR>
+<TD>Leva Strelica</TD>
+<TD>razmak+tačka3</TD>
+</TR>
+<TR>
+<TD>Strelica desno</TD>
+<TD>razmak+tačka6</TD>
+</TR>
+<TR>
+<TD>Page up</TD>
+<TD>razmak+tačka1+tačka3</TD>
+</TR>
+<TR>
+<TD>Page down</TD>
+<TD>razmak+tačka4+tačka6</TD>
+</TR>
+<TR>
+<TD>Home</TD>
+<TD>razmak+tačka1+tačka2</TD>
+</TR>
+<TR>
+<TD>End</TD>
+<TD>razmak+tačka4+tačka5</TD>
+</TR>
+<TR>
+<TD>Kontrol+home</TD>
+<TD>razmak+tačka1+tačka2+tačka3</TD>
+</TR>
+<TR>
+<TD>Control+end</TD>
+<TD>razmak+tačka4+tačka5+tačka6</TD>
+</TR>
+<TR>
+<TD>Razmak</TD>
+<TD>brajev razmak</TD>
+</TR>
+<TR>
+<TD>Enter</TD>
+<TD>Razmak +tačka8</TD>
+</TR>
+<TR>
+<TD>Backspace</TD>
+<TD>Razmak +tačka7</TD>
+</TR>
+<TR>
+<TD>Tab</TD>
+<TD>razmak+tačka2+tačka3+tačka4+tačka5 (razmak+t)</TD>
+</TR>
+<TR>
+<TD>Šift+tab</TD>
+<TD>razmak+tačka1+tačka2+tačka5+tačka6</TD>
+</TR>
+<TR>
+<TD>Windows taster</TD>
+<TD>razmak+tačka2+tačka4+tačka5+tačka6 (razmak+w)</TD>
+</TR>
+<TR>
+<TD>Alt</TD>
+<TD>razmak+Tačka1+tačka3+tačka4 (razmak+m)</TD>
+</TR>
+<TR>
+<TD>Uključi/isključi pomoć za unos</TD>
+<TD>razmak+tačka2+tačka3+tačka6 (razmak+spušteno h)</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc126"></A>
+<H3>14.15. EcoBraille</H3>
+<P>
+NVDA podržava EcoBraille brajeve redove koje proizvodi <A HREF="http://www.once.es/">ONCE</A>.
+Sledeći modeli su podržani:
+</P>
+<UL>
+<LI>EcoBraille 20
+<LI>EcoBraille 40
+<LI>EcoBraille 80
+<LI>EcoBraille Plus
+</UL>
+
+<P></P>
+<P>
+U NVDA možete podesiti priključak na koji će brajev red biti povezan, u brajevim podešavanjima.
+</P>
+<P>
+Slede Dodeljene prečice za EcoBraille brajeve redove.
+Molimo pogledajte <A HREF="ftp://ftp.once.es/pub/utt/bibliotecnia/Lineas_Braille/ECO/">EcoBraille korisničko uputstvo</A> Za opis i raspored tastera na vašem brajevom redu.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad za red</TD>
+<TD>T2</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred za jedan red</TD>
+<TD>T4</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na prethodnu liniju teksta</TD>
+<TD>T1</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red na sledeću liniju teksta</TD>
+<TD>T5</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>Routing</TD>
+</TR>
+<TR>
+<TD>Aktiviraj trenutni objekat navigacije</TD>
+<TD>T3</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći režim pregleda</TD>
+<TD>F1</TD>
+</TR>
+<TR>
+<TD>Pomeri se na prethodni objekat</TD>
+<TD>F2</TD>
+</TR>
+<TR>
+<TD>Pomeri se na prethodni režim pregleda</TD>
+<TD>F3</TD>
+</TR>
+<TR>
+<TD>Pomeri se na prethodni objekat</TD>
+<TD>F4</TD>
+</TR>
+<TR>
+<TD>Čitaj trenutni objekat</TD>
+<TD>F5</TD>
+</TR>
+<TR>
+<TD>Prebaci se na sledeći objekat</TD>
+<TD>F6</TD>
+</TR>
+<TR>
+<TD>Premesti se na objekat koji ima fokus</TD>
+<TD>F7</TD>
+</TR>
+<TR>
+<TD>Premesti se na prvi sadržan objekat</TD>
+<TD>F8</TD>
+</TR>
+<TR>
+<TD>Premesti fokus sistema i kursor na trenutnu poziciju</TD>
+<TD>F9</TD>
+</TR>
+<TR>
+<TD>Prijavi poziciju preglednog kursora| F0</TD>
+</TR>
+<TR>
+<TD>Uključi /isključi brajev vezan na| A</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc127"></A>
+<H3>14.16. SuperBraille</H3>
+<P>
+ SuperBraille uređaj, uglavnom dostupan u Tajvanu, se može povezati putem USB ili serijskog porta.
+Budući da SuperBraille nema fizičke tastere za unos teksta ili pomeranje, sav unos mora se vršiti putem tastature računara.
+Zbog ovoga, i zbog zadržavanja kompatibilnosti sa drugim čitačima ekrana u Tajvanu, dve komande za pomeranje brajevog reda su dodate:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Komanda</TH>
+</TR>
+<TR>
+<TD>Pomeri brajev red nazad| NumeričkiMinus</TD>
+</TR>
+<TR>
+<TD>Pomeri brajev red napred| NumeričkiPlus</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc128"></A>
+<H3>14.17. BRLTTY</H3>
+<P>
+<A HREF="http://www.brltty.com/">BRLTTY</A> je program koji se može koristiti za podršku puno više brajevih redova.
+Da biste ga mogli koristiti, morate instalirati <A HREF="http://www.brltty.com/download.html">BRLTTY za Windows</A>.
+Morate preuzeti i instalirati trenutnu verziju paketa, na primer koji će biti imenovan, brltty-win-4.2-2.exe.
+Kada podešavate brajev red i priključak za korišćenje, budite sigurni da strogo pratite uputstva, pogotovo ako koristite Usb brajev red i ako već imate instalirane drajvere proizvođača.
+</P>
+<P>
+Za brajeve redove koji imaju brajevu tastaturu, BRLTTY trenutno koristi unos brajevih znakova iz samog sebe.
+Zbog toga, podešavanje za ulaznu brajevu tabelu u dijalogu Brajeva podešavanja, je nebitno.
+</P>
+<P>
+Ovo su BRLTTY prečice za NVDA.
+Molimo pogledajte <A HREF="http://mielke.cc/brltty/doc/KeyBindings/">BRLTTY tabele tasterskih prečica</A> za više informacija o tome kako su dodeljene prečice za kontrole na brajevim redovima.
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>BRLTTY komanda</TH>
+</TR>
+<TR>
+<TD>Prebaci brajev red nazad</TD>
+<TD>fwinlt (idi jedan prozor u levo)</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red napred</TD>
+<TD>fwinrt (Prebaci se jedan prozor u desno)</TD>
+</TR>
+<TR>
+<TD>Prebaci brajev red na sledeći red</TD>
+<TD>lnup (Idi jedan red gore)</TD>
+</TR>
+<TR>
+<TD>Premesti brajev red na sledeći red</TD>
+<TD>lndn (Idi dole za jedan red)</TD>
+</TR>
+<TR>
+<TD>Pomeri se na brajevu ćeliju</TD>
+<TD>route (Pomeri kursor na znak)</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc129"></A>
+<H2>15. Napredne teme</H2>
+<A NAME="CommandLineOptions"></A>
+<H3>15.1. Opcije komandne linije</H3>
+<P>
+NVDA može prihvatiti jednu ili više opcija kada se pokreće koje menjaju njegovo ponašanje.
+Možete proslediti onoliko opcija koliko vam je potrebno.
+Ove opcije mogu biti prosleđene kada pokrećete preko prečice(u svojstvima prečice), iz dijaloga pokreni(start meni-&gt; pokreni ili Windows+r) ili iz Windows komandne linije.
+Opcije trebaju biti odvojene od imena glavne datoteke programa NVDA i od drugih opcija razmacima.
+Na primer, prečica koju NVDA pravi na radnoj površini u toku instalacije ima -r opciju, koja govori programu da zatvori trenutno pokrenutu kopiju pre pokretanja nove.
+Još jedna korisna opcija je --disable-addons, koja govori programu NVDA da onemogući sve pokrenute dodatke.
+Ovo vam dozvoljava da proverite da li je neki od dodataka izazvao problem i da rešite ozbiljne probleme izazvane od strane dodataka.
+</P>
+<P>
+Kao primer, možete izaći iz prethodno pokrenute kopije programa NVDA upisivanjem sledećeg u dijalog za pokretanje:
+</P>
+<P>
+nvda -q
+</P>
+<P>
+Neke opcije komandne linije imaju kratku i dugu verziju, dok neke imaju samo dugu verziju.
+Za one koje imaju kratku verziju, možete ih kombinovati ovako:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TD>nvda -rm</TD>
+<TD>Ovo će izaći iz programa NVDA i pokrenuti novu sa zvucima pri pokretanju onemogućenim, i tako dalje.</TD>
+</TR>
+<TR>
+<TD>nvda -rm --disable-addons</TD>
+<TD>Isto kao iznad, ali sa dodacima onemogućenim|</TD>
+</TR>
+</TABLE>
+
+<P>
+Neke opcije prihvataju dodatne parametre; na primer koliko detaljna evidencija u dnevniku treba da bude ili adresa za korisnička podešavanja.
+Ovi parametri se postavljaju nakon opcije odvojeni razmakom, kada se koristi kratka verzija ili znakom jednako(=) kada se koristi duga verzija; na primer.:
+</P>
+<TABLE CELLPADDING="4">
+<TR>
+<TD>nvda -l 10</TD>
+<TD>Govori programu NVDA da se pokrene sa evidencijom u dnevniku podešenom na otklanjanje grešaka|</TD>
+</TR>
+<TR>
+<TD>nvda --log-file=c:\nvda.log</TD>
+<TD ALIGN="right">Govori programu NVDA da piše datoteke sa dnevnikom na lokaciji c:/NVDA.log|</TD>
+</TR>
+<TR>
+<TD>nvda --log-level=20 -f c:\nvda.log</TD>
+<TD>Govori programu NVDA da se pokrene sa evidencijom u dnevniku podešenom na informacije i da piše datoteke sa dnevnikom na lokaciji c:\NVDA.log|</TD>
+</TR>
+</TABLE>
+
+<P>
+Slede opcije komandne linije za NVDA:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Kratka</TH>
+<TH>Duga</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>-h</TD>
+<TD>--help</TD>
+<TD>Prikaži pomoć komandne linije i izađi|</TD>
+</TR>
+<TR>
+<TD>-q</TD>
+<TD>--quit</TD>
+<TD>Izađi iz već pokrenute kopije programa NVDA|</TD>
+</TR>
+<TR>
+<TD>-r</TD>
+<TD>--replace</TD>
+<TD>Izađi iz pokrenute kopije programa NVDA i pokreni ovu|</TD>
+</TR>
+<TR>
+<TD>-k</TD>
+<TD>--check-running</TD>
+<TD>Prijavi da li je NVDA pokrenut korišćenjem koda izlaza; 0 ako je pokrenut, 1 ako nije pokrenut|</TD>
+</TR>
+<TR>
+<TD>-f LOGFILENAME</TD>
+<TD>--log-file=LOGFILENAME</TD>
+<TD>Datoteka u kojoj poruke dnevnika trebaju biti pisane|</TD>
+</TR>
+<TR>
+<TD>-l LOGLEVEL</TD>
+<TD>--log-level=LOGLEVEL</TD>
+<TD>Najniži nivo evidencije poruka(otklanjanje grešaka 10, info 20, upozorenje 30, greška 40, kritično 50), podrazumevano je upozorenje|</TD>
+</TR>
+<TR>
+<TD>-c CONFIGPATH</TD>
+<TD>--config-path=CONFIGPATH</TD>
+<TD>Adresa na kojoj podešavanja za NVDA trebaju biti sačuvana|</TD>
+</TR>
+<TR>
+<TD>-m</TD>
+<TD>--minimal</TD>
+<TD>Nema zvukova, nema interfejsa, nema poruka pokretanja i tako dalje|</TD>
+</TR>
+<TR>
+<TD>-s</TD>
+<TD>--secure</TD>
+<TD>Bezbednosni režim(onemogući pithon konzolu)</TD>
+</TR>
+<TR>
+<TD>Nema</TD>
+<TD>--disable-addons</TD>
+<TD>Dodaci neće imati efekta|</TD>
+</TR>
+<TR>
+<TD>Nema</TD>
+<TD>--debug-logging</TD>
+<TD>Omogući evidenciju otklanjanja grešaka za ovo pokretanje. Ovo podešavanje će promeniti ostale nivoe evidencije( --loglevel, -l).</TD>
+</TR>
+<TR>
+<TD>Nema| --no-sr-flag</TD>
+<TD>Ne menjaj globalnu oznaku čitača ekrana na sistemu|</TD>
+</TR>
+<TR>
+<TD>Nema</TD>
+<TD>--install</TD>
+<TD>Instalira NVDA(i pokreće novo instaliranu kopiju)</TD>
+</TR>
+<TR>
+<TD>Nema</TD>
+<TD>--install-silent</TD>
+<TD>Tiha instalacija programa NVDA(ne pokreće novo instaliranu kopiju)</TD>
+</TR>
+</TABLE>
+
+<A NAME="SystemWideParameters"></A>
+<H3>15.2. Sistemski parametri</H3>
+<P>
+NVDA dozvoljava promenu određenih vrednosti u sistemskoj registry bazi koje menjaju ponašanje programa NVDA.
+Ove vrednosti se čuvaju u registry bazi u jednom od sledećih ključeva:
+</P>
+<UL>
+<LI>32-bitni system: "HKEY_LOCAL_MACHINE\SOFTWARE\nvda"
+<LI>64-bitni system: "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\nvda"
+</UL>
+
+<P></P>
+<P>
+Sledeće vrednosti se mogu podesiti u ovom registry ključu:
+</P>
+<TABLE BORDER="1" CELLPADDING="4">
+<TR>
+<TH>Ime</TH>
+<TH>Vrsta</TH>
+<TH>Moguće vrednosti</TH>
+<TH>Opis</TH>
+</TR>
+<TR>
+<TD>configInLocalAppData</TD>
+<TD>DWORD</TD>
+<TD>0 (Podrazumevano) da onemogućite, 1 da omogućite| Ako je omogućeno, Čuva NVDA podešavanja u local folderu foldera app data umesto roaming foldera|</TD>
+</TR>
+<TR>
+<TD>serviceDebug</TD>
+<TD>DWORD</TD>
+<TD>0 (Podrazumevano) da onemogućite, 1 da omogućite</TD>
+<TD>Ako je omogućeno, onemogućava bezbedni režim na Windows secure računarima, dozvoljavajući korišćenje Python konzole i pregleda dnevnika. Zbog nekoliko velikih bezbednosnih rizika, korišćenje ove opcije nije preporučeno|</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc132"></A>
+<H2>16. Dodatne informacije</H2>
+<P>
+Ako vam trebaju dodatne informacije ili pomoć za program NVDA, molimo posetite NVDA sajt na lokaciji <A HREF="http://www.nvaccess.org/">http://www.nvaccess.org/</A>.
+Ovde, možete pronaći dodatnu dokumentaciju, kao i tehničku podršku i mesta zajednice.
+Ovaj sajt takođe pruža informacije o razvoju programa NVDA.
+</P>
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\sr\userGuide.t2t -->
+</BODY></HTML>

@@ -1,0 +1,9 @@
+welcome.mp3
+Welcome to Access I Pad
+
+instructions.mp3
+Press, F1, to start the NvdA screen reader.
+Press, F5, to start the windows magnifier.
+Press, F6, to start the Accessiware magnifier.
+Press, F11, to start the Accessiware Calculator.
+Press, escape, to close this program.

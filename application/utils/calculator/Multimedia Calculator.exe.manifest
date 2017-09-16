@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="Multimedia Calculator.exe" version="2.0.0.10" publicKeyToken="23499a1f2e5060ef" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Multimedia Calculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Multimedia Calculator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Multimedia Calculator.exe" size="94208">
+      <assemblyIdentity name="Multimedia Calculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WsTUAH4uSw3lajBpaaLczn1v42Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="favicon.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Kjtm/UV6yZKMiHPHGvQwr2bMFYo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RUDY\Peter Burgess" issuerKeyHash="930eed31d39fe6bd6d38be57bd46bb7da86f9cd6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>nHIMJUxmaljfoGjdbDZr5wZpDiM=</DigestValue></Reference></SignedInfo><SignatureValue>zyRWEMnhhb+iC74wGJKZA14k2irkFjhee6CIcr2lg8qoAGYP/FiEPeFGQLgKzxZc2hsou9r1oGsDGGIUCOlE0UJNz+Kfu+TE97KexhTwBfSaFm8JMaI78HeykbwW5ZjMgNzsSUUIb7MwB1EAxHYHA152Iyf/3phXC3c4689Y1/E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4C0lQ3gpfoqSDabARbgiUIA4vH+Zm8fgB9Oa0sQZD7fnCedvp8/JrDrZmkH3/NRPoxASGDBIqzKmbiFsr0CQYKiK/Fl5v0ehZS5C92fuuYddkzZY29FGdmWnFMSCUCJWqJwI7n/8VwaB7yZaRBHqnIYp9IIcS/R3Q1Ogr4gm6lU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="230e6906e76b366cdd68a0df586a664c250c729c" Description="" Url=""><as:assemblyIdentity name="Multimedia Calculator.exe" version="2.0.0.10" publicKeyToken="23499a1f2e5060ef" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RUDY\Peter Burgess</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ADeHGj7k0Y4ndigbrW2sB2up9Po=</DigestValue></Reference></SignedInfo><SignatureValue>e8vv9g1HQNA8P8qezrFrkStIMQbj2lsfh7caA1a5E6jlZP2o2dBCv+zyvFlrsz3etsenA/c68hWUl8iHZ6rwn1qS0ai8hcioY61N8jMBUN4uutPAWhgZpHSlUlbAA0aA7W5RQLLJOYReOFnjs3FidTkOThbyA0C5k2LpH0kk59E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4C0lQ3gpfoqSDabARbgiUIA4vH+Zm8fgB9Oa0sQZD7fnCedvp8/JrDrZmkH3/NRPoxASGDBIqzKmbiFsr0CQYKiK/Fl5v0ehZS5C92fuuYddkzZY29FGdmWnFMSCUCJWqJwI7n/8VwaB7yZaRBHqnIYp9IIcS/R3Q1Ogr4gm6lU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUagAwIBAgIQhR/oJXuNzatKLU/suNDdxjAJBgUrDgMCHQUAMC8xLTArBgNVBAMeJABSAFUARABZAFwAUABlAHQAZQByACAAQgB1AHIAZwBlAHMAczAeFw0wNzA1MzExNDM1MTlaFw0wODA1MzAyMDM1MTlaMC8xLTArBgNVBAMeJABSAFUARABZAFwAUABlAHQAZQByACAAQgB1AHIAZwBlAHMAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4C0lQ3gpfoqSDabARbgiUIA4vH+Zm8fgB9Oa0sQZD7fnCedvp8/JrDrZmkH3/NRPoxASGDBIqzKmbiFsr0CQYKiK/Fl5v0ehZS5C92fuuYddkzZY29FGdmWnFMSCUCJWqJwI7n/8VwaB7yZaRBHqnIYp9IIcS/R3Q1Ogr4gm6lUCAwEAATAJBgUrDgMCHQUAA4GBAHmpD9abK1v1f92OuOo1rtiWnkZvTw5y94BZ7hW0Poi0qcLd6YOa3yglmM49msfnIdyiITstu1gKJe4A3fm4QLF9C18yOYyVwL70VaG8v7GmSpxaLvVYX1SqPjgXma4TIE7m1UFHwZD4JigCzkDciKO/VNj1HlABN6RW8TNYLVFB</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Nyheder i NVDA</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Nyheder i NVDA</H1>
+<FONT SIZE="4">
+</FONT></CENTER>
+
+<H2>2017.3</H2>
+<H3>Nye Funktioner</H3>
+<UL>
+<LI>En indstilling er blevet tilføjet til dialogen punktindstillinger. Den er "Vis meddelelser på ubestemt tid". (<A HREF="https://github.com/nvaccess/nvda/issues/6669" target="_blank">#6669</A>)
+<LI>Beskeder i Microsoft Outlooks meddelelsesliste vil nu blive rapporteret med flag, hvis dette er passende. (<A HREF="https://github.com/nvaccess/nvda/issues/6374" target="_blank">#6374</A>)
+<LI>Den præcise type af en form i Microsoft Powerpoint vil nu blive rapporteret når et dias redigeres, såsom trekant, cirkel, video eller pil, i stedet for "shape". (<A HREF="https://github.com/nvaccess/nvda/issues/7111" target="_blank">#7111</A>)
+<LI>Matematisk indhold (angivet i MathML) er nu understøttet i Google Chrome. (<A HREF="https://github.com/nvaccess/nvda/issues/7184" target="_blank">#7184</A>)
+<LI>NVDA kan nu benytte de nye Windows OneCore stemmer (også kendt som Windows Mobile Stemmer). Disse er inkluderet i Windows 10. Du kan få adgang til dem ved at tilgå NVDAs dialog "Talesyntese". (<A HREF="https://github.com/nvaccess/nvda/issues/6159" target="_blank">#6159</A>)
+<LI>NVDAs brugerkonfigurationsfiler kan nu opbevares i brugerens lokale application data mappe. Dette kan aktiveres ved at ændre indstillingen ved brug af registreringsdatabasen. Se afsnittet "systemspecifikke parametre" i brugervejledningen for yderligere oplysninger. (<A HREF="https://github.com/nvaccess/nvda/issues/6812" target="_blank">#6812</A>)
+<LI>NVDA kan nu rapportere pladsholderværdier for felter i webbrowsere (specifikt, aria-placeholder er nu understøttet). (<A HREF="https://github.com/nvaccess/nvda/issues/7004" target="_blank">#7004</A>)
+<LI>Det er nu muligt at flytte imellem stavefejl i Microsoft Word når gennemsynstilstand er slået til ved brug af hurtignavigation (W og skift+W). (<A HREF="https://github.com/nvaccess/nvda/issues/6942" target="_blank">#6942</A>)
+<LI>Kontrollen datovælger, der er at finde i aftaledialogen i Microsoft Outlook, er nu understøttet. (<A HREF="https://github.com/nvaccess/nvda/issues/7217" target="_blank">#7217</A>)
+<LI>Det aktuelt valgte forslag rapporteres nu i Windows 10 Mail Til/CC felter, samt I Windows 10 søgefeltet. (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>En lyd er nu afspillet, når forslag vises i bestemte felter i Windows 10 (f.eks. startskærmen, søg i indstillinger, Windows 10 mail til/CC felter). (<A HREF="https://github.com/nvaccess/nvda/issues/6241" target="_blank">#6241</A>)
+<LI>Automatisk rapportering af meddelelser i Skype for Business, såsom når en person starter en samtale med dig. (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>Automatisk rapportering af meddelelser i Microsoft Edge, såsom når en overførsel er påbegyndt.  (<A HREF="https://github.com/nvaccess/nvda/issues/7281" target="_blank">#7281</A>)
+<LI>Du kan nu indtaste i både forkortet og uforkortet punktskrift på et punktdisplay med et punkttastatur. Se afsnittet "Indtastning med punkt" for flere informationer. (<A HREF="https://github.com/nvaccess/nvda/issues/2439" target="_blank">#2439</A>)
+<LI>Du kan nu indtaste Unicode punkttegn fra punkttastaturet på et punktdisplay ved at vælge Unicode-punkt  som indtastningstabel i dialogen "Punktindstillinger". (<A HREF="https://github.com/nvaccess/nvda/issues/6449" target="_blank">#6449</A>)
+<LI>Understøtter nu punktdisplayet SuperBraille der bruges i Taiwan. (<A HREF="https://github.com/nvaccess/nvda/issues/7352" target="_blank">#7352</A>)
+</UL>
+
+<H3>Ændringer</H3>
+<UL>
+<LI>En ubunden bevægelse (script_restart) er nu blevet tilføjet således NVDA hurtigt kan genstartes. (<A HREF="https://github.com/nvaccess/nvda/issues/6396" target="_blank">#6396</A>)
+<LI>Tastaturlayoutet kan nu indstilles fra NVDAs velkomstdialog. (<A HREF="https://github.com/nvaccess/nvda/issues/6863" target="_blank">#6863</A>)
+<LI>Navnene på landmærker er forkortet i punktskrift således: (<A HREF="https://github.com/nvaccess/nvda/issues/3975" target="_blank">#3975</A>)
+ <UL>
+ <LI>"landmærke:" "lmk"
+ <LI>"banner": "bnnr"
+ <LI>"komplementært": "kmpl"
+ <LI>"information om indhold": "iind"
+ <LI>"hovedindhold": "hind"
+ <LI>"navigation": "navi"
+ <LI>"søg": "søg"
+ <LI>"formular": "form"
+ <LI>"omrråde": "omr"
+ <LI>Eksempel: "navigation landmærke" bliver "lmk navi"
+ </UL>
+<LI>Opdaterede eSpeak NG til 1.49.1. (<A HREF="https://github.com/nvaccess/nvda/issues/7280" target="_blank">#7280</A>)
+<LI>Listerne over indtastning- og oversættelsestabeller sorteres nu alfabetisk. (<A HREF="https://github.com/nvaccess/nvda/issues/6113" target="_blank">#6113</A>)
+<LI>Opdaterede Liblouis Braille Translator til 3.2.0. (<A HREF="https://github.com/nvaccess/nvda/issues/6935" target="_blank">#6935</A>)
+</UL>
+
+<H3>Fejlrettelser</H3>
+<UL>
+<LI>Redigerbare div-elementer i Chrome har ikke længere deres label rapporteret som deres værdi når gennemsynstilstand benyttes. (<A HREF="https://github.com/nvaccess/nvda/issues/7153" target="_blank">#7153</A>)
+<LI>Et tryk på end-tasten i et tomt dokument når gennemsynstilstand er aktiv i Microsoft Word vil ikke længere udløse en Runtime-fejl. (<A HREF="https://github.com/nvaccess/nvda/issues/7009" target="_blank">#7009</A>)
+<LI>Gennemsynstilstand er nu korrekt understøttet når et dokument er givet den specifikke ARIA-rolle "document" i Microsoft Edge. (<A HREF="https://github.com/nvaccess/nvda/issues/6998" target="_blank">#6998</A>)
+<LI>Du kan nu vælge eller fravælge til slutningen af linjen ved brug af Skift+end i Microsoft Word, selv når markøren befinder sig på det sidste tegn på linjen. (<A HREF="https://github.com/nvaccess/nvda/issues/7157" target="_blank">#7157</A>)
+<LI>Hvis en dialog indeholder en behandlingslinje, vil denne nu blive opdateret i punkt. Dette betyder f.eks. at den resterende tid i NVDAs "Henter opdatering" dialog nu kan læses på punkt. (<A HREF="https://github.com/nvaccess/nvda/issues/6862" target="_blank">#6862</A>)
+<LI>NVDA vil nu annoncére ændringer af valg for bestemte combobokse i Windows 10, såsom automatisk afspilning i indstillinger. (<A HREF="https://github.com/nvaccess/nvda/issues/6337" target="_blank">#6337</A>).
+<LI>Unødvendigt information bliver ikke længere annoncéret i dialoger til oprettelse af møder/aftaler i Microsoft Outlook. (<A HREF="https://github.com/nvaccess/nvda/issues/7216" target="_blank">#7216</A>)
+<LI>Bip for ubestemte behandlingslinjer, såsom når der søges efter opdatering, vil kun forekomme når output af behandlingslinjer sættes til bip. (<A HREF="https://github.com/nvaccess/nvda/issues/6759" target="_blank">#6759</A>)
+<LI>Celler vil nu igen blive rapporteret når der piles rundt i et regneark i Microsoft Excel 2003 og 2007. (<A HREF="https://github.com/nvaccess/nvda/issues/8243" target="_blank">#8243</A>)
+<LI>i Windows 10 Creators Update og nyere vil gennemsynstilstand er nu igen blive slået til automatisk, når der læses email i Windows 10 Mail. (<A HREF="https://github.com/nvaccess/nvda/issues/7289" target="_blank">#7289</A>)
+<LI>På de fleste punktdisplays med punkttastaturer vil punkt 7 nu slette sidst indtastede punktcelle eller tegn, og punkt 8 trykker på enter-tasten. (<A HREF="https://github.com/nvaccess/nvda/issues/6054" target="_blank">#6054</A>)
+<LI>Når markøren bevæges i redigerbart tekst (f.eks. med markørtasterne eller backspace), vil NVDAs udtalte feedback nu være mere præcist i mange tilfæld, særligt i Chrome og terminalapplikationer. (<A HREF="https://github.com/nvaccess/nvda/issues/6424" target="_blank">#6424</A>)
+<LI>Indholdet i signaturredigering i Microsoft Outlook 2016 kan nu læses. (<A HREF="https://github.com/nvaccess/nvda/issues/7253" target="_blank">#7253</A>)
+<LI>NVDA vil ikke længere være grunden til at nogle Java Swing applikationer bryder ned, når der navigeres i tabeller. (<A HREF="https://github.com/nvaccess/nvda/issues/6992" target="_blank">#6992</A>)
+<LI>NVDA vil ikke længere annoncere toastbeskeder i Windows 10 Creators Update flere gange end nødvendigt. (<A HREF="https://github.com/nvaccess/nvda/issues/7128" target="_blank">#7128</A>)
+<LI>Efter en søgning vil et tryk på Enter-tasten for at lukke startmenuen ikke længere annoncere søgetekst i Windows 10. (<A HREF="https://github.com/nvaccess/nvda/issues/7370" target="_blank">#7370</A>)
+<LI>Udførelse af bogstavnavigation mellem overskrifter er nu markant hurtigere i Microsoft Edge. (<A HREF="https://github.com/nvaccess/nvda/issues/7343" target="_blank">#7343</A>)
+<LI>Navigation i gennemsynstilstand i Microsoft Edge springer ikke længere over store dele af hjemmesider (f.eks. temaet Wordpress 2015 på hjemmesider skabt af Wordpress). (<A HREF="https://github.com/nvaccess/nvda/issues/7143" target="_blank">#7143</A>)
+<LI>Landmærker er nu rigtigt lokaliserede i andre sprog end engelsk, når Microsoft Edge benyttes som browser. (<A HREF="https://github.com/nvaccess/nvda/issues/7328" target="_blank">#7328</A>)
+</UL>
+
+<H3>Ændringer for udviklere</H3>
+<P>
+For nyheder relateret til udvikling se venligst det engelske "What's New"-dokument.
+</P>
+<H2>Tidligere versioner</H2>
+<P>
+For nyheder i ældre versioner se venligst det engelske "What's New"-dokument.
+</P>
+
+<!-- html code generated by txt2tags 2.5 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags user_docs\da\changes.t2t -->
+</BODY></HTML>

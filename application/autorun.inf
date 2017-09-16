@@ -1,0 +1,9 @@
+[autorun]
+open=accessipad.exe
+icon=accessipad.exe,0
+label=Accessipad
+
+[Content]
+MusicFiles=false
+PictureFiles=false
+VideoFiles=false
