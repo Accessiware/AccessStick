@@ -50,7 +50,7 @@ class Panel1(wx.Panel):
                 wx.BITMAP_TYPE_ANY).ConvertToBitmap()
             self.bitmap1 = wx.StaticBitmap(
                 self, -1, bmp1, (0, 0))
-            parent.SetTitle("Accessipad")
+            parent.SetTitle("Access Stick")
         except IOError:
             print "Image file %s not found" % imageFile
             raise SystemExit
@@ -58,7 +58,7 @@ class Panel1(wx.Panel):
 
 app = wx.App(False)
 worker = WorkerThread(app)
-frame1 = wx.Frame(None, -1, "Accessipad", size=(1000, 1000))
+frame1 = wx.Frame(None, -1, "Access Stick", size=(1000, 1000))
 panel1 = Panel1(frame1, -1)
 frame1.Centre()
 frame1.Show(True)

@@ -1,8 +1,8 @@
 import wx, zipfile, os, urllib2
 
-ACCESSIPAD_URL = "https://repo.accessiware.com/viscon/beta/application/application.zip"
+DOWNLOAD_URL = "https://repo.accessiware.com/accessstick/accessstick.zip"
 
-def YesNo(parent, question, caption = 'Accessipad'):
+def YesNo(parent, question, caption = 'Access Stick'):
 	dlg = wx.MessageDialog(parent, question, caption, wx.YES_NO | wx.ICON_QUESTION)
 	result = dlg.ShowModal() == wx.ID_YES
 	dlg.Destroy()
@@ -18,7 +18,7 @@ def GetUSB():
 
 app = wx.App()
 app.MainLoop()# Call Dialog
-wx.MessageBox("Welcome.\nThis small program will help you download and install the latest version of Accessipad on an usb stick.\nBefore continuing, please insert your usb into the computer.\nWhen you've done that, press \"OK\".\n\n\nFor more information visit: https://accessiware.com/accessipad.", "Accessipad Downloader", style=wx.OK)
+wx.MessageBox("Welcome.\nThis small program will help you download and install the latest version of Access Stick on an usb.\nBefore continuing, please insert your usb into the computer.\nWhen you've done that, press \"OK\".\n\n\nFor more information visit: https://accessiware.com/accessstick.", "Access Stick Downloader", style=wx.OK)
 usb = GetUSB()
 while True:
 	q = YesNo(None, "Is \""+usb+"\" the correct usb?")
@@ -26,19 +26,19 @@ while True:
 		break;
 	GetUSB()
 
-dlg = wx.MessageDialog(None, "Please wait while the Accessipad is being downloaded and installed.", "Accessipad Downloader", wx.OK | wx.ICON_INFORMATION)
+dlg = wx.MessageDialog(None, "Please wait while the Access Stick is being downloaded and installed.", "Access Stick Downloader", wx.OK | wx.ICON_INFORMATION)
 dlg.ShowModal()
 dlg.Destroy()
 
-f = urllib2.urlopen(ACCESSIPAD_URL)
+f = urllib2.urlopen(DOWNLOAD_URL)
 data = f.read()
-with open("accessipad.zip", "wb") as code:
+with open("accessstick.zip", "wb") as code:
 	code.write(data)
-zf = zipfile.ZipFile("accessipad.zip")
+zf = zipfile.ZipFile("accessstick.zip")
 zf.extractall(path = usb)
 zf.close()
-os.remove("accessipad.zip")
+os.remove("accessstick.zip")
 
-dlg = wx.MessageDialog(None, "The Accessipad was successfully copied to " + usb, "Accessipad Downloader", wx.OK | wx.ICON_INFORMATION)
+dlg = wx.MessageDialog(None, "The Access Stick was successfully copied to " + usb, "Access Stick Downloader", wx.OK | wx.ICON_INFORMATION)
 dlg.ShowModal()
 dlg.Destroy()

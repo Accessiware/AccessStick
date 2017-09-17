@@ -1,13 +1,13 @@
-# Accessipad
-Accessipad is a small program that can be carried around on an usb stick, that allows the user to start almost every accessibility program.
+# Access Stick
+Access Stick is a small program that can be carried around on an usb stick, that allows the user to start almost every accessibility program.
 
 ### Download:
-If you're looking for a binary (compiled) version go to: https://accessiware.com/accessipad
+If you're looking for a binary (compiled) version go to: https://accessiware.com/accessstick
 You can also run from source (not recommended for production use).
 1. Clone this repository.
 2. install the required dependencies with "pip install -r requirements.txt"
 2.1 Install wx3 for Python 2.7.
-3. run "application/accessipad.py"
+3. run "application/AccessStick.py"
 
 ### Programs included.
 * nvda (the open source screen reader by NVAccess)
