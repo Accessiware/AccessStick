@@ -1,7 +1,7 @@
 [autorun]
-open=accessipad.exe
-icon=accessipad.exe,0
-label=Accessipad
+open=AccessStick.exe
+icon=AccessStick.exe,0
+label=AccessStick
 
 [Content]
 MusicFiles=false
